@@ -1,0 +1,2002 @@
+[
+  {
+    "id": 1,
+    "slug": "kenya-mpesa",
+    "title": "M-Pesa: Mobile Money Revolution",
+    "country": "Kenya",
+    "region": "Sub-Saharan Africa",
+    "topic": "Financial Inclusion",
+    "year": "2007–present",
+    "summary": "Launched by Safaricom and Vodafone in 2007, M-Pesa became the world's most successful mobile money platform, reaching over 51 million users across multiple countries and lifting roughly 2% of Kenyan households out of poverty according to landmark research."
+  },
+  {
+    "id": 2,
+    "slug": "kenya-free-primary-education",
+    "title": "Free Primary Education Programme",
+    "country": "Kenya",
+    "region": "Sub-Saharan Africa",
+    "topic": "Education",
+    "year": "2003–present",
+    "summary": "Kenya's 2003 abolition of primary school fees triggered an immediate enrollment surge from 5.9 million to 7.6 million students, dramatically expanding access but creating severe quality challenges including overcrowded classrooms and teacher shortages."
+  },
+  {
+    "id": 3,
+    "slug": "kenya-devolution",
+    "title": "Devolution & County Governments",
+    "country": "Kenya",
+    "region": "Sub-Saharan Africa",
+    "topic": "Governance & Decentralization",
+    "year": "2013–present",
+    "summary": "Kenya's 2010 Constitution established 47 county governments with guaranteed minimum revenue shares, representing one of Africa's most ambitious decentralization reforms. Results have been mixed, with improved local service access alongside significant corruption and capacity challenges."
+  },
+  {
+    "id": 4,
+    "slug": "rwanda-gacaca",
+    "title": "Gacaca Community Justice Courts",
+    "country": "Rwanda",
+    "region": "Sub-Saharan Africa",
+    "topic": "Governance & Decentralization",
+    "year": "2001–2012",
+    "summary": "Rwanda's Gacaca courts adapted a traditional community dispute resolution mechanism to try nearly 2 million genocide-related cases through 12,000 local courts, processing a caseload that would have taken conventional courts over a century to complete."
+  },
+  {
+    "id": 5,
+    "slug": "rwanda-vision-2020",
+    "title": "Vision 2020 Economic Transformation",
+    "country": "Rwanda",
+    "region": "Sub-Saharan Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2000–2020",
+    "summary": "Rwanda's Vision 2020 strategy drove sustained GDP growth averaging 8% annually and cut poverty from 60% to 38%, but prompted intense debate about the sustainability of an authoritarian developmental state model heavily reliant on foreign aid."
+  },
+  {
+    "id": 6,
+    "slug": "rwanda-mutuelles",
+    "title": "Mutuelles de Santé Community Health Insurance",
+    "country": "Rwanda",
+    "region": "Sub-Saharan Africa",
+    "topic": "Health",
+    "year": "1999–present",
+    "summary": "Rwanda's community-based health insurance scheme achieved over 90% population coverage by 2010, starting from just 7% in 2003. Combined with 45,000 community health workers, the program contributed to dramatic reductions in child and maternal mortality."
+  },
+  {
+    "id": 7,
+    "slug": "rwanda-girinka",
+    "title": "Girinka One Cow Per Poor Family",
+    "country": "Rwanda",
+    "region": "Sub-Saharan Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "2006–present",
+    "summary": "Rwanda's Girinka program distributed over 400,000 cows to poor families, drawing on a traditional practice of cattle gifting to address child malnutrition, increase agricultural productivity through manure, and promote social cohesion between genocide survivors and perpetrators."
+  },
+  {
+    "id": 8,
+    "slug": "ethiopia-psnp",
+    "title": "Productive Safety Net Programme",
+    "country": "Ethiopia",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2005–present",
+    "summary": "Africa's largest social protection program, Ethiopia's PSNP shifted from emergency food aid to predictable transfers for 8 million chronically food-insecure people. It combined public works employment with direct support for labor-poor households, aiming to prevent asset depletion and build community infrastructure."
+  },
+  {
+    "id": 9,
+    "slug": "ethiopia-adli",
+    "title": "Agricultural Development Led Industrialization",
+    "country": "Ethiopia",
+    "region": "Sub-Saharan Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "1993–2019",
+    "summary": "Ethiopia's ADLI strategy deployed over 60,000 agricultural extension agents and prioritized smallholder productivity, helping triple cereal production and sustain roughly 10% GDP growth from 2004 to 2015. The model faced criticism for top-down implementation and eventual political instability."
+  },
+  {
+    "id": 10,
+    "slug": "ethiopia-hawassa",
+    "title": "Hawassa Industrial Park",
+    "country": "Ethiopia",
+    "region": "Sub-Saharan Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2016–present",
+    "summary": "Built for $250 million and opened in 2016, the Hawassa Industrial Park was the flagship of Ethiopia's ambitious plan to become Africa's manufacturing hub. It attracted global brands like PVH/Calvin Klein but faced challenges including low wages, high worker turnover, and devastating disruption from civil conflict."
+  },
+  {
+    "id": 11,
+    "slug": "nigeria-lagos-brt",
+    "title": "Lagos Bus Rapid Transit System",
+    "country": "Nigeria",
+    "region": "Sub-Saharan Africa",
+    "topic": "Infrastructure & Urbanization",
+    "year": "2008–present",
+    "summary": "Africa's first Bus Rapid Transit system launched in Lagos in 2008, carrying over 200,000 passengers daily on dedicated lanes. It demonstrated that mass transit solutions could work in congested African megacities, though expansion has been slower than planned."
+  },
+  {
+    "id": 12,
+    "slug": "nigeria-cct",
+    "title": "National Social Investment Programme",
+    "country": "Nigeria",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2016–present",
+    "summary": "Nigeria's National Social Investment Programme, launched in 2016 with a $1.7 billion budget, included conditional cash transfers, youth employment schemes, and school feeding programs targeting millions. Implementation was marred by targeting controversies, political capture concerns, and questions about impact evidence."
+  },
+  {
+    "id": 13,
+    "slug": "ghana-nhis",
+    "title": "National Health Insurance Scheme",
+    "country": "Ghana",
+    "region": "Sub-Saharan Africa",
+    "topic": "Health",
+    "year": "2003–present",
+    "summary": "Ghana launched Africa's most ambitious premium-based national health insurance scheme in 2003, eventually claiming 40% active membership. While the scheme expanded access and introduced free maternal care, it has struggled with financial sustainability, low active enrollment, and quality of care concerns."
+  },
+  {
+    "id": 14,
+    "slug": "ghana-cocoa-reform",
+    "title": "Cocoa Sector Reform & COCOBOD",
+    "country": "Ghana",
+    "region": "Sub-Saharan Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "1990s–present",
+    "summary": "Ghana's partial liberalization of the cocoa sector since the 1990s preserved the state marketing board COCOBOD while introducing private licensed buying companies. Producer prices rose and output recovered from historic lows, though child labor, deforestation, and farmer poverty persist as major challenges."
+  },
+  {
+    "id": 15,
+    "slug": "ghana-leap",
+    "title": "LEAP Cash Transfer Programme",
+    "country": "Ghana",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2008–present",
+    "summary": "Ghana's Livelihood Empowerment Against Poverty (LEAP) programme provides cash transfers to over 350,000 extremely poor households, using community-based targeting and linking beneficiaries to the national health insurance scheme. Rigorous evaluations show positive but modest impacts on consumption and health access."
+  },
+  {
+    "id": 16,
+    "slug": "tanzania-ujamaa",
+    "title": "Ujamaa Villagization Experiment",
+    "country": "Tanzania",
+    "region": "Sub-Saharan Africa",
+    "topic": "Governance & Decentralization",
+    "year": "1967–1985",
+    "summary": "Tanzania's Ujamaa experiment under President Nyerere forcibly relocated over 5 million rural Tanzanians into planned villages between 1973 and 1976. Rooted in African socialist ideology, the programme collectivized agriculture but led to significant declines in agricultural output and rural livelihoods."
+  },
+  {
+    "id": 17,
+    "slug": "tanzania-tasaf",
+    "title": "Tanzania Social Action Fund",
+    "country": "Tanzania",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2000–present",
+    "summary": "TASAF is a World Bank-supported social protection programme that evolved from community-driven development to a national productive safety net. TASAF III reached over 1.1 million households through conditional cash transfers and public works, becoming Tanzania's flagship anti-poverty intervention."
+  },
+  {
+    "id": 18,
+    "slug": "uganda-upe",
+    "title": "Universal Primary Education",
+    "country": "Uganda",
+    "region": "Sub-Saharan Africa",
+    "topic": "Education",
+    "year": "1997–present",
+    "summary": "Uganda's Universal Primary Education programme, launched in 1997 after President Museveni's election pledge, abolished primary school fees and doubled enrollment from 3.1 million to 6.5 million children within a year. The rapid expansion came at significant cost to education quality."
+  },
+  {
+    "id": 19,
+    "slug": "uganda-nusaf",
+    "title": "Northern Uganda Social Action Fund",
+    "country": "Uganda",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2003–present",
+    "summary": "NUSAF combined community-driven development with innovative youth employment programmes in post-conflict northern Uganda. The Youth Opportunities Programme, evaluated by Blattman et al. (2014), provided $382 cash grants to groups of young adults, generating a 41% increase in earnings."
+  },
+  {
+    "id": 20,
+    "slug": "botswana-diamonds",
+    "title": "Diamond-Led Development Model",
+    "country": "Botswana",
+    "region": "Sub-Saharan Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1967–present",
+    "summary": "Botswana transformed from one of the world's poorest countries at independence in 1966, with GDP per capita around $70, to an upper-middle-income economy exceeding $7,000 per capita. Its partnership with De Beers through Debswana and prudent fiscal management allowed it to avoid the resource curse."
+  },
+  {
+    "id": 21,
+    "slug": "botswana-achap",
+    "title": "ACHAP HIV/AIDS Public-Private Partnership",
+    "country": "Botswana",
+    "region": "Sub-Saharan Africa",
+    "topic": "Health",
+    "year": "2000–2014",
+    "summary": "The African Comprehensive HIV/AIDS Partnerships (ACHAP), a collaboration between the Government of Botswana, the Merck Company Foundation, and the Bill & Melinda Gates Foundation, helped Botswana achieve 84% ART coverage. The MASA national treatment programme became a model for African HIV/AIDS responses."
+  },
+  {
+    "id": 22,
+    "slug": "south-africa-social-grants",
+    "title": "Post-Apartheid Social Grants System",
+    "country": "South Africa",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "1994–present",
+    "summary": "South Africa's social grants system is the largest unconditional cash transfer programme in Africa, reaching over 18 million beneficiaries. The Child Support Grant alone covers 12.8 million children, making it one of the most extensive social protection interventions in the developing world."
+  },
+  {
+    "id": 23,
+    "slug": "south-africa-rdp-housing",
+    "title": "Reconstruction & Development Programme Housing",
+    "country": "South Africa",
+    "region": "Sub-Saharan Africa",
+    "topic": "Infrastructure & Urbanization",
+    "year": "1994–present",
+    "summary": "South Africa's RDP housing programme has delivered over 4.5 million subsidized houses since 1994, making it the largest government-funded housing programme in the Global South. Despite this scale, the programme has been criticized for poor construction quality and perpetuating spatial apartheid through peripheral locations."
+  },
+  {
+    "id": 24,
+    "slug": "south-africa-epwp",
+    "title": "Expanded Public Works Programme",
+    "country": "South Africa",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2004–present",
+    "summary": "South Africa's Expanded Public Works Programme has created over 5 million work opportunities across four sectors since 2004. Designed to provide temporary employment and skills training to the unemployed, EPWP has been criticized for offering only short-term, low-wage work that fails to create pathways to permanent employment."
+  },
+  {
+    "id": 25,
+    "slug": "malawi-fisp",
+    "title": "Farm Input Subsidy Programme",
+    "country": "Malawi",
+    "region": "Sub-Saharan Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "2005–present",
+    "summary": "Malawi's Farm Input Subsidy Programme distributed subsidized fertilizer and improved seed to approximately 1.5 million smallholder farmers annually, contributing to a doubling of maize production. The programme cost around $100 million per year, roughly 6% of GDP, sparking intense debate about fiscal sustainability and effectiveness."
+  },
+  {
+    "id": 26,
+    "slug": "mozambique-reconstruction",
+    "title": "Post-Civil War Reconstruction",
+    "country": "Mozambique",
+    "region": "Sub-Saharan Africa",
+    "topic": "Governance & Decentralization",
+    "year": "1992–2010",
+    "summary": "Mozambique's recovery from a devastating civil war that killed roughly one million people became a widely cited post-conflict success story. Following the 1992 Rome Peace Accords, the country achieved average GDP growth of 7% from 1993 to 2008, though recovery was heavily aid-dependent and later undermined by hidden debt scandals and renewed conflict."
+  },
+  {
+    "id": 27,
+    "slug": "senegal-pse",
+    "title": "Plan Senegal Emergent",
+    "country": "Senegal",
+    "region": "Sub-Saharan Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2014–present",
+    "summary": "Plan Senegal Emergent (PSE) is Senegal's ambitious long-term development strategy aiming to achieve emerging economy status by 2035. The plan accelerated GDP growth to 6-7% annually through major infrastructure investments including the Diamniadio industrial platform and Dakar BRT system, though rising debt levels have prompted sustainability concerns."
+  },
+  {
+    "id": 28,
+    "slug": "zambia-sct",
+    "title": "Social Cash Transfer Programme",
+    "country": "Zambia",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2003–present",
+    "summary": "Zambia's Social Cash Transfer programme, piloted in Kalomo District in 2003 with UNICEF support, gradually scaled to reach over 700,000 households nationally. Rigorous evaluations by the American Institutes for Research found significant impacts on food security, children's schooling, and productive investment."
+  },
+  {
+    "id": 29,
+    "slug": "sierra-leone-post-ebola",
+    "title": "Post-Ebola Health System Rebuilding",
+    "country": "Sierra Leone",
+    "region": "Sub-Saharan Africa",
+    "topic": "Health",
+    "year": "2015–present",
+    "summary": "Sierra Leone's health system, already one of the world's weakest, was devastated by the 2014-2016 Ebola epidemic that killed 3,956 people. Post-Ebola rebuilding efforts focused on health workforce expansion, surveillance systems, and strengthening the Free Health Care Initiative launched in 2010."
+  },
+  {
+    "id": 30,
+    "slug": "liberia-reconstruction",
+    "title": "Post-Conflict Reconstruction under Sirleaf",
+    "country": "Liberia",
+    "region": "Sub-Saharan Africa",
+    "topic": "Governance & Decentralization",
+    "year": "2006–2018",
+    "summary": "Ellen Johnson Sirleaf, Africa's first elected female head of state, led Liberia's reconstruction from devastating civil wars. Her government secured $4.7 billion in debt relief, achieved 5-8% GDP growth, and established governance reforms, though the 2014 Ebola epidemic and persistent corruption posed major setbacks."
+  },
+  {
+    "id": 31,
+    "slug": "namibia-big-pilot",
+    "title": "Basic Income Grant Pilot",
+    "country": "Namibia",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2008–2009",
+    "summary": "A universal basic income pilot in Otjivero-Omitara village provided N$100 per month to 930 residents, reducing poverty from 76% to 37% and demonstrating significant improvements in nutrition, school attendance, and crime reduction."
+  },
+  {
+    "id": 32,
+    "slug": "niger-adaptive-social-protection",
+    "title": "Sahel Adaptive Social Protection",
+    "country": "Niger",
+    "region": "Sub-Saharan Africa",
+    "topic": "Social Protection",
+    "year": "2014–present",
+    "summary": "The World Bank's Adaptive Social Protection Programme in Niger links cash transfers to climate early warning systems, reaching 280,000 households with scalable safety nets that respond dynamically to drought and food crises across the Sahel."
+  },
+  {
+    "id": 33,
+    "slug": "zimbabwe-hyperinflation",
+    "title": "Hyperinflation Crisis & Dollarization",
+    "country": "Zimbabwe",
+    "region": "Sub-Saharan Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2000–2009",
+    "summary": "Zimbabwe experienced one of history's worst hyperinflation episodes, peaking at 79.6 billion percent in November 2008. Triggered by the Fast Track Land Reform Programme and fiscal mismanagement, the crisis halved GDP before dollarization in 2009 stabilized the economy."
+  },
+  {
+    "id": 34,
+    "slug": "madagascar-vanilla",
+    "title": "Vanilla Economy: Boom, Bust & Poverty",
+    "country": "Madagascar",
+    "region": "Sub-Saharan Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "2000–present",
+    "summary": "Madagascar produces roughly 80% of the world's natural vanilla. Dramatic price volatility, peaking near $600 per kilogram in 2018, has created a paradox of extreme wealth flowing through one of the world's poorest regions while entrenching cycles of poverty and quality decline."
+  },
+  {
+    "id": 35,
+    "slug": "burkina-faso-zai",
+    "title": "Zai Pit Water Harvesting Revival",
+    "country": "Burkina Faso",
+    "region": "Sub-Saharan Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "1980s–present",
+    "summary": "Farmer innovator Yacouba Sawadogo revived the traditional zai pit technique to rehabilitate degraded land in Burkina Faso's Sahel, contributing to the restoration of 200,000-300,000 hectares of barren land and yield increases of 300-400% across the Central Plateau."
+  },
+  {
+    "id": 36,
+    "slug": "mali-office-du-niger",
+    "title": "Office du Niger Irrigation Scheme",
+    "country": "Mali",
+    "region": "Sub-Saharan Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "1932–present",
+    "summary": "The Office du Niger, a massive gravity-fed irrigation scheme in Mali's inland delta, has operated since 1932 across roughly 100,000 hectares. Once a colonial cotton scheme, it now produces most of Mali's rice while facing ongoing challenges of land governance and large-scale foreign investment."
+  },
+  {
+    "id": 37,
+    "slug": "cote-divoire-recovery",
+    "title": "Post-Crisis Economic Recovery",
+    "country": "Côte d'Ivoire",
+    "region": "Sub-Saharan Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2011–present",
+    "summary": "Following a decade of political crisis culminating in the 2010-2011 civil war, Côte d'Ivoire achieved remarkable GDP growth of 7-9% annually from 2012 to 2019 through its National Development Plan, massive infrastructure investment, and fiscal consolidation, while structural challenges of inequality and cocoa dependence persist."
+  },
+  {
+    "id": 38,
+    "slug": "drc-conflict-minerals",
+    "title": "Conflict Minerals & Dodd-Frank Section 1502",
+    "country": "DRC",
+    "region": "Sub-Saharan Africa",
+    "topic": "Governance & Decentralization",
+    "year": "2010–present",
+    "summary": "The Dodd-Frank Act's Section 1502 required US-listed companies to disclose use of conflict minerals from the DRC. While intended to cut armed group financing, research by Stoop et al. (2018) and Parker et al. (2016) found mixed results, including unintended consequences for artisanal mining livelihoods."
+  },
+  {
+    "id": 39,
+    "slug": "somalia-mobile-money",
+    "title": "Mobile Money in a Fragile State",
+    "country": "Somalia",
+    "region": "Sub-Saharan Africa",
+    "topic": "Financial Inclusion",
+    "year": "2009–present",
+    "summary": "Somalia achieved the highest mobile money penetration rate in Africa through Hormuud Telecom's EVC Plus platform, providing financial services to a population without a functioning formal banking system. The system handles billions in transactions annually and integrates with the country's vital $1.4 billion remittance corridor."
+  },
+  {
+    "id": 40,
+    "slug": "mauritius-epz",
+    "title": "Export Processing Zones & Diversification",
+    "country": "Mauritius",
+    "region": "Sub-Saharan Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1970–present",
+    "summary": "Mauritius transformed from a monocrop sugar economy into a diversified upper-middle-income country with GDP per capita exceeding $12,000 through successive waves of industrial policy. The Export Processing Zone Act of 1970 catalyzed textile manufacturing, followed by diversification into financial services, tourism, and ICT."
+  },
+  {
+    "id": 41,
+    "slug": "cape-verde-development",
+    "title": "Small Island Development Success Story",
+    "country": "Cape Verde",
+    "region": "Sub-Saharan Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1975–present",
+    "summary": "Cape Verde graduated from Least Developed Country status in 2007, a rare achievement in Sub-Saharan Africa. The archipelago nation built a stable democracy, achieved GDP per capita of approximately $3,600, and leveraged tourism, remittances, and good governance to overcome extreme geographic and resource constraints."
+  },
+  {
+    "id": 42,
+    "slug": "eritrea-national-service",
+    "title": "National Service & Developmental Authoritarianism",
+    "country": "Eritrea",
+    "region": "Sub-Saharan Africa",
+    "topic": "Governance & Decentralization",
+    "year": "1994–present",
+    "summary": "Eritrea's indefinite national service conscription program, originally designed as an 18-month civic duty, became a system of open-ended forced labor driving over 400,000 citizens to flee. The UN Commission of Inquiry (2015) found systematic human rights abuses, while the government claimed the program built infrastructure and national cohesion."
+  },
+  {
+    "id": 43,
+    "slug": "lesotho-highlands-water",
+    "title": "Lesotho Highlands Water Project",
+    "country": "Lesotho",
+    "region": "Sub-Saharan Africa",
+    "topic": "Infrastructure & Urbanization",
+    "year": "1986–present",
+    "summary": "The Lesotho Highlands Water Project, one of Africa's largest infrastructure undertakings, transfers water from Lesotho's highlands to South Africa's Gauteng province through massive dams and tunnels. While generating royalties worth approximately 5% of Lesotho's GDP, the project displaced over 30,000 people and was marred by a landmark corruption scandal."
+  },
+  {
+    "id": 44,
+    "slug": "cameroon-community-forests",
+    "title": "Community Forests Programme",
+    "country": "Cameroon",
+    "region": "Sub-Saharan Africa",
+    "topic": "Environment & Climate",
+    "year": "1994–present",
+    "summary": "Cameroon's 1994 Forestry Law pioneered community forestry in Central Africa, allocating over 400 community forests of up to 5,000 hectares each. While innovative in design, research by Oyono (2005) and CIFOR revealed widespread elite capture, governance failures, and limited benefits reaching the poorest community members."
+  },
+  {
+    "id": 45,
+    "slug": "sudan-gezira",
+    "title": "Gezira Irrigation Scheme",
+    "country": "Sudan",
+    "region": "Sub-Saharan Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "1925–present",
+    "summary": "The Gezira Scheme, Africa's largest irrigation project at 882,000 hectares, was established under British colonial rule in 1925 for cotton production. Once generating 60% of Sudan's export revenue, it has declined dramatically due to institutional deterioration, the controversial 2005 privatization act, and the shift from cotton to sorghum."
+  },
+  {
+    "id": 46,
+    "slug": "india-upi",
+    "title": "India's UPI Revolution",
+    "country": "India",
+    "region": "South Asia",
+    "topic": "Financial Inclusion",
+    "year": "2016–present",
+    "summary": "India's Unified Payments Interface (UPI), launched in 2016, became the world's most successful real-time digital payments system, processing over 13 billion transactions monthly by 2024. UPI enabled India to leapfrog card-based payment infrastructure, bringing millions of small merchants into the digital economy, though its zero-fee model raises long-term sustainability questions."
+  },
+  {
+    "id": 47,
+    "slug": "india-dbt-jam",
+    "title": "India's Direct Benefit Transfer & JAM Trinity",
+    "country": "India",
+    "region": "South Asia",
+    "topic": "Social Protection",
+    "year": "2013–present",
+    "summary": "India built the world's most ambitious digital welfare delivery system using the JAM Trinity -- Jan Dhan bank accounts, Aadhaar biometric identity, and Mobile phones -- channeling over 30 lakh crore rupees in direct benefit transfers since 2013. While the system significantly reduced leakage in programs like LPG subsidies, it also created painful exclusion errors where genuine beneficiaries lost access due to biometric failures and connectivity gaps."
+  },
+  {
+    "id": 48,
+    "slug": "india-mgnrega",
+    "title": "India's MGNREGA Workfare Program",
+    "country": "India",
+    "region": "South Asia",
+    "topic": "Social Protection",
+    "year": "2006–present",
+    "summary": "The Mahatma Gandhi National Rural Employment Guarantee Act, enacted in 2005, guarantees 100 days of manual work per year to every rural household, making it the world's largest workfare program with over 260 million registered workers. Rigorous evidence shows it raised rural wages by 4-8% and reduced poverty, while serving as a critical safety net during droughts and COVID-19, though chronic payment delays and wide interstate variation in implementation quality persist."
+  },
+  {
+    "id": 49,
+    "slug": "india-kerala-model",
+    "title": "Kerala's Human Development Model",
+    "country": "India",
+    "region": "South Asia",
+    "topic": "Health",
+    "year": "1950s–present",
+    "summary": "Kerala achieved life expectancy of 77.3 years, literacy of 96.2%, and infant mortality of 6 per 1,000 -- comparable to middle-income countries -- on per-capita income that remained below the Indian average for most of its history. Built on radical land reform, massive public investment in education and health, and a strong redistributive political culture, the model now faces challenges from fiscal stress, aging, and dependence on Gulf remittances."
+  },
+  {
+    "id": 50,
+    "slug": "india-pli",
+    "title": "India's Production-Linked Incentive Scheme",
+    "country": "India",
+    "region": "South Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2020–present",
+    "summary": "India's PLI scheme, launched in 2020-21 with a committed outlay of 1.97 lakh crore rupees across 14 sectors, represents the country's most explicit embrace of industrial policy since 1991 liberalization. Mobile phone manufacturing has been the standout success, with exports surging from $3 billion to over $15 billion, though results across other sectors remain deeply uneven."
+  },
+  {
+    "id": 51,
+    "slug": "india-swachh-bharat",
+    "title": "Swachh Bharat Mission",
+    "country": "India",
+    "region": "South Asia",
+    "topic": "Health",
+    "year": "2014–2019",
+    "summary": "The Swachh Bharat Mission built over 110 million household toilets between 2014 and 2019, dramatically reducing open defecation from 550 million people to an estimated 50-100 million. While this was one of the largest behavior change campaigns in history, significant gaps between declared Open Defecation Free status and actual toilet usage persist, particularly in northern India, and health impact evidence remains mixed."
+  },
+  {
+    "id": 52,
+    "slug": "bangladesh-brac",
+    "title": "BRAC's Ultra-Poor Graduation Model",
+    "country": "Bangladesh",
+    "region": "South Asia",
+    "topic": "Social Protection",
+    "year": "2002–present",
+    "summary": "BRAC pioneered the ultra-poor graduation model combining asset transfers, skills training, cash stipends, and intensive coaching to permanently lift the extreme poor out of destitution. A landmark six-country RCT published in Science found sustained income gains of 38% three years after the program ended, making it one of the most rigorously validated approaches to ending extreme poverty, now replicated in over 50 countries."
+  },
+  {
+    "id": 53,
+    "slug": "bangladesh-garments",
+    "title": "Bangladesh's Garment Industry & Women's Empowerment",
+    "country": "Bangladesh",
+    "region": "South Asia",
+    "topic": "Gender & Inclusion",
+    "year": "1980s–present",
+    "summary": "Bangladesh's ready-made garment sector grew from $31 million in exports in 1983 to over $45 billion by 2023, employing roughly 4 million workers -- approximately 80% women -- and becoming the single most important driver of the country's poverty reduction. The 2013 Rana Plaza collapse, which killed 1,134 workers, exposed systemic safety failures, but post-disaster reforms demonstrated that international pressure could improve factory conditions without destroying the industry."
+  },
+  {
+    "id": 54,
+    "slug": "nepal-community-forestry",
+    "title": "Nepal's Community Forestry Program",
+    "country": "Nepal",
+    "region": "South Asia",
+    "topic": "Environment & Climate",
+    "year": "1978–present",
+    "summary": "Nepal's community forestry program transferred management of national forests to over 22,500 local Community Forest User Groups managing 2.3 million hectares -- roughly one-third of the country's forests -- involving 2.9 million households. The program reversed decades of deforestation in the middle hills, though serious equity critiques persist around elite capture of benefits and limited women's participation in decision-making."
+  },
+  {
+    "id": 55,
+    "slug": "nepal-remittances",
+    "title": "Nepal's Remittance Economy",
+    "country": "Nepal",
+    "region": "South Asia",
+    "topic": "Financial Inclusion",
+    "year": "1990s–present",
+    "summary": "Nepal's migrant worker remittances reached $9.3 billion in 2022-23, equivalent to 23-25% of GDP, making it one of the world's most remittance-dependent economies. While remittances drove a 50% poverty reduction since 2000, at least 7,500 Nepali workers died abroad between 2008 and 2020, and the economy exhibits classic Dutch disease symptoms as manufacturing and agriculture stagnate."
+  },
+  {
+    "id": 56,
+    "slug": "pakistan-bisp",
+    "title": "Pakistan's Benazir Income Support Programme",
+    "country": "Pakistan",
+    "region": "South Asia",
+    "topic": "Social Protection",
+    "year": "2008–present",
+    "summary": "Pakistan's BISP, launched in 2008, grew into one of the developing world's largest social safety nets, reaching over 9 million families through an innovative poverty scorecard system with payments made directly to women. A rare example of institutional continuity across Pakistan's fractured political landscape, BISP proved that even fragile states can build durable social protection, though transfers remain too small to be transformative."
+  },
+  {
+    "id": 57,
+    "slug": "sri-lanka-crisis-2022",
+    "title": "Sri Lanka's 2022 Economic Crisis",
+    "country": "Sri Lanka",
+    "region": "South Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2019–present",
+    "summary": "Sri Lanka experienced its worst economic crisis since independence in 2022, defaulting on $51 billion in foreign debt as foreign reserves fell below $50 million and inflation spiked to 69.8%. The crisis was driven by populist tax cuts, pandemic-induced tourism collapse, and a catastrophic overnight ban on synthetic fertilizers, ultimately forcing the president to flee the country and triggering an IMF bailout program."
+  },
+  {
+    "id": 58,
+    "slug": "bhutan-gnh",
+    "title": "Bhutan's Gross National Happiness Framework",
+    "country": "Bhutan",
+    "region": "South Asia",
+    "topic": "Governance & Decentralization",
+    "year": "1972–present",
+    "summary": "Since 2008, Bhutan has operationalized Gross National Happiness as a formal policy screening tool with a 33-indicator index, a dedicated commission with veto power over legislation, and periodic national surveys across 9 domains of wellbeing. While achieving strong forest conservation, near-universal education, and low inequality, Bhutan faces 29% youth unemployment and economic dependence on hydropower."
+  },
+  {
+    "id": 59,
+    "slug": "maldives-climate",
+    "title": "Maldives' Climate Adaptation Strategy",
+    "country": "Maldives",
+    "region": "South Asia",
+    "topic": "Environment & Climate",
+    "year": "2004–present",
+    "summary": "The Maldives, with 80% of its islands less than one metre above sea level, faces an existential climate threat and has pursued adaptation ranging from building the artificial island of Hulhumale to house a third of its population, to pioneering climate diplomacy at the UN. The nation's survival strategy is constrained by the paradox that its economic lifeline -- luxury tourism -- drives the very emissions threatening its existence."
+  },
+  {
+    "id": 60,
+    "slug": "south-asia-stunting",
+    "title": "South Asia's Child Stunting Crisis",
+    "country": "Regional (India, Bangladesh, Pakistan, Nepal)",
+    "region": "South Asia",
+    "topic": "Health",
+    "year": "2000–present",
+    "summary": "South Asia is home to approximately 57 million stunted children under five -- more than sub-Saharan Africa -- with India alone accounting for one-third of the world's stunted children. Bangladesh achieved the region's most dramatic reduction from 51% to 28%, largely through sanitation elimination, women's empowerment, and effective community health workers, while India and Pakistan have lagged despite far greater resources."
+  },
+  {
+    "id": 61,
+    "slug": "china-sez",
+    "title": "Special Economic Zones: Shenzhen Model",
+    "country": "China",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1980–present",
+    "summary": "China's Special Economic Zones, launched in 1980 under Deng Xiaoping's reform program, transformed Shenzhen from a small fishing village into a global technology hub with GDP exceeding $450 billion, pioneering a model of export-oriented, FDI-led growth replicated worldwide."
+  },
+  {
+    "id": 62,
+    "slug": "china-tve",
+    "title": "Township & Village Enterprises",
+    "country": "China",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1978–2000s",
+    "summary": "China's Township and Village Enterprises (TVEs) drove rural industrialization from 1978, employing 135 million people at their 1996 peak under a unique collective ownership model. TVEs generated nearly a third of China's GDP before a wave of privatization transformed them in the late 1990s."
+  },
+  {
+    "id": 63,
+    "slug": "china-poverty-alleviation",
+    "title": "Targeted Poverty Alleviation Campaign",
+    "country": "China",
+    "region": "East Asia & Pacific",
+    "topic": "Social Protection",
+    "year": "2013–2021",
+    "summary": "China's Targeted Poverty Alleviation campaign, launched by Xi Jinping in 2013, deployed 255,000 work teams and invested over $246 billion to lift 98.99 million rural poor above the poverty line by 2021, de-listing all 832 nationally designated poor counties."
+  },
+  {
+    "id": 64,
+    "slug": "china-belt-and-road",
+    "title": "Belt and Road Initiative",
+    "country": "China",
+    "region": "East Asia & Pacific",
+    "topic": "Infrastructure & Urbanization",
+    "year": "2013–present",
+    "summary": "China's Belt and Road Initiative, announced in 2013, has mobilized over $1 trillion in infrastructure investments across 150+ partner countries. The initiative has built ports, railways, and power plants but has drawn scrutiny over debt sustainability, governance, and geopolitical implications."
+  },
+  {
+    "id": 65,
+    "slug": "china-hukou-reform",
+    "title": "Hukou System & Migration Governance",
+    "country": "China",
+    "region": "East Asia & Pacific",
+    "topic": "Governance & Decentralization",
+    "year": "1958–present",
+    "summary": "China's household registration (hukou) system, established in 1958, has governed the lives of 290 million internal migrants who face restricted access to urban services. Gradual reforms have eased mobility while preserving a system that creates significant social exclusion and inequality."
+  },
+  {
+    "id": 66,
+    "slug": "china-one-child-policy",
+    "title": "One-Child to Universal Two-Child Policy",
+    "country": "China",
+    "region": "East Asia & Pacific",
+    "topic": "Health",
+    "year": "1979–2021",
+    "summary": "China's one-child policy, implemented in 1979, was the most ambitious demographic intervention in history. It contributed to fertility decline but caused severe unintended consequences including sex-ratio imbalance peaking at 117 boys per 100 girls, rapid aging, and the 4-2-1 family burden."
+  },
+  {
+    "id": 67,
+    "slug": "vietnam-doi-moi",
+    "title": "Doi Moi Economic Renovation",
+    "country": "Vietnam",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1986–present",
+    "summary": "Vietnam's Doi Moi reforms, launched in 1986, transformed a centrally planned economy into one of Asia's fastest-growing markets. Poverty fell from 58% to under 5%, GDP growth averaged 6-7% for three decades, and Vietnam graduated to lower-middle-income status by 2010."
+  },
+  {
+    "id": 68,
+    "slug": "vietnam-industrial-zones",
+    "title": "Industrial Zone Development Strategy",
+    "country": "Vietnam",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1991–present",
+    "summary": "Vietnam's industrial zone strategy, begun in 1991, has established over 400 zones that anchor the country's manufacturing export economy. Samsung's $17 billion investment exemplifies how these zones integrated Vietnam into global supply chains, driving $336 billion in manufacturing exports by 2022."
+  },
+  {
+    "id": 69,
+    "slug": "vietnam-poverty-reduction",
+    "title": "National Targeted Poverty Reduction Programme",
+    "country": "Vietnam",
+    "region": "East Asia & Pacific",
+    "topic": "Social Protection",
+    "year": "1998–present",
+    "summary": "Vietnam's National Targeted Programmes, anchored by Programme 135 for ethnic minority areas since 1998, have sought to close the persistent poverty gap between the Kinh majority and 53 ethnic minority groups through targeted infrastructure, livelihood support, and social services."
+  },
+  {
+    "id": 70,
+    "slug": "south-korea-saemaul",
+    "title": "Saemaul Undong Village Movement",
+    "country": "South Korea",
+    "region": "East Asia & Pacific",
+    "topic": "Agriculture & Food Security",
+    "year": "1970–1979",
+    "summary": "South Korea's Saemaul Undong (New Village Movement), launched by President Park Chung-hee in 1970, distributed cement and steel to 34,665 villages to catalyze rural modernization. By 1974, average rural household income surpassed urban levels, though the movement's top-down nature drew significant criticism."
+  },
+  {
+    "id": 71,
+    "slug": "south-korea-hci",
+    "title": "Heavy & Chemical Industry Drive",
+    "country": "South Korea",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1973–1979",
+    "summary": "South Korea's Heavy and Chemical Industry (HCI) drive from 1973 to 1979 channeled approximately $10 billion into steel, shipbuilding, chemicals, and automobiles. Despite initial overcapacity and macroeconomic distortions, POSCO became the world's fourth-largest steelmaker, validating selective industrial targeting."
+  },
+  {
+    "id": 72,
+    "slug": "south-korea-chaebol",
+    "title": "Chaebol-Led Export Development",
+    "country": "South Korea",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1960s–present",
+    "summary": "South Korea's chaebol system, built on state-directed credit and export discipline, produced global conglomerates including Samsung, Hyundai, and LG. The top 10 chaebols generate revenue equivalent to roughly 80% of GDP, raising persistent concerns about market concentration and small business crowding out."
+  },
+  {
+    "id": 73,
+    "slug": "taiwan-land-reform",
+    "title": "Land Reform & Rural Transformation",
+    "country": "Taiwan",
+    "region": "East Asia & Pacific",
+    "topic": "Agriculture & Food Security",
+    "year": "1949–1963",
+    "summary": "Taiwan's three-stage land reform (1949-1953), implemented by the KMT government drawing on its mainland failure, redistributed farmland from landlords to tenants. The reform reduced rural inequality, mobilized agricultural savings for industrialization, and became a model of successful redistributive land policy."
+  },
+  {
+    "id": 74,
+    "slug": "taiwan-tsmc",
+    "title": "TSMC & Semiconductor Industrial Policy",
+    "country": "Taiwan",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1987–present",
+    "summary": "Taiwan's semiconductor industrial policy, anchored by the government-incubated TSMC founded by Morris Chang in 1987, created the world's dominant chip foundry with 65% global market share. The Hsinchu Science Park ecosystem and ITRI technology transfer model became a landmark case of state-led technology upgrading."
+  },
+  {
+    "id": 75,
+    "slug": "japan-miti",
+    "title": "Post-War MITI Industrial Policy",
+    "country": "Japan",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1949–2001",
+    "summary": "Japan's Ministry of International Trade and Industry (MITI) directed post-war industrial policy through administrative guidance, trade protection, and targeted sector promotion. Chalmers Johnson's 1982 study defined the 'developmental state' concept, though debate continues over MITI's actual contribution to Japan's economic miracle."
+  },
+  {
+    "id": 76,
+    "slug": "japan-kaizen",
+    "title": "Kaizen & Quality Revolution",
+    "country": "Japan",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1950s–present",
+    "summary": "Japan's quality revolution, catalyzed by W. Edwards Deming's teachings and institutionalized through Toyota's Production System and kaizen (continuous improvement), transformed global manufacturing standards. Womack et al.'s 1990 study 'The Machine That Changed the World' documented how lean production achieved dramatic efficiency gains."
+  },
+  {
+    "id": 77,
+    "slug": "indonesia-pkh",
+    "title": "PKH Conditional Cash Transfer",
+    "country": "Indonesia",
+    "region": "East Asia & Pacific",
+    "topic": "Social Protection",
+    "year": "2007–present",
+    "summary": "Indonesia's Program Keluarga Harapan (PKH), launched in 2007, grew to cover 10 million families by 2020. World Bank evaluations found school enrollment gains of up to 9 percentage points and improved maternal health, while digital payment integration modernized delivery to reduce leakage."
+  },
+  {
+    "id": 78,
+    "slug": "indonesia-dana-desa",
+    "title": "Village Fund (Dana Desa)",
+    "country": "Indonesia",
+    "region": "East Asia & Pacific",
+    "topic": "Governance & Decentralization",
+    "year": "2015–present",
+    "summary": "Indonesia's Village Fund transfers central government resources directly to 74,953 villages, making it one of the world's largest fiscal decentralization programs. Over Rp 400 trillion has been disbursed since 2015, financing local infrastructure and social assistance including BLT-Dana Desa cash transfers during COVID-19."
+  },
+  {
+    "id": 79,
+    "slug": "indonesia-palm-oil",
+    "title": "Palm Oil Boom & Deforestation Crisis",
+    "country": "Indonesia",
+    "region": "East Asia & Pacific",
+    "topic": "Environment & Climate",
+    "year": "1990s–present",
+    "summary": "Indonesia became the world's largest palm oil producer with 59 million tons annually from 16 million hectares, lifting millions of smallholders from poverty while driving catastrophic deforestation and peatland fires that generated massive greenhouse gas emissions."
+  },
+  {
+    "id": 80,
+    "slug": "indonesia-transmigration",
+    "title": "Transmigration Programme",
+    "country": "Indonesia",
+    "region": "East Asia & Pacific",
+    "topic": "Governance & Decentralization",
+    "year": "1950–2015",
+    "summary": "Indonesia's Transmigration Programme relocated over 8 million people from densely populated Java, Madura, and Bali to outer islands. One of history's largest resettlement schemes, it aimed to reduce population pressure and develop frontier regions but generated severe environmental destruction and ethnic conflicts."
+  },
+  {
+    "id": 81,
+    "slug": "philippines-4ps",
+    "title": "Pantawid Pamilyang Pilipino (4Ps)",
+    "country": "Philippines",
+    "region": "East Asia & Pacific",
+    "topic": "Social Protection",
+    "year": "2008–present",
+    "summary": "The Philippines' Pantawid Pamilyang Pilipino Program (4Ps) is the third-largest conditional cash transfer program globally, reaching 4.4 million households. It provides cash grants tied to school attendance and health checkups, and evaluations have found improvements in enrollment and nutrition outcomes."
+  },
+  {
+    "id": 82,
+    "slug": "philippines-ofw",
+    "title": "OFW Remittance Economy",
+    "country": "Philippines",
+    "region": "East Asia & Pacific",
+    "topic": "Financial Inclusion",
+    "year": "1974–present",
+    "summary": "The Philippines has systematically promoted overseas labor migration since 1974, building an economy deeply dependent on remittances from over 10 million overseas Filipino workers. Remittances reached $36 billion in 2023, comprising 9.3% of GDP, but the model raises concerns about brain drain and worker exploitation."
+  },
+  {
+    "id": 83,
+    "slug": "philippines-bpo",
+    "title": "BPO Industry Development",
+    "country": "Philippines",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2000s–present",
+    "summary": "The Philippines built a $32 billion IT-BPM industry employing 1.7 million people, surpassing India as the world leader in voice-based business process outsourcing. The sector leveraged the country's English proficiency and cultural affinity with the United States to become a pillar of economic growth."
+  },
+  {
+    "id": 84,
+    "slug": "thailand-uhc",
+    "title": "Universal Healthcare Coverage (30-Baht Scheme)",
+    "country": "Thailand",
+    "region": "East Asia & Pacific",
+    "topic": "Health",
+    "year": "2002–present",
+    "summary": "Thailand achieved universal health coverage in 2002 through the Universal Coverage Scheme, extending insurance to 47 million previously uninsured citizens. Out-of-pocket health spending fell from 33% to 11% of total health expenditure, and catastrophic health spending was halved within a decade."
+  },
+  {
+    "id": 85,
+    "slug": "thailand-sufficiency-economy",
+    "title": "Sufficiency Economy Philosophy",
+    "country": "Thailand",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1997–present",
+    "summary": "King Bhumibol Adulyadej's Sufficiency Economy Philosophy (SEP), articulated after the 1997 Asian financial crisis, proposed a development framework based on moderation, reasonableness, and self-immunity. It was integrated into Thailand's national development plans and endorsed by the UNDP, though critics question its practical applicability."
+  },
+  {
+    "id": 86,
+    "slug": "cambodia-garments",
+    "title": "Garment Sector & Better Factories Programme",
+    "country": "Cambodia",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1994–present",
+    "summary": "Cambodia's garment sector grew from nearly nothing in the mid-1990s to a $12 billion export industry employing over 700,000 workers, predominantly women. The ILO's Better Factories Cambodia program linked trade access to labor standards compliance, creating a unique model of trade-labor linkage."
+  },
+  {
+    "id": 87,
+    "slug": "cambodia-demining",
+    "title": "Landmine Clearance Programme",
+    "country": "Cambodia",
+    "region": "East Asia & Pacific",
+    "topic": "Health",
+    "year": "1992–present",
+    "summary": "Cambodia, one of the world's most mine-affected countries with 4–6 million devices laid during decades of conflict, has conducted extensive clearance since 1992. Annual casualties fell from 4,320 in 1996 to 77 in 2022, and over 2,500 square kilometers have been cleared, releasing land for agriculture and development."
+  },
+  {
+    "id": 88,
+    "slug": "cambodia-microfinance",
+    "title": "Microfinance Sector Expansion & Over-Indebtedness",
+    "country": "Cambodia",
+    "region": "East Asia & Pacific",
+    "topic": "Financial Inclusion",
+    "year": "1990s–present",
+    "summary": "Cambodia's microfinance sector grew from small NGO programs in the 1990s to a $16 billion loan portfolio—the highest per capita in the world. While expanding financial access, the sector has generated a debt crisis, with reports of coerced land sales, displacement, and over-indebtedness affecting millions of borrowers."
+  },
+  {
+    "id": 89,
+    "slug": "myanmar-economic-opening",
+    "title": "Post-Sanctions Economic Opening",
+    "country": "Myanmar",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2011–2021",
+    "summary": "Myanmar's political and economic reforms under President Thein Sein (2011–2015) led to sanctions relief, surging foreign investment, and rapid economic growth averaging 7% annually. The telecom revolution connected millions, and the garment sector boomed, but the 2021 military coup reversed a decade of gains."
+  },
+  {
+    "id": 90,
+    "slug": "mongolia-mining",
+    "title": "Mining Boom & Child Money Program",
+    "country": "Mongolia",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2004–present",
+    "summary": "Mongolia's mining boom, centered on the $7 billion Oyu Tolgoi copper-gold mine, drove explosive GDP growth but also Dutch disease symptoms and a debt crisis. The universal Child Money Program distributed mineral wealth directly to families, while disputes with Rio Tinto highlighted resource governance challenges."
+  },
+  {
+    "id": 91,
+    "slug": "png-resource-curse",
+    "title": "Resource Curse & LNG Development",
+    "country": "Papua New Guinea",
+    "region": "East Asia & Pacific",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2000–present",
+    "summary": "Papua New Guinea's vast mineral and petroleum resources, including the $19 billion PNG LNG project, have generated significant export revenue while failing to improve development outcomes for the 80% of the population living in subsistence agriculture. The country exemplifies the resource curse, with the Ok Tedi and Bougainville crises as cautionary precedents."
+  },
+  {
+    "id": 92,
+    "slug": "fiji-climate-adaptation",
+    "title": "Climate Adaptation & Village Relocation",
+    "country": "Fiji",
+    "region": "East Asia & Pacific",
+    "topic": "Environment & Climate",
+    "year": "2012–present",
+    "summary": "Fiji became a global pioneer in climate-induced planned relocation when the village of Vunidogoloa was moved to higher ground in 2014. With over 830 communities identified as vulnerable to climate impacts, Fiji has developed a national relocation framework while championing loss and damage advocacy on the global stage as COP23 president."
+  },
+  {
+    "id": 93,
+    "slug": "timor-leste-petroleum-fund",
+    "title": "Petroleum Fund for Sovereign Wealth",
+    "country": "Timor-Leste",
+    "region": "East Asia & Pacific",
+    "topic": "Governance & Decentralization",
+    "year": "2005–present",
+    "summary": "Timor-Leste, one of the world's newest nations, established a Petroleum Fund in 2005 to manage revenues from its offshore oil and gas fields. The fund reached a peak of $19 billion but faces depletion by the 2030s as the Bayu-Undan field is exhausted, testing whether oil wealth has been translated into sustainable development."
+  },
+  {
+    "id": 94,
+    "slug": "laos-nam-theun-2",
+    "title": "Nam Theun 2 Hydropower Dam",
+    "country": "Laos",
+    "region": "East Asia & Pacific",
+    "topic": "Infrastructure & Urbanization",
+    "year": "2005–present",
+    "summary": "The $1.45 billion Nam Theun 2 hydropower dam in Laos was the World Bank's flagship development project of the 2000s, generating 1,070 MW primarily for export to Thailand. It required resettling 6,200 people and promised that revenues would fund poverty reduction, but outcomes for resettled communities and downstream populations have been contested."
+  },
+  {
+    "id": 95,
+    "slug": "singapore-hdb",
+    "title": "Public Housing (HDB) Model",
+    "country": "Singapore",
+    "region": "East Asia & Pacific",
+    "topic": "Infrastructure & Urbanization",
+    "year": "1960–present",
+    "summary": "Singapore's Housing and Development Board (HDB) program transformed a city of slums and squatter settlements into one where over 80% of the population lives in high-quality public housing with 90% homeownership. The model integrates CPF pension savings for financing, ethnic integration quotas, and urban planning into a comprehensive housing policy."
+  },
+  {
+    "id": 96,
+    "slug": "brazil-bolsa-familia",
+    "title": "Bolsa Família Conditional Cash Transfer",
+    "country": "Brazil",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2003–present",
+    "summary": "Brazil's Bolsa Família became the world's largest conditional cash transfer program, reaching 14 million families at its peak. It contributed to significant reductions in poverty and inequality, with the Gini coefficient falling from 0.59 to 0.52 between 2001 and 2013."
+  },
+  {
+    "id": 97,
+    "slug": "brazil-sus",
+    "title": "SUS Universal Healthcare System",
+    "country": "Brazil",
+    "region": "Latin America & Caribbean",
+    "topic": "Health",
+    "year": "1988–present",
+    "summary": "Brazil's Sistema Único de Saúde (SUS) established universal healthcare as a constitutional right in 1988, covering over 210 million people. The Family Health Programme expanded primary care to 60% of the population, contributing to major reductions in infant mortality."
+  },
+  {
+    "id": 98,
+    "slug": "brazil-pronaf",
+    "title": "PRONAF Family Agriculture Credit",
+    "country": "Brazil",
+    "region": "Latin America & Caribbean",
+    "topic": "Agriculture & Food Security",
+    "year": "1996–present",
+    "summary": "PRONAF (Programa Nacional de Fortalecimento da Agricultura Familiar) has provided subsidized credit to millions of Brazilian family farmers since 1996, disbursing over $30 billion. Family farms produce 70% of Brazil's food, though credit has concentrated disproportionately in the wealthier South and Southeast regions."
+  },
+  {
+    "id": 99,
+    "slug": "brazil-amazon-fund",
+    "title": "Amazon Fund & Deforestation Reduction",
+    "country": "Brazil",
+    "region": "Latin America & Caribbean",
+    "topic": "Environment & Climate",
+    "year": "2008–present",
+    "summary": "Brazil achieved an 80% reduction in Amazon deforestation between 2004 and 2012 through a combination of satellite monitoring, law enforcement, and international financing via the Amazon Fund. Norway contributed $1.2 billion, though deforestation surged again under the Bolsonaro administration before declining after 2023."
+  },
+  {
+    "id": 100,
+    "slug": "brazil-participatory-budgeting",
+    "title": "Participatory Budgeting in Porto Alegre",
+    "country": "Brazil",
+    "region": "Latin America & Caribbean",
+    "topic": "Governance & Decentralization",
+    "year": "1989–present",
+    "summary": "Porto Alegre's Participatory Budgeting (Orçamento Participativo) pioneered direct citizen involvement in municipal budget allocation, engaging up to 50,000 residents annually. The model redirected infrastructure investment toward poor neighborhoods and has been replicated in over 3,000 cities worldwide."
+  },
+  {
+    "id": 101,
+    "slug": "mexico-progresa",
+    "title": "Progresa/Oportunidades/Prospera CCT",
+    "country": "Mexico",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "1997–2019",
+    "summary": "Mexico's Progresa program, designed by Santiago Levy, became the foundational model for conditional cash transfers worldwide. Its randomized rollout enabled rigorous evaluation, with Schultz (2004) documenting 3.4–3.6 percentage point increases in school enrollment. At its peak, the program reached 6.8 million families."
+  },
+  {
+    "id": 102,
+    "slug": "mexico-ejido",
+    "title": "Ejido Land Reform & PROCEDE Titling",
+    "country": "Mexico",
+    "region": "Latin America & Caribbean",
+    "topic": "Agriculture & Food Security",
+    "year": "1917–present",
+    "summary": "Mexico's ejido system, originating from the 1917 Revolution, distributed communal land to millions of peasant families. The 1992 constitutional reform and PROCEDE certification program titled 3.5 million parcels across 28,000 ejidos, though evidence on investment and productivity impacts has been mixed."
+  },
+  {
+    "id": 103,
+    "slug": "mexico-nafta-maquiladoras",
+    "title": "NAFTA, Maquiladoras & Trade Integration",
+    "country": "Mexico",
+    "region": "Latin America & Caribbean",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1994–present",
+    "summary": "NAFTA's implementation in 1994 tripled Mexico's trade with the US and Canada, with over 3,000 maquiladora export assembly plants employing 2 million workers. While northern border states prospered, southern Mexico stagnated, creating a pronounced regional divergence documented by Hanson (2003)."
+  },
+  {
+    "id": 104,
+    "slug": "colombia-familias",
+    "title": "Familias en Acción Cash Transfer",
+    "country": "Colombia",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2001–present",
+    "summary": "Colombia's Familias en Acción conditional cash transfer program, launched during the 1999 economic crisis, reached 2.5 million families with transfers conditional on school attendance and health visits. Rigorous IFS evaluations by Attanasio et al. (2010) documented significant impacts on nutrition, school enrollment, and consumption."
+  },
+  {
+    "id": 105,
+    "slug": "colombia-medellin",
+    "title": "Medellín Urban Transformation",
+    "country": "Colombia",
+    "region": "Latin America & Caribbean",
+    "topic": "Infrastructure & Urbanization",
+    "year": "2004–present",
+    "summary": "Medellín transformed from the world's murder capital to a globally celebrated model of social urbanism. Under Mayor Sergio Fajardo, investments in MetroCable gondolas, library parks, and public spaces in marginalized comunas reduced homicides from 6,300 in 2002 to under 1,000 by 2015 and won the Lee Kuan Yew World City Prize."
+  },
+  {
+    "id": 106,
+    "slug": "colombia-peace-process",
+    "title": "FARC Peace Process & Reintegration",
+    "country": "Colombia",
+    "region": "Latin America & Caribbean",
+    "topic": "Governance & Decentralization",
+    "year": "2012–present",
+    "summary": "The 2016 Havana Peace Agreement ended Colombia's 52-year conflict with the FARC, which had caused 260,000+ deaths and displaced 7 million people. The accord included rural reform, political participation, coca substitution, and transitional justice. Implementation has been uneven, with territorial development programs lagging behind targets."
+  },
+  {
+    "id": 107,
+    "slug": "chile-afp-pension",
+    "title": "AFP Pension Privatization Reform",
+    "country": "Chile",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "1981–present",
+    "summary": "Chile's 1981 pension privatization, designed by José Piñera under the Pinochet dictatorship, replaced the public pay-as-you-go system with individual capitalization accounts managed by private AFPs. Despite strong investment returns, replacement rates averaged only 33–40%, generating mass protests and ongoing reform debates."
+  },
+  {
+    "id": 108,
+    "slug": "chile-copper-fund",
+    "title": "Copper Stabilization Fund & Fiscal Rules",
+    "country": "Chile",
+    "region": "Latin America & Caribbean",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1985–present",
+    "summary": "Chile established one of the developing world's most effective fiscal frameworks for managing commodity revenue, including the structural balance rule and sovereign wealth funds totaling $14+ billion. Cited by Frankel (2011) as a model for counter-cyclical fiscal policy, Chile avoided the resource curse that afflicted other commodity exporters."
+  },
+  {
+    "id": 109,
+    "slug": "chile-solidario",
+    "title": "Chile Solidario Anti-Extreme Poverty",
+    "country": "Chile",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2002–2012",
+    "summary": "Chile Solidario pioneered a psychosocial support approach to extreme poverty through its Puente (Bridge) program, working with 225,000 families to meet 53 minimum conditions across seven life dimensions. Galasso (2006) found positive impacts on employment and social service access, though income effects were modest."
+  },
+  {
+    "id": 110,
+    "slug": "argentina-auh",
+    "title": "Asignación Universal por Hijo",
+    "country": "Argentina",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2009–present",
+    "summary": "Argentina's Asignación Universal por Hijo (AUH) extended child allowances to informal sector workers and the unemployed, covering 4 million+ children. Gasparini and Cruces (2010) estimated the program reduced poverty by 2–3 percentage points and extreme poverty by 50%, while school enrollment increased by approximately 2 percentage points."
+  },
+  {
+    "id": 111,
+    "slug": "argentina-soybean-boom",
+    "title": "Soybean Boom, Export Taxes & Dutch Disease",
+    "country": "Argentina",
+    "region": "Latin America & Caribbean",
+    "topic": "Agriculture & Food Security",
+    "year": "1996–present",
+    "summary": "Argentina's adoption of GM soybean technology after 1996 transformed the Pampas and expanded cultivation to over 20 million hectares, making Argentina the third-largest soy producer globally. Export taxes (retenciones) of up to 35% generated fiscal revenue but triggered the 2008 field-government conflict and contributed to deforestation in the Chaco region."
+  },
+  {
+    "id": 112,
+    "slug": "peru-juntos",
+    "title": "Juntos Conditional Cash Transfer",
+    "country": "Peru",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2005–present",
+    "summary": "Peru's Juntos program provides cash transfers to over 700,000 extremely poor rural households, primarily in Andean communities. Perova and Vakis (2012) documented increased school enrollment, health visits, and poverty reduction. The program was integrated under MIDIS, Peru's Ministry of Development and Social Inclusion, created in 2011."
+  },
+  {
+    "id": 113,
+    "slug": "peru-land-titling",
+    "title": "COFOPRI Urban Land Titling (De Soto Model)",
+    "country": "Peru",
+    "region": "Latin America & Caribbean",
+    "topic": "Governance & Decentralization",
+    "year": "1996–present",
+    "summary": "Peru's COFOPRI urban land titling program, inspired by Hernando de Soto's 'Mystery of Capital' thesis, issued 1.6 million property titles to informal urban settlers. Field (2007) in the QJE found that titling increased labor supply by 17 hours per week, though the expected credit access revolution largely did not materialize."
+  },
+  {
+    "id": 114,
+    "slug": "peru-mining-canon",
+    "title": "Mining Canon & Local Revenue Sharing",
+    "country": "Peru",
+    "region": "Latin America & Caribbean",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2001–present",
+    "summary": "Peru's mining canon transfers 50% of mining income tax to subnational governments in mining regions, channeling over $5 billion to local authorities. Aragón and Rud (2013) documented local economic benefits, but low execution capacity, social conflicts around mines like Yanacocha, and Dutch disease effects at the local level have limited developmental impact."
+  },
+  {
+    "id": 115,
+    "slug": "bolivia-gas-nationalization",
+    "title": "Gas Nationalization & Social Redistribution",
+    "country": "Bolivia",
+    "region": "Latin America & Caribbean",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2006–present",
+    "summary": "Bolivia's 2006 gas nationalization under President Evo Morales tripled state revenue from hydrocarbons, funding universal social transfers including the Renta Dignidad pension. Poverty fell from approximately 60% to 35% between 2006 and 2019, though economic diversification remained limited and gas reserves declined."
+  },
+  {
+    "id": 116,
+    "slug": "bolivia-bono-juancito",
+    "title": "Bono Juancito Pinto Education Incentive",
+    "country": "Bolivia",
+    "region": "Latin America & Caribbean",
+    "topic": "Education",
+    "year": "2006–present",
+    "summary": "Bolivia's Bono Juancito Pinto provides an annual cash transfer of Bs 200 to public school students to reduce dropout rates and boost enrollment. Funded by hydrocarbon revenues, the program has reached over two million beneficiaries and contributed to modest improvements in school attendance."
+  },
+  {
+    "id": 117,
+    "slug": "ecuador-bdh",
+    "title": "Bono de Desarrollo Humano",
+    "country": "Ecuador",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "1998–present",
+    "summary": "Ecuador's Bono de Desarrollo Humano is one of Latin America's largest conditional cash transfer programs, reaching 1.2 million families. Research by Paxson and Schady demonstrated significant cognitive development effects for the poorest children, establishing the program as a landmark in social protection evidence."
+  },
+  {
+    "id": 118,
+    "slug": "ecuador-dollarization",
+    "title": "Dollarization After Banking Crisis",
+    "country": "Ecuador",
+    "region": "Latin America & Caribbean",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2000–present",
+    "summary": "Following a catastrophic 1999 banking crisis that shrank GDP by 5%, Ecuador adopted the US dollar as legal tender in 2000. Dollarization stabilized inflation and facilitated remittance flows but eliminated monetary policy flexibility and deepened oil export dependency."
+  },
+  {
+    "id": 119,
+    "slug": "ecuador-yasuni",
+    "title": "Yasuní-ITT 'Leave Oil Underground' Initiative",
+    "country": "Ecuador",
+    "region": "Latin America & Caribbean",
+    "topic": "Environment & Climate",
+    "year": "2007–2013",
+    "summary": "Ecuador proposed leaving 846 million barrels of oil underground in Yasuní National Park in exchange for US$3.6 billion in international compensation. The initiative raised only US$13.3 million and was abandoned in 2013, representing an innovative but ultimately failed experiment in payments for ecosystem services."
+  },
+  {
+    "id": 120,
+    "slug": "costa-rica-pes",
+    "title": "Payments for Ecosystem Services",
+    "country": "Costa Rica",
+    "region": "Latin America & Caribbean",
+    "topic": "Environment & Climate",
+    "year": "1997–present",
+    "summary": "Costa Rica's Pagos por Servicios Ambientales program pioneered national-scale payments for ecosystem services, contributing to a dramatic recovery in forest cover from 21% in 1987 to over 52% by 2012. The program compensates landowners for carbon sequestration, watershed protection, biodiversity, and scenic beauty."
+  },
+  {
+    "id": 121,
+    "slug": "costa-rica-no-army",
+    "title": "Abolishing the Army & Social Investment",
+    "country": "Costa Rica",
+    "region": "Latin America & Caribbean",
+    "topic": "Governance & Decentralization",
+    "year": "1948–present",
+    "summary": "Costa Rica abolished its army in 1948 under President José Figueres, redirecting military expenditures to education and healthcare. This 'peace dividend' contributed to exceptional human development outcomes, with literacy reaching 97.8% and life expectancy exceeding 80 years, making Costa Rica a unique development model."
+  },
+  {
+    "id": 122,
+    "slug": "cuba-healthcare",
+    "title": "Healthcare Export Model & Medical Diplomacy",
+    "country": "Cuba",
+    "region": "Latin America & Caribbean",
+    "topic": "Health",
+    "year": "1960–present",
+    "summary": "Cuba developed a uniquely effective primary healthcare system achieving health indicators rivaling wealthy nations, with an infant mortality rate of 4.4 per 1,000 and one doctor per 120 people. Cuba has deployed over 400,000 health workers to more than 100 countries, earning billions in revenue through medical diplomacy."
+  },
+  {
+    "id": 123,
+    "slug": "cuba-biotech",
+    "title": "Biotechnology Industry Development",
+    "country": "Cuba",
+    "region": "Latin America & Caribbean",
+    "topic": "Health",
+    "year": "1986–present",
+    "summary": "Cuba built a world-class biotechnology industry from scratch, establishing eight major research centers and developing innovative products including the CIMAvax lung cancer vaccine and Heberprot-P for diabetic foot ulcers. The cluster generates approximately US$2 billion in annual revenues and has produced multiple WHO-prequalified vaccines."
+  },
+  {
+    "id": 124,
+    "slug": "uruguay-plan-ceibal",
+    "title": "Plan Ceibal: One Laptop Per Child",
+    "country": "Uruguay",
+    "region": "Latin America & Caribbean",
+    "topic": "Education",
+    "year": "2007–present",
+    "summary": "Uruguay became the first country to achieve full national deployment of the One Laptop Per Child initiative, distributing over 700,000 devices to every public school student and teacher. Plan Ceibal significantly reduced the digital divide but showed mixed results on academic achievement."
+  },
+  {
+    "id": 125,
+    "slug": "uruguay-cannabis",
+    "title": "Cannabis Legalization & Regulation",
+    "country": "Uruguay",
+    "region": "Latin America & Caribbean",
+    "topic": "Governance & Decentralization",
+    "year": "2013–present",
+    "summary": "Uruguay became the first country in the world to fully legalize the production, sale, and consumption of cannabis in 2013 under Ley 19.172. The regulatory framework includes three access channels—pharmacies, cannabis clubs, and home cultivation—overseen by the IRCCA, though the black market has proven persistent."
+  },
+  {
+    "id": 126,
+    "slug": "haiti-earthquake-reconstruction",
+    "title": "Post-Earthquake Reconstruction Challenges",
+    "country": "Haiti",
+    "region": "Latin America & Caribbean",
+    "topic": "Governance & Decentralization",
+    "year": "2010–present",
+    "summary": "The 2010 Haiti earthquake killed over 220,000 people and displaced 1.5 million, triggering US$13.5 billion in international pledges. Reconstruction efforts were marred by coordination failures, accountability deficits, and the introduction of cholera by UN peacekeepers, making Haiti a cautionary tale of international aid delivery."
+  },
+  {
+    "id": 127,
+    "slug": "jamaica-path",
+    "title": "PATH Conditional Cash Transfer",
+    "country": "Jamaica",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2001–present",
+    "summary": "Jamaica's Programme of Advancement Through Health and Education (PATH) provides conditional cash transfers to approximately 360,000 beneficiaries, increasing school attendance and health visit compliance. As the Caribbean's flagship CCT, PATH demonstrated the feasibility of social protection in small island developing states."
+  },
+  {
+    "id": 128,
+    "slug": "dominican-republic-solidaridad",
+    "title": "Solidaridad Social Protection System",
+    "country": "Dominican Republic",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2005–present",
+    "summary": "The Dominican Republic's Solidaridad program, later expanded into Progresando con Solidaridad (ProSoli), provides conditional cash transfers to over 800,000 families. Combined with the Comer es Primero school feeding component and SIUBEN targeting system, it became the country's primary anti-poverty instrument."
+  },
+  {
+    "id": 129,
+    "slug": "guatemala-mi-familia",
+    "title": "Mi Familia Progresa Cash Transfer",
+    "country": "Guatemala",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2008–2011",
+    "summary": "Guatemala's Mi Familia Progresa CCT reached 800,000 families in predominantly rural indigenous areas, but was plagued by institutional weakness, political capture, and limited impact evidence. Replaced by Mi Bono Seguro in 2012, the program illustrates the challenges of implementing social protection in fragile institutional contexts."
+  },
+  {
+    "id": 130,
+    "slug": "honduras-remittances",
+    "title": "Remittance-Dependent Economy",
+    "country": "Honduras",
+    "region": "Latin America & Caribbean",
+    "topic": "Financial Inclusion",
+    "year": "1998–present",
+    "summary": "Honduras has become one of the world's most remittance-dependent economies, with inflows reaching US$7.7 billion in 2023—approximately 25% of GDP. Driven initially by post-Hurricane Mitch emigration and sustained by gang violence, remittances have become the primary poverty-reduction mechanism but create structural vulnerabilities."
+  },
+  {
+    "id": 131,
+    "slug": "el-salvador-dollarization",
+    "title": "Dollarization & Financial Integration",
+    "country": "El Salvador",
+    "region": "Latin America & Caribbean",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2001–present",
+    "summary": "El Salvador adopted the US dollar as legal tender in 2001 through the Monetary Integration Law, surrendering monetary policy to stabilize the economy and reduce transaction costs for its massive remittance flows (24% of GDP). While inflation converged to US levels, the growth impact has been limited."
+  },
+  {
+    "id": 132,
+    "slug": "el-salvador-bitcoin",
+    "title": "Bitcoin as Legal Tender Experiment",
+    "country": "El Salvador",
+    "region": "Latin America & Caribbean",
+    "topic": "Financial Inclusion",
+    "year": "2021–present",
+    "summary": "El Salvador became the first country to adopt Bitcoin as legal tender in September 2021 under President Nayib Bukele. The government launched the Chivo wallet, purchased over US$100 million in Bitcoin, and faced strong IMF opposition. Adoption has remained low at approximately 20% usage, with significant fiscal risks."
+  },
+  {
+    "id": 133,
+    "slug": "nicaragua-literacy-crusade",
+    "title": "National Literacy Crusade",
+    "country": "Nicaragua",
+    "region": "Latin America & Caribbean",
+    "topic": "Education",
+    "year": "1980",
+    "summary": "Nicaragua's 1980 Cruzada Nacional de Alfabetización mobilized 95,000 volunteer brigadistas who reduced the national illiteracy rate from approximately 50% to 12% in just five months. The campaign won UNESCO's Nadezhda Krupskaya Prize and became one of the most celebrated mass literacy programs in history."
+  },
+  {
+    "id": 134,
+    "slug": "paraguay-tekopore",
+    "title": "Tekoporã Conditional Cash Transfer",
+    "country": "Paraguay",
+    "region": "Latin America & Caribbean",
+    "topic": "Social Protection",
+    "year": "2005–present",
+    "summary": "Paraguay's Tekoporã program provides conditional cash transfers to over 150,000 households in extreme poverty, with a distinctive indigenous targeting component. The Guaraní-named program has demonstrated positive effects on school enrollment and nutrition, supported by the SIIS social information system."
+  },
+  {
+    "id": 135,
+    "slug": "trinidad-hsf",
+    "title": "Heritage & Stabilisation Fund",
+    "country": "Trinidad & Tobago",
+    "region": "Latin America & Caribbean",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2000–present",
+    "summary": "Trinidad and Tobago established the Heritage and Stabilisation Fund in 2000 to manage petroleum revenues, accumulating US$5.5 billion in assets. The sovereign wealth fund follows strict deposit and withdrawal rules to smooth government spending and save for future generations facing energy transition challenges."
+  },
+  {
+    "id": 136,
+    "slug": "uae-diversification",
+    "title": "Economic Diversification Beyond Oil",
+    "country": "UAE",
+    "region": "Middle East & North Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1971–present",
+    "summary": "The UAE transformed from a small oil-dependent federation into a globally connected economy with thriving services, logistics, tourism, and finance sectors, reducing oil's share of GDP from roughly 90% at independence to around 30% by the 2020s."
+  },
+  {
+    "id": 137,
+    "slug": "saudi-vision-2030",
+    "title": "Vision 2030 Reform Programme",
+    "country": "Saudi Arabia",
+    "region": "Middle East & North Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2016–present",
+    "summary": "Saudi Arabia's Vision 2030, spearheaded by Crown Prince Mohammed bin Salman, is a sweeping reform programme to diversify the kingdom's economy away from oil dependence, modernize society, and transform the Public Investment Fund into a global sovereign wealth vehicle."
+  },
+  {
+    "id": 138,
+    "slug": "jordan-refugee-integration",
+    "title": "Syrian Refugee Economic Integration",
+    "country": "Jordan",
+    "region": "Middle East & North Africa",
+    "topic": "Gender & Inclusion",
+    "year": "2011–present",
+    "summary": "Jordan hosts over 670,000 registered Syrian refugees and pioneered the Jordan Compact in 2016, a novel agreement linking humanitarian aid with trade concessions and work permits to promote refugee economic integration in special economic zones and designated sectors."
+  },
+  {
+    "id": 139,
+    "slug": "iran-subsidy-reform",
+    "title": "Universal Subsidy Reform to Targeted Transfers",
+    "country": "Iran",
+    "region": "Middle East & North Africa",
+    "topic": "Social Protection",
+    "year": "2010–present",
+    "summary": "Iran implemented the largest subsidy reform in history in December 2010, replacing approximately $100 billion in annual energy and food subsidies with universal cash transfers to 74 million citizens, providing a landmark case in subsidy reform and social protection design."
+  },
+  {
+    "id": 140,
+    "slug": "iraq-reconstruction",
+    "title": "Post-2003 Reconstruction & Institution Building",
+    "country": "Iraq",
+    "region": "Middle East & North Africa",
+    "topic": "Governance & Decentralization",
+    "year": "2003–present",
+    "summary": "The United States and international community spent over $60 billion on Iraq's reconstruction after the 2003 invasion, but the effort was plagued by poor planning, institutional failures including de-Ba'athification, corruption, and security deterioration that culminated in the rise of ISIS in 2014."
+  },
+  {
+    "id": 141,
+    "slug": "palestine-aid-effectiveness",
+    "title": "Donor Dependency & Aid Architecture",
+    "country": "Palestine",
+    "region": "Middle East & North Africa",
+    "topic": "Governance & Decentralization",
+    "year": "1994–present",
+    "summary": "Palestine has received over $40 billion in international aid since the Oslo Accords, making it one of the highest per-capita aid recipients globally, yet economic development has stagnated under occupation, raising fundamental questions about aid effectiveness in contexts of political constraint."
+  },
+  {
+    "id": 142,
+    "slug": "lebanon-refugee-crisis",
+    "title": "Syrian Refugee Crisis & Economic Collapse",
+    "country": "Lebanon",
+    "region": "Middle East & North Africa",
+    "topic": "Social Protection",
+    "year": "2011–present",
+    "summary": "Lebanon hosts approximately 1.5 million Syrian refugees in a country of 5 million citizens while simultaneously experiencing what the World Bank called one of the worst economic collapses in modern history, with GDP falling 58% between 2019 and 2021 and a banking sector implosion erasing billions in savings."
+  },
+  {
+    "id": 143,
+    "slug": "morocco-indh",
+    "title": "INDH Human Development Initiative",
+    "country": "Morocco",
+    "region": "Middle East & North Africa",
+    "topic": "Social Protection",
+    "year": "2005–present",
+    "summary": "Morocco's Initiative Nationale pour le Developpement Humain (INDH), launched by King Mohammed VI in 2005, is a large-scale participatory development programme that invested over $2 billion in its first phase, funding 12,000+ community projects and contributing to significant reductions in rural poverty."
+  },
+  {
+    "id": 144,
+    "slug": "morocco-noor-solar",
+    "title": "Noor-Ouarzazate Solar Complex",
+    "country": "Morocco",
+    "region": "Middle East & North Africa",
+    "topic": "Environment & Climate",
+    "year": "2016–present",
+    "summary": "Morocco's Noor-Ouarzazate Solar Complex, located in the Saharan foothills, is one of the world's largest concentrated solar power installations with 580 MW capacity, representing a $3.6 billion investment that anchors Morocco's strategy to generate over 52% of electricity from renewables by 2030."
+  },
+  {
+    "id": 145,
+    "slug": "tunisia-democratic-transition",
+    "title": "Post-Revolution Democratic Transition",
+    "country": "Tunisia",
+    "region": "Middle East & North Africa",
+    "topic": "Governance & Decentralization",
+    "year": "2011–present",
+    "summary": "Tunisia was the birthplace of the Arab Spring and the only country to achieve a successful democratic transition, producing a progressive 2014 constitution and earning its National Dialogue Quartet a Nobel Peace Prize, before democratic backsliding under President Kais Saied from 2021 onward."
+  },
+  {
+    "id": 146,
+    "slug": "egypt-takaful-karama",
+    "title": "Takaful & Karama Cash Transfer Programme",
+    "country": "Egypt",
+    "region": "Middle East & North Africa",
+    "topic": "Social Protection",
+    "year": "2015–present",
+    "summary": "Egypt's Takaful and Karama programme is a flagship social protection initiative providing conditional and unconditional cash transfers to 3.7 million families, supported by $1.5 billion in World Bank financing, and serving as a cornerstone of Egypt's shift from universal subsidies to targeted social assistance."
+  },
+  {
+    "id": 147,
+    "slug": "egypt-megaprojects",
+    "title": "Suez Canal Expansion & New Administrative Capital",
+    "country": "Egypt",
+    "region": "Middle East & North Africa",
+    "topic": "Infrastructure & Urbanization",
+    "year": "2014–present",
+    "summary": "President Sisi's government has pursued a megaproject-driven development strategy anchored by the $8.5 billion New Suez Canal expansion and the $58 billion New Administrative Capital, reflecting a military-led economic model that has dramatically expanded public debt while delivering mixed economic returns."
+  },
+  {
+    "id": 148,
+    "slug": "oman-omanization",
+    "title": "Omanization Labour Nationalization Policy",
+    "country": "Oman",
+    "region": "Middle East & North Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1988–present",
+    "summary": "Oman's Omanization policy, launched in 1988, is a sustained effort to replace approximately 2 million expatriate workers with Omani nationals through sector-specific quotas and training programmes, representing one of the Gulf's longest-running labour nationalization experiments with persistent dual labor market challenges."
+  },
+  {
+    "id": 149,
+    "slug": "algeria-hydrocarbon-dependency",
+    "title": "Hydrocarbon Dependency & Dutch Disease",
+    "country": "Algeria",
+    "region": "Middle East & North Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1962–present",
+    "summary": "Algeria's post-independence economy has been dominated by hydrocarbons, which account for 95% of export earnings and fund an extensive social contract of subsidies and public employment. Successive oil price shocks have exposed the failure to diversify, culminating in fiscal crisis and the 2019 Hirak protest movement."
+  },
+  {
+    "id": 150,
+    "slug": "yemen-humanitarian-crisis",
+    "title": "Conflict, Famine & Humanitarian Response",
+    "country": "Yemen",
+    "region": "Middle East & North Africa",
+    "topic": "Health",
+    "year": "2014–present",
+    "summary": "Yemen's civil war, which escalated in 2014 with the Houthi takeover and Saudi-led coalition intervention, has produced what the UN designated the world's worst humanitarian crisis, with 21 million people needing assistance, massive cholera outbreaks, near-famine conditions, and a destroyed health system."
+  },
+  {
+    "id": 151,
+    "slug": "turkey-gap",
+    "title": "GAP Southeastern Anatolia Development Project",
+    "country": "Turkey",
+    "region": "Middle East & North Africa",
+    "topic": "Infrastructure & Urbanization",
+    "year": "1989–present",
+    "summary": "Turkey's Southeastern Anatolia Project (GAP) is one of the world's largest integrated regional development programmes, comprising 22 dams and 19 hydroelectric plants on the Tigris and Euphrates rivers, with $32 billion invested to irrigate 1.82 million hectares and develop Turkey's poorest region."
+  },
+  {
+    "id": 152,
+    "slug": "turkey-cct-education",
+    "title": "Conditional Cash Transfer for Education",
+    "country": "Turkey",
+    "region": "Middle East & North Africa",
+    "topic": "Education",
+    "year": "2003–present",
+    "summary": "Turkey's conditional cash transfer programme for education, launched in 2003, reached 2.9 million beneficiary children with higher payments for girls, contributing to a 10 percentage point increase in girls' secondary enrollment and becoming a model for gender-targeted social assistance integrated with a national social registry."
+  },
+  {
+    "id": 153,
+    "slug": "israel-kibbutz",
+    "title": "Kibbutz Model: From Collective Farming to Privatization",
+    "country": "Israel",
+    "region": "Middle East & North Africa",
+    "topic": "Agriculture & Food Security",
+    "year": "1910–present",
+    "summary": "Israel's kibbutzim, collective agricultural communities founded on socialist principles, were central to the nation's agricultural development and pioneered innovations like drip irrigation, but underwent dramatic privatization from the 1980s onward, transforming from egalitarian communes into diversified, market-oriented communities."
+  },
+  {
+    "id": 154,
+    "slug": "libya-post-gaddafi",
+    "title": "Post-Gaddafi State Fragmentation",
+    "country": "Libya",
+    "region": "Middle East & North Africa",
+    "topic": "Governance & Decentralization",
+    "year": "2011–present",
+    "summary": "The 2011 NATO-backed overthrow of Muammar Gaddafi led to state fragmentation, with rival governments, militia proliferation, and oil production collapse from 1.6 million to as low as 200,000 barrels per day, making Libya a cautionary case of regime change without institutional transition planning."
+  },
+  {
+    "id": 155,
+    "slug": "kurdistan-oil-development",
+    "title": "Oil Revenue & Autonomous Development",
+    "country": "Kurdistan Region (Iraq)",
+    "region": "Middle East & North Africa",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2005–present",
+    "summary": "The Kurdistan Region of Iraq leveraged autonomous oil development to generate peak revenues of $23 billion, attracting international oil companies and building infrastructure, but faced economic crisis after the 2014 oil price collapse, ISIS conflict, and the failed 2017 independence referendum that triggered Baghdad's economic retaliation."
+  },
+  {
+    "id": 156,
+    "slug": "poland-shock-therapy",
+    "title": "Balcerowicz Plan: Shock Therapy Transition",
+    "country": "Poland",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1990–present",
+    "summary": "Poland's 'shock therapy' program launched in January 1990 under Finance Minister Leszek Balcerowicz rapidly liberalized prices, trade, and ownership. After an initial recession, Poland became the first post-communist economy to surpass its 1989 GDP level and joined the EU in 2004."
+  },
+  {
+    "id": 157,
+    "slug": "estonia-e-governance",
+    "title": "e-Estonia: Digital Governance & e-Residency",
+    "country": "Estonia",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "1997–present",
+    "summary": "Estonia built one of the world's most advanced digital governance systems, connecting 99% of government services online through its X-Road data exchange platform. The e-Residency program, launched in 2014, extended digital identity to over 100,000 non-residents, saving an estimated 2% of GDP annually in administrative efficiency."
+  },
+  {
+    "id": 158,
+    "slug": "georgia-anti-corruption",
+    "title": "Rose Revolution & Anti-Corruption Reforms",
+    "country": "Georgia",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "2003–2012",
+    "summary": "Following the 2003 Rose Revolution, Georgia under President Saakashvili implemented sweeping anti-corruption reforms, including the dismissal of 16,000 corrupt police officers and the creation of a new patrol police force. Georgia's rank on Transparency International's Corruption Perceptions Index improved dramatically from 124th in 2003 to 51st by 2012."
+  },
+  {
+    "id": 159,
+    "slug": "uzbekistan-cotton-reform",
+    "title": "Cotton Sector Reform & Child Labour Elimination",
+    "country": "Uzbekistan",
+    "region": "Europe & Central Asia",
+    "topic": "Agriculture & Food Security",
+    "year": "2013–present",
+    "summary": "Uzbekistan, the world's sixth-largest cotton producer, eliminated systematic child labor from its cotton harvest through ILO monitoring and international pressure. After years of forced mobilization involving children and adults, reforms reduced child labor from 18% to near zero, leading to the Cotton Campaign lifting its global boycott call in 2022."
+  },
+  {
+    "id": 160,
+    "slug": "kazakhstan-national-fund",
+    "title": "National Fund & Oil-Led Diversification",
+    "country": "Kazakhstan",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2000–present",
+    "summary": "Kazakhstan established the National Fund (NFRK) in 2000 to manage oil revenues and reduce resource dependency. With assets exceeding $54 billion, the fund has buffered fiscal shocks, while ambitious industrialization programs have attempted — with mixed success — to diversify beyond oil, which still accounts for roughly 60% of exports."
+  },
+  {
+    "id": 161,
+    "slug": "kyrgyzstan-cdd",
+    "title": "Community-Driven Development (ARIS)",
+    "country": "Kyrgyzstan",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "2004–present",
+    "summary": "Kyrgyzstan's Community Development and Investment Agency (ARIS) has implemented community-driven development across rural areas, funding over 1,800 micro-projects through participatory planning. Supported by the World Bank and Japan Social Development Fund, the Village Investment Programme delivered infrastructure to remote communities while building local governance capacity."
+  },
+  {
+    "id": 162,
+    "slug": "armenia-diaspora",
+    "title": "Diaspora Investment & Tech-Led Development",
+    "country": "Armenia",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1998–present",
+    "summary": "Armenia leveraged its large global diaspora (estimated at 7 million, versus 3 million domestic population) for development through philanthropic investment, remittances, and technology transfer. Major diaspora contributions include the Lincy Foundation's $1 billion+ in infrastructure, the TUMO Center for Creative Technologies, and a growing IT sector that has become the country's fastest-growing export industry."
+  },
+  {
+    "id": 163,
+    "slug": "tajikistan-remittances",
+    "title": "Remittance Vulnerability (45% of GDP)",
+    "country": "Tajikistan",
+    "region": "Europe & Central Asia",
+    "topic": "Financial Inclusion",
+    "year": "2000–present",
+    "summary": "Tajikistan has consistently ranked among the world's most remittance-dependent countries, with transfers — primarily from over one million labor migrants in Russia — peaking at 49% of GDP in 2008. This extreme dependence was starkly exposed during the 2014-15 Russian ruble crisis, when remittance declines triggered recession and poverty increases."
+  },
+  {
+    "id": 164,
+    "slug": "azerbaijan-oil-boom",
+    "title": "Oil Fund & Governance Paradox",
+    "country": "Azerbaijan",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1999–present",
+    "summary": "Azerbaijan established the State Oil Fund (SOFAZ) in 1999 to manage revenues from its Caspian energy boom, centered on the Baku-Tbilisi-Ceyhan pipeline. While GDP per capita more than doubled and the fund accumulated over $45 billion, the resource wealth coincided with democratic regression, press freedom decline, and classic resource curse symptoms under the Aliyev dynasty."
+  },
+  {
+    "id": 165,
+    "slug": "moldova-eu-migration",
+    "title": "EU Association, Migration & Brain Drain",
+    "country": "Moldova",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "2014–present",
+    "summary": "Moldova, Europe's poorest country, signed an EU Association Agreement in 2014 while grappling with massive emigration (over 1 million abroad from a population of 2.6 million), severe brain drain, and the aftermath of a $1 billion banking fraud scandal. The Transnistria frozen conflict adds a further dimension to its complex development challenges."
+  },
+  {
+    "id": 166,
+    "slug": "ukraine-post-maidan",
+    "title": "Post-Maidan Reform Agenda",
+    "country": "Ukraine",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "2014–present",
+    "summary": "Following the 2014 Euromaidan revolution, Ukraine pursued ambitious governance reforms including the Prozorro e-procurement system (saving an estimated $1.5 billion), creation of anti-corruption bodies (NABU, SAPO), and comprehensive decentralization. Russia's 2022 full-scale invasion dramatically disrupted but did not halt the reform trajectory."
+  },
+  {
+    "id": 167,
+    "slug": "romania-eu-funds",
+    "title": "EU Accession & Structural Fund Absorption",
+    "country": "Romania",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2007–present",
+    "summary": "Romania's 2007 EU accession opened access to tens of billions in structural and cohesion funds, driving GDP growth averaging 4-5% annually. However, absorption rates remained among the lowest in the EU for years, reflecting institutional weaknesses, corruption in procurement, and an infrastructure gap that funds were intended to close."
+  },
+  {
+    "id": 168,
+    "slug": "serbia-reconstruction",
+    "title": "Post-Conflict Reconstruction & EU Integration",
+    "country": "Serbia",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "2000–present",
+    "summary": "After the fall of Milosevic in October 2000, Serbia embarked on post-conflict reconstruction and a protracted EU integration process. FDI rose from approximately EUR 100 million to over EUR 4 billion annually, while Serbia navigated ICTY cooperation obligations, Kosovo normalization dialogue, and the challenge of balancing EU aspirations with Russian and Chinese ties."
+  },
+  {
+    "id": 169,
+    "slug": "bosnia-dayton",
+    "title": "Dayton Agreement & Institutional Design",
+    "country": "Bosnia & Herzegovina",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "1995–present",
+    "summary": "The 1995 Dayton Agreement ended Bosnia's devastating war but created one of the world's most complex governance structures: two entities, ten cantons, and 14 governments for 3.3 million people. Under OHR international supervision, Bosnia has struggled with constitutional reform deadlock, ethnic division, youth emigration, and EU integration stagnation."
+  },
+  {
+    "id": 170,
+    "slug": "albania-transformation",
+    "title": "Post-Communist Economic Transformation",
+    "country": "Albania",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1991–present",
+    "summary": "Albania emerged from Europe's most isolated communist regime in 1991 with virtually no market institutions, then experienced dramatic upheaval including the 1997 pyramid scheme collapse that destroyed savings and triggered state failure. Despite this turbulent beginning, Albania achieved sustained growth, raised GDP per capita from $700 to over $6,400, and became an EU candidate country."
+  },
+  {
+    "id": 171,
+    "slug": "north-macedonia-ohrid",
+    "title": "Ohrid Framework & Decentralization",
+    "country": "North Macedonia",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "2001–present",
+    "summary": "The 2001 Ohrid Framework Agreement ended an ethnic Albanian insurgency by establishing power-sharing mechanisms and comprehensive decentralization in North Macedonia. Combined with the 2018 Prespa Agreement resolving the name dispute with Greece, these frameworks have shaped the country's governance and EU integration path."
+  },
+  {
+    "id": 172,
+    "slug": "kosovo-statebuilding",
+    "title": "International State-Building & Development",
+    "country": "Kosovo",
+    "region": "Europe & Central Asia",
+    "topic": "Governance & Decentralization",
+    "year": "2008–present",
+    "summary": "Kosovo declared independence in 2008 after years of UN administration (UNMIK) and has since pursued state-building under international supervision, including the EU's EULEX rule of law mission. Despite achieving 113 diplomatic recognitions and building functional institutions, Kosovo faces 30% unemployment, limited international integration, and heavy reliance on diaspora remittances at 15% of GDP."
+  },
+  {
+    "id": 173,
+    "slug": "belarus-state-model",
+    "title": "State-Directed Development Model",
+    "country": "Belarus",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1994–present",
+    "summary": "Belarus under President Lukashenko pursued a unique post-Soviet development path, maintaining extensive state ownership (SOEs accounting for 50% of employment), limiting privatization, and sustaining relatively low inequality (Gini ~0.25). The model depended heavily on Russian energy subsidies, while the Hi-Tech Park emerged as an unexpected IT success story before the 2020 political crisis."
+  },
+  {
+    "id": 174,
+    "slug": "turkmenistan-resource-curse",
+    "title": "Gas Wealth & Authoritarian Development",
+    "country": "Turkmenistan",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1991–present",
+    "summary": "Turkmenistan, possessing the world's fourth-largest natural gas reserves including the massive Galkynysh field, has pursued a unique authoritarian development model. Under personality cults of Niyazov and Berdimuhamedow, the state provided free utilities until 2019 while maintaining near-total political control and economic opacity. The TAPI pipeline project symbolizes both ambition and the challenges of development in a hermit state."
+  },
+  {
+    "id": 175,
+    "slug": "montenegro-tourism",
+    "title": "Tourism-Led Development Strategy",
+    "country": "Montenegro",
+    "region": "Europe & Central Asia",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2006–present",
+    "summary": "Since independence in 2006, Montenegro has pursued a tourism-led development strategy, leveraging its Adriatic coastline and natural assets to attract 2.5 million annual visitors for a population of just 620,000. Projects like Porto Montenegro luxury marina have repositioned the country, while EU candidacy and unilateral euroization define its unique economic position."
+  },
+  {
+    "id": 176,
+    "slug": "global-green-revolution",
+    "title": "Green Revolution in Agriculture",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Agriculture & Food Security",
+    "year": "1960s–1990s",
+    "summary": "The Green Revolution introduced high-yielding varieties of wheat and rice across Asia and Latin America, dramatically increasing food production. Led by Norman Borlaug and institutions like IRRI, it is credited with saving over one billion people from famine while also generating significant environmental costs."
+  },
+  {
+    "id": 177,
+    "slug": "global-gavi",
+    "title": "GAVI Vaccine Alliance",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Health",
+    "year": "2000–present",
+    "summary": "GAVI, the Vaccine Alliance, has immunized over one billion children in 73 eligible low-income countries since its founding in 2000, averting an estimated 17.3 million deaths. Through innovative financing mechanisms including the Advance Market Commitment, GAVI has transformed global vaccine access and delivery."
+  },
+  {
+    "id": 178,
+    "slug": "global-fund-hiv-tb-malaria",
+    "title": "Global Fund for HIV, TB & Malaria",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Health",
+    "year": "2002–present",
+    "summary": "The Global Fund to Fight AIDS, Tuberculosis and Malaria has disbursed over $63 billion since 2002, saving an estimated 59 million lives through performance-based funding in over 100 countries. It pioneered country coordinating mechanisms and results-driven global health financing."
+  },
+  {
+    "id": 179,
+    "slug": "global-grameen-microfinance",
+    "title": "Grameen Bank & Microfinance Revolution",
+    "country": "Global (Bangladesh origin)",
+    "region": "Global",
+    "topic": "Financial Inclusion",
+    "year": "1983–present",
+    "summary": "Muhammad Yunus founded Grameen Bank in Bangladesh in 1983, pioneering group lending to the poor and sparking a global microfinance movement. While Yunus received the 2006 Nobel Peace Prize and the model reached 9 million borrowers, rigorous evaluations have found more moderate effects than initially claimed."
+  },
+  {
+    "id": 180,
+    "slug": "global-fair-trade",
+    "title": "Fair Trade Movement: Markets & Ethics",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Agriculture & Food Security",
+    "year": "1988–present",
+    "summary": "The Fair Trade movement established certification systems guaranteeing minimum prices and social premiums for farmers in developing countries, growing into a $12 billion market reaching 1.9 million producers. Evidence on its poverty-reduction impact remains mixed, with debates over whether benefits reach the poorest workers."
+  },
+  {
+    "id": 181,
+    "slug": "global-redd-plus",
+    "title": "REDD+ Forest Conservation Mechanism",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Environment & Climate",
+    "year": "2008–present",
+    "summary": "REDD+ (Reducing Emissions from Deforestation and Forest Degradation) is a UN-backed mechanism that financially compensates developing countries for preserving forests. With over $12 billion pledged, it has become the primary global framework for forest-based climate mitigation, though implementation faces significant challenges around measurement, governance, and indigenous rights."
+  },
+  {
+    "id": 182,
+    "slug": "global-millennium-villages",
+    "title": "Millennium Villages Project",
+    "country": "Global (Sub-Saharan Africa)",
+    "region": "Global",
+    "topic": "Social Protection",
+    "year": "2005–2015",
+    "summary": "The Millennium Villages Project, led by Jeffrey Sachs, invested $120 per person per year in integrated development interventions across 14 sites in 10 African countries. While the project reported improvements in health and agriculture, the absence of a rigorous counterfactual drew sustained methodological criticism."
+  },
+  {
+    "id": 183,
+    "slug": "global-givedirectly",
+    "title": "GiveDirectly & Unconditional Cash Transfers",
+    "country": "Global (Kenya, Uganda)",
+    "region": "Global",
+    "topic": "Social Protection",
+    "year": "2009–present",
+    "summary": "GiveDirectly pioneered large-scale unconditional cash transfers to extremely poor households, distributing over $600 million via mobile money. Rigorous RCTs showed sustained consumption gains and no increase in spending on temptation goods, challenging paternalistic assumptions about aid to the poor."
+  },
+  {
+    "id": 184,
+    "slug": "global-rct-revolution",
+    "title": "RCT Revolution in Development Economics",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Education",
+    "year": "2003–present",
+    "summary": "The randomized controlled trial revolution in development economics, led by Abhijit Banerjee, Esther Duflo, and Michael Kremer (2019 Nobel laureates), has fundamentally transformed how development interventions are designed and evaluated. With over 1,000 RCTs conducted through J-PAL and affiliated networks, the movement has generated actionable evidence on education, health, and poverty reduction."
+  },
+  {
+    "id": 185,
+    "slug": "global-mdgs",
+    "title": "Millennium Development Goals Assessment",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Health",
+    "year": "2000–2015",
+    "summary": "The eight Millennium Development Goals, adopted by 189 nations at the 2000 UN Millennium Summit, established the first unified global framework for poverty reduction. By 2015, extreme poverty had been halved and primary enrollment reached 91%, though progress was uneven and the goals' causal contribution remains debated."
+  },
+  {
+    "id": 186,
+    "slug": "global-paris-climate",
+    "title": "Paris Agreement & Nationally Determined Contributions",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Environment & Climate",
+    "year": "2015–present",
+    "summary": "The 2015 Paris Agreement united 195 nations around the goal of limiting global warming to well below 2 degrees Celsius, with aspirations for 1.5 degrees. Its bottom-up approach through Nationally Determined Contributions represented a breakthrough in climate diplomacy, though analysis shows current pledges remain insufficient to meet temperature targets."
+  },
+  {
+    "id": 187,
+    "slug": "global-pepfar",
+    "title": "PEPFAR HIV/AIDS Emergency Programme",
+    "country": "Global (Sub-Saharan Africa)",
+    "region": "Global",
+    "topic": "Health",
+    "year": "2003–present",
+    "summary": "The US President's Emergency Plan for AIDS Relief (PEPFAR), launched in 2003, is the largest bilateral health program in history with over $110 billion invested. It has supported antiretroviral treatment for over 20 million people and is credited with a 10.5% reduction in all-cause mortality in focus countries."
+  },
+  {
+    "id": 188,
+    "slug": "global-eiti",
+    "title": "Extractive Industries Transparency Initiative",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Governance & Decentralization",
+    "year": "2003–present",
+    "summary": "The Extractive Industries Transparency Initiative established a global standard for transparency in oil, gas, and mining revenues, with 57 implementing countries disclosing over $3 trillion in government revenues. While EITI has improved revenue transparency, evidence of its impact on broader governance outcomes remains limited."
+  },
+  {
+    "id": 189,
+    "slug": "global-south-south",
+    "title": "South-South Cooperation: China in Africa",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Infrastructure & Urbanization",
+    "year": "2000–present",
+    "summary": "China's engagement in Africa has grown dramatically since 2000, with over $170 billion in loans financing infrastructure projects across the continent. This South-South cooperation model, emphasizing infrastructure-for-resources deals, has generated intense debate about debt sustainability, governance implications, and development impact."
+  },
+  {
+    "id": 190,
+    "slug": "global-hipc-debt-relief",
+    "title": "HIPC Debt Relief Initiative",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1996–present",
+    "summary": "The Heavily Indebted Poor Countries (HIPC) Initiative, launched in 1996 and enhanced in 1999, has provided $76 billion in debt relief to 37 countries. Complemented by the Multilateral Debt Relief Initiative, it substantially reduced debt burdens and enabled increased social spending, though critics questioned whether relief addressed underlying causes of indebtedness."
+  },
+  {
+    "id": 191,
+    "slug": "global-wto-doha",
+    "title": "WTO Doha Round & Trade for Development",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "2001–present",
+    "summary": "The WTO Doha Development Round, launched in 2001 to address developing country concerns in global trade, effectively collapsed in 2008 over agricultural subsidy disputes. While the round failed, the 2017 Trade Facilitation Agreement emerged as a notable success, and the Aid for Trade initiative channeled billions toward trade capacity building."
+  },
+  {
+    "id": 192,
+    "slug": "global-structural-adjustment",
+    "title": "World Bank Structural Adjustment Programmes",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Economic Growth & Industrial Policy",
+    "year": "1980–2000",
+    "summary": "World Bank and IMF Structural Adjustment Programmes conditioned loans on market-oriented reforms including privatization, trade liberalization, and fiscal austerity across the developing world from 1980 to 2000. The Washington Consensus approach generated fierce debate, with critics documenting harmful effects on health, education, and inequality, particularly in Sub-Saharan Africa."
+  },
+  {
+    "id": 193,
+    "slug": "global-cct-revolution",
+    "title": "The Conditional Cash Transfer Revolution",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Social Protection",
+    "year": "1997–present",
+    "summary": "Conditional Cash Transfer programs, originating with Mexico's Progresa in 1997, have spread to over 80 countries, providing cash to poor families contingent on children's school attendance and health check-ups. Rigorous evaluations have demonstrated significant effects on enrollment and poverty reduction, though debate continues over whether conditions are necessary."
+  },
+  {
+    "id": 194,
+    "slug": "global-cdd",
+    "title": "Community-Driven Development Model",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Governance & Decentralization",
+    "year": "1996–present",
+    "summary": "Community-Driven Development programs, backed by over $30 billion in World Bank investments, empower communities to decide how development resources are allocated. While the model has delivered infrastructure and enhanced local participation, rigorous evaluations reveal mixed results on governance outcomes and persistent risks of elite capture."
+  },
+  {
+    "id": 195,
+    "slug": "global-rbf-health",
+    "title": "Results-Based Financing in Health",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Health",
+    "year": "2000–present",
+    "summary": "Results-Based Financing in health links payments to health facilities or providers to verified delivery of specific services and outcomes. Rwanda's pioneering program demonstrated a 23% increase in institutional deliveries, and the model has expanded globally through a $400 million Health Results Innovation Trust Fund, though evidence on effectiveness remains mixed."
+  },
+  {
+    "id": 196,
+    "slug": "global-social-impact-bonds",
+    "title": "Social Impact Bonds & Pay for Success",
+    "country": "Global (UK origin)",
+    "region": "Global",
+    "topic": "Financial Inclusion",
+    "year": "2010–present",
+    "summary": "Social Impact Bonds, first launched at HMP Peterborough prison in the UK in 2010, created a new financing model where private investors fund social programs and governments repay only if predetermined outcomes are achieved. Over 200 SIBs have been launched globally with $500 million+ invested, though evidence on cost-effectiveness remains contested."
+  },
+  {
+    "id": 197,
+    "slug": "global-mhealth",
+    "title": "Mobile Technology for Health (mHealth)",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Health",
+    "year": "2005–present",
+    "summary": "mHealth leverages mobile phone technology to improve health outcomes in developing countries through SMS reminders, data collection, telemedicine, and health worker support. While individual RCTs have shown promising results for medication adherence and malaria treatment, systematic reviews indicate that evidence of impact at scale remains limited."
+  },
+  {
+    "id": 198,
+    "slug": "global-deworming",
+    "title": "School-Based Deworming: Evidence & Debate",
+    "country": "Global (Kenya origin)",
+    "region": "Global",
+    "topic": "Health",
+    "year": "1998–present",
+    "summary": "School-based deworming, catalyzed by Miguel and Kremer's landmark 2004 study in Kenya showing large effects on school attendance, became one of the most widely recommended development interventions. However, a Cochrane review and replication debate challenged the original findings, sparking one of development economics' most consequential evidence controversies."
+  },
+  {
+    "id": 199,
+    "slug": "global-graduation-approach",
+    "title": "Ultra-Poor Graduation Approach (BRAC Model)",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Social Protection",
+    "year": "2002–present",
+    "summary": "The Ultra-Poor Graduation Approach, pioneered by BRAC in Bangladesh, provides a comprehensive package of asset transfers, skills training, coaching, and savings support to help the extreme poor build sustainable livelihoods. A landmark six-country RCT published in Science demonstrated sustained income gains, and over 100 programs have been adopted globally."
+  },
+  {
+    "id": 200,
+    "slug": "global-open-data",
+    "title": "Open Data for Development & Accountability",
+    "country": "Global",
+    "region": "Global",
+    "topic": "Governance & Decentralization",
+    "year": "2009–present",
+    "summary": "The open data movement, catalyzed by the Obama administration's 2009 Open Government Directive and growing to 80+ national portals, has sought to make government data freely available to improve transparency, accountability, and service delivery. While open data has produced notable successes in budget transparency and aid tracking, critics highlight persistent barriers to access and use by marginalized populations."
+  }
+]
