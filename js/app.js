@@ -220,7 +220,10 @@
     const findings = [];
     const match = content.match(/## (?:Results & Evidence|Results|Evidence|Impact|Outcomes)\s*\n([\s\S]*?)(?=\n## |$)/i);
     const text = match ? match[1] : content;
-    const sentences = text.split(/(?<=[.!?])\s+/);
+    const sentences = text.split(/([.!?])\s+/).reduce(function(acc, part, i, arr) {
+      if (i % 2 === 0) acc.push(part + (arr[i + 1] || ''));
+      return acc;
+    }, []);
     const quantPattern = /\d+[\.\d]*\s*(%|percent|percentage|million|billion|trillion|fold|times|pp\b|point)/i;
     for (const s of sentences) {
       if (quantPattern.test(s) && s.length > 30 && s.length < 300) {
