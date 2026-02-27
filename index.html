@@ -3,41 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Development Case Study Library</title>
-  <meta name="description" content="200 real-world development case studies from 80+ countries. Every claim cited. Every lesson evidence-based. Explore financial inclusion, health, education, governance, and more.">
-  <meta name="keywords" content="development, case studies, global development, international development, poverty reduction, economic growth, health, education, social protection">
-  <meta name="author" content="Global Development Case Study Library">
+  <title>Dev Case Studies -- Evidence-Based Development Research Library</title>
+  <meta name="description" content="200 cited development case studies from 117 countries. Searchable evidence on financial inclusion, health, education, governance, and more.">
+  <meta name="keywords" content="development case studies, international development, poverty reduction, evidence-based policy, global south, development economics">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Global Development Case Study Library">
-  <meta property="og:description" content="200 real-world development case studies from 80+ countries. Every claim cited. Every lesson evidence-based.">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="Global Development Case Study Library">
+  <meta property="og:title" content="Dev Case Studies">
+  <meta property="og:description" content="200 cited development case studies from 117 countries. Evidence-based research library.">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Global Development Case Study Library">
-  <meta name="twitter:description" content="200 real-world development case studies from 80+ countries. Every claim cited. Every lesson evidence-based.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dev Case Studies">
+  <meta name="twitter:description" content="200 cited development case studies from 117 countries.">
 
-  <!-- Canonical -->
-  <link rel="canonical" href="">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5f8a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/><path d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/></svg>" type="image/svg+xml">
 
-  <!-- Favicon (inline SVG data URI) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>&#x1F4DA;</text></svg>" type="image/svg+xml">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-  <!-- Skip Navigation -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container">
       <a href="./index.html" class="site-logo">
-        <span class="site-logo-icon" aria-hidden="true">&#x1F4DA;</span>
+        <span class="site-logo-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span></span>
         <span>Dev Case Studies</span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
@@ -46,70 +40,63 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero" role="banner">
     <div class="container">
-      <h1>Global Development Case Study Library</h1>
-      <p class="hero-subtitle">200 real-world case studies from 80+ countries. Every claim cited. Every lesson evidence-based.</p>
+      <h1>Development Case Study Library</h1>
+      <p class="hero-subtitle">200 case studies from 117 countries. Every claim cited, every lesson grounded in evidence. Built for researchers, students, and practitioners.</p>
       <div class="hero-stats" aria-label="Library statistics">
-        <span class="stat-badge"><strong>200</strong> Case Studies</span>
-        <span class="stat-badge"><strong>80+</strong> Countries</span>
-        <span class="stat-badge"><strong>12</strong> Topics</span>
-        <span class="stat-badge"><strong>6</strong> Regions</span>
+        <div class="stat-item">
+          <span class="stat-value">200</span>
+          <span class="stat-label">Case Studies</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">117</span>
+          <span class="stat-label">Countries</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">10</span>
+          <span class="stat-label">Topics</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">7</span>
+          <span class="stat-label">Regions</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Search & Filters -->
   <section class="search-filters" aria-label="Search and filter case studies">
     <div class="container">
-      <!-- Search Bar -->
       <div class="search-bar">
-        <span class="search-icon" aria-hidden="true">&#x1F50D;</span>
+        <span class="search-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span></span>
         <label for="search-input" class="sr-only">Search case studies</label>
-        <input
-          type="search"
-          id="search-input"
-          placeholder="Search by title, country, topic, or keyword..."
-          autocomplete="off"
-          spellcheck="false"
-        >
-        <button id="search-clear" class="search-clear" aria-label="Clear search" title="Clear search">&times;</button>
+        <input type="search" id="search-input" placeholder="Search by title, country, topic, or keyword..." autocomplete="off" spellcheck="false">
+        <button id="search-clear" class="search-clear" aria-label="Clear search" title="Clear search"><span class="si"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
         <span id="search-kbd" class="search-kbd" aria-hidden="true">/</span>
       </div>
 
-      <!-- Filter Chips -->
       <div class="filter-section">
         <div class="filter-group">
           <span class="filter-label">Region</span>
-          <div class="chip-group" id="region-chips" role="group" aria-label="Filter by region">
-            <!-- Populated by JS -->
-          </div>
+          <div class="chip-group" id="region-chips" role="group" aria-label="Filter by region"></div>
         </div>
         <div class="filter-group">
           <span class="filter-label">Topic</span>
-          <div class="chip-group" id="topic-chips" role="group" aria-label="Filter by topic">
-            <!-- Populated by JS -->
-          </div>
+          <div class="chip-group" id="topic-chips" role="group" aria-label="Filter by topic"></div>
         </div>
       </div>
 
-      <!-- Active Filters -->
       <div id="active-filters" class="active-filters" aria-live="polite"></div>
     </div>
   </section>
 
-  <!-- Main Content -->
   <main id="main-content">
     <div class="container">
-      <!-- Results Bar -->
       <div class="results-bar">
         <p id="results-count" class="results-count" aria-live="polite">Loading case studies...</p>
       </div>
 
-      <!-- Card Grid -->
       <div id="card-grid" class="card-grid" role="list">
-        <!-- Loading skeletons -->
         <div class="skeleton-card" aria-hidden="true">
           <div class="skeleton-line short"></div>
           <div class="skeleton-line title"></div>
@@ -138,15 +125,15 @@
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p><strong>Built for learning.</strong> Every case study based on real interventions with cited evidence. This library is an educational resource for students, researchers, and practitioners of international development.</p>
+      <p><strong>Built for learning.</strong> Every case study grounded in real interventions with cited evidence. An educational resource for students, researchers, and practitioners of international development.</p>
     </div>
   </footer>
 
-  <!-- Scroll to Top -->
-  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top" title="Scroll to top">&#x2191;</button>
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top" title="Scroll to top"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></button>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
 
   <script src="./js/app.js"></script>
 </body>
