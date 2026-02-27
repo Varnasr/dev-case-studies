@@ -331,6 +331,19 @@
     let sortMode = 'default';
     let viewMode = 'grid';
 
+    // --- Welcome banner dismiss ---
+    var welcomeBanner = document.getElementById('welcome-banner');
+    var welcomeClose = document.getElementById('welcome-close');
+    if (welcomeBanner && localStorage.getItem('dcs-welcome-dismissed')) {
+      welcomeBanner.classList.add('hidden');
+    }
+    if (welcomeClose) {
+      welcomeClose.addEventListener('click', function() {
+        welcomeBanner.classList.add('hidden');
+        localStorage.setItem('dcs-welcome-dismissed', '1');
+      });
+    }
+
     const searchInput = document.getElementById('search-input');
     const searchClear = document.getElementById('search-clear');
     const searchKbd = document.getElementById('search-kbd');
@@ -382,7 +395,7 @@
     if (!overlay && sidebar) {
       overlay = document.createElement('div');
       overlay.className = 'sidebar-overlay';
-      sidebar.parentNode.insertBefore(overlay, sidebar.nextSibling);
+      document.body.appendChild(overlay);
     }
 
     function openSidebar() { sidebar?.classList.add('open'); overlay?.classList.add('visible'); }

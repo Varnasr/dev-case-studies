@@ -355,6 +355,48 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 0;
 }
 
+/* ---------- Welcome Banner ---------- */
+.welcome-banner {
+  position: relative;
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-paper) 100%);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: var(--sp-5) var(--sp-6);
+  margin-bottom: var(--sp-4);
+}
+.welcome-banner.hidden { display: none; }
+.welcome-close {
+  position: absolute; top: var(--sp-2); right: var(--sp-3);
+  background: none; border: none; font-size: 1.3rem;
+  color: var(--text-muted); cursor: pointer; line-height: 1;
+  padding: 2px 6px; border-radius: var(--radius-sm);
+}
+.welcome-close:hover { color: var(--text); background: rgba(0,0,0,0.05); }
+.welcome-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem; font-weight: 700;
+  color: var(--accent); margin-bottom: var(--sp-2);
+}
+.welcome-desc {
+  font-size: 0.88rem; color: var(--text-secondary);
+  line-height: 1.6; margin-bottom: var(--sp-4);
+  max-width: 680px;
+}
+.welcome-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-3);
+}
+.welcome-feature {
+  font-size: 0.8rem; line-height: 1.5;
+}
+.welcome-feature strong {
+  display: block; color: var(--text);
+  font-size: 0.82rem; margin-bottom: 2px;
+}
+.welcome-feature span { color: var(--text-muted); }
+
 .results-bar {
   display: flex; align-items: center; justify-content: space-between;
   padding-bottom: var(--sp-3); margin-bottom: var(--sp-3);
@@ -961,6 +1003,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Animation */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
+/* ---------- Sidebar Overlay ---------- */
+.sidebar-overlay {
+  position: fixed; inset: 0; top: var(--header-height);
+  background: rgba(0,0,0,0.3); z-index: 98;
+  opacity: 0; pointer-events: none; transition: opacity 0.25s;
+}
+.sidebar-overlay.visible { opacity: 1; pointer-events: auto; }
+
 /* ================================================================
    Responsive
    ================================================================ */
@@ -979,13 +1029,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-lg);
   }
   .mobile-filter-btn { display: flex; }
-
-  .sidebar-overlay {
-    position: fixed; inset: 0; top: var(--header-height);
-    background: rgba(0,0,0,0.3); z-index: 98;
-    opacity: 0; pointer-events: none; transition: opacity 0.25s;
-  }
-  .sidebar-overlay.visible { opacity: 1; pointer-events: auto; }
 
   .header-stats { display: none; }
 
