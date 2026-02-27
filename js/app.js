@@ -59,14 +59,21 @@
   }
 
   function getUrlParams() {
-    return Object.fromEntries(new URLSearchParams(window.location.search));
+    var params = {};
+    var sp = new URLSearchParams(window.location.search);
+    sp.forEach(function(v, k) { params[k] = v; });
+    return params;
   }
 
   function setUrlParams(params) {
-    const url = new URL(window.location);
-    [...url.searchParams.keys()].forEach(k => url.searchParams.delete(k));
-    Object.entries(params).forEach(([k, v]) => { if (v) url.searchParams.set(k, v); });
-    window.history.replaceState({}, '', url);
+    try {
+      var url = new URL(window.location);
+      var keys = [];
+      url.searchParams.forEach(function(v, k) { keys.push(k); });
+      keys.forEach(function(k) { url.searchParams.delete(k); });
+      Object.keys(params).forEach(function(k) { if (params[k]) url.searchParams.set(k, params[k]); });
+      window.history.replaceState({}, '', url);
+    } catch (e) { /* ignore URL param errors */ }
   }
 
   function escapeHtml(str) {
@@ -384,16 +391,22 @@
 
     // --- Fetch data ---
     fetch(`${DATA_BASE}/master-list.json`)
-      .then(res => { if (!res.ok) throw new Error('Failed'); return res.json(); })
-      .then(data => {
+      .then(function(res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+      .then(function(data) {
         allStudies = data;
-        initAllFilters();
-        renderCards();
-        updateSearchUI();
-        updateViewToggle();
+        try {
+          initAllFilters();
+          renderCards();
+          updateSearchUI();
+          updateViewToggle();
+        } catch (e) {
+          console.error('Render error:', e);
+          cardGrid.innerHTML = '<div class="no-results"><h3>Render Error</h3><p>' + escapeHtml(String(e)) + '</p></div>';
+        }
       })
-      .catch(() => {
-        cardGrid.innerHTML = `<div class="no-results"><div class="no-results-icon">${icon('info')}</div><h3>Unable to Load Case Studies</h3><p>Check your connection and try refreshing.</p></div>`;
+      .catch(function(err) {
+        console.error('Fetch error:', err);
+        cardGrid.innerHTML = '<div class="no-results"><h3>Unable to Load</h3><p>' + escapeHtml(String(err)) + '</p></div>';
       });
 
     // --- Init Filters ---
@@ -1016,12 +1029,18 @@
   // ══════════════════════════════════════════════════════════════════
 
   function init() {
-    const path = window.location.pathname;
-    const isStudyPage = path.endsWith('study.html') || document.getElementById('study-main') !== null;
-    const isIndexPage = path.endsWith('index.html') || path.endsWith('/') || document.getElementById('card-grid') !== null;
-    if (isStudyPage) initStudyPage();
-    else if (isIndexPage) initIndexPage();
-    initScrollTop();
+    try {
+      var path = window.location.pathname;
+      var isStudyPage = path.endsWith('study.html') || document.getElementById('study-main') !== null;
+      var isIndexPage = path.endsWith('index.html') || path.endsWith('/') || document.getElementById('card-grid') !== null;
+      if (isStudyPage) initStudyPage();
+      else if (isIndexPage) initIndexPage();
+      initScrollTop();
+    } catch (e) {
+      console.error('Init error:', e);
+      var target = document.getElementById('card-grid') || document.getElementById('study-main');
+      if (target) target.innerHTML = '<div style="padding:2rem;color:#c00"><h3>Init Error</h3><p>' + String(e.message || e) + '</p><p>' + String(e.stack || '').substring(0,200) + '</p></div>';
+    }
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

@@ -176,6 +176,7 @@
 
   <div id="toast" class="toast" aria-live="polite"></div>
 
+  <script>window.onerror=function(m,s,l,c,e){var g=document.getElementById('card-grid');if(g)g.innerHTML='<div style="padding:2rem;color:#c00"><h3>JS Error</h3><p>'+m+'</p><p>'+s+':'+l+'</p></div>';};window.onunhandledrejection=function(e){var g=document.getElementById('card-grid');if(g)g.innerHTML='<div style="padding:2rem;color:#c00"><h3>Promise Error</h3><p>'+String(e.reason)+'</p></div>';};</script>
   <script src="./js/app.js"></script>
 </body>
 </html>
