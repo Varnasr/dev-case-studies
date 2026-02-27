@@ -83,6 +83,18 @@
     return div.innerHTML;
   }
 
+  function truncateSentence(text, maxLen) {
+    if (text.length <= maxLen) return text;
+    var sub = text.substring(0, maxLen);
+    var lastPeriod = sub.lastIndexOf('. ');
+    var lastBang = sub.lastIndexOf('! ');
+    var lastQ = sub.lastIndexOf('? ');
+    var cut = Math.max(lastPeriod, lastBang, lastQ);
+    if (cut > maxLen * 0.3) return text.substring(0, cut + 1);
+    var lastSpace = sub.lastIndexOf(' ');
+    return (lastSpace > 0 ? sub.substring(0, lastSpace) : sub) + '...';
+  }
+
   function showToast(message) {
     const toast = document.getElementById('toast');
     if (!toast) return;
@@ -782,8 +794,8 @@
             ${(discussionQs.length > 0 || lessons.length > 0) ? `
             <div class="framework-card">
               <div class="framework-card-header">${icon('lightbulb')}<span class="framework-card-title">How to Think About This</span></div>
-              ${lessons.length > 0 ? `<ul class="framework-questions">${lessons.slice(0, 4).map((l, i) => `<li><span class="q-marker">${i+1}.</span><span>${l.title ? `<strong>${escapeHtml(l.title)}</strong> ` : ''}${escapeHtml(l.detail.substring(0,200))}${l.detail.length>200?'...':''}</span></li>`).join('')}</ul>` : ''}
-              ${discussionQs.length > 0 ? `<div style="margin-top:var(--sp-4);padding-top:var(--sp-4);border-top:1px solid rgba(122,92,62,0.12)"><div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent-warm);margin-bottom:var(--sp-3)">Discussion Questions</div><ul class="framework-questions">${discussionQs.slice(0,3).map((q,i) => `<li><span class="q-marker">Q${i+1}</span><span>${escapeHtml(q.substring(0,250))}${q.length>250?'...':''}</span></li>`).join('')}</ul></div>` : ''}
+              ${lessons.length > 0 ? `<ul class="framework-questions">${lessons.slice(0, 4).map((l, i) => `<li><span class="q-marker">${i+1}.</span><span>${l.title ? `<strong>${escapeHtml(l.title)}</strong> ` : ''}${escapeHtml(truncateSentence(l.detail, 300))}</span></li>`).join('')}</ul>` : ''}
+              ${discussionQs.length > 0 ? `<div style="margin-top:var(--sp-4);padding-top:var(--sp-4);border-top:1px solid rgba(122,92,62,0.12)"><div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent-warm);margin-bottom:var(--sp-3)">Discussion Questions</div><ul class="framework-questions">${discussionQs.slice(0,3).map((q,i) => `<li><span class="q-marker">Q${i+1}</span><span>${escapeHtml(truncateSentence(q, 350))}</span></li>`).join('')}</ul></div>` : ''}
             </div>` : ''}
 
             ${renderMarkdown(mainContent)}
