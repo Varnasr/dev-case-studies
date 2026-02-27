@@ -13,117 +13,158 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Dev Case Studies">
-  <meta name="twitter:description" content="200 cited development case studies from 117 countries.">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5f8a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/><path d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/></svg>" type="image/svg+xml">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="index-page">
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+  <!-- Header — compact on index -->
   <header class="site-header" role="banner">
-    <div class="container">
+    <div class="container-full">
       <a href="./index.html" class="site-logo">
         <span class="site-logo-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span></span>
         <span>Dev Case Studies</span>
       </a>
+      <div class="header-center">
+        <div class="header-stats">
+          <span class="header-stat"><strong>200</strong> studies</span>
+          <span class="header-stat-sep"></span>
+          <span class="header-stat"><strong>117</strong> countries</span>
+          <span class="header-stat-sep"></span>
+          <span class="header-stat"><strong>10</strong> topics</span>
+        </div>
+      </div>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="./index.html">Library</a>
+        <button id="mobile-filter-toggle" class="mobile-filter-btn" aria-label="Toggle filters">
+          <span class="si"><svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/></svg></span>
+          Filters
+        </button>
       </nav>
     </div>
   </header>
 
-  <section class="hero" role="banner">
-    <div class="container">
-      <h1>Development Case Study Library</h1>
-      <p class="hero-subtitle">200 case studies from 117 countries. Every claim cited, every lesson grounded in evidence. Built for researchers, students, and practitioners.</p>
-      <div class="hero-stats" aria-label="Library statistics">
-        <div class="stat-item">
-          <span class="stat-value">200</span>
-          <span class="stat-label">Case Studies</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value">117</span>
-          <span class="stat-label">Countries</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value">10</span>
-          <span class="stat-label">Topics</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-value">7</span>
-          <span class="stat-label">Regions</span>
+  <!-- Main layout: sidebar + content -->
+  <div class="index-layout">
+
+    <!-- Left Sidebar: filters -->
+    <aside class="filter-sidebar" id="filter-sidebar" role="search" aria-label="Filter case studies">
+
+      <!-- Search -->
+      <div class="sidebar-search">
+        <div class="search-bar">
+          <span class="search-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span></span>
+          <label for="search-input" class="sr-only">Search case studies</label>
+          <input type="search" id="search-input" placeholder="Search titles, countries, keywords..." autocomplete="off" spellcheck="false">
+          <button id="search-clear" class="search-clear" aria-label="Clear search"><span class="si"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
+          <span id="search-kbd" class="search-kbd" aria-hidden="true">/</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="search-filters" aria-label="Search and filter case studies">
-    <div class="container">
-      <div class="search-bar">
-        <span class="search-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span></span>
-        <label for="search-input" class="sr-only">Search case studies</label>
-        <input type="search" id="search-input" placeholder="Search by title, country, topic, or keyword..." autocomplete="off" spellcheck="false">
-        <button id="search-clear" class="search-clear" aria-label="Clear search" title="Clear search"><span class="si"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
-        <span id="search-kbd" class="search-kbd" aria-hidden="true">/</span>
+      <!-- Research question search -->
+      <div class="sidebar-search" style="margin-top:-4px">
+        <div class="search-bar search-bar-rq">
+          <span class="search-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></span></span>
+          <label for="rq-input" class="sr-only">Search by research question</label>
+          <input type="search" id="rq-input" placeholder="Ask a research question..." autocomplete="off" spellcheck="false">
+        </div>
+        <div class="rq-hint" id="rq-hint"></div>
       </div>
 
-      <div class="filter-section">
-        <div class="filter-group">
-          <span class="filter-label">Region</span>
-          <div class="chip-group" id="region-chips" role="group" aria-label="Filter by region"></div>
-        </div>
-        <div class="filter-group">
-          <span class="filter-label">Topic</span>
+      <!-- Active filters bar -->
+      <div id="active-filters" class="active-filters" aria-live="polite"></div>
+
+      <!-- Topic Filter -->
+      <div class="filter-panel">
+        <button class="filter-panel-toggle" aria-expanded="true" data-target="fp-topics">
+          <span class="si"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+          Topic
+          <span class="filter-count" id="topic-count"></span>
+          <span class="toggle-chevron"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
+        </button>
+        <div class="filter-panel-body" id="fp-topics">
           <div class="chip-group" id="topic-chips" role="group" aria-label="Filter by topic"></div>
         </div>
       </div>
 
-      <div id="active-filters" class="active-filters" aria-live="polite"></div>
-    </div>
-  </section>
+      <!-- Region Filter -->
+      <div class="filter-panel">
+        <button class="filter-panel-toggle" aria-expanded="true" data-target="fp-regions">
+          <span class="si"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          Region
+          <span class="filter-count" id="region-count"></span>
+          <span class="toggle-chevron"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
+        </button>
+        <div class="filter-panel-body" id="fp-regions">
+          <div class="chip-group" id="region-chips" role="group" aria-label="Filter by region"></div>
+        </div>
+      </div>
 
-  <main id="main-content">
-    <div class="container">
+      <!-- Decade Filter -->
+      <div class="filter-panel">
+        <button class="filter-panel-toggle" aria-expanded="true" data-target="fp-decades">
+          <span class="si"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          Decade
+          <span class="filter-count" id="decade-count"></span>
+          <span class="toggle-chevron"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
+        </button>
+        <div class="filter-panel-body" id="fp-decades">
+          <div class="chip-group" id="decade-chips" role="group" aria-label="Filter by decade"></div>
+        </div>
+      </div>
+
+      <!-- Sort -->
+      <div class="filter-panel">
+        <div class="filter-panel-toggle filter-panel-static">
+          <span class="si"><svg viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span>
+          Sort
+        </div>
+        <div class="filter-panel-body open">
+          <select id="sort-select" class="sort-select">
+            <option value="default">Default order</option>
+            <option value="title-az">Title A to Z</option>
+            <option value="title-za">Title Z to A</option>
+            <option value="year-new">Newest first</option>
+            <option value="year-old">Oldest first</option>
+            <option value="country-az">Country A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Sidebar footer -->
+      <div class="sidebar-footer">
+        <p>Every case study cited, every lesson grounded in evidence.</p>
+      </div>
+    </aside>
+
+    <!-- Main content area -->
+    <main id="main-content" class="index-main">
       <div class="results-bar">
         <p id="results-count" class="results-count" aria-live="polite">Loading case studies...</p>
+        <div class="view-controls">
+          <button class="view-btn active" id="view-grid" aria-label="Grid view" title="Grid view">
+            <span class="si"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span>
+          </button>
+          <button class="view-btn" id="view-list" aria-label="List view" title="List view">
+            <span class="si"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></span>
+          </button>
+        </div>
       </div>
 
       <div id="card-grid" class="card-grid" role="list">
-        <div class="skeleton-card" aria-hidden="true">
-          <div class="skeleton-line short"></div>
-          <div class="skeleton-line title"></div>
-          <div class="skeleton-line medium"></div>
-          <div class="skeleton-line long"></div>
-          <div class="skeleton-line long"></div>
-          <div class="skeleton-line short"></div>
-        </div>
-        <div class="skeleton-card" aria-hidden="true">
-          <div class="skeleton-line short"></div>
-          <div class="skeleton-line title"></div>
-          <div class="skeleton-line medium"></div>
-          <div class="skeleton-line long"></div>
-          <div class="skeleton-line long"></div>
-          <div class="skeleton-line short"></div>
-        </div>
-        <div class="skeleton-card" aria-hidden="true">
-          <div class="skeleton-line short"></div>
-          <div class="skeleton-line title"></div>
-          <div class="skeleton-line medium"></div>
-          <div class="skeleton-line long"></div>
-          <div class="skeleton-line long"></div>
-          <div class="skeleton-line short"></div>
-        </div>
+        <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div><div class="skeleton-line long"></div><div class="skeleton-line short"></div></div>
+        <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div><div class="skeleton-line long"></div><div class="skeleton-line short"></div></div>
+        <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div><div class="skeleton-line long"></div><div class="skeleton-line short"></div></div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
