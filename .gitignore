@@ -1,3 +1,18 @@
 node_modules/
 package-lock.json
 package.json
+
+# Added by git standards propagation
+# Environment files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+build/
+dist/
+coverage/
+.vscode/
+.idea/
+*.swp
