@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this resource, please cite it as below."
+type: dataset
+title: "Dev Case Studies"
+abstract: >-
+  A collection of 200 real development case studies from 117 countries,
+  searchable and filterable, with full citations. Part of the ImpactMojo
+  Learning Platform.
+authors:
+  - family-names: Sri Raman
+    given-names: Varna
+    alias: Varnasr
+url: "https://github.com/Varnasr/dev-case-studies"
+repository-code: "https://github.com/Varnasr/dev-case-studies"
+license: MIT
+keywords:
+  - development
+  - case-studies
+  - global-south
+  - education
+  - open-data
+date-released: "2025-01-01"
