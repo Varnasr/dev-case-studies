@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 9 * * 1" # Weekly on Monday at 9:00 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  link-checker:
+    name: Check Links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,204,301,302,403
+            --timeout 30
+            --max-retries 3
+            --exclude-path ./node_modules
+            './**/*.html'
+            './**/*.md'
+            './**/*.json'
+          fail: true
+
+      - name: Upload link check report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-report
+          path: ./lychee/out.md
+          retention-days: 14
