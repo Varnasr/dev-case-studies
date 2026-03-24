@@ -3,85 +3,122 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Varnasr/dev-case-studies/pulls)
 [![GitHub Issues](https://img.shields.io/github/issues/Varnasr/dev-case-studies)](https://github.com/Varnasr/dev-case-studies/issues)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/Varnasr/dev-case-studies)](https://github.com/Varnasr/dev-case-studies/commits/main)
+[![Part of ImpactMojo](https://img.shields.io/badge/Part%20of-ImpactMojo-orange)](https://www.impactmojo.in)
 
-**200 real development case studies from 117 countries** — searchable, filterable, and fully cited.
+**200 real development case studies from 117 countries — searchable, filterable, and fully cited.**
 
-Part of the [ImpactMojo Learning Platform](https://impactmojo.in) and the [OpenStacks for Change](https://github.com/Varnasr) initiative.
+Part of the [ImpactMojo Learning Platform](https://impactmojo.in) and the [OpenStacks for Change](https://github.com/Varnasr/OpenStacks-for-Change) initiative.
+
+---
+
+## About
+
+Dev Case Studies is a practitioner-oriented library of real-world development case studies drawn from across the Global South and beyond. Each case study documents a programme, intervention, or policy with evidence of outcomes — positive, negative, or mixed.
+
+The library is designed to complement theory with evidence: to help practitioners, students, and researchers understand what development work actually looks like in practice.
+
+---
 
 ## Features
 
-- **200 case studies** spanning 117 countries across the Global South and beyond
-- **Searchable** — find case studies by keyword, country, or theme
-- **Filterable** — narrow results by region, sector, or development outcome
-- **Fully cited** — every case study includes verifiable sources and references
-- **Zero dependencies** — built with vanilla HTML, CSS, and JavaScript
+| Feature | Description |
+|---------|-------------|
+| **200 Case Studies** | Spanning 117 countries across the Global South and beyond |
+| **Searchable** | Full-text search by keyword, country, programme name, or theme |
+| **Filterable** | Narrow by region, sector, development outcome, and evidence type |
+| **Fully Cited** | Every case includes verifiable sources, evaluation reports, and primary references |
+| **Individual Case Pages** | Dedicated `study.html` views with full detail and citation links |
+| **Zero Dependencies** | Vanilla HTML, CSS, and JavaScript — no build step, no framework |
 
-## Tech Stack
+---
 
-| Language   | Share  |
-|------------|--------|
-| JavaScript | 49.6%  |
-| CSS        | 36.2%  |
-| HTML       | 14.2%  |
+## Sectors Covered
 
-No build tools, no frameworks — just clean, standards-based web technologies.
+| Sector | Example Cases |
+|--------|--------------|
+| **Health & Nutrition** | BRAC Community Health Workers (Bangladesh), Progresa/Oportunidades (Mexico) |
+| **Education** | Pratham's Teaching at the Right Level (India), Girls' education programmes (Niger) |
+| **Gender & Women's Empowerment** | Self-help group models (India), Gender-responsive budgeting (Rwanda) |
+| **Livelihoods & Labour** | Graduation programmes, youth employment schemes |
+| **Agriculture** | Smallholder extension, climate-smart agriculture |
+| **Social Protection** | Cash transfer programmes, universal basic income pilots |
+| **Governance** | Community monitoring, social accountability mechanisms |
+| **Climate & Environment** | Adaptation programmes, REDD+, urban resilience |
+| **Digital Development** | Last-mile connectivity, digital financial services |
 
-## Getting Started
-
-### Prerequisites
-
-A modern web browser and one of the following local servers:
-
-- Python 3.x, or
-- Node.js / npm
-
-### Local Setup
-
-Clone the repository and start a local server:
-
-```bash
-git clone https://github.com/Varnasr/dev-case-studies.git
-cd dev-case-studies
-
-# Option 1: Python
-python -m http.server 8000
-
-# Option 2: npx
-npx serve
-```
-
-Then open [http://localhost:8000](http://localhost:8000) in your browser.
+---
 
 ## Project Structure
 
 ```
 dev-case-studies/
-├── index.html          # Main entry point
-├── data/               # Case study data (JSON)
-├── js/                 # Search, filter, and rendering logic
-├── css/                # Styles and responsive layout
-├── .github/            # Community health files
-│   ├── CODE_OF_CONDUCT.md
-│   ├── CONTRIBUTING.md
-│   └── SECURITY.md
-├── LICENSE
-└── CITATION.cff
+├── index.html          # Main library (search + filter interface)
+├── study.html          # Individual case study view
+├── data/               # Case study data files (JSON/CSV)
+├── css/                # Stylesheets
+├── js/                 # Search, filter, and render logic
+├── CITATION.cff        # Citation metadata
+├── LICENSE             # MIT License
+└── README.md           # This file
 ```
-
-## Contributing
-
-Contributions are welcome! Whether you want to add a case study, fix a bug, or improve the interface, please read our [Contributing Guidelines](.github/CONTRIBUTING.md) before getting started.
-
-For case study corrections or content issues, please use the [Content Issue](https://github.com/Varnasr/dev-case-studies/issues/new?template=content_issue.md) template.
-
-## Citation
-
-If you use this resource in your research or teaching, please cite it using the information in [CITATION.cff](CITATION.cff).
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-Built with purpose by [@Varnasr](https://github.com/Varnasr) | [ImpactMojo](https://impactmojo.in)
+## Tech Stack
+
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| Frontend | Vanilla HTML / CSS / JavaScript | No-dependency search and browse |
+| Data | JSON / CSV | Case study content and metadata |
+| Hosting | GitHub Pages | Static site deployment |
+
+---
+
+## Local Development
+
+```bash
+git clone https://github.com/Varnasr/dev-case-studies.git
+cd dev-case-studies
+open index.html
+# or
+python3 -m http.server 8000
+```
+
+---
+
+## Contributing
+
+Contributions are welcome — additional case studies, corrections, or improved citations.
+
+See the [issues tracker](https://github.com/Varnasr/dev-case-studies/issues) for open requests, or open a pull request directly.
+
+**For each new case study, please provide:**
+- Programme name, country, and years of operation
+- Programme description (200–400 words)
+- Evidence of outcomes (with citations)
+- At least two verifiable sources
+
+---
+
+## Part of the ImpactMojo Ecosystem
+
+**Related repositories:**
+- [ImpactMojo](https://github.com/Varnasr/ImpactMojo) — Main platform
+- [development-discourses](https://github.com/Varnasr/development-discourses) — 500+ curated open-access research papers
+- [ImpactLex](https://github.com/Varnasr/ImpactLex) — Development sector terminology dictionary
+
+---
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+## Citation
+
+```
+Sri Raman, V. (2025). Dev Case Studies: 200 real development case studies from 117 countries [Dataset].
+ImpactMojo. https://github.com/Varnasr/dev-case-studies
+```
