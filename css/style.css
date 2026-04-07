@@ -1068,3 +1068,75 @@ h1, h2, h3, h4, h5, h6 {
   .index-layout { grid-template-columns: 1fr; }
   .case-card { break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
 }
+
+
+/* ===== Dark Mode ===== */
+[data-theme="dark"] {
+  --bg:             #0f1419;
+  --bg-paper:       #161b22;
+  --bg-warm:        #1c2128;
+  --bg-sidebar:     #161b22;
+  --card-bg:        #1c2128;
+  --primary:        #f0f6fc;
+  --primary-soft:   #c9d1d9;
+  --accent:         #58a6ff;
+  --accent-hover:   #79b8ff;
+  --accent-light:   #1c2a3a;
+  --accent-warm:    #d4a373;
+  --accent-warm-bg: #2a1f12;
+  --text:           #e6edf3;
+  --text-secondary: #b0b8c1;
+  --text-muted:     #7d8590;
+  --border:         #30363d;
+  --border-light:   #21262d;
+  --divider:        #30363d;
+  --shadow-sm:      0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:      0 2px 8px rgba(0,0,0,0.5);
+  --shadow-lg:      0 4px 20px rgba(0,0,0,0.6);
+  --shadow-card:    0 1px 4px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04);
+
+  --topic-financial-bg:     #2a2008;
+  --topic-health-bg:        #2a1414;
+  --topic-education-bg:     #0f1d2e;
+  --topic-social-bg:        #1f1428;
+  --topic-agriculture-bg:   #142014;
+  --topic-economic-bg:      #1c1c1c;
+  --topic-environment-bg:   #112020;
+  --topic-governance-bg:    #1c1428;
+  --topic-infrastructure-bg:#28141c;
+  --topic-gender-bg:        #28141f;
+}
+
+/* ===== Theme Selector ===== */
+.theme-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--bg-warm);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 2px;
+  margin-left: 12px;
+}
+.theme-btn {
+  background: none;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+  padding: 0;
+}
+.theme-btn:hover { color: var(--text); background: var(--bg-paper); }
+.theme-btn.active { color: var(--accent); background: var(--accent-light); }
+.theme-btn svg { stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 640px) {
+  .theme-selector { margin-left: 6px; }
+  .theme-btn { width: 26px; height: 26px; }
+  .theme-btn svg { width: 14px; height: 14px; }
+}
