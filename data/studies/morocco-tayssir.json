@@ -1,0 +1,41 @@
+{
+  "id": 203,
+  "slug": "morocco-tayssir",
+  "title": "Tayssir: Labeled Cash Transfers for Education",
+  "country": "Morocco",
+  "region": "Middle East & North Africa",
+  "topic": "Education",
+  "year": "2008–present",
+  "summary": "Morocco's Tayssir programme tested a subtle idea: small cash transfers merely *labeled* as education support — handed to fathers, with no real enforcement of attendance — cut dropout almost as much as fully conditional transfers, at lower administrative cost, suggesting that the 'nudge' of a label can do much of the work of a costly condition.",
+  "keyData": [
+    {
+      "label": "Launched",
+      "value": "2008 (pilot), scaled nationally thereafter"
+    },
+    {
+      "label": "Ministry",
+      "value": "Moroccan Ministry of National Education"
+    },
+    {
+      "label": "Design",
+      "value": "Randomized trial across ~320 school sectors"
+    },
+    {
+      "label": "Transfer size",
+      "value": "~$8–$13 per child per month"
+    },
+    {
+      "label": "Key finding",
+      "value": "Labeled transfers nearly as effective as conditional"
+    },
+    {
+      "label": "Dropout",
+      "value": "Sharply reduced; re-enrollment of dropouts rose"
+    },
+    {
+      "label": "Scale",
+      "value": "Reached ~2 million students within a decade"
+    }
+  ],
+  "content": "## Background\n\nBy the 2000s Morocco had achieved high primary-school enrollment but still lost large numbers of children before they finished, especially girls in poor rural areas. Conditional cash transfer (CCT) programmes — pioneered in Latin America — had become the default tool for keeping poor children in school: pay families, but only if their children attend. Yet conditions are expensive and intrusive to enforce, requiring attendance monitoring, verification, and the administrative capacity to cut off non-compliant families. A natural question was how much of a CCT's punch comes from the money itself, how much from the condition, and how much simply from telling parents the money is *for* school.\n\n## The Intervention\n\nThe Ministry of National Education launched **Tayssir** (Arabic for \"facilitation\") in 2008 as a cash-transfer programme aimed at reducing dropout in the poorest rural school sectors. Crucially, the pilot was designed as a randomized controlled trial — studied by Najy Benhassine, Florencia Devoto, Esther Duflo, Pascaline Dupas, and Victor Pouliquen — that varied not just whether families received transfers but *how* the transfers were framed.\n\nSome communities received a conventional **conditional** transfer, tied to a 75%-attendance rule. Others received a **\"labeled\" cash transfer (LCT)**: the same money, presented explicitly as support for the child's education, but with attendance not truly monitored or enforced. The programme also varied whether the transfer was paid to fathers or mothers. Transfers were deliberately modest — roughly $8 to $13 per child per month — small relative to household income.\n\n## Results & Evidence\n\nThe central result, published by Benhassine and colleagues in the *American Economic Journal: Economic Policy* (2015) under the title \"Turning a Shove into a Nudge?\", was that the **labeled transfers were nearly as effective as the conditional ones** — and in some specifications more effective. Both sharply reduced dropout and increased the re-enrollment of children who had already left school, with especially large effects for the pupils most at risk.\n\nThe interpretation was that the *label* did much of the work a costly condition was assumed to require. Simply designating the money as education support — and making the state's interest in schooling visible to parents — shifted household behaviour, apparently by changing parents' perceptions of the returns to schooling rather than by mechanically forcing attendance. Because labeled transfers require no attendance verification, they are cheaper and simpler to run, and they avoid cutting benefits from the poorest families precisely when their children stop attending.\n\nInterestingly, the study found little difference between paying fathers and mothers — a contrast with some other settings — suggesting that the framing of the transfer mattered more than its recipient in this context.\n\nOn the strength of the pilot, Tayssir was scaled up across Morocco's poor rural areas, reaching on the order of two million students within a decade and becoming a central plank of the country's strategy against school dropout.\n\n## Challenges & Criticisms\n\nThe Tayssir evidence is strong on enrollment and dropout but, like most CCT evaluations, says less about **learning**. Keeping children in school is necessary but not sufficient; whether additional years translated into skills depends on the quality of the schools they stayed in, which the transfers did not address. Small transfers can change attendance without changing what happens in the classroom.\n\nThere are also limits to generalization. The \"label is enough\" result emerged in a setting of already-high enrollment where the binding problem was dropout and parental perceptions; in contexts where children have never enrolled, or where the barrier is cost rather than belief, conditions or larger transfers may still matter. And as programmes scale, maintaining reliable payment systems and targeting in remote areas is a persistent operational challenge.\n\n## Key Lessons\n\n- **The condition may be doing less than we think.** Much of a CCT's effect on schooling can be reproduced by a cheaper labeled transfer that signals purpose without enforcing it.\n- **Framing is a policy instrument.** How a transfer is described — what it is \"for\" — can shift behaviour by changing beliefs about the returns to schooling.\n- **Cheaper and kinder can coincide.** Dropping enforcement lowered administrative cost and avoided penalizing the neediest families, without sacrificing impact.\n- **Enrollment is not learning.** Reducing dropout is a real gain, but transfers must be paired with school-quality reforms to convert attendance into skills.\n- **Design experiments into policy.** Building a randomized trial into the pilot let Morocco scale a specific, well-understood design rather than a hunch.\n\n## References\n\n- Benhassine, N., Devoto, F., Duflo, E., Dupas, P., and Pouliquen, V. (2015). \"Turning a Shove into a Nudge? A 'Labeled Cash Transfer' for Education.\" *American Economic Journal: Economic Policy*, 7(3), 86–125.\n- Baird, S., Fereira, F.H.G., Özler, B., and Woolcock, M. (2014). \"Conditional, unconditional and everything in between: a systematic review of the effects of cash transfer programmes on schooling outcomes.\" *Journal of Development Effectiveness*, 6(1), 1–43.\n- World Bank (2015). *Morocco — Tayssir Cash Transfer Program Implementation and Results*. Washington, DC.\n- Fiszbein, A. and Schady, N. (2009). *Conditional Cash Transfers: Reducing Present and Future Poverty*. World Bank Policy Research Report."
+}

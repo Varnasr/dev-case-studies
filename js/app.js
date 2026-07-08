@@ -40,6 +40,12 @@
     check: '<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>',
     info: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>',
     bookmark: '<svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>',
+    bookmarkFill: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>',
+    shuffle: '<svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>',
+    share: '<svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>',
+    insights: '<svg viewBox="0 0 24 24"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>',
+    clock2: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+    trash: '<svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
     grid: '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
     list: '<svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>',
   };
@@ -119,6 +125,44 @@
     if (!yr) return null;
     const dec = Math.floor(yr / 10) * 10;
     return `${dec}s`;
+  }
+
+  // ── Bookmarks (saved studies) ──────────────────────────────────────
+
+  const BOOKMARK_KEY = 'devcs-bookmarks';
+
+  function getBookmarks() {
+    try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY)) || []; }
+    catch (e) { return []; }
+  }
+  function isBookmarked(slug) { return getBookmarks().indexOf(slug) !== -1; }
+  function toggleBookmark(slug) {
+    const marks = getBookmarks();
+    const i = marks.indexOf(slug);
+    if (i === -1) marks.push(slug); else marks.splice(i, 1);
+    try { localStorage.setItem(BOOKMARK_KEY, JSON.stringify(marks)); } catch (e) { /* ignore */ }
+    document.dispatchEvent(new CustomEvent('bookmarks-changed', { detail: { slug } }));
+    return i === -1;
+  }
+
+  // ── Share helpers ──────────────────────────────────────────────────
+
+  function shareStudy(study) {
+    const url = window.location.href;
+    if (navigator.share) {
+      navigator.share({ title: study.title, text: study.summary || study.title, url }).catch(() => {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(() => showToast('Link copied to clipboard'));
+    }
+  }
+
+  function formatReadTime(mins) {
+    return mins ? `${mins} min read` : '';
+  }
+
+  function estimateReadingMinutes(content) {
+    const words = (content || '').trim().split(/\s+/).filter(Boolean).length;
+    return Math.max(1, Math.round(words / 210));
   }
 
   // ── Research Question Keywords ─────────────────────────────────────
@@ -342,6 +386,7 @@
     let rqMatchedTerms = [];
     let sortMode = 'default';
     let viewMode = 'grid';
+    let savedOnly = false;
 
     // --- Welcome banner dismiss ---
     var welcomeBanner = document.getElementById('welcome-banner');
@@ -423,6 +468,15 @@
       .then(function(data) {
         allStudies = data;
         try {
+          // Keep header/welcome counts in sync with the data (never hard-coded)
+          var setText = function(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; };
+          var nCountries = new Set(allStudies.map(function(s){ return s.country; })).size;
+          var nTopics = new Set(allStudies.map(function(s){ return s.topic; })).size;
+          setText('stat-studies', allStudies.length);
+          setText('stat-countries', nCountries);
+          setText('stat-topics', nTopics);
+          setText('wc-studies', allStudies.length);
+          setText('wc-countries', nCountries);
           initAllFilters();
           renderCards();
           updateSearchUI();
@@ -593,6 +647,51 @@
     viewGrid?.addEventListener('click', () => { viewMode = 'grid'; updateViewToggle(); syncUrlParams(); });
     viewList?.addEventListener('click', () => { viewMode = 'list'; updateViewToggle(); syncUrlParams(); });
 
+    // --- Bookmarks ---
+    const btnSaved = document.getElementById('btn-saved');
+    const savedCountEl = document.getElementById('saved-count');
+
+    function updateSavedCount() {
+      const n = getBookmarks().length;
+      if (savedCountEl) { savedCountEl.textContent = n; savedCountEl.classList.toggle('visible', n > 0); }
+    }
+
+    // Delegate bookmark toggles on cards
+    cardGrid.addEventListener('click', e => {
+      const btn = e.target.closest('.card-bookmark');
+      if (!btn) return;
+      e.preventDefault();
+      const slug = btn.dataset.slug;
+      const nowSaved = toggleBookmark(slug);
+      btn.classList.toggle('saved', nowSaved);
+      btn.setAttribute('aria-pressed', String(nowSaved));
+      btn.innerHTML = icon(nowSaved ? 'bookmarkFill' : 'bookmark');
+      showToast(nowSaved ? 'Saved to your library' : 'Removed from saved');
+      if (savedOnly) renderCards();
+    });
+
+    btnSaved?.addEventListener('click', () => {
+      savedOnly = !savedOnly;
+      btnSaved.classList.toggle('active', savedOnly);
+      btnSaved.setAttribute('aria-pressed', String(savedOnly));
+      renderCards();
+    });
+
+    document.addEventListener('bookmarks-changed', updateSavedCount);
+    updateSavedCount();
+
+    // --- Random study ---
+    document.getElementById('btn-random')?.addEventListener('click', () => {
+      const pool = getFilteredStudies();
+      const list = pool.length ? pool : allStudies;
+      if (!list.length) return;
+      const pick = list[Math.floor(Math.random() * list.length)];
+      window.location.href = `./study.html?slug=${encodeURIComponent(pick.slug)}`;
+    });
+
+    // --- Insights dashboard ---
+    initInsights();
+
     // --- Keyboard shortcuts ---
     document.addEventListener('keydown', e => {
       if (e.key === '/' && document.activeElement !== searchInput && document.activeElement !== rqInput) {
@@ -621,6 +720,12 @@
     // --- Filter + Sort ---
     function getFilteredStudies() {
       let filtered = allStudies;
+
+      // Saved-only
+      if (savedOnly) {
+        const marks = getBookmarks();
+        filtered = filtered.filter(s => marks.indexOf(s.slug) !== -1);
+      }
 
       // Text search
       if (searchQuery) {
@@ -684,11 +789,16 @@
         if (decade) tags.push(decade);
         tags.push(study.region);
 
+        const saved = isBookmarked(study.slug);
+        const readTime = formatReadTime(study.readingMinutes);
+        const evLabel = { strong: 'Strong evidence', moderate: 'Moderate evidence', emerging: 'Emerging evidence' }[study.evidence] || '';
+
         return `
           <article class="case-card" style="animation-delay:${Math.min(idx * 0.02, 0.4)}s">
+            <button class="card-bookmark${saved ? ' saved' : ''}" data-slug="${escapeHtml(study.slug)}" aria-pressed="${saved}" aria-label="${saved ? 'Remove bookmark' : 'Save study'}" title="${saved ? 'Saved — click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')}</button>
             <div class="card-body">
               <span class="card-topic ${topicClass}">${escapeHtml(study.topic)}</span>
-              <h3 class="card-title">${escapeHtml(study.title)}</h3>
+              <h3 class="card-title"><a href="./study.html?slug=${encodeURIComponent(study.slug)}">${escapeHtml(study.title)}</a></h3>
               <div class="card-meta">
                 <span class="card-country">${icon('globe')} ${escapeHtml(study.country)}</span>
                 <span class="card-year">${escapeHtml(study.year)}</span>
@@ -701,10 +811,88 @@
                 <a href="./study.html?slug=${encodeURIComponent(study.slug)}" class="card-link">
                   Read study ${icon('arrowRight')}
                 </a>
+                <div class="card-footer-meta">
+                  ${evLabel ? `<span class="card-evidence ${study.evidence}" title="${evLabel}">${escapeHtml(study.evidence)}</span>` : ''}
+                  ${readTime ? `<span class="card-readtime">${icon('clock2')} ${readTime}</span>` : ''}
+                </div>
               </div>
             </div>
           </article>`;
       }).join('');
+    }
+
+    // --- Insights Dashboard ---
+    function initInsights() {
+      const btn = document.getElementById('btn-insights');
+      const panel = document.getElementById('insights-panel');
+      if (!btn || !panel) return;
+      let loaded = false;
+
+      function barChart(title, rows, type) {
+        if (!rows || !rows.length) return '';
+        const max = Math.max.apply(null, rows.map(r => r.count));
+        const bars = rows.map(r => {
+          const pct = Math.round((r.count / max) * 100);
+          const clickable = type ? ` data-filter-type="${type}" data-filter-value="${escapeHtml(r.label)}" role="button" tabindex="0"` : '';
+          return `<div class="insight-bar${type ? ' clickable' : ''}"${clickable}>
+            <span class="insight-bar-label">${escapeHtml(r.label)}</span>
+            <span class="insight-bar-track"><span class="insight-bar-fill" style="width:${pct}%"></span></span>
+            <span class="insight-bar-value">${r.count}</span>
+          </div>`;
+        }).join('');
+        return `<div class="insight-group"><h4 class="insight-group-title">${escapeHtml(title)}</h4>${bars}</div>`;
+      }
+
+      function render(stats) {
+        const t = stats.totals || {};
+        const tiles = [
+          { v: t.studies, l: 'Case studies' },
+          { v: t.countries, l: 'Countries' },
+          { v: t.topics, l: 'Topics' },
+          { v: (t.references || 0).toLocaleString(), l: 'Cited references' },
+          { v: Math.round((t.words || 0) / 1000) + 'k', l: 'Words of analysis' },
+        ];
+        panel.innerHTML = `
+          <div class="insight-tiles">
+            ${tiles.map(x => `<div class="insight-tile"><span class="insight-tile-value">${x.v}</span><span class="insight-tile-label">${x.l}</span></div>`).join('')}
+          </div>
+          <div class="insight-charts">
+            ${barChart('By topic', stats.byTopic, 'topic')}
+            ${barChart('By region', stats.byRegion, 'region')}
+            ${barChart('By decade', stats.byDecade, 'decade')}
+          </div>
+          <p class="insight-note">Data generated from ${t.studies} source files on ${escapeHtml(stats.generatedAt || '')}. Click a bar to filter the library.</p>`;
+
+        panel.querySelectorAll('[data-filter-type]').forEach(el => {
+          const apply = () => {
+            const { filterType, filterValue } = el.dataset;
+            if (filterType === 'topic') activeTopics.has(filterValue) ? activeTopics.delete(filterValue) : activeTopics.add(filterValue);
+            else if (filterType === 'region') activeRegions.has(filterValue) ? activeRegions.delete(filterValue) : activeRegions.add(filterValue);
+            else if (filterType === 'decade') activeDecades.has(filterValue) ? activeDecades.delete(filterValue) : activeDecades.add(filterValue);
+            topicChips?.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', activeTopics.has(c.dataset.topic)));
+            regionChips?.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', activeRegions.has(c.dataset.region)));
+            decadeChips?.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', activeDecades.has(c.dataset.decade)));
+            onFilterChange();
+            document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
+          };
+          el.addEventListener('click', apply);
+          el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); apply(); } });
+        });
+      }
+
+      btn.addEventListener('click', () => {
+        const open = panel.classList.toggle('open');
+        btn.classList.toggle('active', open);
+        btn.setAttribute('aria-expanded', String(open));
+        if (open && !loaded) {
+          loaded = true;
+          panel.innerHTML = '<div class="insight-loading">Loading insights…</div>';
+          fetch(`${DATA_BASE}/stats.json`)
+            .then(r => r.ok ? r.json() : Promise.reject())
+            .then(render)
+            .catch(() => { panel.innerHTML = '<div class="insight-loading">Insights unavailable.</div>'; });
+        }
+      });
     }
   }
 
@@ -743,6 +931,9 @@
       const currentIdx = masterList.findIndex(s => s.slug === study.slug);
       const prevStudy = currentIdx > 0 ? masterList[currentIdx - 1] : null;
       const nextStudy = currentIdx < masterList.length - 1 ? masterList[currentIdx + 1] : null;
+      const listEntry = currentIdx !== -1 ? masterList[currentIdx] : null;
+      const saved = isBookmarked(study.slug);
+      const readMins = (listEntry && listEntry.readingMinutes) || estimateReadingMinutes(study.content);
 
       const citations = parseCitations(study.content);
       const furtherReading = parseFurtherReading(study.content);
@@ -766,13 +957,20 @@
         </nav>
 
         <header class="study-header">
-          <span class="study-topic-tag ${topicClass}">${escapeHtml(study.topic)}</span>
+          <div class="study-header-top">
+            <span class="study-topic-tag ${topicClass}">${escapeHtml(study.topic)}</span>
+            <div class="study-actions">
+              <button class="study-action-btn" id="study-bookmark" aria-pressed="${saved}" title="${saved ? 'Saved — click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')} <span>${saved ? 'Saved' : 'Save'}</span></button>
+              <button class="study-action-btn" id="study-share" title="Share this study">${icon('share')} <span>Share</span></button>
+            </div>
+          </div>
           <h1 class="study-title">${escapeHtml(study.title)}</h1>
           <div class="study-meta">
             <span class="study-meta-item">${icon('globe')} <span>${escapeHtml(study.country)}</span></span>
             <span class="study-meta-item">${icon('map')} <span class="study-meta-label">Region</span> ${escapeHtml(study.region)}</span>
             <span class="study-meta-item">${icon('clock')} <span class="study-meta-label">Period</span> ${escapeHtml(study.year)}</span>
             ${citations.length > 0 ? `<span class="study-meta-item">${icon('article')} <span class="study-meta-label">Refs</span> ${citations.length}</span>` : ''}
+            <span class="study-meta-item">${icon('clock2')} ${formatReadTime(readMins)}</span>
           </div>
         </header>
 
@@ -882,7 +1080,38 @@
       initCitationCopy();
       if (related.length > 0) initLitMap(study, related, masterList);
       initTOCHighlight();
+      initReadingProgress();
+
+      // Bookmark + share actions
+      const bmBtn = document.getElementById('study-bookmark');
+      bmBtn?.addEventListener('click', () => {
+        const nowSaved = toggleBookmark(study.slug);
+        bmBtn.classList.toggle('saved', nowSaved);
+        bmBtn.setAttribute('aria-pressed', String(nowSaved));
+        bmBtn.innerHTML = icon(nowSaved ? 'bookmarkFill' : 'bookmark') + ` <span>${nowSaved ? 'Saved' : 'Save'}</span>`;
+        showToast(nowSaved ? 'Saved to your library' : 'Removed from saved');
+      });
+      if (isBookmarked(study.slug)) bmBtn?.classList.add('saved');
+      document.getElementById('study-share')?.addEventListener('click', () => shareStudy(study));
     }
+  }
+
+  // ── Reading Progress Bar ───────────────────────────────────────────
+
+  function initReadingProgress() {
+    const bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    const fill = bar.firstElementChild;
+    function update() {
+      const doc = document.documentElement;
+      const scrollable = doc.scrollHeight - doc.clientHeight;
+      const pct = scrollable > 0 ? Math.min(100, (window.scrollY / scrollable) * 100) : 0;
+      if (fill) fill.style.width = pct + '%';
+      bar.classList.toggle('visible', window.scrollY > 60);
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+    update();
   }
 
   // ── Cornell Notes ──────────────────────────────────────────────────

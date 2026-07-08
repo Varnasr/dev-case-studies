@@ -1,0 +1,41 @@
+{
+  "id": 201,
+  "slug": "kenya-deworming",
+  "title": "Primary School Deworming Project",
+  "country": "Kenya",
+  "region": "Sub-Saharan Africa",
+  "topic": "Health",
+  "year": "1998–2001",
+  "summary": "A randomized deworming programme in western Kenya cut school absenteeism by roughly a quarter at a cost of about $0.50 per child per year, and a decade-long follow-up found lasting gains in adult earnings — making it one of the most influential and most contested experiments in development economics.",
+  "keyData": [
+    {
+      "label": "Location",
+      "value": "Busia District, western Kenya"
+    },
+    {
+      "label": "Schools",
+      "value": "75 primary schools, ~30,000 pupils"
+    },
+    {
+      "label": "Design",
+      "value": "Phased-in randomized rollout (1998–2001)"
+    },
+    {
+      "label": "Cost",
+      "value": "~$0.50 per child per year"
+    },
+    {
+      "label": "Absenteeism",
+      "value": "Reduced by ~25% among treated pupils"
+    },
+    {
+      "label": "Long-run",
+      "value": "+~13% consumption; more hours worked at age 20s"
+    },
+    {
+      "label": "Scale-up",
+      "value": "Deworm the World reached 280M+ children"
+    }
+  ],
+  "content": "## Background\n\nIntestinal worm infections — hookworm, roundworm, whipworm, and schistosomiasis — are among the most widespread health problems of the rural poor. In the late 1990s, an estimated one in four people worldwide carried soil-transmitted helminth infections, concentrated in warm, low-sanitation regions. In the Busia district of western Kenya, baseline surveys found that more than 90% of primary-school children were infected with at least one type of worm.\n\nWorm infections are rarely fatal, but they sap children in ways that matter for schooling: anemia, fatigue, stunting, and listlessness. Because the drugs that treat them (albendazole and praziquantel) are cheap, safe, and given just once or twice a year, deworming looked like a plausible — but unproven — lever for improving both child health and school participation. The question was whether treating children actually changed their lives, and whether it was worth the money compared with the many other things a health or education budget could buy.\n\n## The Intervention\n\nThe Primary School Deworming Project was run by International Child Support (ICS), a Dutch NGO, in partnership with economists Michael Kremer and Edward Miguel. Rather than treating all 75 schools at once, the programme phased them in over three years in a randomly assigned order. This staggered rollout created, in effect, a large field experiment: schools treated earlier could be compared with otherwise-similar schools not yet reached.\n\nTreatment itself was simple. Trained public-health workers administered deworming pills to enrolled children, along with health education. The direct cost was strikingly low — on the order of $0.50 per child per year once drugs and delivery were combined.\n\nA crucial feature of the analysis was its attention to **externalities**. Because worms spread through the environment, treating one child reduces transmission to others nearby. The evaluation was designed to capture these spillovers, measuring effects not only on treated children but on untreated children in treated schools and in neighbouring schools.\n\n## Results & Evidence\n\nThe headline result, published by Miguel and Kremer in *Econometrica* (2004), was that deworming reduced school absenteeism by about 25% among treated pupils — a large effect for such a cheap intervention. Once the health externalities were accounted for, deworming emerged as one of the most cost-effective ways known to increase school participation, far cheaper per additional day of schooling than programmes that paid families or provided free uniforms.\n\nJust as important, the study showed that ignoring spillovers would badly understate the benefits: earlier studies that randomized treatment *within* schools had missed the transmission effects and therefore underestimated deworming's value.\n\nThe long-run evidence proved even more consequential. Baird, Hicks, Kremer, and Miguel, tracking the original cohort for roughly ten years and publishing in the *Quarterly Journal of Economics* (2016), found that children who had received two to three extra years of deworming worked more hours as young adults, were more likely to hold non-agricultural and wage jobs, and had meaningfully higher consumption — on the order of a 13% increase. A childhood health investment costing a few dollars appeared to raise adult living standards.\n\nThese findings helped launch **Deworm the World** (now run by Evidence Action), which supported governments in India, Kenya, Nigeria, and elsewhere to deworm hundreds of millions of children, and made deworming a favourite of cost-effectiveness-driven donors.\n\n## Challenges & Criticisms\n\nDeworming also became one of the most publicly contested results in the field — the so-called \"worm wars.\" A 2015 Cochrane systematic review (Taylor-Robinson and colleagues) concluded that the broad population-level evidence for mass deworming's effects on weight, cognition, and school performance was weak. Simultaneously, epidemiologists re-analyzing the original Kenya data (Aiken and colleagues; Davey and colleagues, in the *International Journal of Epidemiology*) identified coding errors and questioned some secondary results, though the core reduction in absenteeism largely survived re-analysis.\n\nThe episode sparked a broader debate about replication, the fragility of individual studies, and how to generalize from a single high-worm-burden setting to places where infection rates are lower. Critics argue that in low-prevalence areas the benefits shrink toward zero; defenders counter that where worm burdens are high, deworming remains extraordinarily cheap insurance. The controversy did not so much overturn the finding as sharpen the conditions under which it applies.\n\n## Key Lessons\n\n- **Externalities can dominate.** Because worms spread, the social returns to treating a child exceed the private returns; evaluations that ignore spillovers systematically undervalue such programmes.\n- **Cheap health inputs can be education policy.** A pill costing cents did more per dollar for school attendance than many programmes designed explicitly to boost enrollment.\n- **Long-run follow-up changes the verdict.** The most compelling case for deworming came not from test scores but from earnings a decade later — evidence only visible because the cohort was tracked for years.\n- **Context determines cost-effectiveness.** Deworming is a strong buy where infection rates are high and a weak one where they are low; \"does it work?\" is the wrong question without \"where?\"\n- **Replication is part of the evidence.** The worm wars showed that transparency, data-sharing, and re-analysis — even when uncomfortable — strengthen rather than undermine evidence-based policy.\n\n## References\n\n- Miguel, E. and Kremer, M. (2004). \"Worms: Identifying Impacts on Education and Health in the Presence of Treatment Externalities.\" *Econometrica*, 72(1), 159–217.\n- Baird, S., Hicks, J.H., Kremer, M., and Miguel, E. (2016). \"Worms at Work: Long-run Impacts of a Child Health Investment.\" *Quarterly Journal of Economics*, 131(4), 1637–1680.\n- Taylor-Robinson, D.C., et al. (2015). \"Deworming drugs for soil-transmitted intestinal worms in children.\" *Cochrane Database of Systematic Reviews*, Issue 7.\n- Aiken, A.M., Davey, C., Hargreaves, J.R., and Hayes, R.J. (2015). \"Re-analysis of health and educational impacts of a school-based deworming programme in western Kenya.\" *International Journal of Epidemiology*, 44(5), 1572–1580.\n- Ahuja, A., et al. (2015). \"When Should Governments Subsidize Health? The Case of Mass Deworming.\" *World Bank Economic Review*, 29(suppl_1), S9–S24."
+}

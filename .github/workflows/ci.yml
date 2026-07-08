@@ -7,7 +7,22 @@ on:
     branches: [main]
 
 jobs:
+  validate-data:
+    name: Validate case-study data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate data & derived artefacts are in sync
+        run: npm run validate
+
   check-links:
+    name: Check links
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -17,4 +32,3 @@ jobs:
         with:
           args: --accept 200,204,301,302,403,429 --exclude-mail --exclude "localhost|127.0.0.1|example.com|twitter.com|x.com|linkedin.com|facebook.com|instagram.com|t.me|wa.me|play.google.com|apps.apple.com" --timeout 30 --max-retries 2 "**/*.html" "**/*.md"
           fail: false
-

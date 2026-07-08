@@ -1,0 +1,41 @@
+{
+  "id": 204,
+  "slug": "bangladesh-female-stipend",
+  "title": "Female Secondary School Stipend Programme",
+  "country": "Bangladesh",
+  "region": "South Asia",
+  "topic": "Gender & Inclusion",
+  "year": "1994–present",
+  "summary": "Bangladesh paid rural families to keep their daughters in secondary school — conditional on attendance, passing marks, and staying unmarried — and within a decade girls had caught up with and overtaken boys in secondary enrollment, one of the fastest closings of an education gender gap anywhere, even as questions about learning quality lingered.",
+  "keyData": [
+    {
+      "label": "Launched",
+      "value": "1994 (nationwide), from early 1980s pilots"
+    },
+    {
+      "label": "Backers",
+      "value": "Government of Bangladesh, World Bank, ADB, NORAD"
+    },
+    {
+      "label": "Conditions",
+      "value": "75% attendance, 45% marks, remain unmarried"
+    },
+    {
+      "label": "Reach",
+      "value": "Millions of rural girls across ~460 subdistricts"
+    },
+    {
+      "label": "Enrollment",
+      "value": "Girls' secondary enrollment more than doubled"
+    },
+    {
+      "label": "Gender parity",
+      "value": "Girls overtook boys in secondary school by mid-2000s"
+    },
+    {
+      "label": "Side effects",
+      "value": "Later marriage; slower gains in learning quality"
+    }
+  ],
+  "content": "## Background\n\nAt independence in 1971 Bangladesh was one of the poorest countries in the world, with very low female literacy and a wide gender gap in schooling. Daughters were commonly withdrawn from school around puberty and married early; families saw little private return to educating a girl who would leave for her husband's household, and the costs — fees, uniforms, transport, and the risk to a girl's marriage prospects — fell on parents while the benefits seemed to accrue elsewhere.\n\nThrough the 1980s the government and NGOs experimented with paying families to change this calculus. A pilot stipend scheme in the Shombhugonj area in the early 1980s showed that modest payments could raise girls' enrollment and delay marriage. Encouraged, the government moved toward a nationwide programme.\n\n## The Intervention\n\nIn 1994 Bangladesh launched a national **Female Secondary School Stipend Programme** (implemented through projects including the Female Secondary School Assistance Project), backed by the World Bank, the Asian Development Bank, and NORAD. The programme paid stipends directly to rural girls in grades 6–10, along with covering tuition, disbursing the money into girls' own bank accounts to build financial identity.\n\nThe payments were conditional. To remain eligible a girl had to maintain at least **75% attendance**, achieve a passing academic standard (around **45% marks**), and — most distinctively — **remain unmarried** until she sat her Secondary School Certificate exam or turned eighteen. The unmarried condition explicitly targeted early marriage, one of the strongest forces pulling girls out of school.\n\nThe scheme was deliberately near-universal in its coverage of rural girls rather than tightly poverty-targeted, which simplified administration and built broad political support, but also meant many non-poor families received transfers.\n\n## Results & Evidence\n\nThe enrollment response was dramatic. Female secondary enrollment rose from a low base to several times its previous level over the programme's first decade, and the ratio of girls to boys in secondary school climbed steeply. By the mid-2000s, girls had reached parity with and then **overtaken** boys in secondary enrollment — a reversal of the historic gap achieved unusually fast, and one of the programme's most cited outcomes. Bangladesh became a standard example of a country closing its education gender gap through demand-side incentives.\n\nStudies by the World Bank and independent researchers (including Khandker, Pitt, and Fuwa; Schurmann; and others) documented large increases in girls' school participation and progression associated with the stipends. Research also linked the programme, and girls' schooling more broadly, to **later age at marriage** and, downstream, to lower fertility and greater female labour-force participation — though disentangling the stipend's specific contribution from Bangladesh's broader social change (rising garment employment, NGO expansion, family-planning success) is difficult.\n\n## Challenges & Criticisms\n\nThe programme's success at getting girls into classrooms outran its success at teaching them. Evaluations repeatedly flagged that **learning quality lagged enrollment**: many additional students sat in overcrowded, under-resourced schools, and test scores did not rise in proportion to attendance. Getting girls to school was necessary but not sufficient for building skills.\n\nThe design drew other criticisms. Near-universal coverage meant significant leakage to non-poor households, raising cost-effectiveness questions. The condition that girls **remain unmarried** — while effective against early marriage — raised concerns about tying a welfare benefit to the control of girls' personal lives, and created incentives to conceal marriages. Administrative problems, including delayed disbursements and verification difficulties in remote areas, recurred. And because the programme rewarded staying enrolled rather than learning, it arguably reinforced a system that valued attendance over achievement.\n\n## Key Lessons\n\n- **Demand-side incentives can move deep norms.** Paying families shifted an entrenched preference against girls' schooling and helped reverse a gender gap within a single decade.\n- **Conditions can target the binding constraint.** Tying eligibility to remaining unmarried directly attacked early marriage, the specific force pulling girls out of school.\n- **Enrollment gains do not guarantee learning.** Without parallel investment in school quality, incentive schemes fill classrooms faster than they build skills.\n- **Universal coverage trades targeting for simplicity and support.** Broad eligibility eased administration and politics but sent transfers to many who did not need them.\n- **Conditionality has ethical costs.** Conditions that regulate personal decisions can be effective yet raise legitimate concerns about coercion and the state's reach into family life.\n\n## References\n\n- Khandker, S.R., Pitt, M.M., and Fuwa, N. (2003). \"Subsidy to Promote Girls' Secondary Education: The Female Stipend Program in Bangladesh.\" World Bank, MPRA Paper.\n- Schurmann, A.T. (2009). \"Review of the Bangladesh Female Secondary School Stipend Project Using a Social Exclusion Framework.\" *Journal of Health, Population and Nutrition*, 27(4), 505–517.\n- Hahn, Y., Islam, A., Nuzhat, K., Smyth, R., and Yang, H.-S. (2018). \"Education, Marriage, and Fertility: Long-Term Evidence from a Female Stipend Program in Bangladesh.\" *Economic Development and Cultural Change*, 66(2), 383–415.\n- Raynor, J. and Wesson, K. (2006). \"The Girls' Stipend Program in Bangladesh.\" *Journal of Education for International Development*, 2(2).\n- Asian Development Bank (2006). *Bangladesh: Female Secondary School Assistance Project — Impact Evaluation*. Manila."
+}
