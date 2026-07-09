@@ -1496,3 +1496,14 @@ select:focus-visible,
 @media (max-width: 480px) {
   .about-hero { padding-top: var(--sp-8); }
 }
+
+
+/* ---------- Ecosystem cross-links (shared across ImpactMojo libraries) ---------- */
+.eco-nav { display: inline-flex; align-items: center; gap: 12px; }
+.eco-link {
+  font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);
+  border-bottom: 2px solid transparent; padding-bottom: 1px; white-space: nowrap;
+}
+.eco-link:hover { color: var(--accent); }
+.eco-link.current { color: var(--accent); border-bottom-color: var(--accent); }
+@media (max-width: 900px) { .eco-nav { display: none; } }
