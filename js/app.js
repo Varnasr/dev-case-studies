@@ -861,7 +861,7 @@
             ${barChart('By region', stats.byRegion, 'region')}
             ${barChart('By decade', stats.byDecade, 'decade')}
           </div>
-          <p class="insight-note">Data generated from ${t.studies} source files on ${escapeHtml(stats.generatedAt || '')}. Click a bar to filter the library.</p>`;
+          <p class="insight-note">Generated from ${t.studies} source files. Click a bar to filter the library.</p>`;
 
         panel.querySelectorAll('[data-filter-type]').forEach(el => {
           const apply = () => {
