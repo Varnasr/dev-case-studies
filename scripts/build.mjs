@@ -175,7 +175,8 @@ function buildStats(master) {
   const totalRefs = master.reduce((sum, s) => sum + (s.refs || 0), 0);
 
   return {
-    generatedAt: new Date().toISOString().slice(0, 10),
+    // NB: intentionally no timestamp here — the build must be deterministic so
+    // `--check` (CI) only fails on real data changes, not on the calendar date.
     totals: {
       studies: master.length,
       countries: new Set(master.map((s) => s.country)).size,
