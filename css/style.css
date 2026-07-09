@@ -1148,33 +1148,36 @@ h1, h2, h3, h4, h5, h6 {
    reading progress, study actions, about page). Loaded last so it wins.
    ========================================================================== */
 
-/* ---------- Refined design tokens (light) ---------- */
+/* ---------- Refined design tokens ----------
+   Brand VALUES live in the vendored ImpactMojo Kit (css/impactmojo-kit.css,
+   linked before this file); alias them here so the kit is the single source
+   of truth. Resolved values are unchanged. */
 :root {
-  --accent:         #235789;
-  --accent-hover:   #16416b;
-  --accent-light:   #e9f1f9;
-  --accent-2:       #2a9d8f;            /* teal secondary */
-  --brand-grad:     linear-gradient(135deg, #235789 0%, #2a7ab0 55%, #2a9d8f 130%);
-  --ring:           0 0 0 3px rgba(35,87,137,0.18);
-  --shadow-sm:      0 1px 2px rgba(16,32,52,0.06);
-  --shadow-md:      0 4px 14px rgba(16,32,52,0.09);
-  --shadow-lg:      0 12px 34px rgba(16,32,52,0.14);
-  --radius-sm:      6px;
-  --radius-md:      10px;
-  --radius-lg:      16px;
+  --accent:         var(--imx-accent);
+  --accent-hover:   var(--imx-accent-hover);
+  --accent-light:   var(--imx-accent-light);
+  --accent-2:       var(--imx-accent-2);
+  --brand-grad:     var(--imx-brand-grad);
+  --ring:           var(--imx-ring);
+  --shadow-sm:      var(--imx-shadow-sm);
+  --shadow-md:      var(--imx-shadow-md);
+  --shadow-lg:      var(--imx-shadow-lg);
+  --radius-sm:      var(--imx-radius-sm);
+  --radius-md:      var(--imx-radius-md);
+  --radius-lg:      var(--imx-radius-lg);
   --radius-xl:      22px;
 }
 
 [data-theme="dark"] {
-  --accent:         #6cb2ff;
-  --accent-hover:   #93c6ff;
-  --accent-light:   #16283c;
-  --accent-2:       #4fd1c5;
-  --brand-grad:     linear-gradient(135deg, #1b3b5c 0%, #23557f 55%, #1f5e57 130%);
-  --ring:           0 0 0 3px rgba(108,178,255,0.22);
-  --shadow-sm:      0 1px 2px rgba(0,0,0,0.5);
-  --shadow-md:      0 4px 16px rgba(0,0,0,0.55);
-  --shadow-lg:      0 14px 40px rgba(0,0,0,0.65);
+  --accent:         var(--imx-accent);
+  --accent-hover:   var(--imx-accent-hover);
+  --accent-light:   var(--imx-accent-light);
+  --accent-2:       var(--imx-accent-2);
+  --brand-grad:     var(--imx-brand-grad);
+  --ring:           var(--imx-ring);
+  --shadow-sm:      var(--imx-shadow-sm);
+  --shadow-md:      var(--imx-shadow-md);
+  --shadow-lg:      var(--imx-shadow-lg);
 }
 
 body { line-height: 1.65; }
