@@ -1,0 +1,29 @@
+{
+  "name": "dev-case-studies",
+  "version": "2.0.0",
+  "description": "Evidence-based development research library — 200+ cited case studies from across the Global South.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/build.mjs --check",
+    "dev": "node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Varna Sri Raman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Varnasr/dev-case-studies.git"
+  },
+  "keywords": [
+    "development",
+    "case-studies",
+    "international-development",
+    "evidence",
+    "global-south"
+  ]
+}

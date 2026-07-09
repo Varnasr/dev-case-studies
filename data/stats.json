@@ -1,0 +1,143 @@
+{
+  "generatedAt": "2026-07-08",
+  "totals": {
+    "studies": 204,
+    "countries": 117,
+    "regions": 7,
+    "topics": 10,
+    "references": 867,
+    "words": 227458
+  },
+  "byTopic": [
+    {
+      "label": "Economic Growth & Industrial Policy",
+      "count": 49
+    },
+    {
+      "label": "Social Protection",
+      "count": 38
+    },
+    {
+      "label": "Governance & Decentralization",
+      "count": 34
+    },
+    {
+      "label": "Health",
+      "count": 22
+    },
+    {
+      "label": "Agriculture & Food Security",
+      "count": 17
+    },
+    {
+      "label": "Financial Inclusion",
+      "count": 11
+    },
+    {
+      "label": "Environment & Climate",
+      "count": 11
+    },
+    {
+      "label": "Infrastructure & Urbanization",
+      "count": 10
+    },
+    {
+      "label": "Education",
+      "count": 8
+    },
+    {
+      "label": "Gender & Inclusion",
+      "count": 4
+    }
+  ],
+  "byRegion": [
+    {
+      "label": "Sub-Saharan Africa",
+      "count": 46
+    },
+    {
+      "label": "Latin America & Caribbean",
+      "count": 40
+    },
+    {
+      "label": "East Asia & Pacific",
+      "count": 35
+    },
+    {
+      "label": "Global",
+      "count": 25
+    },
+    {
+      "label": "Middle East & North Africa",
+      "count": 21
+    },
+    {
+      "label": "Europe & Central Asia",
+      "count": 20
+    },
+    {
+      "label": "South Asia",
+      "count": 17
+    }
+  ],
+  "byDecade": [
+    {
+      "label": "1910s",
+      "count": 2
+    },
+    {
+      "label": "1920s",
+      "count": 1
+    },
+    {
+      "label": "1930s",
+      "count": 1
+    },
+    {
+      "label": "1940s",
+      "count": 3
+    },
+    {
+      "label": "1950s",
+      "count": 4
+    },
+    {
+      "label": "1960s",
+      "count": 7
+    },
+    {
+      "label": "1970s",
+      "count": 11
+    },
+    {
+      "label": "1980s",
+      "count": 17
+    },
+    {
+      "label": "1990s",
+      "count": 40
+    },
+    {
+      "label": "2000s",
+      "count": 81
+    },
+    {
+      "label": "2010s",
+      "count": 35
+    },
+    {
+      "label": "2020s",
+      "count": 2
+    }
+  ],
+  "byEvidence": [
+    {
+      "label": "strong",
+      "count": 196
+    },
+    {
+      "label": "emerging",
+      "count": 8
+    }
+  ]
+}

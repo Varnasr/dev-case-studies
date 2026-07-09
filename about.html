@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About &amp; Methodology | Dev Case Studies</title>
+  <script>
+    (function() {
+      var KEY = 'imx_theme';
+      var saved = null;
+      try { saved = localStorage.getItem(KEY); } catch (e) {}
+      function resolve(pref) {
+        if (pref === 'light' || pref === 'dark') return pref;
+        return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', resolve(saved));
+    })();
+  </script>
+  <meta name="description" content="How the Dev Case Studies library is built, curated, and cited — methodology, evidence tiers, data model, and how to contribute.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About & Methodology | Dev Case Studies">
+  <meta property="og:description" content="How the Dev Case Studies library is built, curated, and cited.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5f8a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/><path d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/></svg>" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <a href="#about-main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="./index.html" class="site-logo">
+        <span class="site-logo-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span></span>
+        <span>Dev Case Studies</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="./index.html" class="site-nav-link">Library</a>
+        <div class="theme-selector" role="group" aria-label="Theme selection">
+          <button class="theme-btn" data-theme="system" title="System theme" aria-label="Use system theme">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </button>
+          <button class="theme-btn" data-theme="light" title="Light theme" aria-label="Use light theme">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+          <button class="theme-btn" data-theme="dark" title="Dark theme" aria-label="Use dark theme">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="about-main">
+    <div class="container about-container">
+
+      <section class="about-hero">
+        <span class="about-eyebrow">About the library</span>
+        <h1 class="about-title">Evidence you can actually trace</h1>
+        <p class="about-lede">Dev Case Studies is a curated, openly licensed library of <strong>204 real development interventions</strong> from 117 countries. Each study documents what was tried, what happened, and what the evidence says — with every claim tied back to a citable source.</p>
+        <div class="about-stat-row" id="about-stats">
+          <div class="about-stat"><span class="about-stat-num">204</span><span class="about-stat-label">Case studies</span></div>
+          <div class="about-stat"><span class="about-stat-num">117</span><span class="about-stat-label">Countries</span></div>
+          <div class="about-stat"><span class="about-stat-num">10</span><span class="about-stat-label">Topics</span></div>
+          <div class="about-stat"><span class="about-stat-num">800+</span><span class="about-stat-label">Cited references</span></div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <h2>Why this exists</h2>
+        <p>Development practice is full of confident claims and thin evidence. Programmes get copied across borders on the strength of a compelling story rather than a careful reading of what actually worked, for whom, and under what conditions. This library exists to make the evidence legible: to sit next to the theory and show what interventions look like in the field — including the failures, the trade-offs, and the cases where the honest answer is "we don't really know yet."</p>
+        <p>It is built for students, researchers, and practitioners who need cited evidence and real-world lessons rather than marketing.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>How studies are selected</h2>
+        <p>Cases are chosen to span regions, decades, and sectors — and, deliberately, to include interventions that <em>failed</em> or produced mixed results alongside the celebrated successes. A resource-curse case sits beside a sovereign-wealth-fund success; a cash-transfer triumph beside a subsidy reform that sparked riots. The aim is a balanced evidence base, not a highlight reel.</p>
+        <ul class="about-list">
+          <li><strong>Real interventions.</strong> Every case is an actual programme, policy, or reform — not a hypothetical or a model.</li>
+          <li><strong>Documented outcomes.</strong> Each case reports outcomes with at least one verifiable source, and usually several.</li>
+          <li><strong>Honest about uncertainty.</strong> Where the causal evidence is weak, the study says so rather than overclaiming.</li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <h2>The evidence tiers</h2>
+        <p>Not all evidence is equal. Each study is automatically tagged with an evidence tier based on the number of citable references and whether the underlying research uses credible causal-identification methods (randomised trials, quasi-experiments, or systematic reviews).</p>
+        <div class="about-tiers">
+          <div class="about-tier strong">
+            <span class="about-tier-name">Strong</span>
+            <p>Multiple references <em>and</em> rigorous causal evidence — RCTs, natural experiments, difference-in-differences, or meta-analyses.</p>
+          </div>
+          <div class="about-tier moderate">
+            <span class="about-tier-name">Moderate</span>
+            <p>Several credible sources with observational or descriptive evidence, but without a clean causal design.</p>
+          </div>
+          <div class="about-tier emerging">
+            <span class="about-tier-name">Emerging</span>
+            <p>Limited formal evaluation. The story is documented, but strong conclusions would be premature.</p>
+          </div>
+        </div>
+        <p class="about-caveat">The tier is a signal, not a verdict. A "strong" tag means the evidence is well-identified — it does not mean the programme was good. Read the study.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>How to use the library</h2>
+        <ul class="about-list">
+          <li><strong>Search &amp; filter</strong> by topic, region, or decade — or ask a plain-language research question and let the matcher surface relevant cases.</li>
+          <li><strong>Save studies</strong> to a personal reading list that lives in your browser (no account needed).</li>
+          <li><strong>Take Cornell notes</strong> directly on each study page and export them as Markdown for your own work.</li>
+          <li><strong>Follow the citations.</strong> Every reference is copy-ready, and related studies are surfaced as a small literature map.</li>
+          <li><strong>Explore the Insights dashboard</strong> on the home page to see how the collection is distributed across topics, regions, and decades.</li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <h2>How it's built</h2>
+        <p>The library is deliberately simple and durable: static HTML, CSS, and vanilla JavaScript with no runtime framework, so it loads fast and will keep working for years. Behind that sits a small, zero-dependency Node build pipeline that treats each case study as a single source-of-truth JSON file and generates everything else — the card index, a search index, the statistics dashboard, and the sitemap — automatically. A continuous-integration check validates every study against the schema and fails the build if the generated data drifts out of sync.</p>
+        <p>The full data model and build commands are documented in <a href="https://github.com/Varnasr/dev-case-studies/blob/main/data/README.md" target="_blank" rel="noopener noreferrer">the data README</a>.</p>
+      </section>
+
+      <section class="about-section">
+        <h2>Contributing</h2>
+        <p>Corrections, better citations, and new case studies are all welcome. Each new study needs a programme name, country and period, a 200–400 word description, evidence of outcomes, and at least two verifiable sources. Open an issue or a pull request on <a href="https://github.com/Varnasr/dev-case-studies" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+      </section>
+
+      <section class="about-section about-colophon">
+        <h2>Colophon</h2>
+        <p>Dev Case Studies is part of the <a href="https://impactmojo.in" target="_blank" rel="noopener noreferrer">ImpactMojo</a> learning platform and the OpenStacks for Change initiative. Content is released under the MIT License.</p>
+        <p class="about-cite">Suggested citation — Sri Raman, V. (2025). <em>Dev Case Studies: 204 real development case studies from 117 countries</em> [Dataset]. ImpactMojo.</p>
+        <a href="./index.html" class="back-to-library"><span class="si"><svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></span> Browse the library</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p><strong>Built for learning.</strong> Every case study grounded in real interventions with cited evidence. An educational resource for students, researchers, and practitioners of international development.</p>
+    </div>
+  </footer>
+
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top" title="Scroll to top"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></button>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="./js/app.js"></script>
+  <script>
+    (function() {
+      var KEY = 'imx_theme';
+      var html = document.documentElement;
+      function getSaved() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+      function resolve(pref) {
+        if (pref === 'light' || pref === 'dark') return pref;
+        return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      }
+      function apply(pref) {
+        html.setAttribute('data-theme', resolve(pref));
+        var active = pref || 'system';
+        document.querySelectorAll('.theme-btn').forEach(function(btn) {
+          btn.classList.toggle('active', btn.getAttribute('data-theme') === active);
+        });
+      }
+      function setTheme(pref) {
+        try {
+          if (pref === 'system' || !pref) localStorage.removeItem(KEY);
+          else localStorage.setItem(KEY, pref);
+        } catch (e) {}
+        apply(pref);
+      }
+      apply(getSaved());
+      document.querySelectorAll('.theme-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() { setTheme(btn.getAttribute('data-theme')); });
+      });
+      if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+          if (!getSaved()) apply(null);
+        });
+      }
+    })();
+
+    // Pull live totals from the generated stats file when available.
+    fetch('./data/stats.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(s){
+      if (!s || !s.totals) return;
+      var el = document.getElementById('about-stats');
+      if (!el) return;
+      var t = s.totals;
+      var tiles = [
+        [t.studies, 'Case studies'],
+        [t.countries, 'Countries'],
+        [t.topics, 'Topics'],
+        [(t.references || 0).toLocaleString() + '+', 'Cited references']
+      ];
+      el.innerHTML = tiles.map(function(x){
+        return '<div class="about-stat"><span class="about-stat-num">' + x[0] + '</span><span class="about-stat-label">' + x[1] + '</span></div>';
+      }).join('');
+    }).catch(function(){});
+  </script>
+</body>
+</html>
