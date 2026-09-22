@@ -45,8 +45,17 @@ function readingMinutes(content) {
   return Math.max(1, Math.round(countWords(content) / WORDS_PER_MINUTE));
 }
 
+// The citation section is headed "References" in 189 studies and "Further
+// Reading" in the 15 written to the later, longer template, which is every
+// South Asia study bar two. Those 15 carry five full academic citations each
+// (Imbert and Papp in AEJ: Applied, Dreze and Khera in World Development, and
+// so on) and this function returned 0 for all of them, so the library reported
+// 867 references where it holds 942, and the --check run printed "no parseable
+// References section" as a warning that reads like missing citations and was
+// in fact a heading this regex did not know. No study carries both headings,
+// so nothing is counted twice.
 function countReferences(content) {
-  const m = (content || '').match(/## (?:References|Sources|Bibliography)\s*\n([\s\S]*?)(?=\n## |\n---\s*$|$)/i);
+  const m = (content || '').match(/## (?:References|Sources|Bibliography|Further Reading)\s*\n([\s\S]*?)(?=\n## |\n---\s*$|$)/i);
   if (!m) return 0;
   return m[1].trim().split('\n')
     .map((l) => l.replace(/^[-*]\s*/, '').replace(/^\d+\.\s*/, '').trim())

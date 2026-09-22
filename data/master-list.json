@@ -640,8 +640,8 @@
     "summary": "India's Unified Payments Interface (UPI), launched in 2016, became the world's most successful real-time digital payments system, processing over 13 billion transactions monthly by 2024. UPI enabled India to leapfrog card-based payment infrastructure, bringing millions of small merchants into the digital economy, though its zero-fee model raises long-term sustainability questions.",
     "readingMinutes": 16,
     "words": 3397,
-    "refs": 0,
-    "evidence": "emerging"
+    "refs": 5,
+    "evidence": "strong"
   },
   {
     "id": 47,
@@ -654,7 +654,7 @@
     "summary": "India built the world's most ambitious digital welfare delivery system using the JAM Trinity -- Jan Dhan bank accounts, Aadhaar biometric identity, and Mobile phones -- channeling over 30 lakh crore rupees in direct benefit transfers since 2013. While the system significantly reduced leakage in programs like LPG subsidies, it also created painful exclusion errors where genuine beneficiaries lost access due to biometric failures and connectivity gaps.",
     "readingMinutes": 12,
     "words": 2604,
-    "refs": 0,
+    "refs": 5,
     "evidence": "strong"
   },
   {
@@ -668,7 +668,7 @@
     "summary": "The Mahatma Gandhi National Rural Employment Guarantee Act, enacted in 2005, guarantees 100 days of manual work per year to every rural household, making it the world's largest workfare program with over 260 million registered workers. Rigorous evidence shows it raised rural wages by 4-8% and reduced poverty, while serving as a critical safety net during droughts and COVID-19, though chronic payment delays and wide interstate variation in implementation quality persist.",
     "readingMinutes": 13,
     "words": 2651,
-    "refs": 0,
+    "refs": 5,
     "evidence": "strong"
   },
   {
@@ -682,7 +682,7 @@
     "summary": "Kerala achieved life expectancy of 77.3 years, literacy of 96.2%, and infant mortality of 6 per 1,000 -- comparable to middle-income countries -- on per-capita income that remained below the Indian average for most of its history. Built on radical land reform, massive public investment in education and health, and a strong redistributive political culture, the model now faces challenges from fiscal stress, aging, and dependence on Gulf remittances.",
     "readingMinutes": 15,
     "words": 3072,
-    "refs": 0,
+    "refs": 5,
     "evidence": "strong"
   },
   {
@@ -696,8 +696,8 @@
     "summary": "India's PLI scheme, launched in 2020-21 with a committed outlay of 1.97 lakh crore rupees across 14 sectors, represents the country's most explicit embrace of industrial policy since 1991 liberalization. Mobile phone manufacturing has been the standout success, with exports surging from $3 billion to over $15 billion, though results across other sectors remain deeply uneven.",
     "readingMinutes": 14,
     "words": 2910,
-    "refs": 0,
-    "evidence": "emerging"
+    "refs": 5,
+    "evidence": "strong"
   },
   {
     "id": 51,
@@ -710,8 +710,8 @@
     "summary": "The Swachh Bharat Mission built over 110 million household toilets between 2014 and 2019, dramatically reducing open defecation from 550 million people to an estimated 50-100 million. While this was one of the largest behavior change campaigns in history, significant gaps between declared Open Defecation Free status and actual toilet usage persist, particularly in northern India, and health impact evidence remains mixed.",
     "readingMinutes": 15,
     "words": 3127,
-    "refs": 0,
-    "evidence": "emerging"
+    "refs": 5,
+    "evidence": "strong"
   },
   {
     "id": 52,
@@ -724,7 +724,7 @@
     "summary": "BRAC pioneered the ultra-poor graduation model combining asset transfers, skills training, cash stipends, and intensive coaching to permanently lift the extreme poor out of destitution. A landmark six-country RCT published in Science found sustained income gains of 38% three years after the program ended, making it one of the most rigorously validated approaches to ending extreme poverty, now replicated in over 50 countries.",
     "readingMinutes": 17,
     "words": 3548,
-    "refs": 0,
+    "refs": 5,
     "evidence": "strong"
   },
   {
@@ -738,7 +738,7 @@
     "summary": "Bangladesh's ready-made garment sector grew from $31 million in exports in 1983 to over $45 billion by 2023, employing roughly 4 million workers -- approximately 80% women -- and becoming the single most important driver of the country's poverty reduction. The 2013 Rana Plaza collapse, which killed 1,134 workers, exposed systemic safety failures, but post-disaster reforms demonstrated that international pressure could improve factory conditions without destroying the industry.",
     "readingMinutes": 14,
     "words": 3026,
-    "refs": 0,
+    "refs": 5,
     "evidence": "strong"
   },
   {
@@ -752,8 +752,8 @@
     "summary": "Nepal's community forestry program transferred management of national forests to over 22,500 local Community Forest User Groups managing 2.3 million hectares -- roughly one-third of the country's forests -- involving 2.9 million households. The program reversed decades of deforestation in the middle hills, though serious equity critiques persist around elite capture of benefits and limited women's participation in decision-making.",
     "readingMinutes": 16,
     "words": 3379,
-    "refs": 0,
-    "evidence": "emerging"
+    "refs": 5,
+    "evidence": "strong"
   },
   {
     "id": 55,
@@ -766,8 +766,8 @@
     "summary": "Nepal's migrant worker remittances reached $9.3 billion in 2022-23, equivalent to 23-25% of GDP, making it one of the world's most remittance-dependent economies. While remittances drove a 50% poverty reduction since 2000, at least 7,500 Nepali workers died abroad between 2008 and 2020, and the economy exhibits classic Dutch disease symptoms as manufacturing and agriculture stagnate.",
     "readingMinutes": 18,
     "words": 3755,
-    "refs": 0,
-    "evidence": "emerging"
+    "refs": 5,
+    "evidence": "strong"
   },
   {
     "id": 56,
@@ -780,7 +780,7 @@
     "summary": "Pakistan's BISP, launched in 2008, grew into one of the developing world's largest social safety nets, reaching over 9 million families through an innovative poverty scorecard system with payments made directly to women. A rare example of institutional continuity across Pakistan's fractured political landscape, BISP proved that even fragile states can build durable social protection, though transfers remain too small to be transformative.",
     "readingMinutes": 14,
     "words": 3024,
-    "refs": 0,
+    "refs": 5,
     "evidence": "strong"
   },
   {
@@ -794,8 +794,8 @@
     "summary": "Sri Lanka experienced its worst economic crisis since independence in 2022, defaulting on $51 billion in foreign debt as foreign reserves fell below $50 million and inflation spiked to 69.8%. The crisis was driven by populist tax cuts, pandemic-induced tourism collapse, and a catastrophic overnight ban on synthetic fertilizers, ultimately forcing the president to flee the country and triggering an IMF bailout program.",
     "readingMinutes": 17,
     "words": 3493,
-    "refs": 0,
-    "evidence": "emerging"
+    "refs": 5,
+    "evidence": "strong"
   },
   {
     "id": 58,
@@ -808,8 +808,8 @@
     "summary": "Since 2008, Bhutan has operationalized Gross National Happiness as a formal policy screening tool with a 33-indicator index, a dedicated commission with veto power over legislation, and periodic national surveys across 9 domains of wellbeing. While achieving strong forest conservation, near-universal education, and low inequality, Bhutan faces 29% youth unemployment and economic dependence on hydropower.",
     "readingMinutes": 15,
     "words": 3052,
-    "refs": 0,
-    "evidence": "emerging"
+    "refs": 5,
+    "evidence": "strong"
   },
   {
     "id": 59,
@@ -822,8 +822,8 @@
     "summary": "The Maldives, with 80% of its islands less than one metre above sea level, faces an existential climate threat and has pursued adaptation ranging from building the artificial island of Hulhumale to house a third of its population, to pioneering climate diplomacy at the UN. The nation's survival strategy is constrained by the paradox that its economic lifeline -- luxury tourism -- drives the very emissions threatening its existence.",
     "readingMinutes": 15,
     "words": 3062,
-    "refs": 0,
-    "evidence": "emerging"
+    "refs": 5,
+    "evidence": "strong"
   },
   {
     "id": 60,
@@ -836,7 +836,7 @@
     "summary": "South Asia is home to approximately 57 million stunted children under five -- more than sub-Saharan Africa -- with India alone accounting for one-third of the world's stunted children. Bangladesh achieved the region's most dramatic reduction from 51% to 28%, largely through sanitation elimination, women's empowerment, and effective community health workers, while India and Pakistan have lagged despite far greater resources.",
     "readingMinutes": 16,
     "words": 3347,
-    "refs": 0,
+    "refs": 5,
     "evidence": "strong"
   },
   {

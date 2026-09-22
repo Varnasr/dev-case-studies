@@ -1,0 +1,31 @@
+name: Link check
+
+# Split out of ci.yml on 2026-09-22 for two reasons.
+#
+# It carried `fail: false` on pull requests, so a contributor got a result they
+# could neither act on nor be blocked by. And it shared a workflow run with the
+# data validation: this job talks to a few hundred third-party hosts, and a job
+# cancelled by its own timeout cancels the whole run, so a slow external host
+# could take the validation down with it and report the run as cancelled.
+#
+# On the schedule it fails, because external link rot needs no commit to happen
+# and so belongs on a timer rather than on a pull request.
+on:
+  schedule:
+    - cron: '41 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --accept 200,204,301,302,403,429 --exclude-mail
+            --exclude "localhost|127.0.0.1|example.com|twitter.com|x.com|linkedin.com|facebook.com|instagram.com|t.me|wa.me|play.google.com|apps.apple.com"
+            --timeout 30 --max-retries 2 "**/*.html" "**/*.md"
+          fail: true
