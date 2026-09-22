@@ -4,7 +4,7 @@
     "countries": 117,
     "regions": 7,
     "topics": 10,
-    "references": 867,
+    "references": 942,
     "words": 227458
   },
   "byTopic": [
@@ -132,11 +132,7 @@
   "byEvidence": [
     {
       "label": "strong",
-      "count": 196
-    },
-    {
-      "label": "emerging",
-      "count": 8
+      "count": 204
     }
   ]
 }
