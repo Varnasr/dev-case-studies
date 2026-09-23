@@ -21,7 +21,9 @@
   --accent-warm-bg: #faf3eb;
   --text:           #2c2c2c;
   --text-secondary: #555555;
-  --text-muted:     #8a8a8a;
+  /* 3.42:1 on the page and 3.14:1 on the warm panel. It is the ink of every
+     header stat, the results count and the filter note. */
+  --text-muted:     #6b6b6b;
   --border:         #e0ddd7;
   --border-light:   #eae7e1;
   --divider:        #d4d0c8;
@@ -34,8 +36,8 @@
   --radius-lg:      12px;
 
   --evidence-strong:   #3d7a5f;
-  --evidence-moderate: #c17825;
-  --evidence-emerging: #8a8a8a;
+  --evidence-moderate: #9d5f17;
+  --evidence-emerging: #6b6b6b;
 
   --topic-financial:     #8b6914;
   --topic-financial-bg:  #f9f3e3;
@@ -306,9 +308,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Chip with count */
 .chip .chip-count {
   display: inline-block; margin-left: 3px;
-  font-size: 0.62rem; opacity: 0.65; font-weight: 600;
+  font-size: 0.62rem; font-weight: 600; color: var(--text-muted);
 }
-.chip.active .chip-count { opacity: 0.85; }
+.chip.active .chip-count { color: inherit; }
 
 .sort-select {
   width: 100%; padding: 6px 8px; font-size: 0.78rem;
@@ -1090,7 +1092,9 @@ h1, h2, h3, h4, h5, h6 {
   --accent-warm-bg: #2a1f12;
   --text:           #e6edf3;
   --text-secondary: #b0b8c1;
-  --text-muted:     #7d8590;
+  /* 4.34:1 on --bg-warm and 4.22:1 on the chip fill. It is the ink of every
+     header stat and every chip count, so it is a number a reader came for. */
+  --text-muted:     #8b949e;
   --border:         #30363d;
   --border-light:   #21262d;
   --divider:        #30363d;
@@ -1098,6 +1102,24 @@ h1, h2, h3, h4, h5, h6 {
   --shadow-md:      0 2px 8px rgba(0,0,0,0.5);
   --shadow-lg:      0 4px 20px rgba(0,0,0,0.6);
   --shadow-card:    0 1px 4px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04);
+
+  /* The dark block redefined only the ten fills and left the ten inks at
+     their light values, so every topic chip was dark ink on a dark fill:
+     --topic-economic #4a4a4a on #1c1c1c is 1.92:1, --topic-governance 2.03,
+     --topic-infrastructure 2.19, --topic-agriculture 2.70. Darkening a fill
+     and keeping its ink preserves the hue and destroys the contrast, which is
+     why all ten failed and none of them looked obviously wrong. Each ink below
+     is the same hue lifted until it clears 5:1 on its own fill. */
+  --topic-financial:        #D3B45F;
+  --topic-health:           #C77575;
+  --topic-education:        #6A9DC8;
+  --topic-social:           #A57CC0;
+  --topic-agriculture:      #80B280;
+  --topic-economic:         #999999;
+  --topic-environment:      #6FC3B3;
+  --topic-governance:       #9F81BB;
+  --topic-infrastructure:   #B87A9A;
+  --topic-gender:           #B57D9A;
 
   --topic-financial-bg:     #2a2008;
   --topic-health-bg:        #2a1414;
