@@ -290,15 +290,24 @@
     return findings;
   }
 
-  function calculateEvidenceStrength(content, citations) {
-    const refCount = citations.length;
-    const hasRCT = /\b(RCT|randomized|randomised|experiment|causal|quasi-experiment|difference.in.difference|regression discontinuity|instrumental variable)/i.test(content || '');
-    const hasMeta = /\b(meta.analysis|systematic review|Cochrane|Campbell)/i.test(content || '');
-    if (refCount >= 5 && (hasRCT || hasMeta)) return { level: 'strong', label: 'Strong Evidence Base', pct: 90 };
-    if (refCount >= 4 || hasRCT) return { level: 'strong', label: 'Strong Evidence Base', pct: 80 };
-    if (refCount >= 3) return { level: 'moderate', label: 'Moderate Evidence Base', pct: 60 };
-    if (refCount >= 1) return { level: 'emerging', label: 'Emerging Evidence', pct: 35 };
-    return { level: 'emerging', label: 'Limited Formal Evidence', pct: 15 };
+  /* What the study cites, stated rather than scored.
+   *
+   * This returned a level, a label and a percentage that drove a filled meter.
+   * Every study in this library carries four or five references, so the first
+   * two branches caught all 204 and the meter read "Strong Evidence Base" at
+   * 80 or 90 per cent on every page. A bar at 80 per cent implies a
+   * measurement against a maximum. There is no maximum and nothing was
+   * measured: it was a constant drawn as a gauge.
+   *
+   * The two regexes underneath it are not constants. Over the library, 61 of
+   * 204 studies cite experimental or quasi-experimental work and 7 cite a
+   * systematic review or meta-analysis. They are reported as facts now. */
+  function evidenceFacts(content, citations) {
+    return {
+      sources: citations.length,
+      experimental: /\b(RCT|randomized|randomised|experiment|causal|quasi-experiment|difference.in.difference|regression discontinuity|instrumental variable)/i.test(content || ''),
+      review: /\b(meta.analysis|systematic review|Cochrane|Campbell)/i.test(content || ''),
+    };
   }
 
   function parseLessons(content) {
@@ -381,6 +390,7 @@
     let activeRegions = new Set();
     let activeTopics = new Set();
     let activeDecades = new Set();
+    let activeEvidence = new Set();   // 'experimental' | 'review'
     let searchQuery = '';
     let rqQuery = '';
     let rqMatchedTerms = [];
@@ -409,6 +419,7 @@
     const regionChips = document.getElementById('region-chips');
     const topicChips = document.getElementById('topic-chips');
     const decadeChips = document.getElementById('decade-chips');
+    const evidenceChips = document.getElementById('evidence-chips');
     const activeFiltersEl = document.getElementById('active-filters');
     const resultsCountEl = document.getElementById('results-count');
     const cardGrid = document.getElementById('card-grid');
@@ -418,6 +429,7 @@
     const regionCount = document.getElementById('region-count');
     const topicCount = document.getElementById('topic-count');
     const decadeCount = document.getElementById('decade-count');
+    const evidenceCount = document.getElementById('evidence-count');
 
     if (!cardGrid) return;
 
@@ -427,6 +439,7 @@
     if (params.regions) params.regions.split(',').forEach(r => activeRegions.add(r));
     if (params.topics) params.topics.split(',').forEach(t => activeTopics.add(t));
     if (params.decades) params.decades.split(',').forEach(d => activeDecades.add(d));
+    if (params.evidence) params.evidence.split(',').forEach(e => activeEvidence.add(e));
     if (params.sort) sortMode = params.sort;
     if (params.view) viewMode = params.view;
 
@@ -544,6 +557,28 @@
         });
       }
 
+      /* The kind of evidence a study cites, read from its own text at build
+         time. Unlike the evidence tier, which is 'strong' on all 204, these
+         two vary: 61 studies cite experimental or quasi-experimental work and
+         7 cite a systematic review or meta-analysis. */
+      const EVIDENCE_FACETS = [
+        ['experimental', 'Cites experimental work', s => s.citesExperimental],
+        ['review',       'Cites a review or meta-analysis', s => s.citesReview],
+      ];
+      if (evidenceChips) {
+        evidenceChips.innerHTML = EVIDENCE_FACETS.map(([key, label, test]) => {
+          const n = allStudies.filter(test).length;
+          return `<button class="chip${activeEvidence.has(key) ? ' active' : ''}" data-evidence="${key}">${escapeHtml(label)} <span class="chip-count">${n}</span></button>`;
+        }).join('');
+        evidenceChips.addEventListener('click', e => {
+          const chip = e.target.closest('.chip'); if (!chip) return;
+          const key = chip.dataset.evidence;
+          if (activeEvidence.has(key)) { activeEvidence.delete(key); chip.classList.remove('active'); }
+          else { activeEvidence.add(key); chip.classList.add('active'); }
+          onFilterChange();
+        });
+      }
+
       updateActiveFilters();
     }
 
@@ -558,6 +593,7 @@
       if (topicCount) { topicCount.textContent = activeTopics.size; topicCount.classList.toggle('visible', activeTopics.size > 0); }
       if (regionCount) { regionCount.textContent = activeRegions.size; regionCount.classList.toggle('visible', activeRegions.size > 0); }
       if (decadeCount) { decadeCount.textContent = activeDecades.size; decadeCount.classList.toggle('visible', activeDecades.size > 0); }
+      if (evidenceCount) { evidenceCount.textContent = activeEvidence.size; evidenceCount.classList.toggle('visible', activeEvidence.size > 0); }
     }
 
     function updateActiveFilters() {
@@ -566,6 +602,8 @@
       activeRegions.forEach(r => tags.push(`<span class="active-filter-tag" data-type="region" data-value="${escapeHtml(r)}">${escapeHtml(r)} <span class="remove">\u00D7</span></span>`));
       activeTopics.forEach(t => tags.push(`<span class="active-filter-tag" data-type="topic" data-value="${escapeHtml(t)}">${escapeHtml(t)} <span class="remove">\u00D7</span></span>`));
       activeDecades.forEach(d => tags.push(`<span class="active-filter-tag" data-type="decade" data-value="${d}">${d} <span class="remove">\u00D7</span></span>`));
+      const EV_LABEL = { experimental: 'Cites experimental work', review: 'Cites a review or meta-analysis' };
+      activeEvidence.forEach(e => tags.push(`<span class="active-filter-tag" data-type="evidence" data-value="${e}">${EV_LABEL[e] || e} <span class="remove">\u00D7</span></span>`));
       if (tags.length > 0) tags.push(`<button class="clear-all-btn" id="clear-all-filters">Clear all</button>`);
       activeFiltersEl.innerHTML = tags.join('');
 
@@ -575,12 +613,13 @@
           if (type === 'region') { activeRegions.delete(value); regionChips?.querySelector(`[data-region="${value}"]`)?.classList.remove('active'); }
           else if (type === 'topic') { activeTopics.delete(value); topicChips?.querySelector(`[data-topic="${value}"]`)?.classList.remove('active'); }
           else if (type === 'decade') { activeDecades.delete(value); decadeChips?.querySelector(`[data-decade="${value}"]`)?.classList.remove('active'); }
+          else if (type === 'evidence') { activeEvidence.delete(value); evidenceChips?.querySelector(`[data-evidence="${value}"]`)?.classList.remove('active'); }
           onFilterChange();
         });
       });
 
       document.getElementById('clear-all-filters')?.addEventListener('click', () => {
-        activeRegions.clear(); activeTopics.clear(); activeDecades.clear();
+        activeRegions.clear(); activeTopics.clear(); activeDecades.clear(); activeEvidence.clear();
         regionChips?.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
         topicChips?.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
         decadeChips?.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
@@ -712,6 +751,7 @@
       if (activeRegions.size) p.regions = [...activeRegions].join(',');
       if (activeTopics.size) p.topics = [...activeTopics].join(',');
       if (activeDecades.size) p.decades = [...activeDecades].join(',');
+      if (activeEvidence.size) p.evidence = [...activeEvidence].join(',');
       if (sortMode !== 'default') p.sort = sortMode;
       if (viewMode !== 'grid') p.view = viewMode;
       setUrlParams(p);
@@ -756,6 +796,13 @@
           return d && activeDecades.has(d);
         });
       }
+      // Evidence cited. Both selected means both, not either: a reader asking
+      // for experimental work and a review wants the studies carrying both.
+      if (activeEvidence.size > 0) {
+        filtered = filtered.filter(s =>
+          (!activeEvidence.has('experimental') || s.citesExperimental) &&
+          (!activeEvidence.has('review') || s.citesReview));
+      }
 
       // Sort
       if (sortMode === 'title-az') filtered.sort((a, b) => a.title.localeCompare(b.title));
@@ -791,7 +838,16 @@
 
         const saved = isBookmarked(study.slug);
         const readTime = formatReadTime(study.readingMinutes);
-        const evLabel = { strong: 'Strong evidence', moderate: 'Moderate evidence', emerging: 'Emerging evidence' }[study.evidence] || '';
+        /* The footer used to print study.evidence, which is 'strong' on all
+           204 studies because the tier reaches `refs >= 4` before it consults
+           anything else. A constant in the position a reader reads as a
+           judgement. The reference count is 4 or 5 and the two signals below
+           vary across the library, so all three say something. */
+        const refs = Number(study.refs) || 0;
+        const signal = study.citesReview ? 'Review' : (study.citesExperimental ? 'Experimental' : '');
+        const signalTitle = study.citesReview
+          ? 'Cites a systematic review or meta-analysis'
+          : (study.citesExperimental ? 'Cites experimental or quasi-experimental work' : '');
 
         return `
           <article class="case-card" style="animation-delay:${Math.min(idx * 0.02, 0.4)}s">
@@ -812,7 +868,8 @@
                   Read study ${icon('arrowRight')}
                 </a>
                 <div class="card-footer-meta">
-                  ${evLabel ? `<span class="card-evidence ${study.evidence}" title="${evLabel}">${escapeHtml(study.evidence)}</span>` : ''}
+                  ${signal ? `<span class="card-signal" title="${escapeHtml(signalTitle)}">${signal}</span>` : ''}
+                  ${refs ? `<span class="card-refs" title="${refs} cited sources">${refs} sources</span>` : ''}
                   ${readTime ? `<span class="card-readtime">${icon('clock2')} ${readTime}</span>` : ''}
                 </div>
               </div>
@@ -939,7 +996,7 @@
       const furtherReading = parseFurtherReading(study.content);
       const discussionQs = parseDiscussionQuestions(study.content);
       const evidenceFindings = extractEvidenceFindings(study.content);
-      const evidenceStrength = calculateEvidenceStrength(study.content, citations);
+      const evidence = evidenceFacts(study.content, citations);
       const lessons = parseLessons(study.content);
       const toc = extractTOC(study.content);
       const related = masterList.filter(s => s.slug !== study.slug && (s.topic === study.topic || s.region === study.region));
@@ -980,9 +1037,10 @@
             ${evidenceFindings.length > 0 ? `
             <div class="evidence-card">
               <div class="evidence-card-header">${icon('factCheck')}<span class="evidence-card-title">Evidence Summary</span></div>
-              <div class="evidence-meter">
-                <div class="evidence-meter-bar"><div class="evidence-meter-fill ${evidenceStrength.level}" style="width:${evidenceStrength.pct}%"></div></div>
-                <span class="evidence-meter-label ${evidenceStrength.level}">${evidenceStrength.label}</span>
+              <div class="evidence-facts">
+                <span class="evidence-fact">${icon('book')}<span><strong>${evidence.sources}</strong> cited source${evidence.sources === 1 ? '' : 's'}</span></span>
+                ${evidence.experimental ? `<span class="evidence-fact">${icon('check')}<span>Cites experimental or quasi-experimental work</span></span>` : ''}
+                ${evidence.review ? `<span class="evidence-fact">${icon('check')}<span>Cites a systematic review or meta-analysis</span></span>` : ''}
               </div>
               <ul class="evidence-findings">
                 ${evidenceFindings.map(f => `<li><span class="finding-icon">${icon('check')}</span><span>${escapeHtml(f)}</span></li>`).join('')}
