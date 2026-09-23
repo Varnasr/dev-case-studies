@@ -1,0 +1,45 @@
+{
+  "id": 206,
+  "slug": "mexico-seguro-popular",
+  "title": "Seguro Popular: Financial Protection Without Better Health",
+  "country": "Mexico",
+  "region": "Latin America & Caribbean",
+  "topic": "Health",
+  "year": "2003–2020",
+  "summary": "Mexico's Seguro Popular enrolled more than 50 million people previously outside social security and was evaluated by one of the largest randomised health-policy experiments ever run. It cut catastrophic health spending sharply and moved no measured health outcome in ten months. The programme was abolished in 2020 and replaced by INSABI. Both halves of that record are instructive.",
+  "keyData": [
+    {
+      "label": "Created",
+      "value": "2003, through reform of the General Health Law"
+    },
+    {
+      "label": "Target population",
+      "value": "Households outside formal-sector social security"
+    },
+    {
+      "label": "Peak enrolment",
+      "value": "Over 50 million people"
+    },
+    {
+      "label": "Evaluation design",
+      "value": "Randomised at the level of 74 matched health-cluster pairs"
+    },
+    {
+      "label": "Catastrophic expenditure",
+      "value": "Reduced by roughly half in treated clusters (King et al. 2009)"
+    },
+    {
+      "label": "Health outcomes at 10 months",
+      "value": "No significant effect detected"
+    },
+    {
+      "label": "Medication and utilisation",
+      "value": "No significant increase detected"
+    },
+    {
+      "label": "Abolished",
+      "value": "2020, replaced by INSABI"
+    }
+  ],
+  "content": "## Background\n\nMexican health financing was built around formal employment. IMSS covered private formal-sector workers, ISSSTE covered public employees, and roughly half the population — informal workers, the self-employed, the rural poor — had access to Ministry of Health facilities but no insurance behind that access. The practical consequence was out-of-pocket payment at the point of care, and the practical consequence of that was that illness was a route into poverty.\n\nXu and colleagues had established the measurement frame this reform was designed against: catastrophic health expenditure, defined as out-of-pocket health spending above a threshold share of a household's capacity to pay, and measurable in household surveys across countries. Mexico's numbers on that measure were poor relative to its income.\n\n## The Intervention\n\nSeguro Popular, legislated in 2003 and rolled out from 2004, offered voluntary public insurance to households outside social security, funded by federal and state contributions with a nominally income-scaled family premium that was waived for the poorest deciles. It covered a defined package of interventions — several hundred by the end — plus a separate fund for a shorter list of catastrophic conditions.\n\nThe design decision that makes this case unusual is what accompanied the rollout. Because the programme could not be introduced everywhere at once, the government allowed the sequencing to be randomised across 74 matched pairs of health clusters covering about 118,000 households. This produced a genuine experiment on a national insurance reform, which almost never happens.\n\n## Results & Evidence\n\nKing and colleagues reported the ten-month results in *The Lancet* in 2009. On financial protection the programme worked: catastrophic health expenditure fell substantially in treated clusters, with the effect concentrated, as intended, among poorer households.\n\nOn everything else it did not. There was no significant effect on health outcomes. There was no significant increase in utilisation of medical services. There was no significant increase in medication spending. The authors were explicit that ten months is a short window for health outcomes, and equally explicit that the absence of a utilisation effect was harder to explain away, since utilisation should move quickly if insurance is doing what insurance is supposed to do.\n\nGalárraga and colleagues, working with a different design and a longer horizon, found reductions in both catastrophic and out-of-pocket expenditure, consistent with the experimental finding on the financial protection side.\n\nKnaul and colleagues, writing from inside the reform, set out the system-level case: coverage expansion from roughly half the population to near-universal nominal coverage, a restructured financing architecture, and a shift in the composition of health spending away from out-of-pocket payment. Their account and the experimental account are not in conflict. They measure different things.\n\n## Challenges & Criticisms\n\nThe gap between financial protection and health is the substance of the criticism. Insurance that removes a payment barrier still requires something to be available on the other side of the barrier. Where facilities were short of staff, drugs and equipment — which in Mexico correlated with exactly the marginalised areas the programme targeted — an insurance card changed what a visit cost and not what a visit produced.\n\nVoluntary enrolment created a second problem. Take-up required households to register, and registration effort was not uniformly distributed, so the programme's reach within its target population was uneven in ways that partly tracked existing administrative capacity.\n\nThe reform also left the fragmentation intact. Seguro Popular was a fourth system alongside IMSS, ISSSTE and the state services rather than a consolidation of them, and portability between them remained poor.\n\nIn 2020 the programme was abolished and replaced by INSABI, on an argument that it had become an expensive purchasing layer that did not fix supply. The replacement was implemented during the COVID-19 pandemic and its own record is contested.\n\n## Key Lessons\n\n**Financial protection and health improvement are separate outcomes and a programme can deliver one without the other.** This is the most transferable finding in the case, and it is routinely lost when Seguro Popular is cited either as a success or as a failure.\n\n**A demand-side reform inherits the supply side it is given.** Removing the price of care raises the value of care that exists. It does not create care that does not.\n\n**Randomising the rollout of a national reform is possible.** Mexico did it on a programme covering tens of millions of people, because the rollout had to be sequenced anyway. The reason this is rare is not that it is infeasible.\n\n**Ten months is the honest caveat, and it cuts both ways.** It is too short for mortality and probably for most morbidity. It is not too short for utilisation, and utilisation did not move.\n\n## References\n\n- King, G., Gakidou, E., Imai, K., Lakin, J., Moore, R. T., Nall, C., Ravishankar, N., Vargas, M., Téllez-Rojo, M. M., Ávila, J. E. H., Ávila, M. H., & Llamas, H. H. (2009). Public policy for the poor? A randomised assessment of the Mexican universal health insurance programme. *The Lancet*, 373(9673), 1447-1454. https://doi.org/10.1016/S0140-6736(09)60239-7\n- Knaul, F. M., González-Pier, E., Gómez-Dantés, O., García-Junco, D., Arreola-Ornelas, H., Barraza-Lloréns, M., Sandoval, R., Caballero, F., Hernández-Ávila, M., Juan, M., Kershenobich, D., Nigenda, G., Ruelas, E., Sepúlveda, J., Tapia, R., Soberón, G., Chertorivski, S., & Frenk, J. (2012). The quest for universal health coverage: achieving social protection for all in Mexico. *The Lancet*, 380(9849), 1259-1279. https://doi.org/10.1016/S0140-6736(12)61068-X\n- Galárraga, O., Sosa-Rubí, S. G., Salinas-Rodríguez, A., & Sesma-Vázquez, S. (2009). Health insurance for the poor: impact on catastrophic and out-of-pocket health expenditures in Mexico. *The European Journal of Health Economics*, 11(5), 437-447. https://doi.org/10.1007/s10198-009-0180-3\n- Xu, K., Evans, D. B., Kawabata, K., Zeramdini, R., Klavus, J., & Murray, C. J. L. (2003). Household catastrophic health expenditure: a multicountry analysis. *The Lancet*, 362(9378), 111-117. https://doi.org/10.1016/S0140-6736(03)13861-5\n"
+}

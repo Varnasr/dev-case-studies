@@ -1,0 +1,45 @@
+{
+  "id": 207,
+  "slug": "kenya-tusome",
+  "title": "Tusome: Taking a Reading Programme National",
+  "country": "Kenya",
+  "region": "Sub-Saharan Africa",
+  "topic": "Education",
+  "year": "2011–present",
+  "summary": "Kenya took an early-grade reading pilot to every public primary school in the country. The ingredients that worked were unglamorous: a book in every child's hands, a structured lesson guide in every teacher's, and a coach who actually visited. A parallel trial in the same system found that adding tablets to the same package bought no additional learning for substantially more money.",
+  "keyData": [
+    {
+      "label": "Predecessor",
+      "value": "PRIMR pilot, 2011–2014"
+    },
+    {
+      "label": "National scale",
+      "value": "Tusome, from 2015, all public primary schools"
+    },
+    {
+      "label": "Books",
+      "value": "A one-to-one pupil-to-book ratio, the reform's core logistical achievement"
+    },
+    {
+      "label": "Teacher support",
+      "value": "Structured lesson guides plus in-classroom coaching visits"
+    },
+    {
+      "label": "Coaching",
+      "value": "Delivered through existing Curriculum Support Officers rather than a parallel cadre"
+    },
+    {
+      "label": "Technology arms",
+      "value": "Tablets for teachers, for coaches, and for pupils, tested separately"
+    },
+    {
+      "label": "Technology finding",
+      "value": "No arm outperformed the non-technology package on cost-effectiveness"
+    },
+    {
+      "label": "Language",
+      "value": "Instruction and assessment in English, Kiswahili and mother tongue"
+    }
+  ],
+  "content": "## Background\n\nKenya abolished primary school fees in 2003 and enrolment rose sharply, which is a different case study in this library. What followed was the familiar sequel: more children in school, and a large share of them unable to read after several years of it. Early Grade Reading Assessment data from the region made the scale of it legible, and Piper's work on language of instruction showed a complication specific to East Africa — children were being assessed, and often taught, in a language that was neither the one spoken at home nor the one they would be examined in later.\n\n## The Intervention\n\nPRIMR, the Primary Math and Reading initiative, ran from 2011 to 2014 as a randomised trial. Tusome — Kiswahili for \"let us read\" — took it national from 2015 across every public primary school.\n\nThe package had three parts and no fourth.\n\nEvery child got a book. This sounds trivial and was the hardest part: it required fixing procurement and distribution so that the pupil-to-book ratio actually reached one to one, against a baseline where a textbook was shared between several children or arrived late or not at all.\n\nEvery teacher got a structured lesson guide, keyed page by page to the pupil book, specifying what to do rather than what to cover.\n\nEvery teacher got visited. Coaching was routed through Curriculum Support Officers, who already existed in the system, rather than through a parallel cadre funded by the programme. This is the decision that made the model survivable after the donor horizon.\n\n## Results & Evidence\n\nPiper, Destefano, Kinyanjui and Ong'ele documented the scale-up in the *Journal of Educational Change*, and the analytic contribution is in the sequencing: the programme was designed from the start against the constraints of the government system that would have to run it, rather than designed for effect and handed over afterwards.\n\nPiper, Zuilkowski, Dubeck, Jepkemei and King, writing in *World Development*, took apart the package to ask which part carried the effect. Their answer is the combination — teacher professional development with coaching, pupil textbooks, and structured teacher guides — and their emphasis is that the guides and the books are complements. A guide without a book in front of the child is a script for a lesson that cannot happen.\n\nThe technology result is the one worth knowing. Piper, Zuilkowski, Kwayumba and Strigel tested three separate ICT arms within the same system: tablets for teachers, tablets for coaches, and e-readers for pupils. Measured against the non-technology package, none of the three justified its cost. The tablets were not harmful. They were not additive either, and they were considerably more expensive.\n\n## Challenges & Criticisms\n\nThe language question was never fully resolved. Kenyan policy favours mother-tongue instruction in the early grades, parental demand favours English, and the programme operated across all three languages. Piper's earlier EGRA work documents the trade-off rather than settling it.\n\nEffect sizes at national scale were smaller than in the pilot, which is the ordinary pattern and was reported rather than smoothed over.\n\nSustaining coaching is the live risk. Routing it through Curriculum Support Officers was the right structural choice, and it also means coaching competes with everything else those officers are asked to do. The frequency of visits is the variable most likely to decay once external attention moves on, and it is the variable the evidence says matters.\n\nThere is also a coverage question that applies to every structured-pedagogy programme: the method is strongest for the mechanics of decoding and weakest for comprehension, and a system that measures what it teaches can mistake fluent reading aloud for understanding.\n\n## Key Lessons\n\n**Design for the system that will run it, from the first day.** Tusome's coaching model was chosen because Curriculum Support Officers already existed. That constraint produced a weaker programme on paper and a survivable one in practice.\n\n**Books and guides are complements, not alternatives.** Procurement is treated as logistics and pedagogy is treated as policy; the evidence here says they are one intervention.\n\n**Test the technology arm separately or you will never know.** Kenya ran three ICT variants against the same base package and found none of them worth the money. That result exists only because somebody built the comparison in rather than adding tablets to a programme that was already working and attributing the result to the tablets.\n\n## References\n\n- Piper, B., Destefano, J., Kinyanjui, E. M., & Ong'ele, S. (2018). Scaling up successfully: Lessons from Kenya's Tusome national literacy program. *Journal of Educational Change*, 19(3), 293-321. https://doi.org/10.1007/s10833-018-9325-4\n- Piper, B., Zuilkowski, S. S., Dubeck, M., Jepkemei, E., & King, S. J. (2018). Identifying the essential ingredients to literacy and numeracy improvement: Teacher professional development and coaching, student textbooks, and structured teachers' guides. *World Development*, 106, 324-336. https://doi.org/10.1016/j.worlddev.2018.01.018\n- Piper, B., Zuilkowski, S. S., Kwayumba, D., & Strigel, C. (2016). Does technology improve reading outcomes? Comparing the effectiveness and cost-effectiveness of ICT interventions for early grade reading in Kenya. *International Journal of Educational Development*, 49, 204-214. https://doi.org/10.1016/j.ijedudev.2016.03.006\n- Piper, B., & Miksic, E. (2011). Mother Tongue and Reading: Using Early Grade Reading Assessments to Investigate Language-of-Instruction Policy in East Africa. In A. Gove & A. Wetterberg (Eds.), *The Early Grade Reading Assessment: Applications and Interventions to Improve Basic Literacy*. Research Triangle Park: RTI Press. https://doi.org/10.3768/rtipress.2011.bk.0007.1109.5\n"
+}

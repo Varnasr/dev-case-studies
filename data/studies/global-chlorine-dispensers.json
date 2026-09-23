@@ -1,0 +1,45 @@
+{
+  "id": 208,
+  "slug": "global-chlorine-dispensers",
+  "title": "Chlorine Dispensers and the Twenty-Year Argument About Water Treatment",
+  "country": "Global",
+  "region": "Global",
+  "topic": "Health",
+  "year": "2004–present",
+  "summary": "Household water chlorination is cheap, and for two decades the evidence on whether it saves lives was thin enough that reasonable people disagreed. Point-of-collection dispensers solved the adoption problem that had defeated every earlier delivery model. A 2023 meta-analysis pooling the mortality data put the reduction in child deaths at roughly a quarter, and made water treatment one of the most cost-effective interventions on record.",
+  "keyData": [
+    {
+      "label": "Delivery innovation",
+      "value": "Chlorine dispenser sited at the water source, not sold to the household"
+    },
+    {
+      "label": "Why it works",
+      "value": "Free, visible, habitual and at the point of collection rather than the point of purchase"
+    },
+    {
+      "label": "Adoption under alternatives",
+      "value": "Persistently low for retail bottled chlorine even when heavily subsidised"
+    },
+    {
+      "label": "Spring protection effect",
+      "value": "Roughly a quarter reduction in child diarrhoea (Kremer et al. 2011)"
+    },
+    {
+      "label": "Mortality meta-analysis",
+      "value": "About a 25 per cent reduction in odds of child death (Kremer et al. 2023)"
+    },
+    {
+      "label": "Earlier Cochrane position",
+      "value": "Effect on diarrhoea probable; effect on mortality not established"
+    },
+    {
+      "label": "WHO synthesis 2022",
+      "value": "Point-of-use filtration halves diarrhoea risk; chlorination reduces it about a third"
+    },
+    {
+      "label": "Cost-effectiveness",
+      "value": "Among the lowest cost per death averted in the health evidence base"
+    }
+  ],
+  "content": "## Background\n\nDiarrhoeal disease has been one of the leading causes of child death for as long as the cause of death has been counted, and contaminated drinking water is one of its main routes. Chlorine kills the relevant pathogens, costs almost nothing per litre, and has been available in bottled form in low-income markets for decades.\n\nThe intervention was therefore not the chemistry. It was the behaviour. Programmes that sold or gave away bottled chlorine consistently found that households did not use it — not because they disbelieved in it, but because using it required remembering, at the moment of collecting or storing water, to measure and add a product bought on a previous occasion and kept somewhere else.\n\n## The Intervention\n\nThe dispenser moves the decision to the place and moment where water is collected. A valved chlorine dispenser is installed at the spring, well or borehole. Turning the handle delivers one metered dose for one jerrycan. It is free at the point of use, it is physically in the path of the person collecting, and the act is public, which makes it habitual and socially visible in a way that a bottle at home is not.\n\nThe design is the intervention. Nothing about the chemical changed.\n\n## Results & Evidence\n\nKremer, Leino, Miguel and Zwane established the underlying relationship in the *Quarterly Journal of Economics*, studying spring protection in rural Kenya. Protecting springs at source reduced diarrhoea in children by roughly a quarter. The paper is also one of the more careful treatments of valuation and of property rights over a shared water point, which matters because a dispenser sits on exactly such a point and depends on somebody maintaining it.\n\nThe state of the evidence before 2023 is worth stating plainly, because it is the reason this case is interesting. Clasen and colleagues, in the Cochrane review, concluded that household water treatment probably reduced diarrhoea and that the evidence on mortality was not sufficient to support a conclusion. Trials were individually underpowered for deaths. Each one could report a diarrhoea effect and could not report a mortality effect, and the field read that repeated silence as absence.\n\nKremer and colleagues re-examined it in 2023 by pooling mortality data across the randomised trials rather than asking any one of them to carry the question. The pooled estimate was a reduction of roughly a quarter in the odds of child death, with a cost per death averted low enough to place water treatment among the most cost-effective health interventions measured.\n\nTwo broader syntheses sit alongside this. Wolf and colleagues, in *The Lancet*, put point-of-use filtration at about a halving of diarrhoea risk and chlorination at about a third, across 124 studies organised by service level. Waddington and colleagues, in *PLOS Medicine*, reached the mortality question from a different direction — participant flow data rather than reported morbidity — and found a 17 per cent reduction in all-cause child mortality and 45 per cent in diarrhoea mortality across WASH interventions generally.\n\n## Challenges & Criticisms\n\nThe meta-analysis is a meta-analysis. It pools trials that were not designed to measure mortality, in heterogeneous settings, and the confidence interval is correspondingly wide. It is stronger evidence than any single trial and it is not the same thing as a trial powered for deaths, which has still not been run.\n\nDispensers require maintenance. Somebody refills them, somebody repairs the valve, somebody is accountable when the chlorine runs out. Where that person is funded by the programme, the model is a programme; where they are not, the failure mode is a dry dispenser that nobody reports.\n\nChlorine does not work on everything. It does not address turbid water well, it does not touch chemical contamination such as arsenic or fluoride, and in places where those are the binding problem a dispenser is the wrong answer confidently applied.\n\nAnd there is a displacement risk worth naming: a cheap point-of-use fix can reduce the political pressure for piped supply, which is what actually delivers safely managed water. The Lancet review makes the related observation that no study has evaluated the safely managed service level at all — the level universal coverage is formally committed to.\n\n## Key Lessons\n\n**Adoption is a design problem, not a persuasion problem.** Two decades of social marketing for bottled chlorine achieved less than moving the dispenser to the spring. The question to ask of any product-based intervention is where in the day the decision falls.\n\n**Underpowered trials produce a literature that reads as null.** Every individual study was honest. The aggregate conclusion drawn from them — that mortality effects were unproven — was an artefact of sample size, and it took a deliberate pooling exercise to see it. This generalises well beyond water.\n\n**Cheap and boring beats expensive and novel, when it is used.** The binding constraint was never the cost of chlorine.\n\n**Point-of-use treatment is a bridge, not a destination.** It should be argued for as what it is: the thing that keeps children alive until the pipe arrives.\n\n## References\n\n- Kremer, M., Leino, J., Miguel, E., & Zwane, A. P. (2011). Spring Cleaning: Rural Water Impacts, Valuation, and Property Rights Institutions. *The Quarterly Journal of Economics*, 126(1), 145-205. https://doi.org/10.1093/qje/qjq010\n- Kremer, M., Luby, S. P., Maertens, R., Tan, B., & Więcek, W. (2023). Water Treatment And Child Mortality: A Meta-Analysis And Cost-effectiveness Analysis. *NBER Working Paper* No. 30835. https://doi.org/10.3386/w30835\n- Clasen, T., Roberts, I., Rabie, T., Schmidt, W., & Cairncross, S. (2006). Interventions to improve water quality for preventing diarrhoea. *Cochrane Database of Systematic Reviews*. https://doi.org/10.1002/14651858.CD004794.pub2\n- Wolf, J., Hubbard, S., Brauer, M., Ambelu, A., Arnold, B. F., Bain, R., et al. (2022). Effectiveness of interventions to improve drinking water, sanitation, and handwashing with soap on risk of diarrhoeal disease in children in low-income and middle-income settings: a systematic review and meta-analysis. *The Lancet*, 400(10345), 48-59. https://doi.org/10.1016/S0140-6736(22)00937-0\n- Sharma Waddington, H., Masset, E., Bick, S., & Cairncross, S. (2023). Impact on childhood mortality of interventions to improve drinking water, sanitation, and hygiene (WASH) to households: Systematic review and meta-analysis. *PLOS Medicine*, 20(4), e1004215. https://doi.org/10.1371/journal.pmed.1004215\n"
+}
