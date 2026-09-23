@@ -11,7 +11,9 @@
     "readingMinutes": 5,
     "words": 1003,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 2,
@@ -25,7 +27,9 @@
     "readingMinutes": 5,
     "words": 1024,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 3,
@@ -39,7 +43,9 @@
     "readingMinutes": 5,
     "words": 972,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 4,
@@ -53,7 +59,9 @@
     "readingMinutes": 5,
     "words": 1032,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 5,
@@ -67,7 +75,9 @@
     "readingMinutes": 5,
     "words": 1028,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 6,
@@ -81,7 +91,9 @@
     "readingMinutes": 5,
     "words": 1076,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 7,
@@ -95,7 +107,9 @@
     "readingMinutes": 5,
     "words": 1070,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 8,
@@ -109,7 +123,9 @@
     "readingMinutes": 5,
     "words": 1152,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 9,
@@ -123,7 +139,9 @@
     "readingMinutes": 5,
     "words": 1129,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 10,
@@ -137,7 +155,9 @@
     "readingMinutes": 5,
     "words": 1097,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 11,
@@ -151,7 +171,9 @@
     "readingMinutes": 5,
     "words": 1074,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 12,
@@ -165,7 +187,9 @@
     "readingMinutes": 5,
     "words": 1105,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 13,
@@ -179,7 +203,9 @@
     "readingMinutes": 6,
     "words": 1174,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 14,
@@ -193,7 +219,9 @@
     "readingMinutes": 6,
     "words": 1180,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 15,
@@ -207,7 +235,9 @@
     "readingMinutes": 6,
     "words": 1188,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 16,
@@ -221,7 +251,9 @@
     "readingMinutes": 4,
     "words": 902,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 17,
@@ -235,7 +267,9 @@
     "readingMinutes": 4,
     "words": 855,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 18,
@@ -249,7 +283,9 @@
     "readingMinutes": 4,
     "words": 890,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 19,
@@ -263,7 +299,9 @@
     "readingMinutes": 4,
     "words": 875,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 20,
@@ -277,7 +315,9 @@
     "readingMinutes": 4,
     "words": 919,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 21,
@@ -291,7 +331,9 @@
     "readingMinutes": 4,
     "words": 891,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 22,
@@ -305,7 +347,9 @@
     "readingMinutes": 5,
     "words": 952,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 23,
@@ -319,7 +363,9 @@
     "readingMinutes": 4,
     "words": 921,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 24,
@@ -333,7 +379,9 @@
     "readingMinutes": 5,
     "words": 961,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 25,
@@ -347,7 +395,9 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 26,
@@ -361,7 +411,9 @@
     "readingMinutes": 4,
     "words": 911,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 27,
@@ -375,7 +427,9 @@
     "readingMinutes": 4,
     "words": 913,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 28,
@@ -389,7 +443,9 @@
     "readingMinutes": 5,
     "words": 972,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 29,
@@ -403,7 +459,9 @@
     "readingMinutes": 5,
     "words": 1030,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 30,
@@ -417,7 +475,9 @@
     "readingMinutes": 5,
     "words": 955,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 31,
@@ -431,7 +491,9 @@
     "readingMinutes": 4,
     "words": 927,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 32,
@@ -445,7 +507,9 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 33,
@@ -459,7 +523,9 @@
     "readingMinutes": 5,
     "words": 1005,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 34,
@@ -473,7 +539,9 @@
     "readingMinutes": 5,
     "words": 1029,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 35,
@@ -487,7 +555,9 @@
     "readingMinutes": 5,
     "words": 1094,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 36,
@@ -501,7 +571,9 @@
     "readingMinutes": 5,
     "words": 1060,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 37,
@@ -515,7 +587,9 @@
     "readingMinutes": 5,
     "words": 1071,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 38,
@@ -529,7 +603,9 @@
     "readingMinutes": 5,
     "words": 1109,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 39,
@@ -543,7 +619,9 @@
     "readingMinutes": 5,
     "words": 1112,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 40,
@@ -557,7 +635,9 @@
     "readingMinutes": 5,
     "words": 1141,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 41,
@@ -571,7 +651,9 @@
     "readingMinutes": 5,
     "words": 1073,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 42,
@@ -585,7 +667,9 @@
     "readingMinutes": 5,
     "words": 1127,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 43,
@@ -599,7 +683,9 @@
     "readingMinutes": 5,
     "words": 1124,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 44,
@@ -613,7 +699,9 @@
     "readingMinutes": 6,
     "words": 1167,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 45,
@@ -627,7 +715,9 @@
     "readingMinutes": 5,
     "words": 1137,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 46,
@@ -641,7 +731,9 @@
     "readingMinutes": 16,
     "words": 3397,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 47,
@@ -655,7 +747,9 @@
     "readingMinutes": 12,
     "words": 2604,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 48,
@@ -669,7 +763,9 @@
     "readingMinutes": 13,
     "words": 2651,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 49,
@@ -683,7 +779,9 @@
     "readingMinutes": 15,
     "words": 3072,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 50,
@@ -697,7 +795,9 @@
     "readingMinutes": 14,
     "words": 2910,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 51,
@@ -711,7 +811,9 @@
     "readingMinutes": 15,
     "words": 3127,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 52,
@@ -725,7 +827,9 @@
     "readingMinutes": 17,
     "words": 3548,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 53,
@@ -739,7 +843,9 @@
     "readingMinutes": 14,
     "words": 3026,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 54,
@@ -753,7 +859,9 @@
     "readingMinutes": 16,
     "words": 3379,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": true
   },
   {
     "id": 55,
@@ -767,7 +875,9 @@
     "readingMinutes": 18,
     "words": 3755,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 56,
@@ -781,7 +891,9 @@
     "readingMinutes": 14,
     "words": 3024,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 57,
@@ -795,7 +907,9 @@
     "readingMinutes": 17,
     "words": 3493,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 58,
@@ -809,7 +923,9 @@
     "readingMinutes": 15,
     "words": 3052,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 59,
@@ -823,7 +939,9 @@
     "readingMinutes": 15,
     "words": 3062,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 60,
@@ -837,7 +955,9 @@
     "readingMinutes": 16,
     "words": 3347,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 61,
@@ -851,7 +971,9 @@
     "readingMinutes": 4,
     "words": 888,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 62,
@@ -865,7 +987,9 @@
     "readingMinutes": 4,
     "words": 909,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 63,
@@ -879,7 +1003,9 @@
     "readingMinutes": 4,
     "words": 902,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 64,
@@ -893,7 +1019,9 @@
     "readingMinutes": 4,
     "words": 866,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 65,
@@ -907,7 +1035,9 @@
     "readingMinutes": 4,
     "words": 933,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 66,
@@ -921,7 +1051,9 @@
     "readingMinutes": 5,
     "words": 969,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 67,
@@ -935,7 +1067,9 @@
     "readingMinutes": 4,
     "words": 889,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 68,
@@ -949,7 +1083,9 @@
     "readingMinutes": 4,
     "words": 907,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 69,
@@ -963,7 +1099,9 @@
     "readingMinutes": 5,
     "words": 978,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 70,
@@ -977,7 +1115,9 @@
     "readingMinutes": 4,
     "words": 921,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 71,
@@ -991,7 +1131,9 @@
     "readingMinutes": 5,
     "words": 959,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 72,
@@ -1005,7 +1147,9 @@
     "readingMinutes": 4,
     "words": 927,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 73,
@@ -1019,7 +1163,9 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 74,
@@ -1033,7 +1179,9 @@
     "readingMinutes": 4,
     "words": 912,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 75,
@@ -1047,7 +1195,9 @@
     "readingMinutes": 5,
     "words": 977,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 76,
@@ -1061,7 +1211,9 @@
     "readingMinutes": 5,
     "words": 975,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 77,
@@ -1075,7 +1227,9 @@
     "readingMinutes": 5,
     "words": 1008,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 78,
@@ -1089,7 +1243,9 @@
     "readingMinutes": 4,
     "words": 888,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 79,
@@ -1103,7 +1259,9 @@
     "readingMinutes": 5,
     "words": 988,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 80,
@@ -1117,7 +1275,9 @@
     "readingMinutes": 4,
     "words": 910,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 81,
@@ -1131,7 +1291,9 @@
     "readingMinutes": 5,
     "words": 968,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 82,
@@ -1145,7 +1307,9 @@
     "readingMinutes": 5,
     "words": 1001,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 83,
@@ -1159,7 +1323,9 @@
     "readingMinutes": 5,
     "words": 989,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 84,
@@ -1173,7 +1339,9 @@
     "readingMinutes": 5,
     "words": 1052,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 85,
@@ -1187,7 +1355,9 @@
     "readingMinutes": 5,
     "words": 1015,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 86,
@@ -1201,7 +1371,9 @@
     "readingMinutes": 5,
     "words": 981,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 87,
@@ -1215,7 +1387,9 @@
     "readingMinutes": 5,
     "words": 1007,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 88,
@@ -1229,7 +1403,9 @@
     "readingMinutes": 5,
     "words": 1047,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 89,
@@ -1243,7 +1419,9 @@
     "readingMinutes": 5,
     "words": 1019,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 90,
@@ -1257,7 +1435,9 @@
     "readingMinutes": 5,
     "words": 1018,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 91,
@@ -1271,7 +1451,9 @@
     "readingMinutes": 5,
     "words": 1009,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 92,
@@ -1285,7 +1467,9 @@
     "readingMinutes": 5,
     "words": 1055,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 93,
@@ -1299,7 +1483,9 @@
     "readingMinutes": 5,
     "words": 1041,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 94,
@@ -1313,7 +1499,9 @@
     "readingMinutes": 5,
     "words": 1084,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 95,
@@ -1327,7 +1515,9 @@
     "readingMinutes": 5,
     "words": 1067,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 96,
@@ -1341,7 +1531,9 @@
     "readingMinutes": 4,
     "words": 826,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 97,
@@ -1355,7 +1547,9 @@
     "readingMinutes": 4,
     "words": 835,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 98,
@@ -1369,7 +1563,9 @@
     "readingMinutes": 4,
     "words": 872,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 99,
@@ -1383,7 +1579,9 @@
     "readingMinutes": 4,
     "words": 844,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 100,
@@ -1397,7 +1595,9 @@
     "readingMinutes": 4,
     "words": 865,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 101,
@@ -1411,7 +1611,9 @@
     "readingMinutes": 4,
     "words": 915,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 102,
@@ -1425,7 +1627,9 @@
     "readingMinutes": 4,
     "words": 850,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 103,
@@ -1439,7 +1643,9 @@
     "readingMinutes": 4,
     "words": 935,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 104,
@@ -1453,7 +1659,9 @@
     "readingMinutes": 4,
     "words": 918,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 105,
@@ -1467,7 +1675,9 @@
     "readingMinutes": 5,
     "words": 972,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 106,
@@ -1481,7 +1691,9 @@
     "readingMinutes": 4,
     "words": 898,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 107,
@@ -1495,7 +1707,9 @@
     "readingMinutes": 4,
     "words": 891,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 108,
@@ -1509,7 +1723,9 @@
     "readingMinutes": 5,
     "words": 979,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 109,
@@ -1523,7 +1739,9 @@
     "readingMinutes": 5,
     "words": 957,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 110,
@@ -1537,7 +1755,9 @@
     "readingMinutes": 5,
     "words": 968,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 111,
@@ -1551,7 +1771,9 @@
     "readingMinutes": 5,
     "words": 1027,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 112,
@@ -1565,7 +1787,9 @@
     "readingMinutes": 5,
     "words": 957,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 113,
@@ -1579,7 +1803,9 @@
     "readingMinutes": 5,
     "words": 993,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 114,
@@ -1593,7 +1819,9 @@
     "readingMinutes": 5,
     "words": 991,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 115,
@@ -1607,7 +1835,9 @@
     "readingMinutes": 5,
     "words": 1075,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 116,
@@ -1621,7 +1851,9 @@
     "readingMinutes": 4,
     "words": 852,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 117,
@@ -1635,7 +1867,9 @@
     "readingMinutes": 4,
     "words": 859,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 118,
@@ -1649,7 +1883,9 @@
     "readingMinutes": 4,
     "words": 845,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 119,
@@ -1663,7 +1899,9 @@
     "readingMinutes": 4,
     "words": 833,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 120,
@@ -1677,7 +1915,9 @@
     "readingMinutes": 4,
     "words": 868,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 121,
@@ -1691,7 +1931,9 @@
     "readingMinutes": 4,
     "words": 911,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 122,
@@ -1705,7 +1947,9 @@
     "readingMinutes": 4,
     "words": 919,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 123,
@@ -1719,7 +1963,9 @@
     "readingMinutes": 4,
     "words": 876,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 124,
@@ -1733,7 +1979,9 @@
     "readingMinutes": 4,
     "words": 904,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 125,
@@ -1747,7 +1995,9 @@
     "readingMinutes": 4,
     "words": 913,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 126,
@@ -1761,7 +2011,9 @@
     "readingMinutes": 4,
     "words": 830,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 127,
@@ -1775,7 +2027,9 @@
     "readingMinutes": 4,
     "words": 869,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 128,
@@ -1789,7 +2043,9 @@
     "readingMinutes": 4,
     "words": 880,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 129,
@@ -1803,7 +2059,9 @@
     "readingMinutes": 4,
     "words": 876,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 130,
@@ -1817,7 +2075,9 @@
     "readingMinutes": 4,
     "words": 908,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 131,
@@ -1831,7 +2091,9 @@
     "readingMinutes": 4,
     "words": 916,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 132,
@@ -1845,7 +2107,9 @@
     "readingMinutes": 5,
     "words": 969,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 133,
@@ -1859,7 +2123,9 @@
     "readingMinutes": 5,
     "words": 964,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 134,
@@ -1873,7 +2139,9 @@
     "readingMinutes": 4,
     "words": 943,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 135,
@@ -1887,7 +2155,9 @@
     "readingMinutes": 5,
     "words": 1025,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 136,
@@ -1901,7 +2171,9 @@
     "readingMinutes": 4,
     "words": 856,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 137,
@@ -1915,7 +2187,9 @@
     "readingMinutes": 4,
     "words": 848,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 138,
@@ -1929,7 +2203,9 @@
     "readingMinutes": 4,
     "words": 874,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 139,
@@ -1943,7 +2219,9 @@
     "readingMinutes": 4,
     "words": 907,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 140,
@@ -1957,7 +2235,9 @@
     "readingMinutes": 4,
     "words": 850,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 141,
@@ -1971,7 +2251,9 @@
     "readingMinutes": 4,
     "words": 863,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 142,
@@ -1985,7 +2267,9 @@
     "readingMinutes": 4,
     "words": 895,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 143,
@@ -1999,7 +2283,9 @@
     "readingMinutes": 4,
     "words": 863,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 144,
@@ -2013,7 +2299,9 @@
     "readingMinutes": 4,
     "words": 907,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 145,
@@ -2027,7 +2315,9 @@
     "readingMinutes": 4,
     "words": 893,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 146,
@@ -2041,7 +2331,9 @@
     "readingMinutes": 5,
     "words": 962,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 147,
@@ -2055,7 +2347,9 @@
     "readingMinutes": 4,
     "words": 899,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 148,
@@ -2069,7 +2363,9 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 149,
@@ -2083,7 +2379,9 @@
     "readingMinutes": 4,
     "words": 896,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 150,
@@ -2097,7 +2395,9 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 151,
@@ -2111,7 +2411,9 @@
     "readingMinutes": 4,
     "words": 930,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 152,
@@ -2125,7 +2427,9 @@
     "readingMinutes": 5,
     "words": 1002,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 153,
@@ -2139,7 +2443,9 @@
     "readingMinutes": 5,
     "words": 953,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 154,
@@ -2153,7 +2459,9 @@
     "readingMinutes": 4,
     "words": 929,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 155,
@@ -2167,7 +2475,9 @@
     "readingMinutes": 5,
     "words": 1000,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 156,
@@ -2181,7 +2491,9 @@
     "readingMinutes": 4,
     "words": 850,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 157,
@@ -2195,7 +2507,9 @@
     "readingMinutes": 4,
     "words": 833,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 158,
@@ -2209,7 +2523,9 @@
     "readingMinutes": 4,
     "words": 817,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 159,
@@ -2223,7 +2539,9 @@
     "readingMinutes": 4,
     "words": 817,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 160,
@@ -2237,7 +2555,9 @@
     "readingMinutes": 4,
     "words": 864,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 161,
@@ -2251,7 +2571,9 @@
     "readingMinutes": 4,
     "words": 851,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 162,
@@ -2265,7 +2587,9 @@
     "readingMinutes": 4,
     "words": 916,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 163,
@@ -2279,7 +2603,9 @@
     "readingMinutes": 4,
     "words": 906,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 164,
@@ -2293,7 +2619,9 @@
     "readingMinutes": 4,
     "words": 878,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 165,
@@ -2307,7 +2635,9 @@
     "readingMinutes": 4,
     "words": 878,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 166,
@@ -2321,7 +2651,9 @@
     "readingMinutes": 4,
     "words": 878,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 167,
@@ -2335,7 +2667,9 @@
     "readingMinutes": 5,
     "words": 951,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 168,
@@ -2349,7 +2683,9 @@
     "readingMinutes": 4,
     "words": 879,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 169,
@@ -2363,7 +2699,9 @@
     "readingMinutes": 4,
     "words": 903,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 170,
@@ -2377,7 +2715,9 @@
     "readingMinutes": 4,
     "words": 932,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 171,
@@ -2391,7 +2731,9 @@
     "readingMinutes": 5,
     "words": 964,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 172,
@@ -2405,7 +2747,9 @@
     "readingMinutes": 4,
     "words": 933,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 173,
@@ -2419,7 +2763,9 @@
     "readingMinutes": 5,
     "words": 1006,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 174,
@@ -2433,7 +2779,9 @@
     "readingMinutes": 5,
     "words": 1011,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 175,
@@ -2447,7 +2795,9 @@
     "readingMinutes": 5,
     "words": 1020,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 176,
@@ -2461,7 +2811,9 @@
     "readingMinutes": 4,
     "words": 759,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 177,
@@ -2475,7 +2827,9 @@
     "readingMinutes": 4,
     "words": 824,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 178,
@@ -2489,7 +2843,9 @@
     "readingMinutes": 4,
     "words": 829,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 179,
@@ -2503,7 +2859,9 @@
     "readingMinutes": 4,
     "words": 813,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 180,
@@ -2517,7 +2875,9 @@
     "readingMinutes": 4,
     "words": 883,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 181,
@@ -2531,7 +2891,9 @@
     "readingMinutes": 4,
     "words": 838,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 182,
@@ -2545,7 +2907,9 @@
     "readingMinutes": 4,
     "words": 888,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 183,
@@ -2559,7 +2923,9 @@
     "readingMinutes": 4,
     "words": 898,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 184,
@@ -2573,7 +2939,9 @@
     "readingMinutes": 4,
     "words": 928,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 185,
@@ -2587,7 +2955,9 @@
     "readingMinutes": 4,
     "words": 913,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 186,
@@ -2601,7 +2971,9 @@
     "readingMinutes": 4,
     "words": 941,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 187,
@@ -2615,7 +2987,9 @@
     "readingMinutes": 4,
     "words": 894,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 188,
@@ -2629,7 +3003,9 @@
     "readingMinutes": 4,
     "words": 942,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 189,
@@ -2643,7 +3019,9 @@
     "readingMinutes": 4,
     "words": 920,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 190,
@@ -2657,7 +3035,9 @@
     "readingMinutes": 5,
     "words": 987,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 191,
@@ -2671,7 +3051,9 @@
     "readingMinutes": 5,
     "words": 980,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 192,
@@ -2685,7 +3067,9 @@
     "readingMinutes": 5,
     "words": 1026,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 193,
@@ -2699,7 +3083,9 @@
     "readingMinutes": 5,
     "words": 960,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": true
   },
   {
     "id": 194,
@@ -2713,7 +3099,9 @@
     "readingMinutes": 4,
     "words": 884,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 195,
@@ -2727,7 +3115,9 @@
     "readingMinutes": 5,
     "words": 1037,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": true
   },
   {
     "id": 196,
@@ -2741,7 +3131,9 @@
     "readingMinutes": 5,
     "words": 1001,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 197,
@@ -2755,7 +3147,9 @@
     "readingMinutes": 5,
     "words": 1001,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": true
   },
   {
     "id": 198,
@@ -2769,7 +3163,9 @@
     "readingMinutes": 5,
     "words": 1007,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": true
   },
   {
     "id": 199,
@@ -2783,7 +3179,9 @@
     "readingMinutes": 5,
     "words": 1043,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 200,
@@ -2797,7 +3195,9 @@
     "readingMinutes": 5,
     "words": 1097,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": false,
+    "citesReview": false
   },
   {
     "id": 201,
@@ -2811,7 +3211,9 @@
     "readingMinutes": 5,
     "words": 969,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": true
   },
   {
     "id": 202,
@@ -2825,7 +3227,9 @@
     "readingMinutes": 4,
     "words": 908,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   },
   {
     "id": 203,
@@ -2839,7 +3243,9 @@
     "readingMinutes": 4,
     "words": 846,
     "refs": 4,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": true
   },
   {
     "id": 204,
@@ -2853,6 +3259,8 @@
     "readingMinutes": 4,
     "words": 827,
     "refs": 5,
-    "evidence": "strong"
+    "evidence": "strong",
+    "citesExperimental": true,
+    "citesReview": false
   }
 ]

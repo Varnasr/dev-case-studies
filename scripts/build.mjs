@@ -62,11 +62,35 @@ function countReferences(content) {
     .filter((l) => l.length >= 20).length;
 }
 
+/* The two signals the tier short-circuits.
+ *
+ * evidenceTier() below reaches `refs >= 4` first and returns 'strong' before
+ * either of these is consulted, and every one of the 204 studies carries four
+ * or five references, so the tier is 'strong' on all of them: a field with zero
+ * variance, which is a constant with a label on it.
+ *
+ * These two are not constants. Measured over the library on 2026-09-23: 61 of
+ * 204 studies cite experimental or quasi-experimental work, and 7 cite a
+ * systematic review or meta-analysis. They were computed and thrown away. They
+ * are recorded per study now, and the interface filters on them. */
+function evidenceSignals(content) {
+  return {
+    citesExperimental: /\b(RCT|randomi[sz]ed|experiment|causal|quasi-experiment|difference.in.difference|regression discontinuity|instrumental variable)/i.test(content || ''),
+    citesReview: /\b(meta.analysis|systematic review|Cochrane|Campbell)/i.test(content || ''),
+  };
+}
+
+/* Kept, unchanged, and still 'strong' for all 204.
+ *
+ * What counts as strong evidence in this library is an editorial judgement
+ * about the library, not a bug to patch: the honest options are to raise the
+ * threshold, to weight the two signals above rather than short-circuiting past
+ * them, or to drop the field. Picking one is the owner's call, so the field
+ * stays and what the interface *shows* has changed instead. See CLAUDE.md. */
 function evidenceTier(content, refs) {
-  const hasRCT = /\b(RCT|randomi[sz]ed|experiment|causal|quasi-experiment|difference.in.difference|regression discontinuity|instrumental variable)/i.test(content || '');
-  const hasMeta = /\b(meta.analysis|systematic review|Cochrane|Campbell)/i.test(content || '');
-  if (refs >= 5 && (hasRCT || hasMeta)) return 'strong';
-  if (refs >= 4 || hasRCT) return 'strong';
+  const { citesExperimental, citesReview } = evidenceSignals(content);
+  if (refs >= 5 && (citesExperimental || citesReview)) return 'strong';
+  if (refs >= 4 || citesExperimental) return 'strong';
   if (refs >= 3) return 'moderate';
   return 'emerging';
 }
@@ -152,6 +176,7 @@ function buildMasterList(studies) {
       words: countWords(s.content),
       refs,
       evidence: evidenceTier(s.content, refs),
+      ...evidenceSignals(s.content),
     };
   });
 }

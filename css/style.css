@@ -1046,7 +1046,11 @@ h1, h2, h3, h4, h5, h6 {
   .container, .container-full { padding: 0 var(--sp-3); }
   .index-main { padding: var(--sp-3); }
   .card-body { padding: var(--sp-3); }
-  .site-logo span:last-child { display: none; }
+  /* The wordmark used to be display:none here, so on a phone the site had no
+     name at all — a blue square in the corner and nothing else. It shortens
+     instead: the CSS hides the words after the first, which the markup now
+     carries in its own span. */
+  .site-logo .site-logo-long { display: none; }
   .cornell-grid { grid-template-columns: 1fr; }
   .cornell-cues { border-right: none; border-bottom: 2px solid var(--accent-warm); }
 }
@@ -1510,3 +1514,59 @@ select:focus-visible,
 .eco-link:hover { color: var(--accent); }
 .eco-link.current { color: var(--accent); border-bottom-color: var(--accent); }
 @media (max-width: 900px) { .eco-nav { display: none; } }
+
+
+/* ── Evidence facet ──────────────────────────────────────────────────────── */
+.filter-note {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--text-muted, #6b7280);
+  margin: 8px 2px 0;
+}
+
+/* The card footer used to carry the word "strong", on all 204 cards, because
+   the tier it came from returns 'strong' for every study in the library. A
+   constant in the position a reader reads as an assessment. It carries the
+   reference count now, which is 4 or 5 and therefore says something, and a
+   marker for the two signals that actually vary across the library. */
+.card-refs {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.72rem; color: var(--text-muted, #6b7280);
+  font-variant-numeric: tabular-nums;
+}
+.card-signal {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 0.68rem; font-weight: 600; letter-spacing: 0.02em;
+  padding: 2px 7px; border-radius: 999px;
+  color: var(--accent, #1d4ed8);
+  background: color-mix(in srgb, var(--accent, #1d4ed8) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent, #1d4ed8) 22%, transparent);
+}
+.evidence-facts { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.evidence-fact {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.82rem; color: var(--text-2, #374151);
+}
+.evidence-fact strong { font-variant-numeric: tabular-nums; }
+
+/* On a phone the welcome panel filled the whole first screen, so a visitor
+   landed on an explanation rather than on the library. Collapsed to its
+   headline and opening sentence below 700px; the rest is still there for
+   anyone who opens it. */
+@media (max-width: 700px) {
+  .welcome-features { display: none; }
+  .welcome-desc {
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* At 390px the card footer put "Read study" and "5 sources" each over two
+   lines, because the link and three metadata items were competing for one
+   row. The link keeps its own line and the metadata sits under it. */
+@media (max-width: 460px) {
+  .card-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .card-link { white-space: nowrap; }
+  .card-footer-meta { flex-wrap: wrap; gap: 6px 10px; }
+  .card-refs { white-space: nowrap; }
+}

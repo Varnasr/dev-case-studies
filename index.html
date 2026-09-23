@@ -44,7 +44,7 @@
     <div class="container-full">
       <a href="./index.html" class="site-logo">
         <span class="site-logo-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span></span>
-        <span>Dev Case Studies</span>
+        <span>Dev<span class="site-logo-long"> Case Studies</span></span>
       </a>
       <div class="header-center">
         <div class="header-stats">
@@ -147,6 +147,20 @@
         </button>
         <div class="filter-panel-body" id="fp-decades">
           <div class="chip-group" id="decade-chips" role="group" aria-label="Filter by decade"></div>
+        </div>
+      </div>
+
+      <!-- Evidence Filter -->
+      <div class="filter-panel">
+        <button class="filter-panel-toggle" aria-expanded="true" data-target="fp-evidence">
+          <span class="si"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+          Evidence
+          <span class="filter-count" id="evidence-count"></span>
+          <span class="toggle-chevron"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
+        </button>
+        <div class="filter-panel-body" id="fp-evidence">
+          <div class="chip-group" id="evidence-chips" role="group" aria-label="Filter by the kind of evidence cited"></div>
+          <p class="filter-note">What the study cites, read from its own text. Not a grade.</p>
         </div>
       </div>
 
