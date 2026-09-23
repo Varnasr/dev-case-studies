@@ -1,11 +1,11 @@
 {
   "totals": {
-    "studies": 204,
+    "studies": 208,
     "countries": 117,
     "regions": 7,
     "topics": 10,
-    "references": 942,
-    "words": 227458
+    "references": 959,
+    "words": 231277
   },
   "byTopic": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "label": "Health",
-      "count": 22
+      "count": 24
     },
     {
       "label": "Agriculture & Food Security",
@@ -37,12 +37,12 @@
       "count": 11
     },
     {
-      "label": "Infrastructure & Urbanization",
+      "label": "Education",
       "count": 10
     },
     {
-      "label": "Education",
-      "count": 8
+      "label": "Infrastructure & Urbanization",
+      "count": 10
     },
     {
       "label": "Gender & Inclusion",
@@ -52,11 +52,11 @@
   "byRegion": [
     {
       "label": "Sub-Saharan Africa",
-      "count": 46
+      "count": 47
     },
     {
       "label": "Latin America & Caribbean",
-      "count": 40
+      "count": 41
     },
     {
       "label": "East Asia & Pacific",
@@ -64,7 +64,7 @@
     },
     {
       "label": "Global",
-      "count": 25
+      "count": 26
     },
     {
       "label": "Middle East & North Africa",
@@ -76,7 +76,7 @@
     },
     {
       "label": "South Asia",
-      "count": 17
+      "count": 18
     }
   ],
   "byDecade": [
@@ -118,11 +118,11 @@
     },
     {
       "label": "2000s",
-      "count": 81
+      "count": 84
     },
     {
       "label": "2010s",
-      "count": 35
+      "count": 36
     },
     {
       "label": "2020s",
@@ -132,7 +132,7 @@
   "byEvidence": [
     {
       "label": "strong",
-      "count": 204
+      "count": 208
     }
   ]
 }

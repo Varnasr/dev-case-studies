@@ -1,0 +1,45 @@
+{
+  "id": 205,
+  "slug": "india-teaching-at-the-right-level",
+  "title": "Teaching at the Right Level: From Trial to National Policy",
+  "country": "India",
+  "region": "South Asia",
+  "topic": "Education",
+  "year": "2001–present",
+  "summary": "Pratham's Teaching at the Right Level groups children by what they can actually do rather than by the grade they are enrolled in. Four randomised evaluations in India between 2001 and 2016 produced effects from 0.6 SD down to zero, and the variation is the finding: the approach works where teachers are given dedicated time to use it and fails where it is added to an unchanged school day. It now reaches millions of children across India and Africa.",
+  "keyData": [
+    {
+      "label": "First evaluation",
+      "value": "Balsakhi and CAL programmes, Mumbai and Vadodara, 2001–04"
+    },
+    {
+      "label": "Balsakhi effect",
+      "value": "0.14 SD year one, 0.28 SD year two (Banerjee et al. 2005)"
+    },
+    {
+      "label": "Bihar summer camp effect",
+      "value": "About 0.6 SD, the largest of the four trials"
+    },
+    {
+      "label": "Government in-service model",
+      "value": "No detectable effect on learning"
+    },
+    {
+      "label": "The discriminating variable",
+      "value": "Whether dedicated instructional time was ring-fenced"
+    },
+    {
+      "label": "ASER 2018 baseline",
+      "value": "About half of Indian Grade 5 children could not read a Grade 2 text"
+    },
+    {
+      "label": "Cost",
+      "value": "Among the lowest cost-per-SD interventions in the education evidence base"
+    },
+    {
+      "label": "Scale",
+      "value": "Adopted by Indian state governments and adapted across several African countries"
+    }
+  ],
+  "content": "## Background\n\nIndia solved enrolment and did not solve learning. By the mid-2000s net primary enrolment was above 95 per cent, and the Annual Status of Education Report, the household survey Pratham has run since 2005, kept finding that about half of children in Grade 5 could not read a Grade 2 text. The two facts sit together uncomfortably. A child can attend school for five years, be promoted every year, and leave unable to read the textbook of a class three years below.\n\nThe mechanism is not mysterious. The curriculum is written for a notional child who learned last year's material. Teachers are evaluated against curriculum completion. A child who falls behind in Grade 2 is taught Grade 3 content in Grade 3 and Grade 4 content in Grade 4, and the gap compounds. Nothing in the system's incentives asks what any particular child can do today.\n\n## The Intervention\n\nTeaching at the Right Level inverts the ordering. Children are assessed with a short oral instrument — can they recognise letters, read words, read a paragraph, read a story; can they recognise numbers, subtract, divide — and then grouped by that result rather than by enrolled grade. Instruction is pitched at the group. Children are re-assessed and regrouped as they move.\n\nThe delivery model changed repeatedly across two decades, and this is the part usually left out of the summary. The first version, Balsakhi, placed a young community tutor in the school to work with the weakest children. Later versions used Pratham volunteers in villages, then government teachers in dedicated summer camps, then government teachers during a ring-fenced hour of the regular school day, then government teachers with no ring-fenced hour at all.\n\n## Results & Evidence\n\nBanerjee, Cole, Duflo and Linden evaluated the Balsakhi remedial programme and a computer-assisted learning programme in Mumbai and Vadodara, covering about 20,000 children. Balsakhi raised average test scores by 0.14 standard deviations in the first year and 0.28 in the second, with the gains concentrated among the weakest children — which is what you would expect from an intervention that targets them.\n\nThe later work matters more for policy. Banerjee and colleagues ran four randomised evaluations of different scale-up models and reported them together rather than separately. The summer camp model run by government teachers produced effects around 0.6 SD. The model that asked government teachers to use the method inside an unchanged school day produced no detectable effect at all.\n\nThat spread — 0.6 SD to zero, same method, same country, same organisation — is the substance of the case. The authors' reading is that the binding constraint is not teacher knowledge or material quality but whether instructional time is genuinely reallocated. A method that requires regrouping children cannot run in the fifteen minutes left over after the syllabus.\n\nLoyalka and colleagues found a parallel result evaluating a national teacher training programme in China: large-scale in-service training, delivered through the existing system without changing what teachers were required to cover, moved neither teacher practice nor student learning.\n\n## Challenges & Criticisms\n\nThree criticisms are worth taking seriously.\n\nThe first is that grouping by attainment is tracking, and tracking has a long literature on stigma and on lowered expectations for the lower groups. The TaRL response is that the grouping is temporary, fluid and explicitly remedial, and that the counterfactual is not an untracked classroom but a classroom where the weakest children learn nothing.\n\nThe second is external validity across systems rather than across sites. The method assumes a teacher can be redirected. Where the curriculum is centrally examined and the examination is the only thing that counts, the reallocation of time that makes TaRL work is exactly the thing a head teacher cannot authorise.\n\nThe third is that the evidence base is dominated by one organisation. Pratham designed the method, ran most of the implementations, and was a partner in most of the evaluations. That is not a reason to discount the results, which were independently randomised and analysed, but it does mean that the question of whether the method survives a different implementer is largely untested.\n\n## Key Lessons\n\n**A programme that works is not a programme that scales, and the difference is usually not the programme.** The four Indian trials held the method constant and varied the delivery. The results ranged over the whole plausible range. Anyone quoting \"TaRL raises learning by X\" without saying which delivery model is quoting a number that does not exist.\n\n**Ring-fenced time is the active ingredient, not the assessment tool.** The assessment is simple and cheap and everybody copies it. The hour of protected instruction is expensive in political terms and gets dropped first.\n\n**Publishing the null result was the contribution.** The 2016 papers report the failing arm alongside the succeeding ones. A literature that reported only the summer camps would have produced confident national rollouts of the model that does not work.\n\n## References\n\n- Banerjee, A. V., Cole, S., Duflo, E., & Linden, L. (2005). Remedying Education: Evidence from Two Randomized Experiments in India. *NBER Working Paper* No. 11904. https://doi.org/10.3386/w11904\n- Banerjee, A., Banerji, R., Berry, J., Duflo, E., Kannan, H., Mukerji, S., Shotland, M., & Walton, M. (2016). Mainstreaming an Effective Intervention: Evidence from Randomized Evaluations of \"Teaching at the Right Level\" in India. *NBER Working Paper* No. 22746. https://doi.org/10.3386/w22746\n- Banerjee, A., Banerji, R., Berry, J., Duflo, E., Kannan, H., Mukerji, S., Shotland, M., & Walton, M. (2016). From Proof of Concept to Scalable Policies: Challenges and Solutions, with an Application. *NBER Working Paper* No. 22931. https://doi.org/10.3386/w22931\n- Loyalka, P., Popova, A., Li, G., & Shi, Z. (2019). Does Teacher Training Actually Work? Evidence from a Large-Scale Randomized Evaluation of a National Teacher Training Program. *American Economic Journal: Applied Economics*, 11(3), 128-154. https://doi.org/10.1257/app.20170226\n"
+}
