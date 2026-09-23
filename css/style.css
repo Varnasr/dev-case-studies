@@ -38,6 +38,9 @@
   --evidence-strong:   #3d7a5f;
   --evidence-moderate: #9d5f17;
   --evidence-emerging: #6b6b6b;
+  --evidence-strong-bg:   #e8f5ee;
+  --evidence-moderate-bg: #fef3e4;
+  --evidence-emerging-bg: #f0f0f0;
 
   --topic-financial:     #8b6914;
   --topic-financial-bg:  #f9f3e3;
@@ -518,9 +521,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.65rem; font-weight: 600; padding: 2px 6px;
   border-radius: var(--radius-sm); white-space: nowrap;
 }
-.card-evidence.strong { background: #e8f5ee; color: var(--evidence-strong); }
-.card-evidence.moderate { background: #fef3e4; color: var(--evidence-moderate); }
-.card-evidence.emerging { background: #f0f0f0; color: var(--evidence-emerging); }
+.card-evidence.strong { background: var(--evidence-strong-bg); color: var(--evidence-strong); }
+.card-evidence.moderate { background: var(--evidence-moderate-bg); color: var(--evidence-moderate); }
+.card-evidence.emerging { background: var(--evidence-emerging-bg); color: var(--evidence-emerging); }
 
 /* No results */
 .no-results { text-align: center; padding: var(--sp-16) var(--sp-6); grid-column: 1 / -1; }
@@ -1110,6 +1113,13 @@ h1, h2, h3, h4, h5, h6 {
      and keeping its ink preserves the hue and destroys the contrast, which is
      why all ten failed and none of them looked obviously wrong. Each ink below
      is the same hue lifted until it clears 5:1 on its own fill. */
+  --evidence-strong:        #6FC08F;
+  --evidence-moderate:      #D9A055;
+  --evidence-emerging:      #9EA5AD;
+  --evidence-strong-bg:     #12251b;
+  --evidence-moderate-bg:   #2a1f0d;
+  --evidence-emerging-bg:   #1c1c1c;
+
   --topic-financial:        #D3B45F;
   --topic-health:           #C77575;
   --topic-education:        #6A9DC8;
