@@ -1,5 +1,7 @@
 # dev-case-studies
 
+Shared engineering standard: @.claude/engineering-standards.md. It applies to all work in this repository. This file adds what is specific to the project, and wins where the two disagree.
+
 Research library of 204 cited development case studies from across the Global
 South. Static HTML, no framework, one generator script. Deployed to GitHub
 Pages under `/dev-case-studies/`.

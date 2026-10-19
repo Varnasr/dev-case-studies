@@ -15,6 +15,10 @@ on:
     - cron: '41 6 * * *'
   workflow_dispatch:
 
+# Read-only: this workflow checks the repository and writes nothing back to it.
+permissions:
+  contents: read
+
 jobs:
   links:
     runs-on: ubuntu-latest
@@ -25,7 +29,7 @@ jobs:
       - uses: lycheeverse/lychee-action@v2
         with:
           args: >-
-            --accept 200,204,301,302,403,429 --exclude-mail
+            --accept 200,204,301,302,403,429
             --exclude "localhost|127.0.0.1|example.com|twitter.com|x.com|linkedin.com|facebook.com|instagram.com|t.me|wa.me|play.google.com|apps.apple.com"
             --timeout 30 --max-retries 2 "**/*.html" "**/*.md"
           fail: true
