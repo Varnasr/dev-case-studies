@@ -1,16 +1,16 @@
 [
   {
     "slug": "kenya-mpesa",
-    "title": "M-Pesa: Mobile Money Revolution",
+    "title": "M-Pesa and the mobile money revolution",
     "country": "Kenya",
     "region": "Sub-Saharan Africa",
     "topic": "Financial Inclusion",
     "year": "2007–present",
-    "text": "m-pesa: mobile money revolution kenya sub-saharan africa financial inclusion launched by safaricom and vodafone in 2007, m-pesa became the world's most successful mobile money platform, reaching over 51 million users across multiple countries and lifting roughly 2% of kenyan households out of poverty according to landmark research. launch year 2007 active users (2024) 51 million+ household penetration 96% of kenyan households poverty reduction ~2% of households (194,000) lifted out of poverty agent network over 600,000 agents across operating countries transaction volume over $300 billion annually by 2023 countries of operation 7 countries including tanzania, mozambique, drc gdp share of transactions approximately 50% of kenya's gdp"
+    "text": "m-pesa and the mobile money revolution kenya sub-saharan africa financial inclusion launched by safaricom and vodafone in 2007, m-pesa became the world's most successful mobile money platform, reaching over 51 million users across multiple countries and lifting roughly 2% of kenyan households out of poverty according to landmark research. launch year 2007 active users (2024) 51 million+ household penetration 96% of kenyan households poverty reduction ~2% of households (194,000) lifted out of poverty agent network over 600,000 agents across operating countries transaction volume over $300 billion annually by 2023 countries of operation 7 countries including tanzania, mozambique, drc gdp share of transactions approximately 50% of kenya's gdp"
   },
   {
     "slug": "kenya-free-primary-education",
-    "title": "Free Primary Education Programme",
+    "title": "Free Primary Education programme",
     "country": "Kenya",
     "region": "Sub-Saharan Africa",
     "topic": "Education",
@@ -19,7 +19,7 @@
   },
   {
     "slug": "kenya-devolution",
-    "title": "Devolution & County Governments",
+    "title": "Devolution & county governments",
     "country": "Kenya",
     "region": "Sub-Saharan Africa",
     "topic": "Governance & Decentralization",
@@ -28,7 +28,7 @@
   },
   {
     "slug": "rwanda-gacaca",
-    "title": "Gacaca Community Justice Courts",
+    "title": "Gacaca community justice courts",
     "country": "Rwanda",
     "region": "Sub-Saharan Africa",
     "topic": "Governance & Decentralization",
@@ -37,7 +37,7 @@
   },
   {
     "slug": "rwanda-vision-2020",
-    "title": "Vision 2020 Economic Transformation",
+    "title": "Vision 2020 economic transformation",
     "country": "Rwanda",
     "region": "Sub-Saharan Africa",
     "topic": "Economic Growth & Industrial Policy",
@@ -46,7 +46,7 @@
   },
   {
     "slug": "rwanda-mutuelles",
-    "title": "Mutuelles de Santé Community Health Insurance",
+    "title": "Mutuelles de Santé community health insurance",
     "country": "Rwanda",
     "region": "Sub-Saharan Africa",
     "topic": "Health",
@@ -55,12 +55,12 @@
   },
   {
     "slug": "rwanda-girinka",
-    "title": "Girinka One Cow Per Poor Family",
+    "title": "Girinka, One Cow per Poor Family",
     "country": "Rwanda",
     "region": "Sub-Saharan Africa",
     "topic": "Agriculture & Food Security",
     "year": "2006–present",
-    "text": "girinka one cow per poor family rwanda sub-saharan africa agriculture & food security rwanda's girinka program distributed over 400,000 cows to poor families, drawing on a traditional practice of cattle gifting to address child malnutrition, increase agricultural productivity through manure, and promote social cohesion between genocide survivors and perpetrators. cows distributed over 430,000 by 2022 beneficiary households over 380,000 families milk production increase national production rose from 60,000 to over 800,000 metric tons (2000-2020) child stunting rate declined from 51% (2005) to 33% (2019/20) program cost approximately $200 per cow at initial distribution pass-on requirement first female calf given to a neighbor manure production estimated 8-10 tons of organic fertilizer per cow per year annual budget approximately $5-8 million from government and donors"
+    "text": "girinka, one cow per poor family rwanda sub-saharan africa agriculture & food security rwanda's girinka program distributed over 400,000 cows to poor families, drawing on a traditional practice of cattle gifting to address child malnutrition, increase agricultural productivity through manure, and promote social cohesion between genocide survivors and perpetrators. cows distributed over 430,000 by 2022 beneficiary households over 380,000 families milk production increase national production rose from 60,000 to over 800,000 metric tons (2000-2020) child stunting rate declined from 51% (2005) to 33% (2019/20) program cost approximately $200 per cow at initial distribution pass-on requirement first female calf given to a neighbor manure production estimated 8-10 tons of organic fertilizer per cow per year annual budget approximately $5-8 million from government and donors"
   },
   {
     "slug": "ethiopia-psnp",
@@ -73,7 +73,7 @@
   },
   {
     "slug": "ethiopia-adli",
-    "title": "Agricultural Development Led Industrialization",
+    "title": "Agricultural development led industrialization",
     "country": "Ethiopia",
     "region": "Sub-Saharan Africa",
     "topic": "Agriculture & Food Security",
@@ -91,7 +91,7 @@
   },
   {
     "slug": "nigeria-lagos-brt",
-    "title": "Lagos Bus Rapid Transit System",
+    "title": "Lagos bus rapid transit system",
     "country": "Nigeria",
     "region": "Sub-Saharan Africa",
     "topic": "Infrastructure & Urbanization",
@@ -118,7 +118,7 @@
   },
   {
     "slug": "ghana-cocoa-reform",
-    "title": "Cocoa Sector Reform & COCOBOD",
+    "title": "Cocoa sector reform & COCOBOD",
     "country": "Ghana",
     "region": "Sub-Saharan Africa",
     "topic": "Agriculture & Food Security",
@@ -127,7 +127,7 @@
   },
   {
     "slug": "ghana-leap",
-    "title": "LEAP Cash Transfer Programme",
+    "title": "LEAP cash transfer programme",
     "country": "Ghana",
     "region": "Sub-Saharan Africa",
     "topic": "Social Protection",
@@ -136,7 +136,7 @@
   },
   {
     "slug": "tanzania-ujamaa",
-    "title": "Ujamaa Villagization Experiment",
+    "title": "Ujamaa villagization experiment",
     "country": "Tanzania",
     "region": "Sub-Saharan Africa",
     "topic": "Governance & Decentralization",
@@ -172,7 +172,7 @@
   },
   {
     "slug": "botswana-diamonds",
-    "title": "Diamond-Led Development Model",
+    "title": "Diamond-led development model",
     "country": "Botswana",
     "region": "Sub-Saharan Africa",
     "topic": "Economic Growth & Industrial Policy",
@@ -181,7 +181,7 @@
   },
   {
     "slug": "botswana-achap",
-    "title": "ACHAP HIV/AIDS Public-Private Partnership",
+    "title": "ACHAP HIV/AIDS public-private partnership",
     "country": "Botswana",
     "region": "Sub-Saharan Africa",
     "topic": "Health",
@@ -190,7 +190,7 @@
   },
   {
     "slug": "south-africa-social-grants",
-    "title": "Post-Apartheid Social Grants System",
+    "title": "Post-apartheid social grants system",
     "country": "South Africa",
     "region": "Sub-Saharan Africa",
     "topic": "Social Protection",
@@ -199,7 +199,7 @@
   },
   {
     "slug": "south-africa-rdp-housing",
-    "title": "Reconstruction & Development Programme Housing",
+    "title": "Reconstruction & Development Programme housing",
     "country": "South Africa",
     "region": "Sub-Saharan Africa",
     "topic": "Infrastructure & Urbanization",
@@ -226,7 +226,7 @@
   },
   {
     "slug": "mozambique-reconstruction",
-    "title": "Post-Civil War Reconstruction",
+    "title": "Post-civil war reconstruction",
     "country": "Mozambique",
     "region": "Sub-Saharan Africa",
     "topic": "Governance & Decentralization",
@@ -244,7 +244,7 @@
   },
   {
     "slug": "zambia-sct",
-    "title": "Social Cash Transfer Programme",
+    "title": "Social cash transfer programme",
     "country": "Zambia",
     "region": "Sub-Saharan Africa",
     "topic": "Social Protection",
@@ -253,7 +253,7 @@
   },
   {
     "slug": "sierra-leone-post-ebola",
-    "title": "Post-Ebola Health System Rebuilding",
+    "title": "Post-Ebola health system rebuilding",
     "country": "Sierra Leone",
     "region": "Sub-Saharan Africa",
     "topic": "Health",
@@ -262,7 +262,7 @@
   },
   {
     "slug": "liberia-reconstruction",
-    "title": "Post-Conflict Reconstruction under Sirleaf",
+    "title": "Post-conflict reconstruction under Sirleaf",
     "country": "Liberia",
     "region": "Sub-Saharan Africa",
     "topic": "Governance & Decentralization",
@@ -271,7 +271,7 @@
   },
   {
     "slug": "namibia-big-pilot",
-    "title": "Basic Income Grant Pilot",
+    "title": "Basic Income Grant pilot",
     "country": "Namibia",
     "region": "Sub-Saharan Africa",
     "topic": "Social Protection",
@@ -280,7 +280,7 @@
   },
   {
     "slug": "niger-adaptive-social-protection",
-    "title": "Sahel Adaptive Social Protection",
+    "title": "Sahel adaptive social protection",
     "country": "Niger",
     "region": "Sub-Saharan Africa",
     "topic": "Social Protection",
@@ -289,7 +289,7 @@
   },
   {
     "slug": "zimbabwe-hyperinflation",
-    "title": "Hyperinflation Crisis & Dollarization",
+    "title": "Hyperinflation crisis & dollarization",
     "country": "Zimbabwe",
     "region": "Sub-Saharan Africa",
     "topic": "Economic Growth & Industrial Policy",
@@ -298,16 +298,16 @@
   },
   {
     "slug": "madagascar-vanilla",
-    "title": "Vanilla Economy: Boom, Bust & Poverty",
+    "title": "Vanilla boom, bust & poverty",
     "country": "Madagascar",
     "region": "Sub-Saharan Africa",
     "topic": "Agriculture & Food Security",
     "year": "2000–present",
-    "text": "vanilla economy: boom, bust & poverty madagascar sub-saharan africa agriculture & food security madagascar produces roughly 80% of the world's natural vanilla. dramatic price volatility, peaking near $600 per kilogram in 2018, has created a paradox of extreme wealth flowing through one of the world's poorest regions while entrenching cycles of poverty and quality decline. global market share ~80% of world's natural vanilla peak price ~us$600/kg (2018) price crash below $20/kg (2003–2012) sava region poverty rate over 70% below poverty line vanilla farmers ~80,000 smallholders export revenue us$600m+ in peak year (2018) madagascar gdp per capita ~us$500 (2019) cyclone enawo impact destroyed ~30% of 2017 crop"
+    "text": "vanilla boom, bust & poverty madagascar sub-saharan africa agriculture & food security madagascar produces roughly 80% of the world's natural vanilla. dramatic price volatility, peaking near $600 per kilogram in 2018, has created a paradox of extreme wealth flowing through one of the world's poorest regions while entrenching cycles of poverty and quality decline. global market share ~80% of world's natural vanilla peak price ~us$600/kg (2018) price crash below $20/kg (2003–2012) sava region poverty rate over 70% below poverty line vanilla farmers ~80,000 smallholders export revenue us$600m+ in peak year (2018) madagascar gdp per capita ~us$500 (2019) cyclone enawo impact destroyed ~30% of 2017 crop"
   },
   {
     "slug": "burkina-faso-zai",
-    "title": "Zai Pit Water Harvesting Revival",
+    "title": "Zai pit water harvesting revival",
     "country": "Burkina Faso",
     "region": "Sub-Saharan Africa",
     "topic": "Agriculture & Food Security",
@@ -316,7 +316,7 @@
   },
   {
     "slug": "mali-office-du-niger",
-    "title": "Office du Niger Irrigation Scheme",
+    "title": "Office du Niger irrigation scheme",
     "country": "Mali",
     "region": "Sub-Saharan Africa",
     "topic": "Agriculture & Food Security",
@@ -325,7 +325,7 @@
   },
   {
     "slug": "cote-divoire-recovery",
-    "title": "Post-Crisis Economic Recovery",
+    "title": "Post-crisis economic recovery",
     "country": "Côte d'Ivoire",
     "region": "Sub-Saharan Africa",
     "topic": "Economic Growth & Industrial Policy",
@@ -334,7 +334,7 @@
   },
   {
     "slug": "drc-conflict-minerals",
-    "title": "Conflict Minerals & Dodd-Frank Section 1502",
+    "title": "Conflict minerals & Dodd-Frank Section 1502",
     "country": "DRC",
     "region": "Sub-Saharan Africa",
     "topic": "Governance & Decentralization",
@@ -343,7 +343,7 @@
   },
   {
     "slug": "somalia-mobile-money",
-    "title": "Mobile Money in a Fragile State",
+    "title": "Mobile money in a fragile state",
     "country": "Somalia",
     "region": "Sub-Saharan Africa",
     "topic": "Financial Inclusion",
@@ -352,7 +352,7 @@
   },
   {
     "slug": "mauritius-epz",
-    "title": "Export Processing Zones & Diversification",
+    "title": "Export processing zones & diversification",
     "country": "Mauritius",
     "region": "Sub-Saharan Africa",
     "topic": "Economic Growth & Industrial Policy",
@@ -361,16 +361,16 @@
   },
   {
     "slug": "cape-verde-development",
-    "title": "Small Island Development Success Story",
+    "title": "Small island development success story",
     "country": "Cape Verde",
     "region": "Sub-Saharan Africa",
     "topic": "Economic Growth & Industrial Policy",
     "year": "1975–present",
-    "text": "small island development success story cape verde sub-saharan africa economic growth & industrial policy cape verde graduated from least developed country status in 2007, a rare achievement in sub-saharan africa. the archipelago nation built a stable democracy, achieved gdp per capita of approximately $3,600, and leveraged tourism, remittances, and good governance to overcome extreme geographic and resource constraints. ldc graduation 2007 (one of few african countries) gdp per capita ~us$3,600 (2019) hdi score 0.662 (medium human development, 2019) remittances ~12% of gdp tourism contribution ~25% of gdp tourist arrivals 819,000 (2019) population ~556,000 (2020) diaspora population ~700,000 (larger than resident population)"
+    "text": "small island development success story cape verde sub-saharan africa economic growth & industrial policy cape verde graduated from least developed country status in 2007, a rare achievement in sub-saharan africa. the archipelago nation built a stable democracy, achieved gdp per capita of approximately $3,600, and used tourism, remittances, and good governance to overcome extreme geographic and resource constraints. ldc graduation 2007 (one of few african countries) gdp per capita ~us$3,600 (2019) hdi score 0.662 (medium human development, 2019) remittances ~12% of gdp tourism contribution ~25% of gdp tourist arrivals 819,000 (2019) population ~556,000 (2020) diaspora population ~700,000 (larger than resident population)"
   },
   {
     "slug": "eritrea-national-service",
-    "title": "National Service & Developmental Authoritarianism",
+    "title": "National service & developmental authoritarianism",
     "country": "Eritrea",
     "region": "Sub-Saharan Africa",
     "topic": "Governance & Decentralization",
@@ -388,7 +388,7 @@
   },
   {
     "slug": "cameroon-community-forests",
-    "title": "Community Forests Programme",
+    "title": "Community forests programme",
     "country": "Cameroon",
     "region": "Sub-Saharan Africa",
     "topic": "Environment & Climate",
@@ -397,7 +397,7 @@
   },
   {
     "slug": "sudan-gezira",
-    "title": "Gezira Irrigation Scheme",
+    "title": "Gezira irrigation scheme",
     "country": "Sudan",
     "region": "Sub-Saharan Africa",
     "topic": "Agriculture & Food Security",
@@ -406,7 +406,7 @@
   },
   {
     "slug": "india-upi",
-    "title": "India's UPI Revolution",
+    "title": "India's UPI revolution",
     "country": "India",
     "region": "South Asia",
     "topic": "Financial Inclusion",
@@ -420,11 +420,11 @@
     "region": "South Asia",
     "topic": "Social Protection",
     "year": "2013–present",
-    "text": "india's direct benefit transfer & jam trinity india south asia social protection india built the world's most ambitious digital welfare delivery system using the jam trinity -- jan dhan bank accounts, aadhaar biometric identity, and mobile phones -- channeling over 30 lakh crore rupees in direct benefit transfers since 2013. while the system significantly reduced leakage in programs like lpg subsidies, it also created painful exclusion errors where genuine beneficiaries lost access due to biometric failures and connectivity gaps. jan dhan accounts opened 520 million (2024) aadhaar enrollments 1.38 billion (2024) cumulative dbt transfers ₹33.7 lakh crore (2013-2025) government-claimed savings ₹2.73 lakh crore duplicate lpg connections eliminated 35.4 million lpg leakage reduction 24% (barnwal 2017) schemes using dbt pipeline 300+ central schemes pm-kisan beneficiaries ~110 million farmers"
+    "text": "india's direct benefit transfer & jam trinity india south asia social protection india built the world's most ambitious digital welfare delivery system using the jam trinity (jan dhan bank accounts, aadhaar biometric identity, and mobile phones), channeling over 30 lakh crore rupees in direct benefit transfers since 2013. while the system significantly reduced leakage in programs like lpg subsidies, it also created painful exclusion errors where eligible beneficiaries lost access due to biometric failures and connectivity gaps. jan dhan accounts opened 520 million (2024) aadhaar enrollments 1.38 billion (2024) cumulative dbt transfers ₹33.7 lakh crore (2013-2025) government-claimed savings ₹2.73 lakh crore duplicate lpg connections eliminated 35.4 million lpg leakage reduction 24% (barnwal 2017) schemes using dbt pipeline 300+ central schemes pm-kisan beneficiaries ~110 million farmers"
   },
   {
     "slug": "india-mgnrega",
-    "title": "India's MGNREGA Workfare Program",
+    "title": "India's MGNREGA workfare program",
     "country": "India",
     "region": "South Asia",
     "topic": "Social Protection",
@@ -433,16 +433,16 @@
   },
   {
     "slug": "india-kerala-model",
-    "title": "Kerala's Human Development Model",
+    "title": "Kerala's human development model",
     "country": "India",
     "region": "South Asia",
     "topic": "Health",
     "year": "1950s–present",
-    "text": "kerala's human development model india south asia health kerala achieved life expectancy of 77.3 years, literacy of 96.2%, and infant mortality of 6 per 1,000 -- comparable to middle-income countries -- on per-capita income that remained below the indian average for most of its history. built on radical land reform, massive public investment in education and health, and a strong redistributive political culture, the model now faces challenges from fiscal stress, aging, and dependence on gulf remittances. life expectancy 77.3 years (vs india avg 69.7) infant mortality rate 6 per 1,000 live births literacy rate 96.2% total fertility rate 1.5 gulf remittances ₹1.15 lakh crore/year unemployment rate 7.4% (highest among major states) population aged 60+ 16.5% debt-to-gsdp ratio 37%+"
+    "text": "kerala's human development model india south asia health kerala achieved life expectancy of 77.3 years, literacy of 96.2%, and infant mortality of 6 per 1,000, comparable to middle-income countries, on per-capita income that remained below the indian average for most of its history. built on radical land reform, massive public investment in education and health, and a strong redistributive political culture, the model now faces challenges from fiscal stress, aging, and dependence on gulf remittances. life expectancy 77.3 years (vs india avg 69.7) infant mortality rate 6 per 1,000 live births literacy rate 96.2% total fertility rate 1.5 gulf remittances ₹1.15 lakh crore/year unemployment rate 7.4% (highest among major states) population aged 60+ 16.5% debt-to-gsdp ratio 37%+"
   },
   {
     "slug": "india-pli",
-    "title": "India's Production-Linked Incentive Scheme",
+    "title": "India's Production-Linked Incentive scheme",
     "country": "India",
     "region": "South Asia",
     "topic": "Economic Growth & Industrial Policy",
@@ -460,7 +460,7 @@
   },
   {
     "slug": "bangladesh-brac",
-    "title": "BRAC's Ultra-Poor Graduation Model",
+    "title": "BRAC's ultra-poor graduation model",
     "country": "Bangladesh",
     "region": "South Asia",
     "topic": "Social Protection",
@@ -469,25 +469,25 @@
   },
   {
     "slug": "bangladesh-garments",
-    "title": "Bangladesh's Garment Industry & Women's Empowerment",
+    "title": "Bangladesh's garment industry & women's empowerment",
     "country": "Bangladesh",
     "region": "South Asia",
     "topic": "Gender & Inclusion",
     "year": "1980s–present",
-    "text": "bangladesh's garment industry & women's empowerment bangladesh south asia gender & inclusion bangladesh's ready-made garment sector grew from $31 million in exports in 1983 to over $45 billion by 2023, employing roughly 4 million workers -- approximately 80% women -- and becoming the single most important driver of the country's poverty reduction. the 2013 rana plaza collapse, which killed 1,134 workers, exposed systemic safety failures, but post-disaster reforms demonstrated that international pressure could improve factory conditions without destroying the industry. total rmg exports $46.99 billion (2022-23) share of total exports 84.6% number of factories ~3,500 total employment ~4 million minimum wage (2023) tk 12,500/month (~$113) rana plaza death toll 1,134 killed accord safety hazards identified 154,689 accord remediation rate 92%"
+    "text": "bangladesh's garment industry & women's empowerment bangladesh south asia gender & inclusion bangladesh's ready-made garment sector grew from $31 million in exports in 1983 to over $45 billion by 2023, employing roughly 4 million workers, approximately 80% of them women, and becoming the single most important driver of the country's poverty reduction. the 2013 rana plaza collapse, which killed 1,134 workers, exposed systemic safety failures, but post-disaster reforms demonstrated that international pressure could improve factory conditions without destroying the industry. total rmg exports $46.99 billion (2022-23) share of total exports 84.6% number of factories ~3,500 total employment ~4 million minimum wage (2023) tk 12,500/month (~$113) rana plaza death toll 1,134 killed accord safety hazards identified 154,689 accord remediation rate 92%"
   },
   {
     "slug": "nepal-community-forestry",
-    "title": "Nepal's Community Forestry Program",
+    "title": "Nepal's community forestry program",
     "country": "Nepal",
     "region": "South Asia",
     "topic": "Environment & Climate",
     "year": "1978–present",
-    "text": "nepal's community forestry program nepal south asia environment & climate nepal's community forestry program transferred management of national forests to over 22,500 local community forest user groups managing 2.3 million hectares -- roughly one-third of the country's forests -- involving 2.9 million households. the program reversed decades of deforestation in the middle hills, though serious equity critiques persist around elite capture of benefits and limited women's participation in decision-making. number of cfugs 22,500+ (2023) area under community management 2.3 million hectares households involved 2.9 million (~35% of population) national forest cover 44.7% middle hills forest recovery 29% to 40%+ annual cfug income ~$114 million carbon stored ~180 million metric tons co2eq female representation on committees ~48%"
+    "text": "nepal's community forestry program nepal south asia environment & climate nepal's community forestry program transferred management of national forests to over 22,500 local community forest user groups managing 2.3 million hectares (roughly one-third of the country's forests) and involving 2.9 million households. the program reversed decades of deforestation in the middle hills, though serious equity critiques persist around elite capture of benefits and limited women's participation in decision-making. number of cfugs 22,500+ (2023) area under community management 2.3 million hectares households involved 2.9 million (~35% of population) national forest cover 44.7% middle hills forest recovery 29% to 40%+ annual cfug income ~$114 million carbon stored ~180 million metric tons co2eq female representation on committees ~48%"
   },
   {
     "slug": "nepal-remittances",
-    "title": "Nepal's Remittance Economy",
+    "title": "Nepal's remittance economy",
     "country": "Nepal",
     "region": "South Asia",
     "topic": "Financial Inclusion",
@@ -501,11 +501,11 @@
     "region": "South Asia",
     "topic": "Social Protection",
     "year": "2008–present",
-    "text": "pakistan's benazir income support programme pakistan south asia social protection pakistan's bisp, launched in 2008, grew into one of the developing world's largest social safety nets, reaching over 9 million families through an innovative poverty scorecard system with payments made directly to women. a rare example of institutional continuity across pakistan's fractured political landscape, bisp proved that even fragile states can build durable social protection, though transfers remain too small to be transformative. beneficiary households 9.3 million (2023) annual budget (fy 2023) pkr 400 billion (~$1.4 billion) budget as % of gdp ~0.8% quarterly transfer amount pkr 8,750 (~$31) households in nser database 36 million women issued cnics via bisp 8+ million consumption increase ~10% per capita covid-19 emergency disbursement 16.9 million families"
+    "text": "pakistan's benazir income support programme pakistan south asia social protection pakistan's bisp, launched in 2008, grew into one of the developing world's largest social safety nets, reaching over 9 million families through an innovative poverty scorecard system with payments made directly to women. a rare example of institutional continuity across pakistan's fractured politics, bisp proved that even fragile states can build durable social protection, though transfers remain too small to transform recipients' lives. beneficiary households 9.3 million (2023) annual budget (fy 2023) pkr 400 billion (~$1.4 billion) budget as % of gdp ~0.8% quarterly transfer amount pkr 8,750 (~$31) households in nser database 36 million women issued cnics via bisp 8+ million consumption increase ~10% per capita covid-19 emergency disbursement 16.9 million families"
   },
   {
     "slug": "sri-lanka-crisis-2022",
-    "title": "Sri Lanka's 2022 Economic Crisis",
+    "title": "Sri Lanka's 2022 economic crisis",
     "country": "Sri Lanka",
     "region": "South Asia",
     "topic": "Economic Growth & Industrial Policy",
@@ -514,7 +514,7 @@
   },
   {
     "slug": "bhutan-gnh",
-    "title": "Bhutan's Gross National Happiness Framework",
+    "title": "Bhutan's Gross National Happiness framework",
     "country": "Bhutan",
     "region": "South Asia",
     "topic": "Governance & Decentralization",
@@ -523,34 +523,34 @@
   },
   {
     "slug": "maldives-climate",
-    "title": "Maldives' Climate Adaptation Strategy",
+    "title": "Maldives' climate adaptation strategy",
     "country": "Maldives",
     "region": "South Asia",
     "topic": "Environment & Climate",
     "year": "2004–present",
-    "text": "maldives' climate adaptation strategy maldives south asia environment & climate the maldives, with 80% of its islands less than one metre above sea level, faces an existential climate threat and has pursued adaptation ranging from building the artificial island of hulhumale to house a third of its population, to pioneering climate diplomacy at the un. the nation's survival strategy is constrained by the paradox that its economic lifeline -- luxury tourism -- drives the very emissions threatening its existence. number of islands 1,192 (187 inhabited) average elevation 1.5 metres above sea level tourism as % of gdp (direct) ~28% annual tourist arrivals 1.88 million (2023) hulhumale target population 240,000 (by 2030) estimated adaptation cost (to 2030) $6-8 billion adaptation finance received ~$300 million (2010-2022) public debt to gdp ~115% (2023)"
+    "text": "maldives' climate adaptation strategy maldives south asia environment & climate the maldives, with 80% of its islands less than one metre above sea level, faces an existential climate threat and has pursued adaptation ranging from building the artificial island of hulhumale to house a third of its population, to pioneering climate diplomacy at the un. the nation's survival strategy is constrained by the paradox that its economic lifeline, luxury tourism, drives the very emissions threatening its existence. number of islands 1,192 (187 inhabited) average elevation 1.5 metres above sea level tourism as % of gdp (direct) ~28% annual tourist arrivals 1.88 million (2023) hulhumale target population 240,000 (by 2030) estimated adaptation cost (to 2030) $6-8 billion adaptation finance received ~$300 million (2010-2022) public debt to gdp ~115% (2023)"
   },
   {
     "slug": "south-asia-stunting",
-    "title": "South Asia's Child Stunting Crisis",
+    "title": "South Asia's child stunting crisis",
     "country": "Regional (India, Bangladesh, Pakistan, Nepal)",
     "region": "South Asia",
     "topic": "Health",
     "year": "2000–present",
-    "text": "south asia's child stunting crisis regional (india, bangladesh, pakistan, nepal) south asia health south asia is home to approximately 57 million stunted children under five -- more than sub-saharan africa -- with india alone accounting for one-third of the world's stunted children. bangladesh achieved the region's most dramatic reduction from 51% to 28%, largely through sanitation elimination, women's empowerment, and effective community health workers, while india and pakistan have lagged despite far greater resources. india stunting rate 35.5% (2019-21) bangladesh stunting rate 28% (2022) pakistan stunting rate 40% (2017-18) nepal stunting rate 32% (2022) india's stunted children 40.6 million gdp cost of malnutrition 2-3% of gdp bangladesh open defecation rate <1% (2020) india open defecation rate ~15% (2021)"
+    "text": "south asia's child stunting crisis regional (india, bangladesh, pakistan, nepal) south asia health south asia is home to approximately 57 million stunted children under five, more than sub-saharan africa, with india alone accounting for one-third of the world's stunted children. bangladesh achieved the region's most dramatic reduction from 51% to 28%, largely through sanitation elimination, women's empowerment, and effective community health workers, while india and pakistan have lagged despite far greater resources. india stunting rate 35.5% (2019-21) bangladesh stunting rate 28% (2022) pakistan stunting rate 40% (2017-18) nepal stunting rate 32% (2022) india's stunted children 40.6 million gdp cost of malnutrition 2-3% of gdp bangladesh open defecation rate <1% (2020) india open defecation rate ~15% (2021)"
   },
   {
     "slug": "china-sez",
-    "title": "Special Economic Zones: Shenzhen Model",
+    "title": "Special economic zones and the Shenzhen model",
     "country": "China",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
     "year": "1980–present",
-    "text": "special economic zones: shenzhen model china east asia & pacific economic growth & industrial policy china's special economic zones, launched in 1980 under deng xiaoping's reform program, transformed shenzhen from a small fishing village into a global technology hub with gdp exceeding $450 billion, pioneering a model of export-oriented, fdi-led growth replicated worldwide. shenzhen gdp (2022) $456 billion shenzhen population growth from ~30,000 (1979) to 17.6 million (2020) original sezs established 5 (shenzhen, zhuhai, shantou, xiamen, hainan) fdi into sezs (1980s) over 60% of china's total fdi shenzhen gdp growth (1980-2020) average ~22% annually sez corporate tax rate 15% vs. 33% national rate shenzhen patent applications (2021) over 200,000 annually"
+    "text": "special economic zones and the shenzhen model china east asia & pacific economic growth & industrial policy china's special economic zones, launched in 1980 under deng xiaoping's reform program, transformed shenzhen from a small fishing village into a global technology hub with gdp exceeding $450 billion, pioneering a model of export-oriented, fdi-led growth replicated worldwide. shenzhen gdp (2022) $456 billion shenzhen population growth from ~30,000 (1979) to 17.6 million (2020) original sezs established 5 (shenzhen, zhuhai, shantou, xiamen, hainan) fdi into sezs (1980s) over 60% of china's total fdi shenzhen gdp growth (1980-2020) average ~22% annually sez corporate tax rate 15% vs. 33% national rate shenzhen patent applications (2021) over 200,000 annually"
   },
   {
     "slug": "china-tve",
-    "title": "Township & Village Enterprises",
+    "title": "Township & village enterprises",
     "country": "China",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -559,7 +559,7 @@
   },
   {
     "slug": "china-poverty-alleviation",
-    "title": "Targeted Poverty Alleviation Campaign",
+    "title": "Targeted Poverty Alleviation campaign",
     "country": "China",
     "region": "East Asia & Pacific",
     "topic": "Social Protection",
@@ -577,7 +577,7 @@
   },
   {
     "slug": "china-hukou-reform",
-    "title": "Hukou System & Migration Governance",
+    "title": "Hukou system & migration governance",
     "country": "China",
     "region": "East Asia & Pacific",
     "topic": "Governance & Decentralization",
@@ -586,7 +586,7 @@
   },
   {
     "slug": "china-one-child-policy",
-    "title": "One-Child to Universal Two-Child Policy",
+    "title": "One-child to universal two-child policy",
     "country": "China",
     "region": "East Asia & Pacific",
     "topic": "Health",
@@ -595,7 +595,7 @@
   },
   {
     "slug": "vietnam-doi-moi",
-    "title": "Doi Moi Economic Renovation",
+    "title": "Doi Moi economic renovation",
     "country": "Vietnam",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -604,7 +604,7 @@
   },
   {
     "slug": "vietnam-industrial-zones",
-    "title": "Industrial Zone Development Strategy",
+    "title": "Industrial zone development strategy",
     "country": "Vietnam",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -613,7 +613,7 @@
   },
   {
     "slug": "vietnam-poverty-reduction",
-    "title": "National Targeted Poverty Reduction Programme",
+    "title": "National targeted poverty reduction programme",
     "country": "Vietnam",
     "region": "East Asia & Pacific",
     "topic": "Social Protection",
@@ -622,7 +622,7 @@
   },
   {
     "slug": "south-korea-saemaul",
-    "title": "Saemaul Undong Village Movement",
+    "title": "Saemaul Undong village movement",
     "country": "South Korea",
     "region": "East Asia & Pacific",
     "topic": "Agriculture & Food Security",
@@ -631,7 +631,7 @@
   },
   {
     "slug": "south-korea-hci",
-    "title": "Heavy & Chemical Industry Drive",
+    "title": "Heavy & chemical industry drive",
     "country": "South Korea",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -640,7 +640,7 @@
   },
   {
     "slug": "south-korea-chaebol",
-    "title": "Chaebol-Led Export Development",
+    "title": "Chaebol-led export development",
     "country": "South Korea",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -649,7 +649,7 @@
   },
   {
     "slug": "taiwan-land-reform",
-    "title": "Land Reform & Rural Transformation",
+    "title": "Land reform & rural transformation",
     "country": "Taiwan",
     "region": "East Asia & Pacific",
     "topic": "Agriculture & Food Security",
@@ -658,7 +658,7 @@
   },
   {
     "slug": "taiwan-tsmc",
-    "title": "TSMC & Semiconductor Industrial Policy",
+    "title": "TSMC & semiconductor industrial policy",
     "country": "Taiwan",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -667,7 +667,7 @@
   },
   {
     "slug": "japan-miti",
-    "title": "Post-War MITI Industrial Policy",
+    "title": "Post-war MITI industrial policy",
     "country": "Japan",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -676,16 +676,16 @@
   },
   {
     "slug": "japan-kaizen",
-    "title": "Kaizen & Quality Revolution",
+    "title": "Kaizen & the quality revolution",
     "country": "Japan",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
     "year": "1950s–present",
-    "text": "kaizen & quality revolution japan east asia & pacific economic growth & industrial policy japan's quality revolution, catalyzed by w. edwards deming's teachings and institutionalized through toyota's production system and kaizen (continuous improvement), transformed global manufacturing standards. womack et al.'s 1990 study 'the machine that changed the world' documented how lean production achieved dramatic efficiency gains. deming's first lectures in japan 1950, to juse (union of japanese scientists and engineers) deming prize established 1951 by juse toyota production system formalized 1950s-1960s by taiichi ohno japan auto production (1980) 11 million vehicles (surpassed us) japanese quality advantage (1980s) ~60% fewer defects than us auto plants lean production productivity gap ~2x efficiency vs. mass production (imvp study) global adoption lean/kaizen adopted across manufacturing, healthcare, services worldwide"
+    "text": "kaizen & the quality revolution japan east asia & pacific economic growth & industrial policy japan's quality revolution, catalyzed by w. edwards deming's teachings and institutionalized through toyota's production system and kaizen (continuous improvement), transformed global manufacturing standards. womack et al.'s 1990 study 'the machine that changed the world' documented how lean production achieved dramatic efficiency gains. deming's first lectures in japan 1950, to juse (union of japanese scientists and engineers) deming prize established 1951 by juse toyota production system formalized 1950s-1960s by taiichi ohno japan auto production (1980) 11 million vehicles (surpassed us) japanese quality advantage (1980s) ~60% fewer defects than us auto plants lean production productivity gap ~2x efficiency vs. mass production (imvp study) global adoption lean/kaizen adopted across manufacturing, healthcare, services worldwide"
   },
   {
     "slug": "indonesia-pkh",
-    "title": "PKH Conditional Cash Transfer",
+    "title": "PKH conditional cash transfer",
     "country": "Indonesia",
     "region": "East Asia & Pacific",
     "topic": "Social Protection",
@@ -703,7 +703,7 @@
   },
   {
     "slug": "indonesia-palm-oil",
-    "title": "Palm Oil Boom & Deforestation Crisis",
+    "title": "Palm oil boom & deforestation crisis",
     "country": "Indonesia",
     "region": "East Asia & Pacific",
     "topic": "Environment & Climate",
@@ -712,7 +712,7 @@
   },
   {
     "slug": "indonesia-transmigration",
-    "title": "Transmigration Programme",
+    "title": "Transmigration programme",
     "country": "Indonesia",
     "region": "East Asia & Pacific",
     "topic": "Governance & Decentralization",
@@ -730,7 +730,7 @@
   },
   {
     "slug": "philippines-ofw",
-    "title": "OFW Remittance Economy",
+    "title": "OFW remittance economy",
     "country": "Philippines",
     "region": "East Asia & Pacific",
     "topic": "Financial Inclusion",
@@ -739,16 +739,16 @@
   },
   {
     "slug": "philippines-bpo",
-    "title": "BPO Industry Development",
+    "title": "BPO industry development",
     "country": "Philippines",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
     "year": "2000s–present",
-    "text": "bpo industry development philippines east asia & pacific economic growth & industrial policy the philippines built a $32 billion it-bpm industry employing 1.7 million people, surpassing india as the world leader in voice-based business process outsourcing. the sector leveraged the country's english proficiency and cultural affinity with the united states to become a pillar of economic growth. industry revenue (2023) $32.5 billion (ibpap) direct employment 1.7 million (2023) share of gdp ~7.5% global voice bpo share ~10–15% of global market growth rate (2006–2019) ~17% cagr in revenue number of firms 1,000+ it-bpm companies metro manila concentration ~70% of industry employment average monthly salary ₱25,000–45,000 ($450–$810)"
+    "text": "bpo industry development philippines east asia & pacific economic growth & industrial policy the philippines built a $32 billion it-bpm industry employing 1.7 million people, surpassing india as the world leader in voice-based business process outsourcing. the sector built on the country's english proficiency and cultural affinity with the united states to become a pillar of economic growth. industry revenue (2023) $32.5 billion (ibpap) direct employment 1.7 million (2023) share of gdp ~7.5% global voice bpo share ~10–15% of global market growth rate (2006–2019) ~17% cagr in revenue number of firms 1,000+ it-bpm companies metro manila concentration ~70% of industry employment average monthly salary ₱25,000–45,000 ($450–$810)"
   },
   {
     "slug": "thailand-uhc",
-    "title": "Universal Healthcare Coverage (30-Baht Scheme)",
+    "title": "Universal healthcare coverage (30-baht scheme)",
     "country": "Thailand",
     "region": "East Asia & Pacific",
     "topic": "Health",
@@ -757,7 +757,7 @@
   },
   {
     "slug": "thailand-sufficiency-economy",
-    "title": "Sufficiency Economy Philosophy",
+    "title": "Sufficiency Economy philosophy",
     "country": "Thailand",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -766,7 +766,7 @@
   },
   {
     "slug": "cambodia-garments",
-    "title": "Garment Sector & Better Factories Programme",
+    "title": "Garment sector & Better Factories programme",
     "country": "Cambodia",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -775,7 +775,7 @@
   },
   {
     "slug": "cambodia-demining",
-    "title": "Landmine Clearance Programme",
+    "title": "Landmine clearance programme",
     "country": "Cambodia",
     "region": "East Asia & Pacific",
     "topic": "Health",
@@ -784,16 +784,16 @@
   },
   {
     "slug": "cambodia-microfinance",
-    "title": "Microfinance Sector Expansion & Over-Indebtedness",
+    "title": "Microfinance sector expansion & over-indebtedness",
     "country": "Cambodia",
     "region": "East Asia & Pacific",
     "topic": "Financial Inclusion",
     "year": "1990s–present",
-    "text": "microfinance sector expansion & over-indebtedness cambodia east asia & pacific financial inclusion cambodia's microfinance sector grew from small ngo programs in the 1990s to a $16 billion loan portfolio—the highest per capita in the world. while expanding financial access, the sector has generated a debt crisis, with reports of coerced land sales, displacement, and over-indebtedness affecting millions of borrowers. total loan portfolio $16 billion (2023) active borrowers 2.8 million average loan size ~$5,700 (highest per capita globally) mfi licenses ~90 licensed institutions household debt-to-income estimated 50%+ for borrowers interest rate cap 18% per annum (imposed 2017) sector origins ngo programs in early 1990s (acleda, amk) land titles used as collateral widespread—licadho reports forced land sales"
+    "text": "microfinance sector expansion & over-indebtedness cambodia east asia & pacific financial inclusion cambodia's microfinance sector grew from small ngo programs in the 1990s to a $16 billion loan portfolio, the highest per capita in the world. while expanding financial access, the sector has generated a debt crisis, with reports of coerced land sales, displacement, and over-indebtedness affecting millions of borrowers. total loan portfolio $16 billion (2023) active borrowers 2.8 million average loan size ~$5,700 (highest per capita globally) mfi licenses ~90 licensed institutions household debt-to-income estimated 50%+ for borrowers interest rate cap 18% per annum (imposed 2017) sector origins ngo programs in early 1990s (acleda, amk) land titles used as collateral widespread; licadho reports forced land sales"
   },
   {
     "slug": "myanmar-economic-opening",
-    "title": "Post-Sanctions Economic Opening",
+    "title": "Post-sanctions economic opening",
     "country": "Myanmar",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -802,16 +802,16 @@
   },
   {
     "slug": "mongolia-mining",
-    "title": "Mining Boom & Child Money Program",
+    "title": "Mining boom & the Child Money Program",
     "country": "Mongolia",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
     "year": "2004–present",
-    "text": "mining boom & child money program mongolia east asia & pacific economic growth & industrial policy mongolia's mining boom, centered on the $7 billion oyu tolgoi copper-gold mine, drove explosive gdp growth but also dutch disease symptoms and a debt crisis. the universal child money program distributed mineral wealth directly to families, while disputes with rio tinto highlighted resource governance challenges. oyu tolgoi investment $7+ billion (rio tinto/turquoise hill) mining share of gdp ~25–30% mining share of exports ~90% of merchandise exports gdp growth peak 17.3% (2011) child money recipients ~1.1 million children (universal) debt crisis 2016–2017, imf $5.5b bailout gdp growth trough 1.2% (2016) fiscal stability law adopted 2010, frequently breached"
+    "text": "mining boom & the child money program mongolia east asia & pacific economic growth & industrial policy mongolia's mining boom, centered on the $7 billion oyu tolgoi copper-gold mine, drove explosive gdp growth but also dutch disease symptoms and a debt crisis. the universal child money program distributed mineral wealth directly to families, while disputes with rio tinto highlighted resource governance challenges. oyu tolgoi investment $7+ billion (rio tinto/turquoise hill) mining share of gdp ~25–30% mining share of exports ~90% of merchandise exports gdp growth peak 17.3% (2011) child money recipients ~1.1 million children (universal) debt crisis 2016–2017, imf $5.5b bailout gdp growth trough 1.2% (2016) fiscal stability law adopted 2010, frequently breached"
   },
   {
     "slug": "png-resource-curse",
-    "title": "Resource Curse & LNG Development",
+    "title": "Resource curse & LNG development",
     "country": "Papua New Guinea",
     "region": "East Asia & Pacific",
     "topic": "Economic Growth & Industrial Policy",
@@ -820,7 +820,7 @@
   },
   {
     "slug": "fiji-climate-adaptation",
-    "title": "Climate Adaptation & Village Relocation",
+    "title": "Climate adaptation & village relocation",
     "country": "Fiji",
     "region": "East Asia & Pacific",
     "topic": "Environment & Climate",
@@ -829,7 +829,7 @@
   },
   {
     "slug": "timor-leste-petroleum-fund",
-    "title": "Petroleum Fund for Sovereign Wealth",
+    "title": "Petroleum fund for sovereign wealth",
     "country": "Timor-Leste",
     "region": "East Asia & Pacific",
     "topic": "Governance & Decentralization",
@@ -838,7 +838,7 @@
   },
   {
     "slug": "laos-nam-theun-2",
-    "title": "Nam Theun 2 Hydropower Dam",
+    "title": "Nam Theun 2 hydropower dam",
     "country": "Laos",
     "region": "East Asia & Pacific",
     "topic": "Infrastructure & Urbanization",
@@ -847,7 +847,7 @@
   },
   {
     "slug": "singapore-hdb",
-    "title": "Public Housing (HDB) Model",
+    "title": "Public housing (HDB) model",
     "country": "Singapore",
     "region": "East Asia & Pacific",
     "topic": "Infrastructure & Urbanization",
@@ -856,7 +856,7 @@
   },
   {
     "slug": "brazil-bolsa-familia",
-    "title": "Bolsa Família Conditional Cash Transfer",
+    "title": "Bolsa Família conditional cash transfer",
     "country": "Brazil",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -865,7 +865,7 @@
   },
   {
     "slug": "brazil-sus",
-    "title": "SUS Universal Healthcare System",
+    "title": "SUS universal healthcare system",
     "country": "Brazil",
     "region": "Latin America & Caribbean",
     "topic": "Health",
@@ -874,7 +874,7 @@
   },
   {
     "slug": "brazil-pronaf",
-    "title": "PRONAF Family Agriculture Credit",
+    "title": "PRONAF family agriculture credit",
     "country": "Brazil",
     "region": "Latin America & Caribbean",
     "topic": "Agriculture & Food Security",
@@ -883,7 +883,7 @@
   },
   {
     "slug": "brazil-amazon-fund",
-    "title": "Amazon Fund & Deforestation Reduction",
+    "title": "Amazon Fund & deforestation reduction",
     "country": "Brazil",
     "region": "Latin America & Caribbean",
     "topic": "Environment & Climate",
@@ -892,7 +892,7 @@
   },
   {
     "slug": "brazil-participatory-budgeting",
-    "title": "Participatory Budgeting in Porto Alegre",
+    "title": "Participatory budgeting in Porto Alegre",
     "country": "Brazil",
     "region": "Latin America & Caribbean",
     "topic": "Governance & Decentralization",
@@ -910,7 +910,7 @@
   },
   {
     "slug": "mexico-ejido",
-    "title": "Ejido Land Reform & PROCEDE Titling",
+    "title": "Ejido land reform & PROCEDE titling",
     "country": "Mexico",
     "region": "Latin America & Caribbean",
     "topic": "Agriculture & Food Security",
@@ -919,7 +919,7 @@
   },
   {
     "slug": "mexico-nafta-maquiladoras",
-    "title": "NAFTA, Maquiladoras & Trade Integration",
+    "title": "NAFTA, maquiladoras & trade integration",
     "country": "Mexico",
     "region": "Latin America & Caribbean",
     "topic": "Economic Growth & Industrial Policy",
@@ -928,7 +928,7 @@
   },
   {
     "slug": "colombia-familias",
-    "title": "Familias en Acción Cash Transfer",
+    "title": "Familias en Acción cash transfer",
     "country": "Colombia",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -937,7 +937,7 @@
   },
   {
     "slug": "colombia-medellin",
-    "title": "Medellín Urban Transformation",
+    "title": "Medellín urban transformation",
     "country": "Colombia",
     "region": "Latin America & Caribbean",
     "topic": "Infrastructure & Urbanization",
@@ -946,7 +946,7 @@
   },
   {
     "slug": "colombia-peace-process",
-    "title": "FARC Peace Process & Reintegration",
+    "title": "FARC peace process & reintegration",
     "country": "Colombia",
     "region": "Latin America & Caribbean",
     "topic": "Governance & Decentralization",
@@ -955,7 +955,7 @@
   },
   {
     "slug": "chile-afp-pension",
-    "title": "AFP Pension Privatization Reform",
+    "title": "AFP pension privatization reform",
     "country": "Chile",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -964,7 +964,7 @@
   },
   {
     "slug": "chile-copper-fund",
-    "title": "Copper Stabilization Fund & Fiscal Rules",
+    "title": "Copper stabilization fund & fiscal rules",
     "country": "Chile",
     "region": "Latin America & Caribbean",
     "topic": "Economic Growth & Industrial Policy",
@@ -973,7 +973,7 @@
   },
   {
     "slug": "chile-solidario",
-    "title": "Chile Solidario Anti-Extreme Poverty",
+    "title": "Chile Solidario anti-extreme poverty",
     "country": "Chile",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -991,7 +991,7 @@
   },
   {
     "slug": "argentina-soybean-boom",
-    "title": "Soybean Boom, Export Taxes & Dutch Disease",
+    "title": "Soybean boom, export taxes & Dutch disease",
     "country": "Argentina",
     "region": "Latin America & Caribbean",
     "topic": "Agriculture & Food Security",
@@ -1000,7 +1000,7 @@
   },
   {
     "slug": "peru-juntos",
-    "title": "Juntos Conditional Cash Transfer",
+    "title": "Juntos conditional cash transfer",
     "country": "Peru",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -1009,7 +1009,7 @@
   },
   {
     "slug": "peru-land-titling",
-    "title": "COFOPRI Urban Land Titling (De Soto Model)",
+    "title": "COFOPRI urban land titling (De Soto model)",
     "country": "Peru",
     "region": "Latin America & Caribbean",
     "topic": "Governance & Decentralization",
@@ -1018,7 +1018,7 @@
   },
   {
     "slug": "peru-mining-canon",
-    "title": "Mining Canon & Local Revenue Sharing",
+    "title": "Mining canon & local revenue sharing",
     "country": "Peru",
     "region": "Latin America & Caribbean",
     "topic": "Economic Growth & Industrial Policy",
@@ -1027,7 +1027,7 @@
   },
   {
     "slug": "bolivia-gas-nationalization",
-    "title": "Gas Nationalization & Social Redistribution",
+    "title": "Gas nationalization & social redistribution",
     "country": "Bolivia",
     "region": "Latin America & Caribbean",
     "topic": "Economic Growth & Industrial Policy",
@@ -1036,7 +1036,7 @@
   },
   {
     "slug": "bolivia-bono-juancito",
-    "title": "Bono Juancito Pinto Education Incentive",
+    "title": "Bono Juancito Pinto education incentive",
     "country": "Bolivia",
     "region": "Latin America & Caribbean",
     "topic": "Education",
@@ -1054,16 +1054,16 @@
   },
   {
     "slug": "ecuador-dollarization",
-    "title": "Dollarization After Banking Crisis",
+    "title": "Dollarization after banking crisis",
     "country": "Ecuador",
     "region": "Latin America & Caribbean",
     "topic": "Economic Growth & Industrial Policy",
     "year": "2000–present",
-    "text": "dollarization after banking crisis ecuador latin america & caribbean economic growth & industrial policy following a catastrophic 1999 banking crisis that shrank gdp by 5%, ecuador adopted the us dollar as legal tender in 2000. dollarization stabilized inflation and facilitated remittance flows but eliminated monetary policy flexibility and deepened oil export dependency. gdp contraction (1999) -4.7% inflation before 96.1% (2000) inflation after 2–3% average (2003–2015) date of dollarization january 9, 2000 banks closed in crisis 16 of 40 deposit freeze us$3.8 billion frozen oil share of exports ~50% emigration (1999–2004) ~600,000 ecuadorians"
+    "text": "dollarization after banking crisis ecuador latin america & caribbean economic growth & industrial policy following a catastrophic 1999 banking crisis that shrank gdp by 5%, ecuador adopted the us dollar as legal tender in 2000. dollarization stabilized inflation and eased remittance flows but eliminated monetary policy flexibility and deepened oil export dependency. gdp contraction (1999) -4.7% inflation before 96.1% (2000) inflation after 2–3% average (2003–2015) date of dollarization january 9, 2000 banks closed in crisis 16 of 40 deposit freeze us$3.8 billion frozen oil share of exports ~50% emigration (1999–2004) ~600,000 ecuadorians"
   },
   {
     "slug": "ecuador-yasuni",
-    "title": "Yasuní-ITT 'Leave Oil Underground' Initiative",
+    "title": "Yasuní-ITT 'Leave oil underground' initiative",
     "country": "Ecuador",
     "region": "Latin America & Caribbean",
     "topic": "Environment & Climate",
@@ -1072,7 +1072,7 @@
   },
   {
     "slug": "costa-rica-pes",
-    "title": "Payments for Ecosystem Services",
+    "title": "Payments for ecosystem services",
     "country": "Costa Rica",
     "region": "Latin America & Caribbean",
     "topic": "Environment & Climate",
@@ -1081,7 +1081,7 @@
   },
   {
     "slug": "costa-rica-no-army",
-    "title": "Abolishing the Army & Social Investment",
+    "title": "Abolishing the army & social investment",
     "country": "Costa Rica",
     "region": "Latin America & Caribbean",
     "topic": "Governance & Decentralization",
@@ -1090,7 +1090,7 @@
   },
   {
     "slug": "cuba-healthcare",
-    "title": "Healthcare Export Model & Medical Diplomacy",
+    "title": "Healthcare export model & medical diplomacy",
     "country": "Cuba",
     "region": "Latin America & Caribbean",
     "topic": "Health",
@@ -1099,7 +1099,7 @@
   },
   {
     "slug": "cuba-biotech",
-    "title": "Biotechnology Industry Development",
+    "title": "Biotechnology industry development",
     "country": "Cuba",
     "region": "Latin America & Caribbean",
     "topic": "Health",
@@ -1108,25 +1108,25 @@
   },
   {
     "slug": "uruguay-plan-ceibal",
-    "title": "Plan Ceibal: One Laptop Per Child",
+    "title": "Plan Ceibal, one laptop per child",
     "country": "Uruguay",
     "region": "Latin America & Caribbean",
     "topic": "Education",
     "year": "2007–present",
-    "text": "plan ceibal: one laptop per child uruguay latin america & caribbean education uruguay became the first country to achieve full national deployment of the one laptop per child initiative, distributing over 700,000 devices to every public school student and teacher. plan ceibal significantly reduced the digital divide but showed mixed results on academic achievement. devices distributed 700,000+ year launched 2007 coverage 100% of public school students cost (2007–2012) ~us$260 million internet access in schools near-universal math score impact no significant improvement digital divide reduction home computer access: 0.42 to 0.93 teacher training ongoing challenge"
+    "text": "plan ceibal, one laptop per child uruguay latin america & caribbean education uruguay became the first country to achieve full national deployment of the one laptop per child initiative, distributing over 700,000 devices to every public school student and teacher. plan ceibal significantly reduced the digital divide but showed mixed results on academic achievement. devices distributed 700,000+ year launched 2007 coverage 100% of public school students cost (2007–2012) ~us$260 million internet access in schools near-universal math score impact no significant improvement digital divide reduction home computer access: 0.42 to 0.93 teacher training ongoing challenge"
   },
   {
     "slug": "uruguay-cannabis",
-    "title": "Cannabis Legalization & Regulation",
+    "title": "Cannabis legalization & regulation",
     "country": "Uruguay",
     "region": "Latin America & Caribbean",
     "topic": "Governance & Decentralization",
     "year": "2013–present",
-    "text": "cannabis legalization & regulation uruguay latin america & caribbean governance & decentralization uruguay became the first country in the world to fully legalize the production, sale, and consumption of cannabis in 2013 under ley 19.172. the regulatory framework includes three access channels—pharmacies, cannabis clubs, and home cultivation—overseen by the ircca, though the black market has proven persistent. law enacted ley 19.172 (december 2013) regulatory body ircca access channels 3 (pharmacy, clubs, home grow) pharmacy price ~us$1.30 per gram registered users (2022) ~75,000 cannabis clubs ~250 home cultivation permits ~12,000 population ~3.5 million"
+    "text": "cannabis legalization & regulation uruguay latin america & caribbean governance & decentralization uruguay became the first country in the world to fully legalize the production, sale, and consumption of cannabis in 2013 under ley 19.172. the regulatory framework includes three access channels (pharmacies, cannabis clubs, and home cultivation) overseen by the ircca, though the black market has proven persistent. law enacted ley 19.172 (december 2013) regulatory body ircca access channels 3 (pharmacy, clubs, home grow) pharmacy price ~us$1.30 per gram registered users (2022) ~75,000 cannabis clubs ~250 home cultivation permits ~12,000 population ~3.5 million"
   },
   {
     "slug": "haiti-earthquake-reconstruction",
-    "title": "Post-Earthquake Reconstruction Challenges",
+    "title": "Post-earthquake reconstruction challenges",
     "country": "Haiti",
     "region": "Latin America & Caribbean",
     "topic": "Governance & Decentralization",
@@ -1135,7 +1135,7 @@
   },
   {
     "slug": "jamaica-path",
-    "title": "PATH Conditional Cash Transfer",
+    "title": "PATH conditional cash transfer",
     "country": "Jamaica",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -1144,7 +1144,7 @@
   },
   {
     "slug": "dominican-republic-solidaridad",
-    "title": "Solidaridad Social Protection System",
+    "title": "Solidaridad social protection system",
     "country": "Dominican Republic",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -1153,7 +1153,7 @@
   },
   {
     "slug": "guatemala-mi-familia",
-    "title": "Mi Familia Progresa Cash Transfer",
+    "title": "Mi Familia Progresa cash transfer",
     "country": "Guatemala",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -1162,16 +1162,16 @@
   },
   {
     "slug": "honduras-remittances",
-    "title": "Remittance-Dependent Economy",
+    "title": "Remittance-dependent economy",
     "country": "Honduras",
     "region": "Latin America & Caribbean",
     "topic": "Financial Inclusion",
     "year": "1998–present",
-    "text": "remittance-dependent economy honduras latin america & caribbean financial inclusion honduras has become one of the world's most remittance-dependent economies, with inflows reaching us$7.7 billion in 2023—approximately 25% of gdp. driven initially by post-hurricane mitch emigration and sustained by gang violence, remittances have become the primary poverty-reduction mechanism but create structural vulnerabilities. remittances (2023) us$7.7 billion remittances/gdp ~25% post-mitch emigration surge beginning 1998 hondurans in us ~1 million tps beneficiaries ~57,000 poverty rate ~60% (2022) homicide rate 38/100,000 (2022, down from 86 in 2011) transfer costs ~4–6% average"
+    "text": "remittance-dependent economy honduras latin america & caribbean financial inclusion honduras has become one of the world's most remittance-dependent economies, with inflows reaching us$7.7 billion in 2023, approximately 25% of gdp. driven initially by post-hurricane mitch emigration and sustained by gang violence, remittances have become the primary poverty-reduction mechanism but create structural vulnerabilities. remittances (2023) us$7.7 billion remittances/gdp ~25% post-mitch emigration surge beginning 1998 hondurans in us ~1 million tps beneficiaries ~57,000 poverty rate ~60% (2022) homicide rate 38/100,000 (2022, down from 86 in 2011) transfer costs ~4–6% average"
   },
   {
     "slug": "el-salvador-dollarization",
-    "title": "Dollarization & Financial Integration",
+    "title": "Dollarization & financial integration",
     "country": "El Salvador",
     "region": "Latin America & Caribbean",
     "topic": "Economic Growth & Industrial Policy",
@@ -1180,7 +1180,7 @@
   },
   {
     "slug": "el-salvador-bitcoin",
-    "title": "Bitcoin as Legal Tender Experiment",
+    "title": "Bitcoin as legal tender experiment",
     "country": "El Salvador",
     "region": "Latin America & Caribbean",
     "topic": "Financial Inclusion",
@@ -1198,7 +1198,7 @@
   },
   {
     "slug": "paraguay-tekopore",
-    "title": "Tekoporã Conditional Cash Transfer",
+    "title": "Tekoporã conditional cash transfer",
     "country": "Paraguay",
     "region": "Latin America & Caribbean",
     "topic": "Social Protection",
@@ -1216,7 +1216,7 @@
   },
   {
     "slug": "uae-diversification",
-    "title": "Economic Diversification Beyond Oil",
+    "title": "Economic diversification beyond oil",
     "country": "UAE",
     "region": "Middle East & North Africa",
     "topic": "Economic Growth & Industrial Policy",
@@ -1225,16 +1225,16 @@
   },
   {
     "slug": "saudi-vision-2030",
-    "title": "Vision 2030 Reform Programme",
+    "title": "Vision 2030 reform programme",
     "country": "Saudi Arabia",
     "region": "Middle East & North Africa",
     "topic": "Economic Growth & Industrial Policy",
     "year": "2016–present",
-    "text": "vision 2030 reform programme saudi arabia middle east & north africa economic growth & industrial policy saudi arabia's vision 2030, spearheaded by crown prince mohammed bin salman, is a sweeping reform programme to diversify the kingdom's economy away from oil dependence, modernize society, and transform the public investment fund into a global sovereign wealth vehicle. pif assets under management $930b (2024) neom planned investment $500b women's labor force participation rose from 17% to 33% non-oil revenue (2022) $163b (tripled since 2015) entertainment sector value $1.5b+ annually nitaqat saudization target 30-70% by sector tourism target (2030) 100m visits/year fdi target (2030) 5.7% of gdp"
+    "text": "vision 2030 reform programme saudi arabia middle east & north africa economic growth & industrial policy saudi arabia's vision 2030, led by crown prince mohammed bin salman, is a sweeping reform programme to diversify the kingdom's economy away from oil dependence, modernize society, and transform the public investment fund into a global sovereign wealth vehicle. pif assets under management $930b (2024) neom planned investment $500b women's labor force participation rose from 17% to 33% non-oil revenue (2022) $163b (tripled since 2015) entertainment sector value $1.5b+ annually nitaqat saudization target 30-70% by sector tourism target (2030) 100m visits/year fdi target (2030) 5.7% of gdp"
   },
   {
     "slug": "jordan-refugee-integration",
-    "title": "Syrian Refugee Economic Integration",
+    "title": "Syrian refugee economic integration",
     "country": "Jordan",
     "region": "Middle East & North Africa",
     "topic": "Gender & Inclusion",
@@ -1243,7 +1243,7 @@
   },
   {
     "slug": "iran-subsidy-reform",
-    "title": "Universal Subsidy Reform to Targeted Transfers",
+    "title": "Universal subsidy reform to targeted transfers",
     "country": "Iran",
     "region": "Middle East & North Africa",
     "topic": "Social Protection",
@@ -1252,7 +1252,7 @@
   },
   {
     "slug": "iraq-reconstruction",
-    "title": "Post-2003 Reconstruction & Institution Building",
+    "title": "Post-2003 reconstruction & institution building",
     "country": "Iraq",
     "region": "Middle East & North Africa",
     "topic": "Governance & Decentralization",
@@ -1261,7 +1261,7 @@
   },
   {
     "slug": "palestine-aid-effectiveness",
-    "title": "Donor Dependency & Aid Architecture",
+    "title": "Donor dependency & aid architecture",
     "country": "Palestine",
     "region": "Middle East & North Africa",
     "topic": "Governance & Decentralization",
@@ -1270,7 +1270,7 @@
   },
   {
     "slug": "lebanon-refugee-crisis",
-    "title": "Syrian Refugee Crisis & Economic Collapse",
+    "title": "Syrian refugee crisis & economic collapse",
     "country": "Lebanon",
     "region": "Middle East & North Africa",
     "topic": "Social Protection",
@@ -1279,7 +1279,7 @@
   },
   {
     "slug": "morocco-indh",
-    "title": "INDH Human Development Initiative",
+    "title": "INDH human development initiative",
     "country": "Morocco",
     "region": "Middle East & North Africa",
     "topic": "Social Protection",
@@ -1288,7 +1288,7 @@
   },
   {
     "slug": "morocco-noor-solar",
-    "title": "Noor-Ouarzazate Solar Complex",
+    "title": "Noor-Ouarzazate solar complex",
     "country": "Morocco",
     "region": "Middle East & North Africa",
     "topic": "Environment & Climate",
@@ -1297,7 +1297,7 @@
   },
   {
     "slug": "tunisia-democratic-transition",
-    "title": "Post-Revolution Democratic Transition",
+    "title": "Post-revolution democratic transition",
     "country": "Tunisia",
     "region": "Middle East & North Africa",
     "topic": "Governance & Decentralization",
@@ -1306,7 +1306,7 @@
   },
   {
     "slug": "egypt-takaful-karama",
-    "title": "Takaful & Karama Cash Transfer Programme",
+    "title": "Takaful & Karama cash transfer programme",
     "country": "Egypt",
     "region": "Middle East & North Africa",
     "topic": "Social Protection",
@@ -1315,7 +1315,7 @@
   },
   {
     "slug": "egypt-megaprojects",
-    "title": "Suez Canal Expansion & New Administrative Capital",
+    "title": "Suez Canal expansion & New Administrative Capital",
     "country": "Egypt",
     "region": "Middle East & North Africa",
     "topic": "Infrastructure & Urbanization",
@@ -1324,7 +1324,7 @@
   },
   {
     "slug": "oman-omanization",
-    "title": "Omanization Labour Nationalization Policy",
+    "title": "Omanization labour nationalization policy",
     "country": "Oman",
     "region": "Middle East & North Africa",
     "topic": "Economic Growth & Industrial Policy",
@@ -1333,7 +1333,7 @@
   },
   {
     "slug": "algeria-hydrocarbon-dependency",
-    "title": "Hydrocarbon Dependency & Dutch Disease",
+    "title": "Hydrocarbon dependency & Dutch disease",
     "country": "Algeria",
     "region": "Middle East & North Africa",
     "topic": "Economic Growth & Industrial Policy",
@@ -1342,7 +1342,7 @@
   },
   {
     "slug": "yemen-humanitarian-crisis",
-    "title": "Conflict, Famine & Humanitarian Response",
+    "title": "Conflict, famine & humanitarian response",
     "country": "Yemen",
     "region": "Middle East & North Africa",
     "topic": "Health",
@@ -1351,7 +1351,7 @@
   },
   {
     "slug": "turkey-gap",
-    "title": "GAP Southeastern Anatolia Development Project",
+    "title": "GAP Southeastern Anatolia development project",
     "country": "Turkey",
     "region": "Middle East & North Africa",
     "topic": "Infrastructure & Urbanization",
@@ -1360,7 +1360,7 @@
   },
   {
     "slug": "turkey-cct-education",
-    "title": "Conditional Cash Transfer for Education",
+    "title": "Conditional cash transfer for education",
     "country": "Turkey",
     "region": "Middle East & North Africa",
     "topic": "Education",
@@ -1369,16 +1369,16 @@
   },
   {
     "slug": "israel-kibbutz",
-    "title": "Kibbutz Model: From Collective Farming to Privatization",
+    "title": "The kibbutz from collective farming to privatization",
     "country": "Israel",
     "region": "Middle East & North Africa",
     "topic": "Agriculture & Food Security",
     "year": "1910–present",
-    "text": "kibbutz model: from collective farming to privatization israel middle east & north africa agriculture & food security israel's kibbutzim, collective agricultural communities founded on socialist principles, were central to the nation's agricultural development and pioneered innovations like drip irrigation, but underwent dramatic privatization from the 1980s onward, transforming from egalitarian communes into diversified, market-oriented communities. number of kibbutzim (2020) ~270 kibbutz population share ~2.5% of israel peak agricultural output share ~40% of national (1960s) agricultural output share (2020) ~6% industrial output of kibbutzim ~9% of national drip irrigation invented 1965 (hatzerim) privatized/reformed kibbutzim ~75% first kibbutz (degania) 1910"
+    "text": "the kibbutz from collective farming to privatization israel middle east & north africa agriculture & food security israel's kibbutzim, collective agricultural communities founded on socialist principles, were central to the nation's agricultural development and pioneered innovations like drip irrigation, but underwent dramatic privatization from the 1980s onward, transforming from egalitarian communes into diversified, market-oriented communities. number of kibbutzim (2020) ~270 kibbutz population share ~2.5% of israel peak agricultural output share ~40% of national (1960s) agricultural output share (2020) ~6% industrial output of kibbutzim ~9% of national drip irrigation invented 1965 (hatzerim) privatized/reformed kibbutzim ~75% first kibbutz (degania) 1910"
   },
   {
     "slug": "libya-post-gaddafi",
-    "title": "Post-Gaddafi State Fragmentation",
+    "title": "Post-Gaddafi state fragmentation",
     "country": "Libya",
     "region": "Middle East & North Africa",
     "topic": "Governance & Decentralization",
@@ -1387,34 +1387,34 @@
   },
   {
     "slug": "kurdistan-oil-development",
-    "title": "Oil Revenue & Autonomous Development",
+    "title": "Oil revenue & autonomous development",
     "country": "Kurdistan Region (Iraq)",
     "region": "Middle East & North Africa",
     "topic": "Economic Growth & Industrial Policy",
     "year": "2005–present",
-    "text": "oil revenue & autonomous development kurdistan region (iraq) middle east & north africa economic growth & industrial policy the kurdistan region of iraq leveraged autonomous oil development to generate peak revenues of $23 billion, attracting international oil companies and building infrastructure, but faced economic crisis after the 2014 oil price collapse, isis conflict, and the failed 2017 independence referendum that triggered baghdad's economic retaliation. oil exports (peak) ~600,000 bpd peak oil revenue $23b (2013) international oil companies 50+ (inc. dno, genel) population (est.) ~5.5 million gdp per capita (peak) ~$8,000 independence referendum (2017) 92.7% yes vote civil servant salary arrears months unpaid (2015-2018) peshmerga forces ~150,000"
+    "text": "oil revenue & autonomous development kurdistan region (iraq) middle east & north africa economic growth & industrial policy the kurdistan region of iraq used autonomous oil development to generate peak revenues of $23 billion, attracting international oil companies and building infrastructure, but faced economic crisis after the 2014 oil price collapse, isis conflict, and the failed 2017 independence referendum that triggered baghdad's economic retaliation. oil exports (peak) ~600,000 bpd peak oil revenue $23b (2013) international oil companies 50+ (inc. dno, genel) population (est.) ~5.5 million gdp per capita (peak) ~$8,000 independence referendum (2017) 92.7% yes vote civil servant salary arrears months unpaid (2015-2018) peshmerga forces ~150,000"
   },
   {
     "slug": "poland-shock-therapy",
-    "title": "Balcerowicz Plan: Shock Therapy Transition",
+    "title": "The Balcerowicz Plan and shock therapy",
     "country": "Poland",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
     "year": "1990–present",
-    "text": "balcerowicz plan: shock therapy transition poland europe & central asia economic growth & industrial policy poland's 'shock therapy' program launched in january 1990 under finance minister leszek balcerowicz rapidly liberalized prices, trade, and ownership. after an initial recession, poland became the first post-communist economy to surpass its 1989 gdp level and joined the eu in 2004. gdp decline (1990-91) -11.6% cumulative gdp growth (1994) 5.3% inflation (1989) 639.6% inflation (1995) 27.8% soes privatized ~8,000 enterprises eu accession may 2004 gdp per capita (2023) ~$18,300 (current usd) world bank status high-income (2009)"
+    "text": "the balcerowicz plan and shock therapy poland europe & central asia economic growth & industrial policy poland's 'shock therapy' program launched in january 1990 under finance minister leszek balcerowicz rapidly liberalized prices, trade, and ownership. after an initial recession, poland became the first post-communist economy to surpass its 1989 gdp level and joined the eu in 2004. gdp decline (1990-91) -11.6% cumulative gdp growth (1994) 5.3% inflation (1989) 639.6% inflation (1995) 27.8% soes privatized ~8,000 enterprises eu accession may 2004 gdp per capita (2023) ~$18,300 (current usd) world bank status high-income (2009)"
   },
   {
     "slug": "estonia-e-governance",
-    "title": "e-Estonia: Digital Governance & e-Residency",
+    "title": "e-Estonia, digital governance & e-Residency",
     "country": "Estonia",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
     "year": "1997–present",
-    "text": "e-estonia: digital governance & e-residency estonia europe & central asia governance & decentralization estonia built one of the world's most advanced digital governance systems, connecting 99% of government services online through its x-road data exchange platform. the e-residency program, launched in 2014, extended digital identity to over 100,000 non-residents, saving an estimated 2% of gdp annually in administrative efficiency. government services online 99% digital identity coverage 1.3 million citizens e-residents (by 2023) 100,000+ companies created by e-residents 27,000+ gdp savings from e-gov ~2% annually x-road launch 2001 e-voting since 2005 data exchange queries/year 1 billion+"
+    "text": "e-estonia, digital governance & e-residency estonia europe & central asia governance & decentralization estonia built one of the world's most advanced digital governance systems, connecting 99% of government services online through its x-road data exchange platform. the e-residency program, launched in 2014, extended digital identity to over 100,000 non-residents, saving an estimated 2% of gdp annually in administrative efficiency. government services online 99% digital identity coverage 1.3 million citizens e-residents (by 2023) 100,000+ companies created by e-residents 27,000+ gdp savings from e-gov ~2% annually x-road launch 2001 e-voting since 2005 data exchange queries/year 1 billion+"
   },
   {
     "slug": "georgia-anti-corruption",
-    "title": "Rose Revolution & Anti-Corruption Reforms",
+    "title": "Rose Revolution & anti-corruption reforms",
     "country": "Georgia",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
@@ -1423,7 +1423,7 @@
   },
   {
     "slug": "uzbekistan-cotton-reform",
-    "title": "Cotton Sector Reform & Child Labour Elimination",
+    "title": "Cotton sector reform & child labour elimination",
     "country": "Uzbekistan",
     "region": "Europe & Central Asia",
     "topic": "Agriculture & Food Security",
@@ -1432,16 +1432,16 @@
   },
   {
     "slug": "kazakhstan-national-fund",
-    "title": "National Fund & Oil-Led Diversification",
+    "title": "National Fund & oil-led diversification",
     "country": "Kazakhstan",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
     "year": "2000–present",
-    "text": "national fund & oil-led diversification kazakhstan europe & central asia economic growth & industrial policy kazakhstan established the national fund (nfrk) in 2000 to manage oil revenues and reduce resource dependency. with assets exceeding $54 billion, the fund has buffered fiscal shocks, while ambitious industrialization programs have attempted — with mixed success — to diversify beyond oil, which still accounts for roughly 60% of exports. nfrk assets (2023) ~$54 billion oil share of exports ~60% gdp per capita (2000) ~$1,229 gdp per capita (2023) ~$13,000 major oil fields tengiz, kashagan, karachaganak kashagan investment $55 billion+ 2015 tenge devaluation ~50% depreciation nurly zhol infrastructure $9 billion program"
+    "text": "national fund & oil-led diversification kazakhstan europe & central asia economic growth & industrial policy kazakhstan established the national fund (nfrk) in 2000 to manage oil revenues and reduce resource dependency. with assets exceeding $54 billion, the fund has buffered fiscal shocks, while ambitious industrialization programs have attempted, with mixed success, to diversify beyond oil, which still accounts for roughly 60% of exports. nfrk assets (2023) ~$54 billion oil share of exports ~60% gdp per capita (2000) ~$1,229 gdp per capita (2023) ~$13,000 major oil fields tengiz, kashagan, karachaganak kashagan investment $55 billion+ 2015 tenge devaluation ~50% depreciation nurly zhol infrastructure $9 billion program"
   },
   {
     "slug": "kyrgyzstan-cdd",
-    "title": "Community-Driven Development (ARIS)",
+    "title": "Community-driven development (ARIS)",
     "country": "Kyrgyzstan",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
@@ -1450,25 +1450,25 @@
   },
   {
     "slug": "armenia-diaspora",
-    "title": "Diaspora Investment & Tech-Led Development",
+    "title": "Diaspora investment & tech-led development",
     "country": "Armenia",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
     "year": "1998–present",
-    "text": "diaspora investment & tech-led development armenia europe & central asia economic growth & industrial policy armenia leveraged its large global diaspora (estimated at 7 million, versus 3 million domestic population) for development through philanthropic investment, remittances, and technology transfer. major diaspora contributions include the lincy foundation's $1 billion+ in infrastructure, the tumo center for creative technologies, and a growing it sector that has become the country's fastest-growing export industry. diaspora population ~7 million globally domestic population ~2.9 million lincy foundation investment $1 billion+ remittances (% gdp) ~10% it sector growth (2015-22) ~30% annually tumo centers multiple (armenia & global) tech sector revenue (2022) ~$1 billion it workers (2022) ~30,000"
+    "text": "diaspora investment & tech-led development armenia europe & central asia economic growth & industrial policy armenia drew on its large global diaspora (estimated at 7 million, versus 3 million domestic population) for development through philanthropic investment, remittances, and technology transfer. major diaspora contributions include the lincy foundation's $1 billion+ in infrastructure, the tumo center for creative technologies, and a growing it sector that has become the country's fastest-growing export industry. diaspora population ~7 million globally domestic population ~2.9 million lincy foundation investment $1 billion+ remittances (% gdp) ~10% it sector growth (2015-22) ~30% annually tumo centers multiple (armenia & global) tech sector revenue (2022) ~$1 billion it workers (2022) ~30,000"
   },
   {
     "slug": "tajikistan-remittances",
-    "title": "Remittance Vulnerability (45% of GDP)",
+    "title": "Remittance vulnerability (45% of GDP)",
     "country": "Tajikistan",
     "region": "Europe & Central Asia",
     "topic": "Financial Inclusion",
     "year": "2000–present",
-    "text": "remittance vulnerability (45% of gdp) tajikistan europe & central asia financial inclusion tajikistan has consistently ranked among the world's most remittance-dependent countries, with transfers — primarily from over one million labor migrants in russia — peaking at 49% of gdp in 2008. this extreme dependence was starkly exposed during the 2014-15 russian ruble crisis, when remittance declines triggered recession and poverty increases. peak remittances (% gdp) 49% (2008) remittances (% gdp, 2022) ~32% labor migrants in russia ~1 million total population ~10 million gdp per capita (2023) ~$1,060 remittance drop (2015) -42% in usd terms poverty rate (2015) 31% (up from 23%) median migrant age 18-35 years"
+    "text": "remittance vulnerability (45% of gdp) tajikistan europe & central asia financial inclusion tajikistan has consistently ranked among the world's most remittance-dependent countries, with transfers, primarily from over one million labor migrants in russia, peaking at 49% of gdp in 2008. this extreme dependence was starkly exposed during the 2014-15 russian ruble crisis, when remittance declines triggered recession and poverty increases. peak remittances (% gdp) 49% (2008) remittances (% gdp, 2022) ~32% labor migrants in russia ~1 million total population ~10 million gdp per capita (2023) ~$1,060 remittance drop (2015) -42% in usd terms poverty rate (2015) 31% (up from 23%) median migrant age 18-35 years"
   },
   {
     "slug": "azerbaijan-oil-boom",
-    "title": "Oil Fund & Governance Paradox",
+    "title": "Oil fund & governance paradox",
     "country": "Azerbaijan",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
@@ -1477,7 +1477,7 @@
   },
   {
     "slug": "moldova-eu-migration",
-    "title": "EU Association, Migration & Brain Drain",
+    "title": "EU association, migration & brain drain",
     "country": "Moldova",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
@@ -1486,7 +1486,7 @@
   },
   {
     "slug": "ukraine-post-maidan",
-    "title": "Post-Maidan Reform Agenda",
+    "title": "Post-Maidan reform agenda",
     "country": "Ukraine",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
@@ -1495,7 +1495,7 @@
   },
   {
     "slug": "romania-eu-funds",
-    "title": "EU Accession & Structural Fund Absorption",
+    "title": "EU accession & Structural Fund absorption",
     "country": "Romania",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
@@ -1504,16 +1504,16 @@
   },
   {
     "slug": "serbia-reconstruction",
-    "title": "Post-Conflict Reconstruction & EU Integration",
+    "title": "Post-conflict reconstruction & EU integration",
     "country": "Serbia",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
     "year": "2000–present",
-    "text": "post-conflict reconstruction & eu integration serbia europe & central asia governance & decentralization after the fall of milosevic in october 2000, serbia embarked on post-conflict reconstruction and a protracted eu integration process. fdi rose from approximately eur 100 million to over eur 4 billion annually, while serbia navigated icty cooperation obligations, kosovo normalization dialogue, and the challenge of balancing eu aspirations with russian and chinese ties. fdi (2001) ~eur 100 million fdi (2022) ~eur 4.4 billion eu candidate status march 2012 gdp per capita (2000) ~$800 gdp per capita (2023) ~$9,500 unemployment (2012) 24% unemployment (2023) ~9% icty indictees transferred 46 (all 46)"
+    "text": "post-conflict reconstruction & eu integration serbia europe & central asia governance & decentralization after the fall of milosevic in october 2000, serbia began post-conflict reconstruction and a protracted eu integration process. fdi rose from approximately eur 100 million to over eur 4 billion annually, while serbia managed icty cooperation obligations, kosovo normalization dialogue, and the challenge of balancing eu aspirations with russian and chinese ties. fdi (2001) ~eur 100 million fdi (2022) ~eur 4.4 billion eu candidate status march 2012 gdp per capita (2000) ~$800 gdp per capita (2023) ~$9,500 unemployment (2012) 24% unemployment (2023) ~9% icty indictees transferred 46 (all 46)"
   },
   {
     "slug": "bosnia-dayton",
-    "title": "Dayton Agreement & Institutional Design",
+    "title": "Dayton Agreement & institutional design",
     "country": "Bosnia & Herzegovina",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
@@ -1522,7 +1522,7 @@
   },
   {
     "slug": "albania-transformation",
-    "title": "Post-Communist Economic Transformation",
+    "title": "Post-communist economic transformation",
     "country": "Albania",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
@@ -1531,7 +1531,7 @@
   },
   {
     "slug": "north-macedonia-ohrid",
-    "title": "Ohrid Framework & Decentralization",
+    "title": "Ohrid Framework & decentralization",
     "country": "North Macedonia",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
@@ -1540,7 +1540,7 @@
   },
   {
     "slug": "kosovo-statebuilding",
-    "title": "International State-Building & Development",
+    "title": "International state-building & development",
     "country": "Kosovo",
     "region": "Europe & Central Asia",
     "topic": "Governance & Decentralization",
@@ -1549,7 +1549,7 @@
   },
   {
     "slug": "belarus-state-model",
-    "title": "State-Directed Development Model",
+    "title": "State-directed development model",
     "country": "Belarus",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
@@ -1558,7 +1558,7 @@
   },
   {
     "slug": "turkmenistan-resource-curse",
-    "title": "Gas Wealth & Authoritarian Development",
+    "title": "Gas wealth & authoritarian development",
     "country": "Turkmenistan",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
@@ -1567,16 +1567,16 @@
   },
   {
     "slug": "montenegro-tourism",
-    "title": "Tourism-Led Development Strategy",
+    "title": "Tourism-led development strategy",
     "country": "Montenegro",
     "region": "Europe & Central Asia",
     "topic": "Economic Growth & Industrial Policy",
     "year": "2006–present",
-    "text": "tourism-led development strategy montenegro europe & central asia economic growth & industrial policy since independence in 2006, montenegro has pursued a tourism-led development strategy, leveraging its adriatic coastline and natural assets to attract 2.5 million annual visitors for a population of just 620,000. projects like porto montenegro luxury marina have repositioned the country, while eu candidacy and unilateral euroization define its unique economic position. independence june 3, 2006 population ~620,000 tourist arrivals (2019) ~2.5 million tourism (% gdp, direct+indirect) ~25% porto montenegro investment ~$600 million eu candidate status december 2010 currency euro (unilateral adoption) gdp per capita (2023) ~$10,400"
+    "text": "tourism-led development strategy montenegro europe & central asia economic growth & industrial policy since independence in 2006, montenegro has pursued a tourism-led development strategy, using its adriatic coastline and natural assets to attract 2.5 million annual visitors for a population of just 620,000. projects like porto montenegro luxury marina have repositioned the country, while eu candidacy and unilateral euroization define its unique economic position. independence june 3, 2006 population ~620,000 tourist arrivals (2019) ~2.5 million tourism (% gdp, direct+indirect) ~25% porto montenegro investment ~$600 million eu candidate status december 2010 currency euro (unilateral adoption) gdp per capita (2023) ~$10,400"
   },
   {
     "slug": "global-green-revolution",
-    "title": "Green Revolution in Agriculture",
+    "title": "Green Revolution in agriculture",
     "country": "Global",
     "region": "Global",
     "topic": "Agriculture & Food Security",
@@ -1594,7 +1594,7 @@
   },
   {
     "slug": "global-fund-hiv-tb-malaria",
-    "title": "Global Fund for HIV, TB & Malaria",
+    "title": "Global Fund for HIV, TB & malaria",
     "country": "Global",
     "region": "Global",
     "topic": "Health",
@@ -1603,25 +1603,25 @@
   },
   {
     "slug": "global-grameen-microfinance",
-    "title": "Grameen Bank & Microfinance Revolution",
+    "title": "Grameen Bank & the microfinance revolution",
     "country": "Global (Bangladesh origin)",
     "region": "Global",
     "topic": "Financial Inclusion",
     "year": "1983–present",
-    "text": "grameen bank & microfinance revolution global (bangladesh origin) global financial inclusion muhammad yunus founded grameen bank in bangladesh in 1983, pioneering group lending to the poor and sparking a global microfinance movement. while yunus received the 2006 nobel peace prize and the model reached 9 million borrowers, rigorous evaluations have found more moderate effects than initially claimed. grameen bank borrowers 9 million (97% women) yunus nobel peace prize 2006 global microfinance borrowers 140 million+ (2019) repayment rate claimed 97%+ 6-country rct finding modest positive effects on business activity andhra pradesh crisis 2010 (mass defaults, suicides) global microfinance portfolio $124 billion (2019) countries with microfinance 100+"
+    "text": "grameen bank & the microfinance revolution global (bangladesh origin) global financial inclusion muhammad yunus founded grameen bank in bangladesh in 1983, pioneering group lending to the poor and sparking a global microfinance movement. while yunus received the 2006 nobel peace prize and the model reached 9 million borrowers, rigorous evaluations have found more moderate effects than initially claimed. grameen bank borrowers 9 million (97% women) yunus nobel peace prize 2006 global microfinance borrowers 140 million+ (2019) repayment rate claimed 97%+ 6-country rct finding modest positive effects on business activity andhra pradesh crisis 2010 (mass defaults, suicides) global microfinance portfolio $124 billion (2019) countries with microfinance 100+"
   },
   {
     "slug": "global-fair-trade",
-    "title": "Fair Trade Movement: Markets & Ethics",
+    "title": "The fair trade movement, markets & ethics",
     "country": "Global",
     "region": "Global",
     "topic": "Agriculture & Food Security",
     "year": "1988–present",
-    "text": "fair trade movement: markets & ethics global global agriculture & food security the fair trade movement established certification systems guaranteeing minimum prices and social premiums for farmers in developing countries, growing into a $12 billion market reaching 1.9 million producers. evidence on its poverty-reduction impact remains mixed, with debates over whether benefits reach the poorest workers. global fair trade sales $12 billion+ (2021) certified producers 1.9 million farmers/workers producer organizations 1,880+ in 70+ countries fair trade premium disbursed $190 million (2020) certification body flo-cert / fairtrade international first fair trade label max havelaar (netherlands, 1988) top product coffee (~30% of sales) countries with consumers 140+"
+    "text": "the fair trade movement, markets & ethics global global agriculture & food security the fair trade movement established certification systems guaranteeing minimum prices and social premiums for farmers in developing countries, growing into a $12 billion market reaching 1.9 million producers. evidence on its poverty-reduction impact remains mixed, with debates over whether benefits reach the poorest workers. global fair trade sales $12 billion+ (2021) certified producers 1.9 million farmers/workers producer organizations 1,880+ in 70+ countries fair trade premium disbursed $190 million (2020) certification body flo-cert / fairtrade international first fair trade label max havelaar (netherlands, 1988) top product coffee (~30% of sales) countries with consumers 140+"
   },
   {
     "slug": "global-redd-plus",
-    "title": "REDD+ Forest Conservation Mechanism",
+    "title": "REDD+ forest conservation mechanism",
     "country": "Global",
     "region": "Global",
     "topic": "Environment & Climate",
@@ -1639,7 +1639,7 @@
   },
   {
     "slug": "global-givedirectly",
-    "title": "GiveDirectly & Unconditional Cash Transfers",
+    "title": "GiveDirectly & unconditional cash transfers",
     "country": "Global (Kenya, Uganda)",
     "region": "Global",
     "topic": "Social Protection",
@@ -1648,16 +1648,16 @@
   },
   {
     "slug": "global-rct-revolution",
-    "title": "RCT Revolution in Development Economics",
+    "title": "The RCT revolution in development economics",
     "country": "Global",
     "region": "Global",
     "topic": "Education",
     "year": "2003–present",
-    "text": "rct revolution in development economics global global education the randomized controlled trial revolution in development economics, led by abhijit banerjee, esther duflo, and michael kremer (2019 nobel laureates), has fundamentally transformed how development interventions are designed and evaluated. with over 1,000 rcts conducted through j-pal and affiliated networks, the movement has generated actionable evidence on education, health, and poverty reduction. nobel prize in economics 2019 (banerjee, duflo, kremer) j-pal founded 2003 (mit) rcts completed 1,000+ (by j-pal affiliates) people reached by j-pal-informed policy 600 million+ countries with j-pal rcts 80+ landmark study kremer deworming in kenya (1998) key debate external validity (deaton 2010) regional offices 7 worldwide"
+    "text": "the rct revolution in development economics global global education the randomized controlled trial revolution in development economics, led by abhijit banerjee, esther duflo, and michael kremer (2019 nobel laureates), has fundamentally transformed how development interventions are designed and evaluated. with over 1,000 rcts conducted through j-pal and affiliated networks, the movement has generated actionable evidence on education, health, and poverty reduction. nobel prize in economics 2019 (banerjee, duflo, kremer) j-pal founded 2003 (mit) rcts completed 1,000+ (by j-pal affiliates) people reached by j-pal-informed policy 600 million+ countries with j-pal rcts 80+ landmark study kremer deworming in kenya (1998) key debate external validity (deaton 2010) regional offices 7 worldwide"
   },
   {
     "slug": "global-mdgs",
-    "title": "Millennium Development Goals Assessment",
+    "title": "Millennium Development Goals assessment",
     "country": "Global",
     "region": "Global",
     "topic": "Health",
@@ -1666,7 +1666,7 @@
   },
   {
     "slug": "global-paris-climate",
-    "title": "Paris Agreement & Nationally Determined Contributions",
+    "title": "Paris Agreement & nationally determined contributions",
     "country": "Global",
     "region": "Global",
     "topic": "Environment & Climate",
@@ -1675,7 +1675,7 @@
   },
   {
     "slug": "global-pepfar",
-    "title": "PEPFAR HIV/AIDS Emergency Programme",
+    "title": "PEPFAR HIV/AIDS emergency programme",
     "country": "Global (Sub-Saharan Africa)",
     "region": "Global",
     "topic": "Health",
@@ -1693,16 +1693,16 @@
   },
   {
     "slug": "global-south-south",
-    "title": "South-South Cooperation: China in Africa",
+    "title": "China in Africa and South-South cooperation",
     "country": "Global",
     "region": "Global",
     "topic": "Infrastructure & Urbanization",
     "year": "2000–present",
-    "text": "south-south cooperation: china in africa global global infrastructure & urbanization china's engagement in africa has grown dramatically since 2000, with over $170 billion in loans financing infrastructure projects across the continent. this south-south cooperation model, emphasizing infrastructure-for-resources deals, has generated intense debate about debt sustainability, governance implications, and development impact. chinese lending to africa $170 billion+ (2000–2022) forum on china-africa cooperation founded 2000 flagship projects mombasa-nairobi sgr, au hq, addis ababa light rail belt and road initiative 2013–present (52 african signatories) peak annual lending $28.4 billion (2016) infrastructure sectors transport, energy, telecoms, water top borrowers angola, ethiopia, kenya, nigeria, zambia chinese workers in africa (peak) ~263,000 (2015)"
+    "text": "china in africa and south-south cooperation global global infrastructure & urbanization china's engagement in africa has grown dramatically since 2000, with over $170 billion in loans financing infrastructure projects across the continent. this south-south cooperation model, emphasizing infrastructure-for-resources deals, has generated intense debate about debt sustainability, governance implications, and development impact. chinese lending to africa $170 billion+ (2000–2022) forum on china-africa cooperation founded 2000 flagship projects mombasa-nairobi sgr, au hq, addis ababa light rail belt and road initiative 2013–present (52 african signatories) peak annual lending $28.4 billion (2016) infrastructure sectors transport, energy, telecoms, water top borrowers angola, ethiopia, kenya, nigeria, zambia chinese workers in africa (peak) ~263,000 (2015)"
   },
   {
     "slug": "global-hipc-debt-relief",
-    "title": "HIPC Debt Relief Initiative",
+    "title": "HIPC debt relief initiative",
     "country": "Global",
     "region": "Global",
     "topic": "Economic Growth & Industrial Policy",
@@ -1711,16 +1711,16 @@
   },
   {
     "slug": "global-wto-doha",
-    "title": "WTO Doha Round & Trade for Development",
+    "title": "WTO Doha Round & trade for development",
     "country": "Global",
     "region": "Global",
     "topic": "Economic Growth & Industrial Policy",
     "year": "2001–present",
-    "text": "wto doha round & trade for development global global economic growth & industrial policy the wto doha development round, launched in 2001 to address developing country concerns in global trade, effectively collapsed in 2008 over agricultural subsidy disputes. while the round failed, the 2017 trade facilitation agreement emerged as a notable success, and the aid for trade initiative channeled billions toward trade capacity building. round launched november 2001, doha, qatar wto members 164 (2023) key dispute agricultural subsidies and market access effective collapse july 2008 (geneva ministerial) trade facilitation agreement entered into force february 2017 tfa estimated savings 14.3% reduction in trade costs aid for trade disbursements $55 billion+ (2006–2020) trips & public health doha declaration 2001"
+    "text": "wto doha round & trade for development global global economic growth & industrial policy the wto doha development round, launched in 2001 to address developing country concerns in global trade, effectively collapsed in 2008 over agricultural subsidy disputes. while the round failed, the 2017 trade facilitation agreement emerged as a success, and the aid for trade initiative channeled billions toward trade capacity building. round launched november 2001, doha, qatar wto members 164 (2023) key dispute agricultural subsidies and market access effective collapse july 2008 (geneva ministerial) trade facilitation agreement entered into force february 2017 tfa estimated savings 14.3% reduction in trade costs aid for trade disbursements $55 billion+ (2006–2020) trips & public health doha declaration 2001"
   },
   {
     "slug": "global-structural-adjustment",
-    "title": "World Bank Structural Adjustment Programmes",
+    "title": "World Bank structural adjustment programmes",
     "country": "Global",
     "region": "Global",
     "topic": "Economic Growth & Industrial Policy",
@@ -1729,7 +1729,7 @@
   },
   {
     "slug": "global-cct-revolution",
-    "title": "The Conditional Cash Transfer Revolution",
+    "title": "The conditional cash transfer revolution",
     "country": "Global",
     "region": "Global",
     "topic": "Social Protection",
@@ -1738,16 +1738,16 @@
   },
   {
     "slug": "global-cdd",
-    "title": "Community-Driven Development Model",
+    "title": "Community-driven development model",
     "country": "Global",
     "region": "Global",
     "topic": "Governance & Decentralization",
     "year": "1996–present",
-    "text": "community-driven development model global global governance & decentralization community-driven development programs, backed by over $30 billion in world bank investments, empower communities to decide how development resources are allocated. while the model has delivered infrastructure and enhanced local participation, rigorous evaluations reveal mixed results on governance outcomes and persistent risks of elite capture. world bank cdd investment $30 billion+ (1996–2020) peak share of wb lending ~10% of total portfolio flagship program kdp/pnpm (indonesia) countries with cdd programs 100+ typical block grant size $10,000–$100,000 per community sectors infrastructure, education, health, livelihoods key evaluation mansuri & rao (2013) elite capture risk documented across multiple settings"
+    "text": "community-driven development model global global governance & decentralization community-driven development programs, backed by over $30 billion in world bank investments, let communities decide how development resources are allocated. while the model has delivered infrastructure and increased local participation, rigorous evaluations reveal mixed results on governance outcomes and persistent risks of elite capture. world bank cdd investment $30 billion+ (1996–2020) peak share of wb lending ~10% of total portfolio flagship program kdp/pnpm (indonesia) countries with cdd programs 100+ typical block grant size $10,000–$100,000 per community sectors infrastructure, education, health, livelihoods key evaluation mansuri & rao (2013) elite capture risk documented across multiple settings"
   },
   {
     "slug": "global-rbf-health",
-    "title": "Results-Based Financing in Health",
+    "title": "Results-based financing in health",
     "country": "Global",
     "region": "Global",
     "topic": "Health",
@@ -1756,7 +1756,7 @@
   },
   {
     "slug": "global-social-impact-bonds",
-    "title": "Social Impact Bonds & Pay for Success",
+    "title": "Social impact bonds & pay for success",
     "country": "Global (UK origin)",
     "region": "Global",
     "topic": "Financial Inclusion",
@@ -1765,25 +1765,25 @@
   },
   {
     "slug": "global-mhealth",
-    "title": "Mobile Technology for Health (mHealth)",
+    "title": "Mobile technology for health (mHealth)",
     "country": "Global",
     "region": "Global",
     "topic": "Health",
     "year": "2005–present",
-    "text": "mobile technology for health (mhealth) global global health mhealth leverages mobile phone technology to improve health outcomes in developing countries through sms reminders, data collection, telemedicine, and health worker support. while individual rcts have shown promising results for medication adherence and malaria treatment, systematic reviews indicate that evidence of impact at scale remains limited. mhealth programs worldwide 500+ mobile phone penetration (ssa) 80%+ (2023) weltel kenya rct result improved art adherence (lester et al. 2010) sms malaria reminder effect 24% improvement in treatment adherence (zurovac et al. 2011) who mhealth resolution 2018 (wha71.7 on digital health) major platforms commcare, dhis2, rapidpro, medic mobile cochrane reviews free et al. (2013) - limited high-quality evidence key challenge scale-up and sustainability beyond pilots"
+    "text": "mobile technology for health (mhealth) global global health mhealth uses mobile phone technology to improve health outcomes in developing countries through sms reminders, data collection, telemedicine, and health worker support. while individual rcts have shown promising results for medication adherence and malaria treatment, systematic reviews indicate that evidence of impact at scale remains limited. mhealth programs worldwide 500+ mobile phone penetration (ssa) 80%+ (2023) weltel kenya rct result improved art adherence (lester et al. 2010) sms malaria reminder effect 24% improvement in treatment adherence (zurovac et al. 2011) who mhealth resolution 2018 (wha71.7 on digital health) major platforms commcare, dhis2, rapidpro, medic mobile cochrane reviews free et al. (2013) - limited high-quality evidence key challenge scale-up and sustainability beyond pilots"
   },
   {
     "slug": "global-deworming",
-    "title": "School-Based Deworming: Evidence & Debate",
+    "title": "School-based deworming and the debate over its evidence",
     "country": "Global (Kenya origin)",
     "region": "Global",
     "topic": "Health",
     "year": "1998–present",
-    "text": "school-based deworming: evidence & debate global (kenya origin) global health school-based deworming, catalyzed by miguel and kremer's landmark 2004 study in kenya showing large effects on school attendance, became one of the most widely recommended development interventions. however, a cochrane review and replication debate challenged the original findings, sparking one of development economics' most consequential evidence controversies. landmark study miguel & kremer (2004) econometrica school attendance effect 25% reduction in absenteeism (original) 10-year follow-up +29% earnings, +9% hours worked (baird et al. 2016) cost per child per year $0.30–$0.50 children dewormed annually 600 million+ (who target) cochrane review finding insufficient evidence of benefit (taylor-robinson et al. 2015) replication analysis aiken et al. (2015) - smaller effects dcp3 recommendation included as cost-effective intervention"
+    "text": "school-based deworming and the debate over its evidence global (kenya origin) global health school-based deworming, catalyzed by miguel and kremer's landmark 2004 study in kenya showing large effects on school attendance, became one of the most widely recommended development interventions. however, a cochrane review and replication debate challenged the original findings, sparking one of development economics' most consequential evidence controversies. landmark study miguel & kremer (2004) econometrica school attendance effect 25% reduction in absenteeism (original) 10-year follow-up +29% earnings, +9% hours worked (baird et al. 2016) cost per child per year $0.30–$0.50 children dewormed annually 600 million+ (who target) cochrane review finding insufficient evidence of benefit (taylor-robinson et al. 2015) replication analysis aiken et al. (2015) - smaller effects dcp3 recommendation included as cost-effective intervention"
   },
   {
     "slug": "global-graduation-approach",
-    "title": "Ultra-Poor Graduation Approach (BRAC Model)",
+    "title": "Ultra-poor graduation approach (BRAC model)",
     "country": "Global",
     "region": "Global",
     "topic": "Social Protection",
@@ -1792,39 +1792,39 @@
   },
   {
     "slug": "global-open-data",
-    "title": "Open Data for Development & Accountability",
+    "title": "Open data for development & accountability",
     "country": "Global",
     "region": "Global",
     "topic": "Governance & Decentralization",
     "year": "2009–present",
-    "text": "open data for development & accountability global global governance & decentralization the open data movement, catalyzed by the obama administration's 2009 open government directive and growing to 80+ national portals, has sought to make government data freely available to improve transparency, accountability, and service delivery. while open data has produced notable successes in budget transparency and aid tracking, critics highlight persistent barriers to access and use by marginalized populations. national open data portals 80+ obama open government directive january 2009 open data charter adopted 2013 (g8), expanded 2015 iati signatories 1,500+ organizations open budget survey countries 120+ (ibp) data.gov datasets 300,000+ (us federal) open government partnership 75+ member countries (founded 2011) key research davies (2014), world bank open data (2010)"
+    "text": "open data for development & accountability global global governance & decentralization the open data movement, catalyzed by the obama administration's 2009 open government directive and growing to 80+ national portals, has sought to make government data freely available to improve transparency, accountability, and service delivery. while open data has produced clear successes in budget transparency and aid tracking, critics highlight persistent barriers to access and use by marginalized populations. national open data portals 80+ obama open government directive january 2009 open data charter adopted 2013 (g8), expanded 2015 iati signatories 1,500+ organizations open budget survey countries 120+ (ibp) data.gov datasets 300,000+ (us federal) open government partnership 75+ member countries (founded 2011) key research davies (2014), world bank open data (2010)"
   },
   {
     "slug": "kenya-deworming",
-    "title": "Primary School Deworming Project",
+    "title": "Primary school deworming project",
     "country": "Kenya",
     "region": "Sub-Saharan Africa",
     "topic": "Health",
     "year": "1998–2001",
-    "text": "primary school deworming project kenya sub-saharan africa health a randomized deworming programme in western kenya cut school absenteeism by roughly a quarter at a cost of about $0.50 per child per year, and a decade-long follow-up found lasting gains in adult earnings — making it one of the most influential and most contested experiments in development economics. location busia district, western kenya schools 75 primary schools, ~30,000 pupils design phased-in randomized rollout (1998–2001) cost ~$0.50 per child per year absenteeism reduced by ~25% among treated pupils long-run +~13% consumption; more hours worked at age 20s scale-up deworm the world reached 280m+ children"
+    "text": "primary school deworming project kenya sub-saharan africa health a randomized deworming programme in western kenya cut school absenteeism by roughly a quarter at a cost of about $0.50 per child per year, and a decade-long follow-up found lasting gains in adult earnings, making it one of the most influential and most contested experiments in development economics. location busia district, western kenya schools 75 primary schools, ~30,000 pupils design phased-in randomized rollout (1998–2001) cost ~$0.50 per child per year absenteeism reduced by ~25% among treated pupils long-run +~13% consumption; more hours worked at age 20s scale-up deworm the world reached 280m+ children"
   },
   {
     "slug": "india-sewa",
-    "title": "SEWA: Organizing Women in the Informal Economy",
+    "title": "SEWA organizes women in the informal economy",
     "country": "India",
     "region": "South Asia",
     "topic": "Gender & Inclusion",
     "year": "1972–present",
-    "text": "sewa: organizing women in the informal economy india south asia gender & inclusion founded in 1972 by ela bhatt in ahmedabad, the self-employed women's association grew into india's largest single trade union — more than two million informal women workers — by pairing union organizing with cooperatives, its own bank, insurance, and childcare, and reframing street vendors and home-based workers as workers with rights. founded 1972, ahmedabad, gujarat founder ela bhatt members ~2.1 million women (across several states) sewa bank cooperative bank founded 1974 model union + cooperatives + finance + social security sectors street vendors, home-based workers, manual labourers influence shaped wiego and global informal-work policy"
+    "text": "sewa organizes women in the informal economy india south asia gender & inclusion founded in 1972 by ela bhatt in ahmedabad, the self-employed women's association grew into india's largest single trade union, with more than two million informal women workers, by pairing union organizing with cooperatives, its own bank, insurance, and childcare, and reframing street vendors and home-based workers as workers with rights. founded 1972, ahmedabad, gujarat founder ela bhatt members ~2.1 million women (across several states) sewa bank cooperative bank founded 1974 model union + cooperatives + finance + social security sectors street vendors, home-based workers, manual labourers influence shaped wiego and global informal-work policy"
   },
   {
     "slug": "morocco-tayssir",
-    "title": "Tayssir: Labeled Cash Transfers for Education",
+    "title": "Tayssir, labeled cash transfers for education",
     "country": "Morocco",
     "region": "Middle East & North Africa",
     "topic": "Education",
     "year": "2008–present",
-    "text": "tayssir: labeled cash transfers for education morocco middle east & north africa education morocco's tayssir programme tested a subtle idea: small cash transfers merely *labeled* as education support — handed to fathers, with no real enforcement of attendance — cut dropout almost as much as fully conditional transfers, at lower administrative cost, suggesting that the 'nudge' of a label can do much of the work of a costly condition. launched 2008 (pilot), scaled nationally thereafter ministry moroccan ministry of national education design randomized trial across ~320 school sectors transfer size ~$8–$13 per child per month key finding labeled transfers nearly as effective as conditional dropout sharply reduced; re-enrollment of dropouts rose scale reached ~2 million students within a decade"
+    "text": "tayssir, labeled cash transfers for education morocco middle east & north africa education morocco's tayssir programme tested a subtle idea. small cash transfers merely *labeled* as education support, handed to fathers with no real enforcement of attendance, cut dropout almost as much as fully conditional transfers, at lower administrative cost, suggesting that the 'nudge' of a label can do much of the work of a costly condition. launched 2008 (pilot), scaled nationally thereafter ministry moroccan ministry of national education design randomized trial across ~320 school sectors transfer size ~$8–$13 per child per month key finding labeled transfers nearly as effective as conditional dropout sharply reduced; re-enrollment of dropouts rose scale reached ~2 million students within a decade"
   },
   {
     "slug": "bangladesh-female-stipend",
@@ -1833,38 +1833,38 @@
     "region": "South Asia",
     "topic": "Gender & Inclusion",
     "year": "1994–present",
-    "text": "female secondary school stipend programme bangladesh south asia gender & inclusion bangladesh paid rural families to keep their daughters in secondary school — conditional on attendance, passing marks, and staying unmarried — and within a decade girls had caught up with and overtaken boys in secondary enrollment, one of the fastest closings of an education gender gap anywhere, even as questions about learning quality lingered. launched 1994 (nationwide), from early 1980s pilots backers government of bangladesh, world bank, adb, norad conditions 75% attendance, 45% marks, remain unmarried reach millions of rural girls across ~460 subdistricts enrollment girls' secondary enrollment more than doubled gender parity girls overtook boys in secondary school by mid-2000s side effects later marriage; slower gains in learning quality"
+    "text": "female secondary school stipend programme bangladesh south asia gender & inclusion bangladesh paid rural families to keep their daughters in secondary school, on condition of attendance, passing marks, and staying unmarried. within a decade girls had caught up with and overtaken boys in secondary enrollment, one of the fastest closings of an education gender gap anywhere, even as questions about learning quality lingered. launched 1994 (nationwide), from early 1980s pilots backers government of bangladesh, world bank, adb, norad conditions 75% attendance, 45% marks, remain unmarried reach millions of rural girls across ~460 subdistricts enrollment girls' secondary enrollment more than doubled gender parity girls overtook boys in secondary school by mid-2000s side effects later marriage; slower gains in learning quality"
   },
   {
     "slug": "india-teaching-at-the-right-level",
-    "title": "Teaching at the Right Level: From Trial to National Policy",
+    "title": "Teaching at the Right Level, from trial to national policy",
     "country": "India",
     "region": "South Asia",
     "topic": "Education",
     "year": "2001–present",
-    "text": "teaching at the right level: from trial to national policy india south asia education pratham's teaching at the right level groups children by what they can actually do rather than by the grade they are enrolled in. four randomised evaluations in india between 2001 and 2016 produced effects from 0.6 sd down to zero, and the variation is the finding: the approach works where teachers are given dedicated time to use it and fails where it is added to an unchanged school day. it now reaches millions of children across india and africa. first evaluation balsakhi and cal programmes, mumbai and vadodara, 2001–04 balsakhi effect 0.14 sd year one, 0.28 sd year two (banerjee et al. 2005) bihar summer camp effect about 0.6 sd, the largest of the four trials government in-service model no detectable effect on learning the discriminating variable whether dedicated instructional time was ring-fenced aser 2018 baseline about half of indian grade 5 children could not read a grade 2 text cost among the lowest cost-per-sd interventions in the education evidence base scale adopted by indian state governments and adapted across several african countries"
+    "text": "teaching at the right level, from trial to national policy india south asia education pratham's teaching at the right level groups children by what they can actually do rather than by the grade they are enrolled in. four randomised evaluations in india between 2001 and 2016 produced effects from 0.6 sd down to zero, and the variation is the finding. the approach works where teachers are given dedicated time to use it and fails where it is added to an unchanged school day. it now reaches millions of children across india and africa. first evaluation balsakhi and cal programmes, mumbai and vadodara, 2001–04 balsakhi effect 0.14 sd year one, 0.28 sd year two (banerjee et al. 2005) bihar summer camp effect about 0.6 sd, the largest of the four trials government in-service model no detectable effect on learning the discriminating variable whether dedicated instructional time was ring-fenced aser 2018 baseline about half of indian grade 5 children could not read a grade 2 text cost among the lowest cost-per-sd interventions in the education evidence base scale adopted by indian state governments and adapted across several african countries"
   },
   {
     "slug": "mexico-seguro-popular",
-    "title": "Seguro Popular: Financial Protection Without Better Health",
+    "title": "Seguro Popular brought financial protection without better health",
     "country": "Mexico",
     "region": "Latin America & Caribbean",
     "topic": "Health",
     "year": "2003–2020",
-    "text": "seguro popular: financial protection without better health mexico latin america & caribbean health mexico's seguro popular enrolled more than 50 million people previously outside social security and was evaluated by one of the largest randomised health-policy experiments ever run. it cut catastrophic health spending sharply and moved no measured health outcome in ten months. the programme was abolished in 2020 and replaced by insabi. both halves of that record are instructive. created 2003, through reform of the general health law target population households outside formal-sector social security peak enrolment over 50 million people evaluation design randomised at the level of 74 matched health-cluster pairs catastrophic expenditure reduced by roughly half in treated clusters (king et al. 2009) health outcomes at 10 months no significant effect detected medication and utilisation no significant increase detected abolished 2020, replaced by insabi"
+    "text": "seguro popular brought financial protection without better health mexico latin america & caribbean health mexico's seguro popular enrolled more than 50 million people previously outside social security and was evaluated by one of the largest randomised health-policy experiments ever run. it cut catastrophic health spending sharply and moved no measured health outcome in ten months. the programme was abolished in 2020 and replaced by insabi. both halves of that record are instructive. created 2003, through reform of the general health law target population households outside formal-sector social security peak enrolment over 50 million people evaluation design randomised at the level of 74 matched health-cluster pairs catastrophic expenditure reduced by roughly half in treated clusters (king et al. 2009) health outcomes at 10 months no significant effect detected medication and utilisation no significant increase detected abolished 2020, replaced by insabi"
   },
   {
     "slug": "kenya-tusome",
-    "title": "Tusome: Taking a Reading Programme National",
+    "title": "Tusome takes a reading programme national",
     "country": "Kenya",
     "region": "Sub-Saharan Africa",
     "topic": "Education",
     "year": "2011–present",
-    "text": "tusome: taking a reading programme national kenya sub-saharan africa education kenya took an early-grade reading pilot to every public primary school in the country. the ingredients that worked were unglamorous: a book in every child's hands, a structured lesson guide in every teacher's, and a coach who actually visited. a parallel trial in the same system found that adding tablets to the same package bought no additional learning for substantially more money. predecessor primr pilot, 2011–2014 national scale tusome, from 2015, all public primary schools books a one-to-one pupil-to-book ratio, the reform's core logistical achievement teacher support structured lesson guides plus in-classroom coaching visits coaching delivered through existing curriculum support officers rather than a parallel cadre technology arms tablets for teachers, for coaches, and for pupils, tested separately technology finding no arm outperformed the non-technology package on cost-effectiveness language instruction and assessment in english, kiswahili and mother tongue"
+    "text": "tusome takes a reading programme national kenya sub-saharan africa education kenya took an early-grade reading pilot to every public primary school in the country. the ingredients that worked were unglamorous: a book in every child's hands, a structured lesson guide in every teacher's, and a coach who actually visited. a parallel trial in the same system found that adding tablets to the same package bought no additional learning for substantially more money. predecessor primr pilot, 2011–2014 national scale tusome, from 2015, all public primary schools books a one-to-one pupil-to-book ratio, the reform's core logistical achievement teacher support structured lesson guides plus in-classroom coaching visits coaching delivered through existing curriculum support officers rather than a parallel cadre technology arms tablets for teachers, for coaches, and for pupils, tested separately technology finding no arm outperformed the non-technology package on cost-effectiveness language instruction and assessment in english, kiswahili and mother tongue"
   },
   {
     "slug": "global-chlorine-dispensers",
-    "title": "Chlorine Dispensers and the Twenty-Year Argument About Water Treatment",
+    "title": "Chlorine dispensers and the twenty-year argument about water treatment",
     "country": "Global",
     "region": "Global",
     "topic": "Health",

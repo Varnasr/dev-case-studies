@@ -496,12 +496,12 @@
           updateViewToggle();
         } catch (e) {
           console.error('Render error:', e);
-          cardGrid.innerHTML = '<div class="no-results"><h3>Render Error</h3><p>' + escapeHtml(String(e)) + '</p></div>';
+          cardGrid.innerHTML = '<div class="no-results"><h3>Render error</h3><p>' + escapeHtml(String(e)) + '</p></div>';
         }
       })
       .catch(function(err) {
         console.error('Fetch error:', err);
-        cardGrid.innerHTML = '<div class="no-results"><h3>Unable to Load</h3><p>' + escapeHtml(String(err)) + '</p></div>';
+        cardGrid.innerHTML = '<div class="no-results"><h3>Unable to load</h3><p>' + escapeHtml(String(err)) + '</p></div>';
       });
 
     // --- Init Filters ---
@@ -822,7 +822,7 @@
       }
 
       if (filtered.length === 0) {
-        cardGrid.innerHTML = `<div class="no-results"><div class="no-results-icon">${icon('search')}</div><h3>No Case Studies Found</h3><p>Try adjusting your search terms or removing some filters.</p></div>`;
+        cardGrid.innerHTML = `<div class="no-results"><div class="no-results-icon">${icon('search')}</div><h3>No case studies found</h3><p>Try adjusting your search terms or removing some filters.</p></div>`;
         return;
       }
 
@@ -851,7 +851,7 @@
 
         return `
           <article class="case-card" style="animation-delay:${Math.min(idx * 0.02, 0.4)}s">
-            <button class="card-bookmark${saved ? ' saved' : ''}" data-slug="${escapeHtml(study.slug)}" aria-pressed="${saved}" aria-label="${saved ? 'Remove bookmark' : 'Save study'}" title="${saved ? 'Saved — click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')}</button>
+            <button class="card-bookmark${saved ? ' saved' : ''}" data-slug="${escapeHtml(study.slug)}" aria-pressed="${saved}" aria-label="${saved ? 'Remove bookmark' : 'Save study'}" title="${saved ? 'Saved. Click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')}</button>
             <div class="card-body">
               <span class="card-topic ${topicClass}">${escapeHtml(study.topic)}</span>
               <h3 class="card-title"><a href="./study.html?slug=${encodeURIComponent(study.slug)}">${escapeHtml(study.title)}</a></h3>
@@ -963,7 +963,7 @@
     const mainEl = document.getElementById('study-main');
     if (!mainEl) return;
 
-    if (!slug) { showError('No Case Study Specified', 'Please select a case study from the library.'); return; }
+    if (!slug) { showError('No case study specified', 'Please select a case study from the library.'); return; }
 
     mainEl.innerHTML = `<div class="loading-spinner"><div class="spinner"></div><span class="loading-text">Loading case study...</span></div>`;
 
@@ -977,10 +977,10 @@
         const md = document.querySelector('meta[name="description"]');
         if (md && study.summary) md.setAttribute('content', study.summary);
       })
-      .catch(() => { showError('Case Study Not Found', `The case study "${escapeHtml(slug)}" could not be loaded.`); });
+      .catch(() => { showError('Case study not found', `The case study "${escapeHtml(slug)}" could not be loaded.`); });
 
     function showError(title, message) {
-      mainEl.innerHTML = `<div class="container"><div class="error-state"><div class="error-state-icon">${icon('book')}</div><h2>${title}</h2><p>${message}</p><a href="./index.html" class="back-to-library">${icon('arrowLeft')} Back to Library</a></div></div>`;
+      mainEl.innerHTML = `<div class="container"><div class="error-state"><div class="error-state-icon">${icon('book')}</div><h2>${title}</h2><p>${message}</p><a href="./index.html" class="back-to-library">${icon('arrowLeft')} Back to library</a></div></div>`;
     }
 
     function renderStudy(study, masterList) {
@@ -1017,7 +1017,7 @@
           <div class="study-header-top">
             <span class="study-topic-tag ${topicClass}">${escapeHtml(study.topic)}</span>
             <div class="study-actions">
-              <button class="study-action-btn" id="study-bookmark" aria-pressed="${saved}" title="${saved ? 'Saved — click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')} <span>${saved ? 'Saved' : 'Save'}</span></button>
+              <button class="study-action-btn" id="study-bookmark" aria-pressed="${saved}" title="${saved ? 'Saved. Click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')} <span>${saved ? 'Saved' : 'Save'}</span></button>
               <button class="study-action-btn" id="study-share" title="Share this study">${icon('share')} <span>Share</span></button>
             </div>
           </div>
@@ -1036,7 +1036,7 @@
 
             ${evidenceFindings.length > 0 ? `
             <div class="evidence-card">
-              <div class="evidence-card-header">${icon('factCheck')}<span class="evidence-card-title">Evidence Summary</span></div>
+              <div class="evidence-card-header">${icon('factCheck')}<span class="evidence-card-title">Evidence summary</span></div>
               <div class="evidence-facts">
                 <span class="evidence-fact">${icon('book')}<span><strong>${evidence.sources}</strong> cited source${evidence.sources === 1 ? '' : 's'}</span></span>
                 ${evidence.experimental ? `<span class="evidence-fact">${icon('check')}<span>Cites experimental or quasi-experimental work</span></span>` : ''}
@@ -1049,9 +1049,9 @@
 
             ${(discussionQs.length > 0 || lessons.length > 0) ? `
             <div class="framework-card">
-              <div class="framework-card-header">${icon('lightbulb')}<span class="framework-card-title">How to Think About This</span></div>
+              <div class="framework-card-header">${icon('lightbulb')}<span class="framework-card-title">How to think about this</span></div>
               ${lessons.length > 0 ? `<ul class="framework-questions">${lessons.slice(0, 4).map((l, i) => `<li><span class="q-marker">${i+1}.</span><span>${l.title ? `<strong>${escapeHtml(l.title)}</strong> ` : ''}${escapeHtml(truncateSentence(l.detail, 300))}</span></li>`).join('')}</ul>` : ''}
-              ${discussionQs.length > 0 ? `<div style="margin-top:var(--sp-4);padding-top:var(--sp-4);border-top:1px solid rgba(122,92,62,0.12)"><div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent-warm);margin-bottom:var(--sp-3)">Discussion Questions</div><ul class="framework-questions">${discussionQs.slice(0,3).map((q,i) => `<li><span class="q-marker">Q${i+1}</span><span>${escapeHtml(truncateSentence(q, 350))}</span></li>`).join('')}</ul></div>` : ''}
+              ${discussionQs.length > 0 ? `<div style="margin-top:var(--sp-4);padding-top:var(--sp-4);border-top:1px solid rgba(122,92,62,0.12)"><div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent-warm);margin-bottom:var(--sp-3)">Discussion questions</div><ul class="framework-questions">${discussionQs.slice(0,3).map((q,i) => `<li><span class="q-marker">Q${i+1}</span><span>${escapeHtml(truncateSentence(q, 350))}</span></li>`).join('')}</ul></div>` : ''}
             </div>` : ''}
 
             ${renderMarkdown(mainContent)}
@@ -1064,13 +1064,13 @@
 
             ${furtherReading.length > 0 ? `
             <div class="further-reading-section">
-              <h2 class="citations-title">${icon('book')} Further Reading</h2>
+              <h2 class="citations-title">${icon('book')} Further reading</h2>
               ${furtherReading.map((r, i) => `<div class="reading-item"><span class="reading-number">${i+1}.</span><span class="reading-text">${renderCitationText(r.text)}</span></div>`).join('')}
             </div>` : ''}
 
             ${related.length > 0 ? `
             <div class="litmap-section">
-              <div class="litmap-header">${icon('flowTree')}<span class="litmap-title">Related Studies</span></div>
+              <div class="litmap-header">${icon('flowTree')}<span class="litmap-title">Related studies</span></div>
               <p class="litmap-subtitle">Studies connected by shared topic or region. Click a node to explore.</p>
               <div class="litmap-canvas" id="litmap-canvas"></div>
             </div>` : ''}
@@ -1078,7 +1078,7 @@
             <!-- Cornell Notes -->
             <div class="cornell-notes" id="cornell-notes">
               <div class="cornell-notes-header">
-                <span class="cornell-notes-title">${icon('edit')} Cornell Notes</span>
+                <span class="cornell-notes-title">${icon('edit')} Cornell notes</span>
                 <div class="cornell-notes-toolbar">
                   <button class="notes-toolbar-btn" id="cornell-hand-btn" title="Handwritten style">${icon('handwriting')} Hand</button>
                   <button class="notes-export-btn" id="cornell-copy-btn">${icon('copy')} Copy</button>
@@ -1087,7 +1087,7 @@
               </div>
               <div class="cornell-grid">
                 <div class="cornell-cues">
-                  <div class="cornell-cues-label">Cues / Keywords</div>
+                  <div class="cornell-cues-label">Cues and keywords</div>
                   <textarea id="cornell-cues-text" placeholder="Key terms, questions, prompts..."></textarea>
                 </div>
                 <div class="cornell-notes-area">
@@ -1109,13 +1109,13 @@
               ${prevStudy ? `<a href="./study.html?slug=${encodeURIComponent(prevStudy.slug)}" class="study-nav-link prev"><span class="study-nav-label">${icon('chevronLeft')} Previous</span><span class="study-nav-title">${escapeHtml(prevStudy.title)}</span></a>` : '<div></div>'}
               ${nextStudy ? `<a href="./study.html?slug=${encodeURIComponent(nextStudy.slug)}" class="study-nav-link next"><span class="study-nav-label">Next ${icon('chevronRight')}</span><span class="study-nav-title">${escapeHtml(nextStudy.title)}</span></a>` : '<div></div>'}
             </nav>
-            <a href="./index.html" class="back-to-library">${icon('arrowLeft')} Back to Library</a>
+            <a href="./index.html" class="back-to-library">${icon('arrowLeft')} Back to library</a>
           </div>
 
           <aside class="study-sidebar">
             ${study.keyData && study.keyData.length > 0 ? `
             <div class="sidebar-panel">
-              <h3 class="sidebar-panel-title">${icon('barChart')} Key Data</h3>
+              <h3 class="sidebar-panel-title">${icon('barChart')} Key data</h3>
               <div class="key-data-grid">
                 ${study.keyData.map(d => `<div class="key-data-item"><div class="key-data-label">${escapeHtml(d.label)}</div><div class="key-data-value">${escapeHtml(d.value)}</div></div>`).join('')}
               </div>
@@ -1226,13 +1226,13 @@
 
     // Copy all
     copyBtn?.addEventListener('click', () => {
-      const text = `# Cornell Notes: ${title}\n\n## Cues\n${cuesText.value}\n\n## Notes\n${notesText.value}\n\n## Summary\n${summaryText.value}\n`;
+      const text = `# Cornell notes: ${title}\n\n## Cues\n${cuesText.value}\n\n## Notes\n${notesText.value}\n\n## Summary\n${summaryText.value}\n`;
       navigator.clipboard.writeText(text).then(() => showToast('Cornell notes copied'));
     });
 
     // Export as markdown
     exportBtn?.addEventListener('click', () => {
-      const content = `# Cornell Notes: ${title}\n\n## Cues / Keywords\n${cuesText.value}\n\n## Notes\n${notesText.value}\n\n## Summary\n${summaryText.value}\n`;
+      const content = `# Cornell notes: ${title}\n\n## Cues and keywords\n${cuesText.value}\n\n## Notes\n${notesText.value}\n\n## Summary\n${summaryText.value}\n`;
       const blob = new Blob([content], { type: 'text/markdown' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -1354,7 +1354,7 @@
     } catch (e) {
       console.error('Init error:', e);
       var target = document.getElementById('card-grid') || document.getElementById('study-main');
-      if (target) target.innerHTML = '<div style="padding:2rem;color:#c00"><h3>Init Error</h3><p>' + String(e.message || e) + '</p><p>' + String(e.stack || '').substring(0,200) + '</p></div>';
+      if (target) target.innerHTML = '<div style="padding:2rem;color:#c00"><h3>Init error</h3><p>' + String(e.message || e) + '</p><p>' + String(e.stack || '').substring(0,200) + '</p></div>';
     }
   }
 
