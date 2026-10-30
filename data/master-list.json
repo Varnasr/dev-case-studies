@@ -11,7 +11,7 @@
     "readingMinutes": 5,
     "words": 1008,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -27,7 +27,7 @@
     "readingMinutes": 5,
     "words": 1026,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -43,7 +43,7 @@
     "readingMinutes": 5,
     "words": 974,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -59,7 +59,7 @@
     "readingMinutes": 5,
     "words": 1037,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -75,7 +75,7 @@
     "readingMinutes": 5,
     "words": 1031,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -91,7 +91,7 @@
     "readingMinutes": 5,
     "words": 1084,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -107,7 +107,7 @@
     "readingMinutes": 5,
     "words": 1074,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -123,7 +123,7 @@
     "readingMinutes": 6,
     "words": 1156,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -139,7 +139,7 @@
     "readingMinutes": 5,
     "words": 1136,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -155,7 +155,7 @@
     "readingMinutes": 5,
     "words": 1107,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -171,7 +171,7 @@
     "readingMinutes": 5,
     "words": 1078,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -187,7 +187,7 @@
     "readingMinutes": 5,
     "words": 1111,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -203,7 +203,7 @@
     "readingMinutes": 6,
     "words": 1178,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -219,7 +219,7 @@
     "readingMinutes": 6,
     "words": 1191,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -235,7 +235,7 @@
     "readingMinutes": 6,
     "words": 1195,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -251,7 +251,7 @@
     "readingMinutes": 4,
     "words": 902,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -267,7 +267,7 @@
     "readingMinutes": 4,
     "words": 855,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -283,7 +283,7 @@
     "readingMinutes": 4,
     "words": 890,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -299,7 +299,7 @@
     "readingMinutes": 4,
     "words": 875,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -315,7 +315,7 @@
     "readingMinutes": 4,
     "words": 919,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -331,7 +331,7 @@
     "readingMinutes": 4,
     "words": 891,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -347,7 +347,7 @@
     "readingMinutes": 5,
     "words": 952,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -363,7 +363,7 @@
     "readingMinutes": 4,
     "words": 921,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -379,7 +379,7 @@
     "readingMinutes": 5,
     "words": 961,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -395,7 +395,7 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -411,7 +411,7 @@
     "readingMinutes": 4,
     "words": 911,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -427,7 +427,7 @@
     "readingMinutes": 4,
     "words": 913,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -443,7 +443,7 @@
     "readingMinutes": 5,
     "words": 972,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -459,7 +459,7 @@
     "readingMinutes": 5,
     "words": 1030,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -475,7 +475,7 @@
     "readingMinutes": 5,
     "words": 955,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -491,7 +491,7 @@
     "readingMinutes": 4,
     "words": 927,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -507,7 +507,7 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -523,7 +523,7 @@
     "readingMinutes": 5,
     "words": 1005,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -539,7 +539,7 @@
     "readingMinutes": 5,
     "words": 1029,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -555,7 +555,7 @@
     "readingMinutes": 5,
     "words": 1094,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -571,7 +571,7 @@
     "readingMinutes": 5,
     "words": 1060,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -587,7 +587,7 @@
     "readingMinutes": 5,
     "words": 1071,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -603,7 +603,7 @@
     "readingMinutes": 5,
     "words": 1109,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -619,7 +619,7 @@
     "readingMinutes": 5,
     "words": 1112,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -635,7 +635,7 @@
     "readingMinutes": 5,
     "words": 1141,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -651,7 +651,7 @@
     "readingMinutes": 5,
     "words": 1073,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -667,7 +667,7 @@
     "readingMinutes": 5,
     "words": 1127,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -683,7 +683,7 @@
     "readingMinutes": 5,
     "words": 1124,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -699,7 +699,7 @@
     "readingMinutes": 6,
     "words": 1167,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -715,7 +715,7 @@
     "readingMinutes": 5,
     "words": 1137,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -731,7 +731,7 @@
     "readingMinutes": 16,
     "words": 3364,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -747,7 +747,7 @@
     "readingMinutes": 12,
     "words": 2578,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -763,7 +763,7 @@
     "readingMinutes": 13,
     "words": 2626,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -779,7 +779,7 @@
     "readingMinutes": 14,
     "words": 3029,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -795,7 +795,7 @@
     "readingMinutes": 14,
     "words": 2873,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -811,7 +811,7 @@
     "readingMinutes": 15,
     "words": 3094,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -827,7 +827,7 @@
     "readingMinutes": 17,
     "words": 3524,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -843,7 +843,7 @@
     "readingMinutes": 14,
     "words": 3006,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -859,7 +859,7 @@
     "readingMinutes": 16,
     "words": 3348,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": false,
     "citesReview": true
   },
@@ -875,7 +875,7 @@
     "readingMinutes": 18,
     "words": 3723,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -891,7 +891,7 @@
     "readingMinutes": 14,
     "words": 2998,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -907,7 +907,7 @@
     "readingMinutes": 16,
     "words": 3454,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -923,7 +923,7 @@
     "readingMinutes": 14,
     "words": 3013,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -939,7 +939,7 @@
     "readingMinutes": 14,
     "words": 3023,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -955,7 +955,7 @@
     "readingMinutes": 16,
     "words": 3305,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -971,7 +971,7 @@
     "readingMinutes": 4,
     "words": 888,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -987,7 +987,7 @@
     "readingMinutes": 4,
     "words": 909,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1003,7 +1003,7 @@
     "readingMinutes": 4,
     "words": 902,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1019,7 +1019,7 @@
     "readingMinutes": 4,
     "words": 866,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1035,7 +1035,7 @@
     "readingMinutes": 4,
     "words": 933,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1051,7 +1051,7 @@
     "readingMinutes": 5,
     "words": 969,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1067,7 +1067,7 @@
     "readingMinutes": 4,
     "words": 889,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1083,7 +1083,7 @@
     "readingMinutes": 4,
     "words": 907,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1099,7 +1099,7 @@
     "readingMinutes": 5,
     "words": 978,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1115,7 +1115,7 @@
     "readingMinutes": 4,
     "words": 921,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1131,7 +1131,7 @@
     "readingMinutes": 5,
     "words": 959,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1147,7 +1147,7 @@
     "readingMinutes": 4,
     "words": 927,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1163,7 +1163,7 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1179,7 +1179,7 @@
     "readingMinutes": 4,
     "words": 912,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1195,7 +1195,7 @@
     "readingMinutes": 5,
     "words": 977,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1211,7 +1211,7 @@
     "readingMinutes": 5,
     "words": 975,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1227,7 +1227,7 @@
     "readingMinutes": 5,
     "words": 1008,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1243,7 +1243,7 @@
     "readingMinutes": 4,
     "words": 890,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1259,7 +1259,7 @@
     "readingMinutes": 5,
     "words": 989,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1275,7 +1275,7 @@
     "readingMinutes": 4,
     "words": 916,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1291,7 +1291,7 @@
     "readingMinutes": 5,
     "words": 973,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1307,7 +1307,7 @@
     "readingMinutes": 5,
     "words": 1006,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1323,7 +1323,7 @@
     "readingMinutes": 5,
     "words": 991,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1339,7 +1339,7 @@
     "readingMinutes": 5,
     "words": 1059,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1355,7 +1355,7 @@
     "readingMinutes": 5,
     "words": 1017,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1371,7 +1371,7 @@
     "readingMinutes": 5,
     "words": 987,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1387,7 +1387,7 @@
     "readingMinutes": 5,
     "words": 1012,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1403,7 +1403,7 @@
     "readingMinutes": 5,
     "words": 1054,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1419,7 +1419,7 @@
     "readingMinutes": 5,
     "words": 1019,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1435,7 +1435,7 @@
     "readingMinutes": 5,
     "words": 1023,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1451,7 +1451,7 @@
     "readingMinutes": 5,
     "words": 1017,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1467,7 +1467,7 @@
     "readingMinutes": 5,
     "words": 1065,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1483,7 +1483,7 @@
     "readingMinutes": 5,
     "words": 1052,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1499,7 +1499,7 @@
     "readingMinutes": 5,
     "words": 1086,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1515,7 +1515,7 @@
     "readingMinutes": 5,
     "words": 1074,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1531,7 +1531,7 @@
     "readingMinutes": 4,
     "words": 826,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1547,7 +1547,7 @@
     "readingMinutes": 4,
     "words": 831,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1563,7 +1563,7 @@
     "readingMinutes": 4,
     "words": 866,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1579,7 +1579,7 @@
     "readingMinutes": 4,
     "words": 839,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1595,7 +1595,7 @@
     "readingMinutes": 4,
     "words": 859,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1611,7 +1611,7 @@
     "readingMinutes": 4,
     "words": 910,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1627,7 +1627,7 @@
     "readingMinutes": 4,
     "words": 850,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1643,7 +1643,7 @@
     "readingMinutes": 4,
     "words": 930,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1659,7 +1659,7 @@
     "readingMinutes": 4,
     "words": 914,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1675,7 +1675,7 @@
     "readingMinutes": 5,
     "words": 962,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1691,7 +1691,7 @@
     "readingMinutes": 4,
     "words": 893,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1707,7 +1707,7 @@
     "readingMinutes": 4,
     "words": 884,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1723,7 +1723,7 @@
     "readingMinutes": 5,
     "words": 973,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1739,7 +1739,7 @@
     "readingMinutes": 5,
     "words": 945,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1755,7 +1755,7 @@
     "readingMinutes": 5,
     "words": 962,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1771,7 +1771,7 @@
     "readingMinutes": 5,
     "words": 1019,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1787,7 +1787,7 @@
     "readingMinutes": 5,
     "words": 949,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1803,7 +1803,7 @@
     "readingMinutes": 5,
     "words": 988,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1819,7 +1819,7 @@
     "readingMinutes": 5,
     "words": 981,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1835,7 +1835,7 @@
     "readingMinutes": 5,
     "words": 1064,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1851,7 +1851,7 @@
     "readingMinutes": 4,
     "words": 855,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1867,7 +1867,7 @@
     "readingMinutes": 4,
     "words": 861,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1883,7 +1883,7 @@
     "readingMinutes": 4,
     "words": 848,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1899,7 +1899,7 @@
     "readingMinutes": 4,
     "words": 837,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1915,7 +1915,7 @@
     "readingMinutes": 4,
     "words": 869,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1931,7 +1931,7 @@
     "readingMinutes": 4,
     "words": 915,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -1947,7 +1947,7 @@
     "readingMinutes": 4,
     "words": 921,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1963,7 +1963,7 @@
     "readingMinutes": 4,
     "words": 879,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1979,7 +1979,7 @@
     "readingMinutes": 4,
     "words": 905,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -1995,7 +1995,7 @@
     "readingMinutes": 4,
     "words": 920,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2011,7 +2011,7 @@
     "readingMinutes": 4,
     "words": 836,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2027,7 +2027,7 @@
     "readingMinutes": 4,
     "words": 876,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2043,7 +2043,7 @@
     "readingMinutes": 4,
     "words": 880,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2059,7 +2059,7 @@
     "readingMinutes": 4,
     "words": 883,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2075,7 +2075,7 @@
     "readingMinutes": 4,
     "words": 913,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2091,7 +2091,7 @@
     "readingMinutes": 4,
     "words": 919,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2107,7 +2107,7 @@
     "readingMinutes": 5,
     "words": 974,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2123,7 +2123,7 @@
     "readingMinutes": 5,
     "words": 973,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2139,7 +2139,7 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2155,7 +2155,7 @@
     "readingMinutes": 5,
     "words": 1032,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2171,7 +2171,7 @@
     "readingMinutes": 4,
     "words": 856,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2187,7 +2187,7 @@
     "readingMinutes": 4,
     "words": 848,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2203,7 +2203,7 @@
     "readingMinutes": 4,
     "words": 874,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2219,7 +2219,7 @@
     "readingMinutes": 4,
     "words": 907,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2235,7 +2235,7 @@
     "readingMinutes": 4,
     "words": 850,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2251,7 +2251,7 @@
     "readingMinutes": 4,
     "words": 863,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2267,7 +2267,7 @@
     "readingMinutes": 4,
     "words": 895,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2283,7 +2283,7 @@
     "readingMinutes": 4,
     "words": 863,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2299,7 +2299,7 @@
     "readingMinutes": 4,
     "words": 907,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2315,7 +2315,7 @@
     "readingMinutes": 4,
     "words": 893,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2331,7 +2331,7 @@
     "readingMinutes": 5,
     "words": 962,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2347,7 +2347,7 @@
     "readingMinutes": 4,
     "words": 899,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2363,7 +2363,7 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2379,7 +2379,7 @@
     "readingMinutes": 4,
     "words": 896,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2395,7 +2395,7 @@
     "readingMinutes": 5,
     "words": 948,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2411,7 +2411,7 @@
     "readingMinutes": 4,
     "words": 930,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2427,7 +2427,7 @@
     "readingMinutes": 5,
     "words": 1002,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2443,7 +2443,7 @@
     "readingMinutes": 5,
     "words": 953,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2459,7 +2459,7 @@
     "readingMinutes": 4,
     "words": 929,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2475,7 +2475,7 @@
     "readingMinutes": 5,
     "words": 1000,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2491,7 +2491,7 @@
     "readingMinutes": 4,
     "words": 846,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2507,7 +2507,7 @@
     "readingMinutes": 4,
     "words": 829,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2523,7 +2523,7 @@
     "readingMinutes": 4,
     "words": 813,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2539,7 +2539,7 @@
     "readingMinutes": 4,
     "words": 812,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2555,7 +2555,7 @@
     "readingMinutes": 4,
     "words": 857,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2571,7 +2571,7 @@
     "readingMinutes": 4,
     "words": 847,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2587,7 +2587,7 @@
     "readingMinutes": 4,
     "words": 912,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2603,7 +2603,7 @@
     "readingMinutes": 4,
     "words": 897,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2619,7 +2619,7 @@
     "readingMinutes": 4,
     "words": 877,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2635,7 +2635,7 @@
     "readingMinutes": 4,
     "words": 871,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2651,7 +2651,7 @@
     "readingMinutes": 4,
     "words": 878,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2667,7 +2667,7 @@
     "readingMinutes": 5,
     "words": 945,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2683,7 +2683,7 @@
     "readingMinutes": 4,
     "words": 878,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2699,7 +2699,7 @@
     "readingMinutes": 4,
     "words": 897,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2715,7 +2715,7 @@
     "readingMinutes": 4,
     "words": 919,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2731,7 +2731,7 @@
     "readingMinutes": 5,
     "words": 953,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2747,7 +2747,7 @@
     "readingMinutes": 4,
     "words": 927,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2763,7 +2763,7 @@
     "readingMinutes": 5,
     "words": 998,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2779,7 +2779,7 @@
     "readingMinutes": 5,
     "words": 1009,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2795,7 +2795,7 @@
     "readingMinutes": 5,
     "words": 1016,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2811,7 +2811,7 @@
     "readingMinutes": 4,
     "words": 759,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2827,7 +2827,7 @@
     "readingMinutes": 4,
     "words": 824,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2843,7 +2843,7 @@
     "readingMinutes": 4,
     "words": 829,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2859,7 +2859,7 @@
     "readingMinutes": 4,
     "words": 813,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2875,7 +2875,7 @@
     "readingMinutes": 4,
     "words": 883,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2891,7 +2891,7 @@
     "readingMinutes": 4,
     "words": 838,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2907,7 +2907,7 @@
     "readingMinutes": 4,
     "words": 888,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2923,7 +2923,7 @@
     "readingMinutes": 4,
     "words": 898,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2939,7 +2939,7 @@
     "readingMinutes": 4,
     "words": 928,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -2955,7 +2955,7 @@
     "readingMinutes": 4,
     "words": 913,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2971,7 +2971,7 @@
     "readingMinutes": 4,
     "words": 941,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -2987,7 +2987,7 @@
     "readingMinutes": 4,
     "words": 894,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -3003,7 +3003,7 @@
     "readingMinutes": 4,
     "words": 942,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -3019,7 +3019,7 @@
     "readingMinutes": 4,
     "words": 920,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -3035,7 +3035,7 @@
     "readingMinutes": 5,
     "words": 987,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -3051,7 +3051,7 @@
     "readingMinutes": 5,
     "words": 980,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -3067,7 +3067,7 @@
     "readingMinutes": 5,
     "words": 1026,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -3099,7 +3099,7 @@
     "readingMinutes": 4,
     "words": 884,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -3131,7 +3131,7 @@
     "readingMinutes": 5,
     "words": 1001,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -3179,7 +3179,7 @@
     "readingMinutes": 5,
     "words": 1043,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -3195,7 +3195,7 @@
     "readingMinutes": 5,
     "words": 1097,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "emerging",
     "citesExperimental": false,
     "citesReview": false
   },
@@ -3227,7 +3227,7 @@
     "readingMinutes": 4,
     "words": 900,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -3259,7 +3259,7 @@
     "readingMinutes": 4,
     "words": 819,
     "refs": 5,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -3275,7 +3275,7 @@
     "readingMinutes": 5,
     "words": 959,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -3291,7 +3291,7 @@
     "readingMinutes": 5,
     "words": 946,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },
@@ -3307,7 +3307,7 @@
     "readingMinutes": 4,
     "words": 882,
     "refs": 4,
-    "evidence": "strong",
+    "evidence": "moderate",
     "citesExperimental": true,
     "citesReview": false
   },

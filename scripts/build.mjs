@@ -80,18 +80,21 @@ function evidenceSignals(content) {
   };
 }
 
-/* Kept, unchanged, and still 'strong' for all 204.
- *
- * What counts as strong evidence in this library is an editorial judgement
- * about the library, not a bug to patch: the honest options are to raise the
- * threshold, to weight the two signals above rather than short-circuiting past
- * them, or to drop the field. Picking one is the owner's call, so the field
- * stays and what the interface *shows* has changed instead. See CLAUDE.md. */
-function evidenceTier(content, refs) {
+/* The tier by study design, chosen by the owner on 2026-10-30. Until then it
+ * reached `refs >= 4` first and returned 'strong' for every study, because all
+ * of them carry four or five references. It now reads only what the study
+ * cites:
+ *   strong    cites experimental or quasi-experimental work AND a systematic
+ *             review or meta-analysis
+ *   moderate  cites one of the two
+ *   emerging  cites neither
+ * The signals are keyword matches over the study's text, so the tier says what
+ * kind of evidence a study draws on, not how good that evidence is. about.html
+ * says so. */
+function evidenceTier(content) {
   const { citesExperimental, citesReview } = evidenceSignals(content);
-  if (refs >= 5 && (citesExperimental || citesReview)) return 'strong';
-  if (refs >= 4 || citesExperimental) return 'strong';
-  if (refs >= 3) return 'moderate';
+  if (citesExperimental && citesReview) return 'strong';
+  if (citesExperimental || citesReview) return 'moderate';
   return 'emerging';
 }
 
@@ -175,7 +178,7 @@ function buildMasterList(studies) {
       readingMinutes: readingMinutes(s.content),
       words: countWords(s.content),
       refs,
-      evidence: evidenceTier(s.content, refs),
+      evidence: evidenceTier(s.content),
       ...evidenceSignals(s.content),
     };
   });

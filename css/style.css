@@ -1574,6 +1574,11 @@ select:focus-visible,
   background: color-mix(in srgb, var(--accent, #1d4ed8) 10%, transparent);
   border: 1px solid color-mix(in srgb, var(--accent, #1d4ed8) 22%, transparent);
 }
+.card-signal.tier-emerging {
+  color: var(--text-muted, #6b6b6b);
+  background: transparent;
+  border-color: color-mix(in srgb, var(--text-muted, #6b6b6b) 35%, transparent);
+}
 .evidence-facts { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
 .evidence-fact {
   display: inline-flex; align-items: center; gap: 6px;

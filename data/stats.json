@@ -131,8 +131,16 @@
   ],
   "byEvidence": [
     {
+      "label": "emerging",
+      "count": 142
+    },
+    {
+      "label": "moderate",
+      "count": 59
+    },
+    {
       "label": "strong",
-      "count": 208
+      "count": 7
     }
   ]
 }

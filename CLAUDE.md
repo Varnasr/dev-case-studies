@@ -46,48 +46,26 @@ so widening the regex counts nothing twice.
 
 **If you add a third template, add its heading to that regex.**
 
-## The evidence tier no longer distinguishes anything
+## The evidence tier is by study design
 
-`evidenceTier()` returns `strong` when `refs >= 4`. Every one of the 204
-studies has four or five references, so after the reference fix the function
-returns `strong` for all 204, and the `moderate` and `emerging` branches are
-unreachable.
+Until 2026-10-30 `evidenceTier()` returned `strong` when `refs >= 4`, and every
+study carries four or five references, so it was `strong` on all of them. The
+owner chose to score it by design instead, from the two signals
+`evidenceSignals()` already computed:
 
-Before the fix, eight studies read `emerging`. All eight were among the fifteen
-whose references were not being counted. **The tier was reporting the parser
-bug rather than the evidence**, which is worth knowing before anyone reads
-meaning into the field.
+| tier | rule | studies on 2026-10-30 |
+|---|---|---|
+| strong | cites experimental or quasi-experimental work **and** a systematic review or meta-analysis | 7 |
+| moderate | cites one of the two | 59 |
+| emerging | cites neither | 142 |
 
-This is left as it is on purpose. What counts as strong evidence is an
-editorial judgement about the library, not a bug to patch: the honest options
-are to raise the threshold, weight the `hasRCT` and `hasMeta` signals that the
-`refs >= 4` branch currently short-circuits, or drop the field and stop
-implying a distinction the data does not carry. Picking one is the owner's
-call.
+The signals are keyword matches over the study's text, so the tier says what
+kind of evidence a study draws on, not how good it is, and `about.html` says so
+in those words. "Emerging" does not mean the programme was never evaluated; it
+means the study does not cite that work. Do not describe it as a quality score.
 
-**What changed on 2026-09-23 is what the interface shows, not the field.** A
-constant is survivable in a data file and not on a page: `strong` was printed
-on all 204 cards, and `study.html` drew it as a filled meter reading "Strong
-Evidence Base" at 80 or 90 per cent. A bar at 80 per cent implies a measurement
-against a maximum; there is no maximum and nothing was measured.
-
-The two signals the tier short-circuits past are **not** constants, and they
-are now computed into `master-list.json` by `evidenceSignals()` and reported
-rather than scored:
-
-| signal | studies |
-|---|---|
-| cites experimental or quasi-experimental work | 61 of 204 |
-| cites a systematic review or meta-analysis | 7 of 204 |
-
-The card footer carries the reference count (4 or 5, so it says something) and
-a marker for the stronger of the two signals. The study page states both as
-facts. And the sidebar has an **Evidence facet** filtering on them, with both
-selected meaning *both* rather than either, because a reader asking for
-experimental work and a review wants the studies carrying both.
-
-`evidenceTier()` is untouched and still returns `strong` for all 204. When the
-editorial question is settled, that is the one function to change.
+Each card shows the tier as its chip, with the matching signal in the tooltip.
+The Evidence facet in the sidebar still filters on the two signals directly.
 
 ## The interface on a phone
 
