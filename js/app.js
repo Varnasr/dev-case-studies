@@ -838,16 +838,18 @@
 
         const saved = isBookmarked(study.slug);
         const readTime = formatReadTime(study.readingMinutes);
-        /* The footer used to print study.evidence, which is 'strong' on all
-           204 studies because the tier reaches `refs >= 4` before it consults
-           anything else. A constant in the position a reader reads as a
-           judgement. The reference count is 4 or 5 and the two signals below
-           vary across the library, so all three say something. */
+        /* The evidence tier, by study design: strong cites experimental work
+           and a systematic review, moderate cites one of the two, emerging
+           cites neither. It is read from the study's own text at build time
+           (evidenceTier() in scripts/build.mjs), so it says what kind of
+           evidence a study draws on, not how good it is. */
         const refs = Number(study.refs) || 0;
-        const signal = study.citesReview ? 'Review' : (study.citesExperimental ? 'Experimental' : '');
-        const signalTitle = study.citesReview
-          ? 'Cites a systematic review or meta-analysis'
-          : (study.citesExperimental ? 'Cites experimental or quasi-experimental work' : '');
+        const TIER = {
+          strong: ['Strong evidence', 'Cites experimental or quasi-experimental work and a systematic review'],
+          moderate: ['Moderate evidence', study.citesReview ? 'Cites a systematic review or meta-analysis' : 'Cites experimental or quasi-experimental work'],
+          emerging: ['Emerging evidence', 'Cites neither experimental work nor a systematic review'],
+        };
+        const [signal, signalTitle] = TIER[study.evidence] || ['', ''];
 
         return `
           <article class="case-card" style="animation-delay:${Math.min(idx * 0.02, 0.4)}s">
@@ -868,7 +870,7 @@
                   Read study ${icon('arrowRight')}
                 </a>
                 <div class="card-footer-meta">
-                  ${signal ? `<span class="card-signal" title="${escapeHtml(signalTitle)}">${signal}</span>` : ''}
+                  ${signal ? `<span class="card-signal tier-${escapeHtml(study.evidence)}" title="${escapeHtml(signalTitle)}">${signal}</span>` : ''}
                   ${refs ? `<span class="card-refs" title="${refs} cited sources">${refs} sources</span>` : ''}
                   ${readTime ? `<span class="card-readtime">${icon('clock2')} ${readTime}</span>` : ''}
                 </div>
