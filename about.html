@@ -16,11 +16,11 @@
       document.documentElement.setAttribute('data-theme', resolve(saved));
     })();
   </script>
-  <meta name="description" content="How the Dev Case Studies library is built, curated and cited, with its method, evidence tiers, data model and how to contribute.">
+  <meta name="description" content="How the Dev Case Studies library is curated and cited, with its evidence tiers and how to contribute.">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="About and method | Dev Case Studies">
-  <meta property="og:description" content="How the Dev Case Studies library is built, curated, and cited.">
+  <meta property="og:description" content="How the Dev Case Studies library is curated and cited.">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d5f8a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/><path d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/></svg>" type="image/svg+xml">
 
@@ -123,12 +123,6 @@
           <li><strong>Follow the citations.</strong> Every reference is copy-ready, and related studies are surfaced as a small literature map.</li>
           <li><strong>Explore the Insights dashboard</strong> on the home page to see how the collection is distributed across topics, regions, and decades.</li>
         </ul>
-      </section>
-
-      <section class="about-section">
-        <h2>How it's built</h2>
-        <p>The library is deliberately simple and durable. It is static HTML, CSS and vanilla JavaScript with no runtime framework, so it loads fast and will keep working for years. Behind that sits a small, zero-dependency Node build pipeline that treats each case study as a single source-of-truth JSON file and generates everything else automatically: the card index, a search index, the statistics dashboard and the sitemap. A continuous-integration check validates every study against the schema and fails the build if the generated data drifts out of sync.</p>
-        <p>The full data model and build commands are documented in <a href="https://github.com/Varnasr/dev-case-studies/blob/main/data/README.md" target="_blank" rel="noopener noreferrer">the data README</a>.</p>
       </section>
 
       <section class="about-section">
