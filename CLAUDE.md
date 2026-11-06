@@ -2,7 +2,7 @@
 
 Shared engineering standard: @.claude/engineering-standards.md. It applies to all work in this repository. This file adds what is specific to the project, and wins where the two disagree.
 
-Research library of 204 cited development case studies from across the Global
+Research library of 208 cited development case studies from across the Global
 South. Static HTML, no framework, one generator script. Deployed to GitHub
 Pages under `/dev-case-studies/`.
 
@@ -91,7 +91,7 @@ Three things were measured at 390x844 on 2026-09-23 and fixed:
   disk will report all 204 as missing pages; compare slugs.
 - **The GitHub Pages path prefix is in the sitemap** and not in the repository
   layout, for the same reason.
-- **Counts stated in prose**: `README.md` says 204 case studies, which is
+- **Counts stated in prose**: `README.md` says 208 case studies, which is
   correct today. Nothing checks it.
 
 ## Testing
