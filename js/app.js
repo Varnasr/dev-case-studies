@@ -978,6 +978,20 @@
         document.title = `${study.title} | Dev Case Studies`;
         const md = document.querySelector('meta[name="description"]');
         if (md && study.summary) md.setAttribute('content', study.summary);
+        // Every study is this one page with a different ?slug=, so the page
+        // carries no static canonical (it would fold all of them into one).
+        // The canonical and the share tags are set here to match the sitemap.
+        const studyUrl = `${location.origin}${location.pathname}?slug=${encodeURIComponent(study.slug)}`;
+        let canon = document.querySelector('link[rel="canonical"]');
+        if (!canon) { canon = document.createElement('link'); canon.rel = 'canonical'; document.head.appendChild(canon); }
+        canon.href = studyUrl;
+        const setMeta = (prop, value) => {
+          const el = document.querySelector(`meta[property="${prop}"]`);
+          if (el && value) el.setAttribute('content', value);
+        };
+        setMeta('og:url', studyUrl);
+        setMeta('og:title', document.title);
+        setMeta('og:description', study.summary);
       })
       .catch(() => { showError('Case study not found', `The case study "${escapeHtml(slug)}" could not be loaded.`); });
 
