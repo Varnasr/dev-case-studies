@@ -19,7 +19,7 @@
      node scripts/build.mjs --check   # validate only; fail if artefacts drift
    ========================================================================== */
 
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, basename } from 'node:path';
 
@@ -248,6 +248,45 @@ function buildSitemap(master) {
 // that renders 200+ studies from ?slug=, so a static canonical would fold them
 // all into one. js/app.js sets it per study, and this check holds both halves.
 
+// A preview picture must be a JPEG or PNG (LinkedIn does not read WebP) of at most
+// 250 KB (WhatsApp drops larger ones), at the size the tags declare. The one card
+// serves every page, including each study, whose own tags js/app.js sets.
+function imageSize(buf) {
+  if (buf.length > 24 && buf.toString('latin1', 1, 4) === 'PNG') return [buf.readUInt32BE(16), buf.readUInt32BE(20)];
+  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) {
+    let i = 2;
+    while (i + 9 < buf.length) {
+      if (buf[i] !== 0xff) return null;
+      const m = buf[i + 1];
+      if (m >= 0xc0 && m <= 0xc2) return [buf.readUInt16BE(i + 7), buf.readUInt16BE(i + 5)];
+      i += 2 + buf.readUInt16BE(i + 2);
+    }
+  }
+  return null;
+}
+
+function checkShareCard(files) {
+  const base = `${SITE_URL}/`;
+  const attr = (html, re) => (html.match(re) || [])[1];
+  for (const file of files) {
+    const html = readFileSync(join(ROOT, file), 'utf8');
+    const img = attr(html, /<meta property="og:image" content="([^"]*)"/);
+    if (!img || !img.startsWith(base)) { errors.push(`${file}: og:image must be an address under ${base}`); continue; }
+    if (attr(html, /<meta name="twitter:image" content="([^"]*)"/) !== img) errors.push(`${file}: twitter:image differs from og:image`);
+    if (attr(html, /<meta property="og:image:width" content="([^"]*)"/) !== '1200') errors.push(`${file}: og:image:width is not 1200`);
+    if (attr(html, /<meta property="og:image:height" content="([^"]*)"/) !== '630') errors.push(`${file}: og:image:height is not 630`);
+    if (!attr(html, /<meta property="og:image:alt" content="([^"]+)"/)) errors.push(`${file}: missing og:image:alt`);
+    const rel = img.slice(base.length);
+    const path = join(ROOT, rel);
+    if (!existsSync(path)) { errors.push(`${file}: ${img} has no file at ${rel}`); continue; }
+    const buf = readFileSync(path);
+    if (buf.length > 250000) errors.push(`${rel} is ${buf.length} bytes; WhatsApp drops previews over about 250 KB`);
+    const size = imageSize(buf);
+    if (!size) errors.push(`${rel} is not a JPEG or PNG`);
+    else if (size[0] !== 1200 || size[1] !== 630) errors.push(`${rel} is ${size[0]}x${size[1]}, the tags say 1200x630`);
+  }
+}
+
 function checkPageHeads() {
   const attr = (html, re) => (html.match(re) || [])[1];
   for (const file of ['index.html', 'about.html']) {
@@ -257,8 +296,9 @@ function checkPageHeads() {
     const ogUrl = attr(html, /<meta property="og:url" content="([^"]*)"/);
     if (canon !== want) errors.push(`${file}: canonical is ${canon || 'missing'}, expected ${want}`);
     if (ogUrl !== want) errors.push(`${file}: og:url is ${ogUrl || 'missing'}, expected ${want}`);
-    if (!/<meta name="twitter:card" content="summary">/.test(html)) errors.push(`${file}: twitter:card is missing`);
+    if (!/<meta name="twitter:card" content="summary_large_image">/.test(html)) errors.push(`${file}: twitter:card is not summary_large_image`);
   }
+  checkShareCard(['index.html', 'about.html', 'study.html']);
   const study = readFileSync(join(ROOT, 'study.html'), 'utf8');
   if (/<link rel="canonical"/.test(study)) errors.push('study.html: a static canonical would fold every study into one page; js/app.js sets it per study');
   const app = readFileSync(join(ROOT, 'js/app.js'), 'utf8');
