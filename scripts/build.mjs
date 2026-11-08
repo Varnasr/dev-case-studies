@@ -241,6 +241,30 @@ function buildSitemap(master) {
     + urls.join('\n') + '\n</urlset>\n';
 }
 
+// ── Static page heads ──────────────────────────────────────────────────────
+// index.html, about.html and study.html are written by hand, not generated.
+// Each lists its own canonical address (the same form the sitemap uses) and a
+// matching og:url. study.html is deliberately the exception: it is one page
+// that renders 200+ studies from ?slug=, so a static canonical would fold them
+// all into one. js/app.js sets it per study, and this check holds both halves.
+
+function checkPageHeads() {
+  const attr = (html, re) => (html.match(re) || [])[1];
+  for (const file of ['index.html', 'about.html']) {
+    const html = readFileSync(join(ROOT, file), 'utf8');
+    const want = `${SITE_URL}/${file}`;
+    const canon = attr(html, /<link rel="canonical" href="([^"]*)"/);
+    const ogUrl = attr(html, /<meta property="og:url" content="([^"]*)"/);
+    if (canon !== want) errors.push(`${file}: canonical is ${canon || 'missing'}, expected ${want}`);
+    if (ogUrl !== want) errors.push(`${file}: og:url is ${ogUrl || 'missing'}, expected ${want}`);
+    if (!/<meta name="twitter:card" content="summary">/.test(html)) errors.push(`${file}: twitter:card is missing`);
+  }
+  const study = readFileSync(join(ROOT, 'study.html'), 'utf8');
+  if (/<link rel="canonical"/.test(study)) errors.push('study.html: a static canonical would fold every study into one page; js/app.js sets it per study');
+  const app = readFileSync(join(ROOT, 'js/app.js'), 'utf8');
+  if (!/canon\.href = studyUrl/.test(app)) errors.push('js/app.js: no longer sets the per-study canonical');
+}
+
 // ── Write / check ──────────────────────────────────────────────────────────
 
 function emit(relPath, content) {
@@ -267,6 +291,7 @@ function main() {
   emit('data/search-index.json', buildSearchIndex(studies));
   emit('data/stats.json', buildStats(master));
   emit('sitemap.xml', buildSitemap(master));
+  checkPageHeads();
 
   if (warnings.length) {
     console.warn(`\n${warnings.length} warning(s):`);
