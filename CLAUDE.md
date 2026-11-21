@@ -53,11 +53,16 @@ study carries four or five references, so it was `strong` on all of them. The
 owner chose to score it by design instead, from the two signals
 `evidenceSignals()` already computed:
 
-| tier | rule | studies on 2026-10-30 |
+| tier | rule | studies on 2026-11-21 |
 |---|---|---|
 | strong | cites experimental or quasi-experimental work **and** a systematic review or meta-analysis | 7 |
-| moderate | cites one of the two | 59 |
-| emerging | cites neither | 142 |
+| moderate | cites one of the two | 60 |
+| emerging | cites neither | 141 |
+
+The counts were 7, 59 and 142 on 2026-10-30. The November 2026 content refresh
+moved `india-swachh-bharat` from emerging to moderate, because it now cites a
+quasi-experimental district panel study (Chakrabarti et al. 2024). The record of
+that refresh is `docs/content-refresh-2026-11.md`.
 
 The signals are keyword matches over the study's text, so the tier says what
 kind of evidence a study draws on, not how good it is, and `about.html` says so
