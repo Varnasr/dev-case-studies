@@ -86,7 +86,9 @@
     if (!str) return '';
     const div = document.createElement('div');
     div.textContent = str;
-    return div.innerHTML;
+    // Quotes too: this is also used inside attribute values, and a citation
+    // that opens a quotation ended its data-citation attribute there.
+    return div.innerHTML.replace(/"/g, '&quot;').replace(/'/g, '&#39;');
   }
 
   function truncateSentence(text, maxLen) {
@@ -276,7 +278,7 @@
     const findings = [];
     const match = content.match(/## (?:Results & Evidence|Results|Evidence|Impact|Outcomes)\s*\n([\s\S]*?)(?=\n## |$)/i);
     const text = match ? match[1] : content;
-    const sentences = text.split(/([.!?])\s+/).reduce(function(acc, part, i, arr) {
+    const sentences = text.split(/([.!?])\s+(?=[A-Z"'\u201C])/).reduce(function(acc, part, i, arr) {
       if (i % 2 === 0) acc.push(part + (arr[i + 1] || ''));
       return acc;
     }, []);
@@ -315,11 +317,11 @@
     const lessons = [];
     const match = content.match(/## (?:Key Lessons|Lessons|Lessons for Policymakers|Lessons Learned)\s*\n([\s\S]*?)(?=\n## |\n---\s*$|$)/i);
     if (!match) return lessons;
-    const items = match[1].trim().split(/\n(?=[-*]\s|\d+\.\s)/).filter(s => s.trim());
+    const items = match[1].trim().split(/\n(?=[-*]\s|\d+\.\s)|\n\s*\n(?=\*\*)/).filter(s => s.trim());
     for (const item of items) {
-      let text = item.replace(/^[-*]\s*/, '').replace(/^\d+\.\s*/, '').trim();
+      let text = item.replace(/^[-*]\s+/, '').replace(/^\d+\.\s*/, '').trim();
       const boldMatch = text.match(/^\*\*([^*]+)\*\*[:\.]?\s*([\s\S]*)/);
-      if (boldMatch) lessons.push({ title: boldMatch[1].trim(), detail: boldMatch[2].trim() });
+      if (boldMatch) lessons.push({ title: boldMatch[1].replace(/^\d+\.\s*/, '').trim(), detail: boldMatch[2].trim() });
       else if (text.length > 20) lessons.push({ title: '', detail: text });
     }
     return lessons;
@@ -336,16 +338,16 @@
     html = html.replace(/(?:^(\|.+\|)\s*\n(\|[\s:|-]+\|)\s*\n((?:\|.+\|\s*\n?)*))/gm, function (m, hdr, sep, body) {
       const headers = hdr.split('|').filter(c => c.trim());
       const aligns = sep.split('|').filter(c => c.trim()).map(c => { const t = c.trim(); if (t.startsWith(':') && t.endsWith(':')) return 'center'; if (t.endsWith(':')) return 'right'; return 'left'; });
-      let t = '<table><thead><tr>';
+      let t = '<div class="table-scroll" tabindex="0" role="region" aria-label="Data table"><table><thead><tr>';
       headers.forEach((h, i) => { t += `<th style="text-align:${aligns[i]||'left'}">${h.trim()}</th>`; });
       t += '</tr></thead><tbody>';
       body.trim().split('\n').forEach(row => { const parts = row.replace(/^\|/,'').replace(/\|$/,'').split('|'); t += '<tr>'; parts.forEach((c,i) => { t += `<td style="text-align:${aligns[i]||'left'}">${c.trim()}</td>`; }); t += '</tr>'; });
-      return t + '</tbody></table>';
+      return t + '</tbody></table></div>';
     });
     html = html.replace(/^&gt;\s?(.*)$/gm, '<blockquote>$1</blockquote>');
     html = html.replace(/<\/blockquote>\s*<blockquote>/g, '\n');
-    html = html.replace(/^### (.+)$/gm, (m, t) => `<h3 id="${t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}">${t}</h3>`);
-    html = html.replace(/^## (.+)$/gm, (m, t) => `<h2 id="${t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}">${t}</h2>`);
+    html = html.replace(/^### (.+)$/gm, (m, t) => `<h3 id="${t.replace(/&amp;/g,'&').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}">${t}</h3>`);
+    html = html.replace(/^## (.+)$/gm, (m, t) => `<h2 id="${t.replace(/&amp;/g,'&').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}">${t}</h2>`);
     html = html.replace(/\*\*\*(.+?)\*\*\*/g, '<strong><em>$1</em></strong>');
     html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
     html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
@@ -468,8 +470,18 @@
       document.body.appendChild(overlay);
     }
 
-    function openSidebar() { sidebar?.classList.add('open'); overlay?.classList.add('visible'); }
-    function closeSidebar() { sidebar?.classList.remove('open'); overlay?.classList.remove('visible'); }
+    function openSidebar() {
+      sidebar?.classList.add('open'); overlay?.classList.add('visible');
+      mobileToggle?.setAttribute('aria-expanded', 'true');
+      document.getElementById('filter-close')?.focus();
+    }
+    function closeSidebar() {
+      const wasOpen = sidebar?.classList.contains('open');
+      sidebar?.classList.remove('open'); overlay?.classList.remove('visible');
+      mobileToggle?.setAttribute('aria-expanded', 'false');
+      if (wasOpen) mobileToggle?.focus();
+    }
+    document.getElementById('filter-close')?.addEventListener('click', closeSidebar);
     mobileToggle?.addEventListener('click', () => {
       sidebar?.classList.contains('open') ? closeSidebar() : openSidebar();
     });
@@ -512,7 +524,7 @@
       const topics = Object.keys(topicMap).sort();
       if (topicChips) {
         topicChips.innerHTML = topics.map(t =>
-          `<button class="chip${activeTopics.has(t) ? ' active' : ''}" data-topic="${escapeHtml(t)}">${escapeHtml(t)} <span class="chip-count">${topicMap[t]}</span></button>`
+          `<button type="button" class="chip ${topicToClass(t)}${activeTopics.has(t) ? ' active' : ''}" aria-pressed="${activeTopics.has(t)}" data-topic="${escapeHtml(t)}"><span class="chip-label">${escapeHtml(t)}</span> <span class="chip-count">${topicMap[t]}</span></button>`
         ).join('');
         topicChips.addEventListener('click', e => {
           const chip = e.target.closest('.chip'); if (!chip) return;
@@ -529,7 +541,7 @@
       const regions = Object.keys(regionMap).sort();
       if (regionChips) {
         regionChips.innerHTML = regions.map(r =>
-          `<button class="chip${activeRegions.has(r) ? ' active' : ''}" data-region="${escapeHtml(r)}">${escapeHtml(r)} <span class="chip-count">${regionMap[r]}</span></button>`
+          `<button type="button" class="chip${activeRegions.has(r) ? ' active' : ''}" aria-pressed="${activeRegions.has(r)}" data-region="${escapeHtml(r)}"><span class="chip-label">${escapeHtml(r)}</span> <span class="chip-count">${regionMap[r]}</span></button>`
         ).join('');
         regionChips.addEventListener('click', e => {
           const chip = e.target.closest('.chip'); if (!chip) return;
@@ -546,7 +558,7 @@
       const decades = Object.keys(decadeMap).sort();
       if (decadeChips) {
         decadeChips.innerHTML = decades.map(d =>
-          `<button class="chip${activeDecades.has(d) ? ' active' : ''}" data-decade="${d}">${d} <span class="chip-count">${decadeMap[d]}</span></button>`
+          `<button type="button" class="chip${activeDecades.has(d) ? ' active' : ''}" aria-pressed="${activeDecades.has(d)}" data-decade="${d}"><span class="chip-label">${d}</span> <span class="chip-count">${decadeMap[d]}</span></button>`
         ).join('');
         decadeChips.addEventListener('click', e => {
           const chip = e.target.closest('.chip'); if (!chip) return;
@@ -568,7 +580,7 @@
       if (evidenceChips) {
         evidenceChips.innerHTML = EVIDENCE_FACETS.map(([key, label, test]) => {
           const n = allStudies.filter(test).length;
-          return `<button class="chip${activeEvidence.has(key) ? ' active' : ''}" data-evidence="${key}">${escapeHtml(label)} <span class="chip-count">${n}</span></button>`;
+          return `<button type="button" class="chip${activeEvidence.has(key) ? ' active' : ''}" aria-pressed="${activeEvidence.has(key)}" data-evidence="${key}"><span class="chip-label">${escapeHtml(label)}</span> <span class="chip-count">${n}</span></button>`;
         }).join('');
         evidenceChips.addEventListener('click', e => {
           const chip = e.target.closest('.chip'); if (!chip) return;
@@ -582,7 +594,20 @@
       updateActiveFilters();
     }
 
+    function syncChips() {
+      const sync = (group, attr, set) => group?.querySelectorAll('.chip').forEach(c => {
+        const on = set.has(c.dataset[attr]);
+        c.classList.toggle('active', on);
+        c.setAttribute('aria-pressed', String(on));
+      });
+      sync(topicChips, 'topic', activeTopics);
+      sync(regionChips, 'region', activeRegions);
+      sync(decadeChips, 'decade', activeDecades);
+      sync(evidenceChips, 'evidence', activeEvidence);
+    }
+
     function onFilterChange() {
+      syncChips();
       renderCards();
       updateActiveFilters();
       updateFilterCounts();
@@ -594,35 +619,38 @@
       if (regionCount) { regionCount.textContent = activeRegions.size; regionCount.classList.toggle('visible', activeRegions.size > 0); }
       if (decadeCount) { decadeCount.textContent = activeDecades.size; decadeCount.classList.toggle('visible', activeDecades.size > 0); }
       if (evidenceCount) { evidenceCount.textContent = activeEvidence.size; evidenceCount.classList.toggle('visible', activeEvidence.size > 0); }
+      // The Filters button says how many filters are on, because below 960px
+      // the filters sit in a closed drawer and would otherwise be invisible.
+      const total = activeTopics.size + activeRegions.size + activeDecades.size + activeEvidence.size;
+      const badge = document.getElementById('filter-toggle-count');
+      if (badge) { badge.textContent = total; badge.hidden = total === 0; }
+      if (mobileToggle) mobileToggle.setAttribute('aria-label', total ? `Filters, ${total} active` : 'Filters');
     }
 
     function updateActiveFilters() {
       if (!activeFiltersEl) return;
       const tags = [];
-      activeRegions.forEach(r => tags.push(`<span class="active-filter-tag" data-type="region" data-value="${escapeHtml(r)}">${escapeHtml(r)} <span class="remove">\u00D7</span></span>`));
-      activeTopics.forEach(t => tags.push(`<span class="active-filter-tag" data-type="topic" data-value="${escapeHtml(t)}">${escapeHtml(t)} <span class="remove">\u00D7</span></span>`));
-      activeDecades.forEach(d => tags.push(`<span class="active-filter-tag" data-type="decade" data-value="${d}">${d} <span class="remove">\u00D7</span></span>`));
+      activeRegions.forEach(r => tags.push(`<button type="button" class="active-filter-tag" data-type="region" data-value="${escapeHtml(r)}" aria-label="Remove filter: ${escapeHtml(r)}">${escapeHtml(r)} <span class="remove" aria-hidden="true">\u00D7</span></button>`));
+      activeTopics.forEach(t => tags.push(`<button type="button" class="active-filter-tag" data-type="topic" data-value="${escapeHtml(t)}" aria-label="Remove filter: ${escapeHtml(t)}">${escapeHtml(t)} <span class="remove" aria-hidden="true">\u00D7</span></button>`));
+      activeDecades.forEach(d => tags.push(`<button type="button" class="active-filter-tag" data-type="decade" data-value="${d}" aria-label="Remove filter: ${d}">${d} <span class="remove" aria-hidden="true">\u00D7</span></button>`));
       const EV_LABEL = { experimental: 'Cites experimental work', review: 'Cites a review or meta-analysis' };
-      activeEvidence.forEach(e => tags.push(`<span class="active-filter-tag" data-type="evidence" data-value="${e}">${EV_LABEL[e] || e} <span class="remove">\u00D7</span></span>`));
-      if (tags.length > 0) tags.push(`<button class="clear-all-btn" id="clear-all-filters">Clear all</button>`);
+      activeEvidence.forEach(e => tags.push(`<button type="button" class="active-filter-tag" data-type="evidence" data-value="${e}" aria-label="Remove filter: ${EV_LABEL[e] || e}">${EV_LABEL[e] || e} <span class="remove" aria-hidden="true">\u00D7</span></button>`));
+      if (tags.length > 0) tags.push(`<button type="button" class="clear-all-btn" id="clear-all-filters">Clear all</button>`);
       activeFiltersEl.innerHTML = tags.join('');
 
       activeFiltersEl.querySelectorAll('.active-filter-tag').forEach(tag => {
         tag.addEventListener('click', () => {
           const { type, value } = tag.dataset;
-          if (type === 'region') { activeRegions.delete(value); regionChips?.querySelector(`[data-region="${value}"]`)?.classList.remove('active'); }
-          else if (type === 'topic') { activeTopics.delete(value); topicChips?.querySelector(`[data-topic="${value}"]`)?.classList.remove('active'); }
-          else if (type === 'decade') { activeDecades.delete(value); decadeChips?.querySelector(`[data-decade="${value}"]`)?.classList.remove('active'); }
-          else if (type === 'evidence') { activeEvidence.delete(value); evidenceChips?.querySelector(`[data-evidence="${value}"]`)?.classList.remove('active'); }
+          if (type === 'region') activeRegions.delete(value);
+          else if (type === 'topic') activeTopics.delete(value);
+          else if (type === 'decade') activeDecades.delete(value);
+          else if (type === 'evidence') activeEvidence.delete(value);
           onFilterChange();
         });
       });
 
       document.getElementById('clear-all-filters')?.addEventListener('click', () => {
         activeRegions.clear(); activeTopics.clear(); activeDecades.clear(); activeEvidence.clear();
-        regionChips?.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-        topicChips?.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-        decadeChips?.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
         onFilterChange();
       });
 
@@ -681,6 +709,8 @@
       viewGrid?.classList.toggle('active', viewMode === 'grid');
       viewList?.classList.toggle('active', viewMode === 'list');
       cardGrid?.classList.toggle('list-view', viewMode === 'list');
+      viewGrid?.setAttribute('aria-pressed', String(viewMode === 'grid'));
+      viewList?.setAttribute('aria-pressed', String(viewMode === 'list'));
     }
 
     viewGrid?.addEventListener('click', () => { viewMode = 'grid'; updateViewToggle(); syncUrlParams(); });
@@ -704,6 +734,7 @@
       const nowSaved = toggleBookmark(slug);
       btn.classList.toggle('saved', nowSaved);
       btn.setAttribute('aria-pressed', String(nowSaved));
+      btn.title = nowSaved ? 'Saved. Click to remove' : 'Save for later';
       btn.innerHTML = icon(nowSaved ? 'bookmarkFill' : 'bookmark');
       showToast(nowSaved ? 'Saved to your library' : 'Removed from saved');
       if (savedOnly) renderCards();
@@ -759,7 +790,7 @@
 
     // --- Filter + Sort ---
     function getFilteredStudies() {
-      let filtered = allStudies;
+      let filtered = allStudies.slice();
 
       // Saved-only
       if (savedOnly) {
@@ -818,24 +849,17 @@
     function renderCards() {
       const filtered = getFilteredStudies();
       if (resultsCountEl) {
-        resultsCountEl.innerHTML = `Showing <strong>${filtered.length}</strong> of <strong>${allStudies.length}</strong> case studies`;
+        resultsCountEl.innerHTML = `<strong>${filtered.length}</strong> of <strong>${allStudies.length}</strong> case studies`;
       }
 
       if (filtered.length === 0) {
-        cardGrid.innerHTML = `<div class="no-results"><div class="no-results-icon">${icon('search')}</div><h3>No case studies found</h3><p>Try adjusting your search terms or removing some filters.</p></div>`;
+        cardGrid.innerHTML = `<div class="no-results"><div class="no-results-icon">${icon('search')}</div><h2>No case studies found</h2><p>Try adjusting your search terms or removing some filters.</p></div>`;
         return;
       }
 
       cardGrid.innerHTML = filtered.map((study, idx) => {
         const topicClass = topicToClass(study.topic);
         const summary = study.summary ? escapeHtml(study.summary) : 'Evidence-based analysis and lessons from this development case study.';
-        const decade = extractDecade(study.year);
-
-        // Generate tags from content keywords
-        const tags = [];
-        if (decade) tags.push(decade);
-        tags.push(study.region);
-
         const saved = isBookmarked(study.slug);
         const readTime = formatReadTime(study.readingMinutes);
         /* The evidence tier, by study design: strong cites experimental work
@@ -851,31 +875,25 @@
         };
         const [signal, signalTitle] = TIER[study.evidence] || ['', ''];
 
+        const href = `./study.html?slug=${encodeURIComponent(study.slug)}`;
         return `
-          <article class="case-card" style="animation-delay:${Math.min(idx * 0.02, 0.4)}s">
-            <button class="card-bookmark${saved ? ' saved' : ''}" data-slug="${escapeHtml(study.slug)}" aria-pressed="${saved}" aria-label="${saved ? 'Remove bookmark' : 'Save study'}" title="${saved ? 'Saved. Click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')}</button>
-            <div class="card-body">
+          <article class="case-card">
+            <div class="card-top">
               <span class="card-topic ${topicClass}">${escapeHtml(study.topic)}</span>
-              <h3 class="card-title"><a href="./study.html?slug=${encodeURIComponent(study.slug)}">${escapeHtml(study.title)}</a></h3>
-              <div class="card-meta">
-                <span class="card-country">${icon('globe')} ${escapeHtml(study.country)}</span>
-                <span class="card-year">${escapeHtml(study.year)}</span>
-              </div>
-              <div class="card-tags">
-                ${tags.map(t => `<span class="card-tag">${escapeHtml(t)}</span>`).join('')}
-              </div>
-              <p class="card-summary">${summary}</p>
-              <div class="card-footer">
-                <a href="./study.html?slug=${encodeURIComponent(study.slug)}" class="card-link">
-                  Read study ${icon('arrowRight')}
-                </a>
-                <div class="card-footer-meta">
-                  ${signal ? `<span class="card-signal tier-${escapeHtml(study.evidence)}" title="${escapeHtml(signalTitle)}">${signal}</span>` : ''}
-                  ${refs ? `<span class="card-refs" title="${refs} cited sources">${refs} sources</span>` : ''}
-                  ${readTime ? `<span class="card-readtime">${icon('clock2')} ${readTime}</span>` : ''}
-                </div>
-              </div>
+              <button type="button" class="card-bookmark${saved ? ' saved' : ''}" data-slug="${escapeHtml(study.slug)}" aria-pressed="${saved}" aria-label="Save study: ${escapeHtml(study.title)}" title="${saved ? 'Saved. Click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')}</button>
             </div>
+            <h2 class="card-title"><a href="${href}">${escapeHtml(study.title)}</a></h2>
+            <p class="card-facts">
+              <span class="card-country">${escapeHtml(study.country)}</span>
+              <span class="card-year">${escapeHtml(study.year)}</span>
+              <span class="card-region">${escapeHtml(study.region)}</span>
+            </p>
+            <p class="card-summary">${summary}</p>
+            <p class="card-footer-meta">
+              ${signal ? `<span class="card-signal tier-${escapeHtml(study.evidence)}" title="${escapeHtml(signalTitle)}">${signal}</span>` : ''}
+              ${refs ? `<span class="card-refs">${refs} sources</span>` : ''}
+              ${readTime ? `<span class="card-readtime">${readTime}</span>` : ''}
+            </p>
           </article>`;
       }).join('');
     }
@@ -899,7 +917,7 @@
             <span class="insight-bar-value">${r.count}</span>
           </div>`;
         }).join('');
-        return `<div class="insight-group"><h4 class="insight-group-title">${escapeHtml(title)}</h4>${bars}</div>`;
+        return `<div class="insight-group"><h3 class="insight-group-title">${escapeHtml(title)}</h3>${bars}</div>`;
       }
 
       function render(stats) {
@@ -928,11 +946,8 @@
             if (filterType === 'topic') activeTopics.has(filterValue) ? activeTopics.delete(filterValue) : activeTopics.add(filterValue);
             else if (filterType === 'region') activeRegions.has(filterValue) ? activeRegions.delete(filterValue) : activeRegions.add(filterValue);
             else if (filterType === 'decade') activeDecades.has(filterValue) ? activeDecades.delete(filterValue) : activeDecades.add(filterValue);
-            topicChips?.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', activeTopics.has(c.dataset.topic)));
-            regionChips?.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', activeRegions.has(c.dataset.region)));
-            decadeChips?.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', activeDecades.has(c.dataset.decade)));
             onFilterChange();
-            document.getElementById('main-content')?.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('results-bar')?.scrollIntoView({ behavior: 'smooth' });
           };
           el.addEventListener('click', apply);
           el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); apply(); } });
@@ -996,7 +1011,7 @@
       .catch(() => { showError('Case study not found', `The case study "${escapeHtml(slug)}" could not be loaded.`); });
 
     function showError(title, message) {
-      mainEl.innerHTML = `<div class="container"><div class="error-state"><div class="error-state-icon">${icon('book')}</div><h2>${title}</h2><p>${message}</p><a href="./index.html" class="back-to-library">${icon('arrowLeft')} Back to library</a></div></div>`;
+      mainEl.innerHTML = `<div class="container"><div class="error-state"><div class="error-state-icon">${icon('book')}</div><h1>${title}</h1><p>${message}</p><a href="./index.html" class="back-to-library">${icon('arrowLeft')} Back to library</a></div></div>`;
     }
 
     function renderStudy(study, masterList) {
@@ -1022,104 +1037,120 @@
       mainContent = mainContent.replace(/## (?:Further Reading|Recommended Reading|Additional Reading)\s*\n[\s\S]*?(?=\n## |\n---\s*$|$)/i, '');
       mainContent = mainContent.replace(/## (?:Discussion Questions|Key Questions|Questions for Discussion)\s*\n[\s\S]*?(?=\n## |\n---\s*$|$)/i, '');
 
-      let pageHtml = `<div class="container">
+      // The 15 studies on the longer template head their citations "Further
+      // Reading" and have no References section. Their list is the citation
+      // list, so it is shown once, under its own heading, and counted.
+      const refList = citations.length > 0 ? citations : furtherReading;
+      const refTitle = citations.length > 0 ? 'References' : 'Further reading';
+      const extraReading = citations.length > 0 ? furtherReading : [];
+      const nRefs = refList.length;
+
+      let pageHtml = `<article class="study"><div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="./index.html">Library</a><span class="sep">/</span>
-          <a href="./index.html?regions=${encodeURIComponent(study.region)}">${escapeHtml(study.region)}</a><span class="sep">/</span>
-          <span>${escapeHtml(study.title)}</span>
+          <a href="./index.html">Library</a><span class="sep" aria-hidden="true">/</span>
+          <a href="./index.html?regions=${encodeURIComponent(study.region)}">${escapeHtml(study.region)}</a><span class="sep" aria-hidden="true">/</span>
+          <span class="breadcrumb-current">${escapeHtml(study.title)}</span>
         </nav>
 
         <header class="study-header">
           <div class="study-header-top">
-            <span class="study-topic-tag ${topicClass}">${escapeHtml(study.topic)}</span>
+            <a class="study-topic-tag ${topicClass}" href="./index.html?topics=${encodeURIComponent(study.topic)}">${escapeHtml(study.topic)}</a>
             <div class="study-actions">
-              <button class="study-action-btn" id="study-bookmark" aria-pressed="${saved}" title="${saved ? 'Saved. Click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')} <span>${saved ? 'Saved' : 'Save'}</span></button>
-              <button class="study-action-btn" id="study-share" title="Share this study">${icon('share')} <span>Share</span></button>
+              <button type="button" class="study-action-btn${saved ? ' saved' : ''}" id="study-bookmark" aria-pressed="${saved}" title="${saved ? 'Saved. Click to remove' : 'Save for later'}">${icon(saved ? 'bookmarkFill' : 'bookmark')} <span>${saved ? 'Saved' : 'Save'}</span></button>
+              <button type="button" class="study-action-btn" id="study-share" title="Share this study">${icon('share')} <span>Share</span></button>
             </div>
           </div>
           <h1 class="study-title">${escapeHtml(study.title)}</h1>
-          <div class="study-meta">
-            <span class="study-meta-item">${icon('globe')} <span>${escapeHtml(study.country)}</span></span>
-            <span class="study-meta-item">${icon('map')} <span class="study-meta-label">Region</span> ${escapeHtml(study.region)}</span>
-            <span class="study-meta-item">${icon('clock')} <span class="study-meta-label">Period</span> ${escapeHtml(study.year)}</span>
-            ${citations.length > 0 ? `<span class="study-meta-item">${icon('article')} <span class="study-meta-label">Refs</span> ${citations.length}</span>` : ''}
-            <span class="study-meta-item">${icon('clock2')} ${formatReadTime(readMins)}</span>
-          </div>
+          ${study.summary ? `<p class="study-dek">${escapeHtml(study.summary)}</p>` : ''}
+          <dl class="study-facts">
+            <div class="study-fact"><dt>Country</dt><dd>${escapeHtml(study.country)}</dd></div>
+            <div class="study-fact"><dt>Region</dt><dd>${escapeHtml(study.region)}</dd></div>
+            <div class="study-fact"><dt>Period</dt><dd>${escapeHtml(study.year)}</dd></div>
+            ${nRefs > 0 ? `<div class="study-fact"><dt>References</dt><dd>${nRefs}</dd></div>` : ''}
+            <div class="study-fact"><dt>Reading time</dt><dd>${readMins} min</dd></div>
+          </dl>
         </header>
 
         <div class="study-layout">
           <div class="study-content">
 
             ${evidenceFindings.length > 0 ? `
-            <div class="evidence-card">
-              <div class="evidence-card-header">${icon('factCheck')}<span class="evidence-card-title">Evidence summary</span></div>
-              <div class="evidence-facts">
-                <span class="evidence-fact">${icon('book')}<span><strong>${evidence.sources}</strong> cited source${evidence.sources === 1 ? '' : 's'}</span></span>
-                ${evidence.experimental ? `<span class="evidence-fact">${icon('check')}<span>Cites experimental or quasi-experimental work</span></span>` : ''}
-                ${evidence.review ? `<span class="evidence-fact">${icon('check')}<span>Cites a systematic review or meta-analysis</span></span>` : ''}
-              </div>
-              <ul class="evidence-findings">
-                ${evidenceFindings.map(f => `<li><span class="finding-icon">${icon('check')}</span><span>${escapeHtml(f)}</span></li>`).join('')}
+            <section class="evidence-card" aria-labelledby="evidence-title">
+              <h2 class="block-label" id="evidence-title">Evidence summary</h2>
+              <ul class="evidence-facts">
+                <li class="evidence-fact"><strong>${nRefs}</strong> cited source${nRefs === 1 ? '' : 's'}</li>
+                ${evidence.experimental ? `<li class="evidence-fact">Cites experimental or quasi-experimental work</li>` : ''}
+                ${evidence.review ? `<li class="evidence-fact">Cites a systematic review or meta-analysis</li>` : ''}
               </ul>
-            </div>` : ''}
+              <ul class="evidence-findings">
+                ${evidenceFindings.map(f => `<li>${escapeHtml(f)}</li>`).join('')}
+              </ul>
+            </section>` : ''}
 
             ${(discussionQs.length > 0 || lessons.length > 0) ? `
-            <div class="framework-card">
-              <div class="framework-card-header">${icon('lightbulb')}<span class="framework-card-title">How to think about this</span></div>
-              ${lessons.length > 0 ? `<ul class="framework-questions">${lessons.slice(0, 4).map((l, i) => `<li><span class="q-marker">${i+1}.</span><span>${l.title ? `<strong>${escapeHtml(l.title)}</strong> ` : ''}${escapeHtml(truncateSentence(l.detail, 300))}</span></li>`).join('')}</ul>` : ''}
-              ${discussionQs.length > 0 ? `<div style="margin-top:var(--sp-4);padding-top:var(--sp-4);border-top:1px solid rgba(122,92,62,0.12)"><div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent-warm);margin-bottom:var(--sp-3)">Discussion questions</div><ul class="framework-questions">${discussionQs.slice(0,3).map((q,i) => `<li><span class="q-marker">Q${i+1}</span><span>${escapeHtml(truncateSentence(q, 350))}</span></li>`).join('')}</ul></div>` : ''}
-            </div>` : ''}
+            <section class="framework-card" aria-labelledby="framework-title">
+              <h2 class="block-label" id="framework-title">How to think about this</h2>
+              ${lessons.length > 0 ? `<ol class="framework-questions">${lessons.slice(0, 4).map(l => `<li>${l.title ? `<strong>${escapeHtml(l.title)}</strong> ` : ''}${escapeHtml(truncateSentence(l.detail, 300))}</li>`).join('')}</ol>` : ''}
+              ${discussionQs.length > 0 ? `<h3 class="framework-sub">Discussion questions</h3><ol class="framework-questions framework-discussion">${discussionQs.slice(0,3).map(q => `<li>${escapeHtml(truncateSentence(q, 350))}</li>`).join('')}</ol>` : ''}
+            </section>` : ''}
 
+            <div class="prose">
             ${renderMarkdown(mainContent)}
+            </div>
 
-            ${citations.length > 0 ? `
-            <div class="citations-section">
-              <div class="citations-header"><h2 class="citations-title">${icon('article')} References</h2></div>
-              ${citations.map((c, i) => `<div class="citation-item"><span class="citation-number">${i+1}</span><span class="citation-text">${renderCitationText(c.text)}</span><div class="citation-actions"><button class="cite-btn" data-citation="${escapeHtml(c.text)}" title="Copy citation">${icon('copy')}</button></div></div>`).join('')}
-            </div>` : ''}
+            ${nRefs > 0 ? `
+            <section class="citations-section" id="references" aria-labelledby="references-title">
+              <h2 class="block-label" id="references-title">${refTitle}</h2>
+              <ol class="citation-list">
+              ${refList.map((c, i) => `<li class="citation-item"><span class="citation-text">${renderCitationText(c.text)}</span><button type="button" class="cite-btn" data-citation="${escapeHtml(c.text)}" aria-label="Copy citation ${i+1}" title="Copy citation">${icon('copy')}</button></li>`).join('')}
+              </ol>
+            </section>` : ''}
 
-            ${furtherReading.length > 0 ? `
-            <div class="further-reading-section">
-              <h2 class="citations-title">${icon('book')} Further reading</h2>
-              ${furtherReading.map((r, i) => `<div class="reading-item"><span class="reading-number">${i+1}.</span><span class="reading-text">${renderCitationText(r.text)}</span></div>`).join('')}
-            </div>` : ''}
+            ${extraReading.length > 0 ? `
+            <section class="further-reading-section" aria-labelledby="further-title">
+              <h2 class="block-label" id="further-title">Further reading</h2>
+              <ol class="citation-list">
+              ${extraReading.map(r => `<li class="citation-item"><span class="citation-text">${renderCitationText(r.text)}</span></li>`).join('')}
+              </ol>
+            </section>` : ''}
 
             ${related.length > 0 ? `
-            <div class="litmap-section">
-              <div class="litmap-header">${icon('flowTree')}<span class="litmap-title">Related studies</span></div>
-              <p class="litmap-subtitle">Studies connected by shared topic or region. Click a node to explore.</p>
-              <div class="litmap-canvas" id="litmap-canvas"></div>
-            </div>` : ''}
+            <section class="litmap-section" aria-labelledby="related-title">
+              <h2 class="block-label" id="related-title">Related studies</h2>
+              <p class="litmap-subtitle">Studies that share this one's topic or region.</p>
+              <div class="litmap-canvas" id="litmap-canvas" aria-hidden="true"></div>
+              <ul class="related-list" id="related-list"></ul>
+            </section>` : ''}
 
             <!-- Cornell Notes -->
-            <div class="cornell-notes" id="cornell-notes">
+            <section class="cornell-notes" id="cornell-notes" aria-labelledby="cornell-title">
               <div class="cornell-notes-header">
-                <span class="cornell-notes-title">${icon('edit')} Cornell notes</span>
+                <h2 class="block-label" id="cornell-title">Cornell notes</h2>
                 <div class="cornell-notes-toolbar">
-                  <button class="notes-toolbar-btn" id="cornell-hand-btn" title="Handwritten style">${icon('handwriting')} Hand</button>
-                  <button class="notes-export-btn" id="cornell-copy-btn">${icon('copy')} Copy</button>
-                  <button class="notes-export-btn" id="cornell-export-btn">${icon('download')} Export</button>
+                  <button type="button" class="notes-toolbar-btn" id="cornell-hand-btn" aria-pressed="false" title="Handwritten style">${icon('handwriting')} Hand</button>
+                  <button type="button" class="notes-export-btn" id="cornell-copy-btn">${icon('copy')} Copy</button>
+                  <button type="button" class="notes-export-btn" id="cornell-export-btn">${icon('download')} Export</button>
                 </div>
               </div>
               <div class="cornell-grid">
                 <div class="cornell-cues">
-                  <div class="cornell-cues-label">Cues and keywords</div>
-                  <textarea id="cornell-cues-text" placeholder="Key terms, questions, prompts..."></textarea>
+                  <label class="cornell-label" for="cornell-cues-text">Cues and keywords</label>
+                  <textarea id="cornell-cues-text" placeholder="Key terms, questions, prompts"></textarea>
                 </div>
                 <div class="cornell-notes-area">
-                  <div class="cornell-notes-label">Notes</div>
-                  <textarea id="cornell-notes-text" placeholder="Detailed notes, evidence, arguments..."></textarea>
+                  <label class="cornell-label" for="cornell-notes-text">Notes</label>
+                  <textarea id="cornell-notes-text" placeholder="Detailed notes, evidence, arguments"></textarea>
                 </div>
               </div>
               <div class="cornell-summary">
-                <div class="cornell-summary-label">Summary</div>
-                <textarea id="cornell-summary-text" placeholder="Summarize the key takeaways in your own words..."></textarea>
+                <label class="cornell-label" for="cornell-summary-text">Summary</label>
+                <textarea id="cornell-summary-text" placeholder="Summarise the key takeaways in your own words"></textarea>
               </div>
               <div class="cornell-footer">
-                <span id="cornell-status">Notes saved locally</span>
-                <span style="font-style:italic">Cornell method: cues left, notes right, summary below</span>
+                <span id="cornell-status" aria-live="polite">Notes saved locally</span>
+                <span>Cornell method: cues left, notes right, summary below</span>
               </div>
-            </div>
+            </section>
 
             <nav class="study-nav" aria-label="Case study navigation">
               ${prevStudy ? `<a href="./study.html?slug=${encodeURIComponent(prevStudy.slug)}" class="study-nav-link prev"><span class="study-nav-label">${icon('chevronLeft')} Previous</span><span class="study-nav-title">${escapeHtml(prevStudy.title)}</span></a>` : '<div></div>'}
@@ -1128,26 +1159,26 @@
             <a href="./index.html" class="back-to-library">${icon('arrowLeft')} Back to library</a>
           </div>
 
-          <aside class="study-sidebar">
+          <aside class="study-sidebar" aria-label="Key data and contents">
             ${study.keyData && study.keyData.length > 0 ? `
             <div class="sidebar-panel">
-              <h3 class="sidebar-panel-title">${icon('barChart')} Key data</h3>
-              <div class="key-data-grid">
-                ${study.keyData.map(d => `<div class="key-data-item"><div class="key-data-label">${escapeHtml(d.label)}</div><div class="key-data-value">${escapeHtml(d.value)}</div></div>`).join('')}
-              </div>
+              <h2 class="sidebar-panel-title">Key data</h2>
+              <dl class="key-data-grid">
+                ${study.keyData.map(d => `<div class="key-data-item"><dt class="key-data-label">${escapeHtml(d.label)}</dt><dd class="key-data-value">${escapeHtml(d.value)}</dd></div>`).join('')}
+              </dl>
             </div>` : ''}
 
             ${toc.length > 0 ? `
-            <div class="sidebar-panel">
-              <h3 class="sidebar-panel-title">${icon('bookmark')} Contents</h3>
+            <nav class="sidebar-panel sidebar-toc" aria-label="Contents">
+              <h2 class="sidebar-panel-title">Contents</h2>
               <ul class="toc-list">
-                ${toc.map(t => `<li><a href="#${t.id}">${escapeHtml(t.title)}</a></li>`).join('')}
-                ${citations.length > 0 ? '<li><a href="#" onclick="document.querySelector(\'.citations-section\').scrollIntoView({behavior:\'smooth\'});return false;">References</a></li>' : ''}
+                ${extractTOC(mainContent).map(t => `<li><a href="#${t.id}">${escapeHtml(t.title)}</a></li>`).join('')}
+                ${nRefs > 0 ? `<li><a href="#references">${refTitle}</a></li>` : ''}
               </ul>
-            </div>` : ''}
+            </nav>` : ''}
           </aside>
         </div>
-      </div>`;
+      </div></article>`;
 
       mainEl.innerHTML = pageHtml;
       initCornellNotes(study.slug, study.title);
@@ -1162,6 +1193,7 @@
         const nowSaved = toggleBookmark(study.slug);
         bmBtn.classList.toggle('saved', nowSaved);
         bmBtn.setAttribute('aria-pressed', String(nowSaved));
+        bmBtn.title = nowSaved ? 'Saved. Click to remove' : 'Save for later';
         bmBtn.innerHTML = icon(nowSaved ? 'bookmarkFill' : 'bookmark') + ` <span>${nowSaved ? 'Saved' : 'Save'}</span>`;
         showToast(nowSaved ? 'Saved to your library' : 'Removed from saved');
       });
@@ -1217,6 +1249,7 @@
     if (localStorage.getItem('devcs-handwrite') === '1') {
       notesText.classList.add('handwritten');
       handBtn?.classList.add('active');
+      handBtn?.setAttribute('aria-pressed', 'true');
     }
 
     // Auto-save
@@ -1237,6 +1270,7 @@
     handBtn?.addEventListener('click', () => {
       notesText.classList.toggle('handwritten');
       handBtn.classList.toggle('active');
+      handBtn.setAttribute('aria-pressed', String(handBtn.classList.contains('active')));
       localStorage.setItem('devcs-handwrite', notesText.classList.contains('handwritten') ? '1' : '0');
     });
 
@@ -1306,6 +1340,11 @@
     for (const s of sameRegion) { if (selected.length >= 12) break; if (!selected.find(x => x.slug === s.slug)) selected.push(s); }
     if (selected.length === 0) return;
 
+    const listEl = document.getElementById('related-list');
+    if (listEl) {
+      listEl.innerHTML = selected.map(s => `<li><a href="./study.html?slug=${encodeURIComponent(s.slug)}">${escapeHtml(s.title)}</a><span class="related-meta">${escapeHtml(s.country)} · ${escapeHtml(s.topic === currentStudy.topic ? 'Same topic' : 'Same region')}</span></li>`).join('');
+    }
+
     const width = canvas.clientWidth || 660;
     const height = Math.max(280, Math.min(380, selected.length * 28));
     const padX = 55, padY = 35;
@@ -1333,18 +1372,18 @@
     }
     for (const n of nodes) {
       const r = n.isCurrent ? 6 : 4;
-      const fill = n.topic === currentStudy.topic ? 'var(--accent)' : 'var(--text-muted)';
+      const fill = n.topic === currentStudy.topic ? 'var(--accent)' : 'var(--ink-3)';
       const lx = n.x > cx ? n.x + 10 : n.x - 10;
       const anchor = n.x > cx ? 'start' : 'end';
       const trunc = n.title.length > 26 ? n.title.substring(0, 24) + '...' : n.title;
-      nodeSvg += `<g class="litmap-node${n.isCurrent ? ' current' : ''}" data-slug="${escapeHtml(n.slug)}"><circle cx="${n.x}" cy="${n.y}" r="${r}" fill="${fill}" stroke="${n.isCurrent ? 'var(--primary)' : fill}" stroke-width="${n.isCurrent ? 2.5 : 1.5}"/><text x="${lx}" y="${n.y + 3}" text-anchor="${anchor}">${escapeHtml(trunc)}</text></g>`;
+      nodeSvg += `<g class="litmap-node${n.isCurrent ? ' current' : ''}" data-slug="${escapeHtml(n.slug)}"><circle cx="${n.x}" cy="${n.y}" r="${r}" fill="${fill}" stroke="${n.isCurrent ? 'var(--ink)' : fill}" stroke-width="${n.isCurrent ? 2.5 : 1.5}"/><text x="${lx}" y="${n.y + 3}" text-anchor="${anchor}">${escapeHtml(trunc)}</text></g>`;
     }
 
     canvas.innerHTML = `<svg viewBox="0 0 ${width} ${height}" style="min-height:${height}px">${edges}${nodeSvg}</svg>
       <div class="litmap-legend">
         <div class="litmap-legend-item"><span class="litmap-legend-dot" style="background:var(--accent);border-color:var(--accent)"></span> Same topic</div>
-        <div class="litmap-legend-item"><span class="litmap-legend-dot" style="background:var(--text-muted);border-color:var(--text-muted)"></span> Same region</div>
-        <div class="litmap-legend-item"><span class="litmap-legend-dot" style="background:var(--accent);border-color:var(--primary);border-width:2.5px"></span> Current</div>
+        <div class="litmap-legend-item"><span class="litmap-legend-dot" style="background:var(--ink-3);border-color:var(--ink-3)"></span> Same region</div>
+        <div class="litmap-legend-item"><span class="litmap-legend-dot" style="background:var(--accent);border-color:var(--ink);border-width:2.5px"></span> This study</div>
       </div>`;
 
     canvas.querySelectorAll('.litmap-node').forEach(node => {
@@ -1356,10 +1395,60 @@
   }
 
   // ══════════════════════════════════════════════════════════════════
+  //  COLOUR THEME
+  // ══════════════════════════════════════════════════════════════════
+
+  /* One button that steps through device setting, light and dark. The choice
+     is kept under 'imx_theme' ('light' or 'dark'; no key means follow the
+     device), which is the key the inline script in each page's <head> reads
+     before first paint. */
+  function initTheme() {
+    var KEY = 'imx_theme';
+    var ORDER = ['system', 'light', 'dark'];
+    var NAMES = { system: 'Device setting', light: 'Light', dark: 'Dark' };
+    var root = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+    function saved() {
+      var v = null;
+      try { v = localStorage.getItem(KEY); } catch (e) {}
+      return (v === 'light' || v === 'dark') ? v : 'system';
+    }
+    function apply() {
+      var mode = saved();
+      var shown = mode === 'system' ? ((mq && mq.matches) ? 'dark' : 'light') : mode;
+      root.setAttribute('data-theme', shown);
+      root.setAttribute('data-theme-mode', mode);
+      if (!btn) return;
+      var next = ORDER[(ORDER.indexOf(mode) + 1) % ORDER.length];
+      var text = 'Colour theme: ' + NAMES[mode] + '. Switch to ' + NAMES[next].toLowerCase();
+      btn.setAttribute('data-mode', mode);
+      btn.setAttribute('aria-label', text);
+      btn.title = text;
+    }
+    if (btn) btn.addEventListener('click', function () {
+      var next = ORDER[(ORDER.indexOf(saved()) + 1) % ORDER.length];
+      try {
+        if (next === 'system') localStorage.removeItem(KEY);
+        else localStorage.setItem(KEY, next);
+      } catch (e) {}
+      apply();
+    });
+    if (mq && mq.addEventListener) mq.addEventListener('change', apply);
+    // Another tab changed it, or this page came back from the back-forward
+    // cache still wearing the theme it had when the reader left it.
+    window.addEventListener('storage', function (e) { if (!e.key || e.key === KEY) apply(); });
+    window.addEventListener('pageshow', apply);
+    apply();
+  }
+
+  // ══════════════════════════════════════════════════════════════════
   //  INIT
   // ══════════════════════════════════════════════════════════════════
 
   function init() {
+    try { initTheme(); } catch (e) { console.error('Theme error:', e); }
     try {
       var path = window.location.pathname;
       var isStudyPage = path.endsWith('study.html') || document.getElementById('study-main') !== null;

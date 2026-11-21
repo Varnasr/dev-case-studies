@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <title>Dev Case Studies | A cited library of development case studies</title>
   <script>
     (function() {
@@ -14,6 +15,7 @@
         return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
       }
       document.documentElement.setAttribute('data-theme', resolve(saved));
+      document.documentElement.setAttribute('data-theme-mode', (saved === 'light' || saved === 'dark') ? saved : 'system');
     })();
   </script>
   <meta name="description" content="208 cited development case studies from 117 countries. Searchable evidence on financial inclusion, health, education, governance, and more.">
@@ -48,213 +50,195 @@
 
   <!-- Header, compact on index -->
   <header class="site-header" role="banner">
-    <div class="container-full">
+    <div class="header-inner">
       <a href="./index.html" class="site-logo">
-        <span class="site-logo-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span></span>
-        <span>Dev<span class="site-logo-long"> Case Studies</span></span>
+        <span class="site-logo-mark" aria-hidden="true"></span>
+        <span class="site-logo-text">Dev Case Studies</span>
       </a>
-      <div class="header-center">
-        <div class="header-stats">
-          <span class="header-stat"><strong id="stat-studies">208</strong> studies</span>
-          <span class="header-stat-sep"></span>
-          <span class="header-stat"><strong id="stat-countries">117</strong> countries</span>
-          <span class="header-stat-sep"></span>
-          <span class="header-stat"><strong id="stat-topics">10</strong> topics</span>
-        </div>
-      </div>
       <nav class="site-nav" aria-label="Main navigation">
-        <span class="eco-nav" aria-label="ImpactMojo libraries">
-          <a href="./index.html" class="eco-link current" aria-current="page">Case Studies</a>
-          <a href="https://varnasr.github.io/development-discourses/" class="eco-link">Discourses</a>
-          <a href="https://www.impactmojo.in/impactlex/" class="eco-link" target="_blank" rel="noopener">ImpactLex</a>
+        <a href="./index.html" class="nav-link nav-library" aria-current="page">Library</a>
+        <a href="./about.html" class="nav-link nav-about">About</a>
+        <span class="eco-nav">
+          <a href="https://varnasr.github.io/development-discourses/" class="nav-link eco-link">Discourses</a>
+          <a href="https://www.impactmojo.in/impactlex/" class="nav-link eco-link" target="_blank" rel="noopener">ImpactLex</a>
         </span>
-        <a href="./about.html" class="site-nav-link">About</a>
-        <button id="mobile-filter-toggle" class="mobile-filter-btn" aria-label="Toggle filters">
-          <span class="si"><svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/></svg></span>
-          Filters
-        </button>
-        <div class="theme-selector" role="group" aria-label="Theme selection">
-          <button class="theme-btn" data-theme="system" title="System theme" aria-label="Use system theme">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </button>
-          <button class="theme-btn" data-theme="light" title="Light theme" aria-label="Use light theme">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-          </button>
-          <button class="theme-btn" data-theme="dark" title="Dark theme" aria-label="Use dark theme">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </button>
-        </div>
       </nav>
+      <div class="header-tools" data-dyslexia-slot>
+        <button type="button" id="theme-toggle" class="theme-toggle" data-mode="system" aria-label="Colour theme: Device setting. Switch to light">
+          <svg class="theme-icon theme-icon-system" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <svg class="theme-icon theme-icon-light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon theme-icon-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <span class="theme-toggle-label" aria-hidden="true"><span class="tl-system">Auto</span><span class="tl-light">Light</span><span class="tl-dark">Dark</span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Main layout: sidebar + content -->
-  <div class="index-layout">
+  <main id="main-content">
 
-    <!-- Left Sidebar: filters -->
-    <aside class="filter-sidebar" id="filter-sidebar" role="search" aria-label="Filter case studies">
-
-      <!-- Search -->
-      <div class="sidebar-search">
-        <div class="search-bar">
-          <span class="search-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span></span>
-          <label for="search-input" class="sr-only">Search case studies</label>
-          <input type="search" id="search-input" placeholder="Search titles, countries, keywords..." autocomplete="off" spellcheck="false">
-          <button id="search-clear" class="search-clear" aria-label="Clear search"><span class="si"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
-          <span id="search-kbd" class="search-kbd" aria-hidden="true">/</span>
+    <section class="masthead" aria-labelledby="masthead-title">
+      <div class="masthead-inner">
+        <div class="masthead-text">
+          <h1 class="masthead-title" id="masthead-title">A cited library of development case studies</h1>
+          <p class="masthead-lede">Real programmes, policies and reforms from across the Global South. Each study sets out what was tried, what happened and what the evidence says, with its sources.</p>
         </div>
+        <dl class="masthead-figures">
+          <div class="masthead-figure"><dd id="stat-studies">208</dd><dt>studies</dt></div>
+          <div class="masthead-figure"><dd id="stat-countries">117</dd><dt>countries</dt></div>
+          <div class="masthead-figure"><dd id="stat-topics">10</dd><dt>topics</dt></div>
+        </dl>
       </div>
+    </section>
 
-      <!-- Research question search -->
-      <div class="sidebar-search" style="margin-top:-4px">
-        <div class="search-bar search-bar-rq">
-          <span class="search-icon" aria-hidden="true"><span class="si"><svg viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></span></span>
-          <label for="rq-input" class="sr-only">Search by research question</label>
-          <input type="search" id="rq-input" placeholder="Ask a research question..." autocomplete="off" spellcheck="false">
+    <div class="index-layout">
+
+      <aside class="filter-sidebar" id="filter-sidebar" aria-label="Filter case studies">
+        <div class="drawer-head">
+          <span class="drawer-title">Filters</span>
+          <button type="button" class="drawer-close" id="filter-close">Show results</button>
         </div>
-        <div class="rq-hint" id="rq-hint"></div>
-      </div>
 
-      <!-- Active filters bar -->
-      <div id="active-filters" class="active-filters" aria-live="polite"></div>
+        <div class="sidebar-search">
+          <label for="rq-input" class="rail-label">Ask a research question</label>
+          <div class="search-bar search-bar-rq">
+            <input type="search" id="rq-input" placeholder="Do cash transfers reduce poverty?" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="rq-hint" id="rq-hint" aria-live="polite"></div>
+        </div>
 
-      <!-- Topic Filter -->
       <div class="filter-panel">
-        <button class="filter-panel-toggle" aria-expanded="true" data-target="fp-topics">
-          <span class="si"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
-          Topic
+        <h2 class="filter-panel-heading"><button type="button" class="filter-panel-toggle" aria-expanded="true" data-target="fp-topics">
+          <span class="filter-panel-label">Topic</span>
           <span class="filter-count" id="topic-count"></span>
-          <span class="toggle-chevron"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
-        </button>
+          <span class="toggle-chevron"><span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
+        </button></h2>
         <div class="filter-panel-body" id="fp-topics">
-          <div class="chip-group" id="topic-chips" role="group" aria-label="Filter by topic"></div>
+          <div class="chip-group chip-group-topic" id="topic-chips" role="group" aria-label="Filter by topic"></div>
         </div>
       </div>
-
-      <!-- Region Filter -->
       <div class="filter-panel">
-        <button class="filter-panel-toggle" aria-expanded="true" data-target="fp-regions">
-          <span class="si"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
-          Region
+        <h2 class="filter-panel-heading"><button type="button" class="filter-panel-toggle" aria-expanded="true" data-target="fp-regions">
+          <span class="filter-panel-label">Region</span>
           <span class="filter-count" id="region-count"></span>
-          <span class="toggle-chevron"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
-        </button>
+          <span class="toggle-chevron"><span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
+        </button></h2>
         <div class="filter-panel-body" id="fp-regions">
-          <div class="chip-group" id="region-chips" role="group" aria-label="Filter by region"></div>
+          <div class="chip-group chip-group-region" id="region-chips" role="group" aria-label="Filter by region"></div>
         </div>
       </div>
-
-      <!-- Decade Filter -->
       <div class="filter-panel">
-        <button class="filter-panel-toggle" aria-expanded="true" data-target="fp-decades">
-          <span class="si"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-          Decade
+        <h2 class="filter-panel-heading"><button type="button" class="filter-panel-toggle" aria-expanded="true" data-target="fp-decades">
+          <span class="filter-panel-label">Decade</span>
           <span class="filter-count" id="decade-count"></span>
-          <span class="toggle-chevron"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
-        </button>
+          <span class="toggle-chevron"><span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
+        </button></h2>
         <div class="filter-panel-body" id="fp-decades">
-          <div class="chip-group" id="decade-chips" role="group" aria-label="Filter by decade"></div>
+          <div class="chip-group chip-group-decade" id="decade-chips" role="group" aria-label="Filter by decade"></div>
         </div>
       </div>
-
-      <!-- Evidence Filter -->
       <div class="filter-panel">
-        <button class="filter-panel-toggle" aria-expanded="true" data-target="fp-evidence">
-          <span class="si"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
-          Evidence
+        <h2 class="filter-panel-heading"><button type="button" class="filter-panel-toggle" aria-expanded="true" data-target="fp-evidences">
+          <span class="filter-panel-label">Evidence</span>
           <span class="filter-count" id="evidence-count"></span>
-          <span class="toggle-chevron"><span class="si"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
-        </button>
-        <div class="filter-panel-body" id="fp-evidence">
-          <div class="chip-group" id="evidence-chips" role="group" aria-label="Filter by the kind of evidence cited"></div>
+          <span class="toggle-chevron"><span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span></span>
+        </button></h2>
+        <div class="filter-panel-body" id="fp-evidences">
+          <div class="chip-group chip-group-evidence" id="evidence-chips" role="group" aria-label="Filter by evidence"></div>
           <p class="filter-note">What the study cites, read from its own text. It does not grade the evidence.</p>
         </div>
       </div>
 
-      <!-- Sort -->
-      <div class="filter-panel">
-        <div class="filter-panel-toggle filter-panel-static">
-          <span class="si"><svg viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span>
-          Sort
+        <div class="sidebar-footer">
+          <p>Every case study cited, every lesson grounded in evidence.</p>
         </div>
-        <div class="filter-panel-body open">
-          <select id="sort-select" class="sort-select" aria-label="Sort the case studies">
-            <option value="default">Default order</option>
-            <option value="title-az">Title A to Z</option>
-            <option value="title-za">Title Z to A</option>
-            <option value="year-new">Newest first</option>
-            <option value="year-old">Oldest first</option>
-            <option value="country-az">Country A to Z</option>
-          </select>
+      </aside>
+
+      <div class="index-main">
+
+        <div class="welcome-banner" id="welcome-banner">
+          <h2 class="welcome-title">How to use this library</h2>
+          <div class="welcome-features">
+            <div class="welcome-feature">
+              <strong>Search and filter</strong>
+              <span>Filter by topic, region, decade or the kind of evidence cited. Search by title, country or keyword, or ask a research question.</span>
+            </div>
+            <div class="welcome-feature">
+              <strong>Read a study</strong>
+              <span>Open any title to read the full case study with evidence findings, key outcomes, citations, and Cornell-style study notes.</span>
+            </div>
+            <div class="welcome-feature">
+              <strong>Built for learning</strong>
+              <span>Designed for students, researchers, and practitioners of international development who need cited evidence and real-world lessons.</span>
+            </div>
+          </div>
+          <button type="button" class="welcome-close" id="welcome-close" aria-label="Dismiss this note"><span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
         </div>
-      </div>
 
-      <!-- Sidebar footer -->
-      <div class="sidebar-footer">
-        <p>Every case study cited, every lesson grounded in evidence.</p>
-      </div>
-    </aside>
-
-    <!-- Main content area -->
-    <main id="main-content" class="index-main">
-
-      <!-- Welcome / About banner -->
-      <div class="welcome-banner" id="welcome-banner">
-        <button class="welcome-close" id="welcome-close" aria-label="Dismiss welcome message">&times;</button>
-        <h2 class="welcome-title">A cited library of development case studies</h2>
-        <p class="welcome-desc">A curated collection of <strong><span id="wc-studies">208</span> case studies</strong> from <strong><span id="wc-countries">117</span> countries</strong> across 10 development topics, from financial inclusion and health to governance and climate. Every study is grounded in real interventions with cited evidence.</p>
-        <div class="welcome-features">
-          <div class="welcome-feature">
-            <strong>Search and filter</strong>
-            <span>Use the sidebar to filter by topic, region, or decade. Search by title, country or keyword, or ask a research question.</span>
-          </div>
-          <div class="welcome-feature">
-            <strong>Read a study</strong>
-            <span>Click any card to read the full case study with evidence findings, key outcomes, citations, and Cornell-style study notes.</span>
-          </div>
-          <div class="welcome-feature">
-            <strong>Built for learning</strong>
-            <span>Designed for students, researchers, and practitioners of international development who need cited evidence and real-world lessons.</span>
+        <div class="search-row" role="search">
+          <div class="search-bar search-bar-main">
+            <span class="search-icon" aria-hidden="true"><span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span></span>
+            <label for="search-input" class="sr-only">Search case studies</label>
+            <input type="search" id="search-input" placeholder="Search titles, countries, keywords" autocomplete="off" spellcheck="false">
+            <button type="button" id="search-clear" class="search-clear" aria-label="Clear search"><span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
+            <span id="search-kbd" class="search-kbd" aria-hidden="true">/</span>
           </div>
         </div>
-      </div>
 
-      <div class="results-bar">
-        <p id="results-count" class="results-count" aria-live="polite">Loading case studies...</p>
-        <div class="results-actions">
-          <button class="action-btn" id="btn-insights" aria-expanded="false" aria-controls="insights-panel" title="Show library insights">
-            <span class="si"><svg viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span>
-            <span class="action-btn-label">Insights</span>
+        <div class="results-bar" id="results-bar">
+          <button type="button" id="mobile-filter-toggle" class="mobile-filter-btn" aria-expanded="false" aria-controls="filter-sidebar">
+            <span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="20" y2="12"/><line x1="12" y1="18" x2="20" y2="18"/></svg></span>
+            <span>Filters</span>
+            <span class="filter-toggle-count" id="filter-toggle-count" hidden></span>
           </button>
-          <button class="action-btn" id="btn-random" title="Open a random case study">
-            <span class="si"><svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg></span>
-            <span class="action-btn-label">Surprise me</span>
-          </button>
-          <button class="action-btn" id="btn-saved" aria-pressed="false" title="Show only saved studies">
-            <span class="si"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
-            <span class="action-btn-label">Saved</span>
-            <span class="action-count" id="saved-count"></span>
-          </button>
-          <div class="view-controls">
-            <button class="view-btn active" id="view-grid" aria-label="Grid view" title="Grid view">
-              <span class="si"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span>
+          <p id="results-count" class="results-count" aria-live="polite">Loading case studies...</p>
+          <label class="sort-control">
+            <span class="sort-label">Sort</span>
+            <select id="sort-select" class="sort-select">
+              <option value="default">Default order</option>
+              <option value="title-az">Title A to Z</option>
+              <option value="title-za">Title Z to A</option>
+              <option value="year-new">Newest first</option>
+              <option value="year-old">Oldest first</option>
+              <option value="country-az">Country A to Z</option>
+            </select>
+          </label>
+          <div class="results-actions">
+            <button type="button" class="action-btn" id="btn-insights" aria-expanded="false" aria-controls="insights-panel" title="Show library insights">
+              <span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></span>
+              <span class="action-btn-label">Insights</span>
             </button>
-            <button class="view-btn" id="view-list" aria-label="List view" title="List view">
-              <span class="si"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></span>
+            <button type="button" class="action-btn" id="btn-random" title="Open a random case study">
+              <span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg></span>
+              <span class="action-btn-label">Surprise me</span>
             </button>
+            <button type="button" class="action-btn" id="btn-saved" aria-pressed="false" title="Show only saved studies">
+              <span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
+              <span class="action-btn-label">Saved</span>
+              <span class="action-count" id="saved-count"></span>
+            </button>
+            <div class="view-controls" role="group" aria-label="Layout">
+              <button type="button" class="view-btn active" id="view-grid" aria-label="Grid view" aria-pressed="true" title="Grid view">
+                <span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span>
+              </button>
+              <button type="button" class="view-btn" id="view-list" aria-label="List view" aria-pressed="false" title="List view">
+                <span class="si" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <section id="insights-panel" class="insights-panel" aria-label="Library insights"></section>
+        <div id="active-filters" class="active-filters" aria-live="polite"></div>
 
-      <div id="card-grid" class="card-grid">
-        <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div><div class="skeleton-line long"></div><div class="skeleton-line short"></div></div>
-        <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div><div class="skeleton-line long"></div><div class="skeleton-line short"></div></div>
-        <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div><div class="skeleton-line long"></div><div class="skeleton-line short"></div></div>
+        <section id="insights-panel" class="insights-panel" aria-label="Library insights"></section>
+
+        <div id="card-grid" class="card-grid">
+          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div></div>
+          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div></div>
+          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-line short"></div><div class="skeleton-line title"></div><div class="skeleton-line medium"></div><div class="skeleton-line long"></div></div>
+        </div>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
 
   <footer class="imx-footer" role="contentinfo">
     <div class="imx-footer-inner">
@@ -273,40 +257,6 @@
 
   <script>window.onerror=function(m,s,l,c,e){var g=document.getElementById('card-grid');if(g)g.innerHTML='<div style="padding:2rem;color:#c00"><h3>JS Error</h3><p>'+m+'</p><p>'+s+':'+l+'</p></div>';};window.onunhandledrejection=function(e){var g=document.getElementById('card-grid');if(g)g.innerHTML='<div style="padding:2rem;color:#c00"><h3>Promise Error</h3><p>'+String(e.reason)+'</p></div>';};</script>
   <script src="./js/app.js"></script>
-  <script>
-    (function() {
-      var KEY = 'imx_theme';
-      var html = document.documentElement;
-      function getSaved() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
-      function resolve(pref) {
-        if (pref === 'light' || pref === 'dark') return pref;
-        return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
-      }
-      function apply(pref) {
-        html.setAttribute('data-theme', resolve(pref));
-        var active = pref || 'system';
-        document.querySelectorAll('.theme-btn').forEach(function(btn) {
-          btn.classList.toggle('active', btn.getAttribute('data-theme') === active);
-        });
-      }
-      function setTheme(pref) {
-        try {
-          if (pref === 'system' || !pref) localStorage.removeItem(KEY);
-          else localStorage.setItem(KEY, pref);
-        } catch (e) {}
-        apply(pref);
-      }
-      apply(getSaved());
-      document.querySelectorAll('.theme-btn').forEach(function(btn) {
-        btn.addEventListener('click', function() { setTheme(btn.getAttribute('data-theme')); });
-      });
-      if (window.matchMedia) {
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
-          if (!getSaved()) apply(null);
-        });
-      }
-    })();
-  </script>
-<script src="js/dyslexia-font.js" data-accent="var(--accent)" data-radius="var(--radius-md)" defer></script>
+<script src="js/dyslexia-font.js" data-accent="var(--accent)" data-radius="0" defer></script>
 </body>
 </html>

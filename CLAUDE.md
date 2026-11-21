@@ -64,8 +64,8 @@ kind of evidence a study draws on, not how good it is, and `about.html` says so
 in those words. "Emerging" does not mean the programme was never evaluated; it
 means the study does not cite that work. Do not describe it as a quality score.
 
-Each card shows the tier as its chip, with the matching signal in the tooltip.
-The Evidence facet in the sidebar still filters on the two signals directly.
+Each entry shows the tier in its meta line, with the matching signal in the
+tooltip. The Evidence filter still filters on the two signals directly.
 
 ## The interface on a phone
 
@@ -82,6 +82,75 @@ Three things were measured at 390x844 on 2026-09-23 and fixed:
 - **The card footer put "Read study" and "5 sources" each across two lines**,
   because a link and three metadata items were competing for one row. The link
   takes its own line below 460px.
+
+## The redesign of 21 November 2026
+
+The owner called the design horrible and said the theme switcher did not work.
+All three pages were rebuilt on one system: `css/style.css` was rewritten, the
+header and the index body were rewritten in the HTML, and the card and study
+templates in `js/app.js` were rewritten. Data, slugs, URLs, canonical and Open
+Graph tags were left alone.
+
+- **The look.** Source Serif 4 for titles and running text, Inter for labels and
+  controls. A 2px ink rule opens each part of a page and a 1px hairline divides
+  the items in it. There are no shadows and no rounded cards. The index opens
+  with a masthead line and the three counts as figures, then search, then the
+  studies as ruled entries: topic label, title, country and period, summary and
+  one meta line (evidence tier, sources, read time). The filters are a plain
+  list in a left rail from 960px and a drawer behind the Filters button below
+  that. The button carries a count of the filters that are on.
+- **The theme control is one button** (`#theme-toggle`) that steps through
+  device setting, light and dark. `initTheme()` in `js/app.js` runs it on every
+  page; the inline script in each `<head>` still sets `data-theme` before first
+  paint and now also sets `data-theme-mode`, which the stylesheet uses to show
+  the right icon. The key is still `imx_theme`, and no key means device setting.
+  The old control was three icons of 26 to 28px in a tinted box with the larger "Aa"
+  reading-font button pushed into the same box, so it read as four theme
+  buttons of which the biggest did not change the theme. On `study.html` and
+  `about.html` the header was a narrow `.container`, so at 1440px wide the
+  navigation wrapped under the logo and the box sat on top of the breadcrumb.
+- **The reading-font button** goes into `.header-tools`, which carries
+  `data-dyslexia-slot`. `--dys-min-size` and `--dys-radius` in `:root` make it
+  the same 40px square-cornered button as the theme control.
+- **Ink and fill are separate tokens.** `--accent` and the ten `--topic-*`
+  colours are ink on paper and change with the theme. A filled control is always
+  `--fill` with `--on-fill`. Do not put white on `--accent`. The topic colours
+  are now a label colour with a small square and no tinted chip behind it.
+
+Traps met on the way, each found by running the page:
+
+- **`escapeHtml()` did not escape quotation marks**, and it is used inside
+  attribute values. A citation that opens a quotation ended its `data-citation`
+  attribute at that mark, so the copy button copied `Jack, W. and Suri, T.
+  (2014). ` and nothing after it. It escapes both kinds of quote now.
+- **A heading with `&` in it had a dead Contents link.** `renderMarkdown()`
+  escapes `&` to `&amp;` before it builds the heading id, so "Context &
+  background" got the id `context-amp-background` while `extractTOC()` linked
+  to `context-background`. The Contents list also linked to the References and
+  Discussion sections that the page removes from the body.
+- **The 15 studies on the longer template showed "0 cited sources"** and no
+  reference count, because the page counted `## References` only. Their
+  `## Further Reading` list is now shown once as the citation list and counted.
+  Their lessons are bold paragraphs, not list items, and were printed as one
+  item with raw asterisks; `parseLessons()` splits on those paragraphs now.
+- **Sorting reordered the master list itself**, so choosing "Default order"
+  after any other sort did nothing. `getFilteredStudies()` sorts a copy.
+- **"Clear all" left the Evidence filter buttons looking selected.**
+  `syncChips()` now sets every filter button from the four sets in one place.
+- **The masthead figures set the width of the page at 320px.** A grid item's
+  default `min-width: auto` let the three figures push the page 8px wide. The
+  text column and the figures both carry `min-width: 0`.
+- **The first study on a phone.** At 390x844 the first entry started at 376px
+  before and starts at 359px now, with search on the first screen. The lede is
+  hidden below 700px and the how-to note is one line there to keep it so.
+  Measure again after adding anything above the list.
+
+Checked in headless Chromium at 320, 360, 390, 768, 1024, 1280 and 1440 in both
+themes on all three pages: no console errors and no sideways scroll. axe-core
+4.x at 390 and 1280 in both themes reported no violations. The lowest measured
+text contrast was 5.97:1 in the light theme (the search placeholder) and 7.15:1
+in the dark theme (the Social Protection label). The check script was kept in
+the session scratchpad and is not in the repository.
 
 ## Watch out for
 
