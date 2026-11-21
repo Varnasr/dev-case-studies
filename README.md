@@ -31,7 +31,7 @@ The library sets evidence beside theory, so that practitioners, students and res
 | **Saved studies** | Bookmark cases to a personal reading list stored in your browser. No account is required. |
 | **Reading experience** | Reading-time estimates, a scroll progress bar, share links, and per-study Cornell notes you can export as Markdown. |
 | **Related studies map** | A small literature map surfaces cases connected by shared topic or region. |
-| **Light / dark / system theme** | Persisted theme with a three-way toggle. |
+| **Light / dark / system theme** | Persisted theme. One button steps through device setting, light and dark. |
 | **Fast and durable** | Zero runtime dependencies. Static HTML, CSS and vanilla JS. |
 
 ---
