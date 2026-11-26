@@ -24,7 +24,7 @@ The library sets evidence beside theory, so that practitioners, students and res
 
 | Feature | Description |
 |---------|-------------|
-| **208 case studies** | Spanning 117 countries across the Global South and beyond, with about 960 cited references. |
+| **208 case studies** | Spanning 117 countries across the Global South and beyond, with about 1,000 cited references (998 in November 2026). |
 | **Search & filter** | Full-text search plus faceted filters by topic, region and decade, plus an experimental research-question matcher. |
 | **Insights dashboard** | Live statistics on how the collection is distributed across topics, regions, and decades. Click a bar to filter. |
 | **Evidence tiers** | Every study is auto-tagged *strong / moderate / emerging* based on reference count and causal-identification methods. |
